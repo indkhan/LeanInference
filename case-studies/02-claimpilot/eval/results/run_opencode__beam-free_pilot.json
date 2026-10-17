@@ -1,0 +1,15 @@
+{
+  "model": "opencode/beam-free",
+  "tag": "pilot",
+  "transport": "hosted_free",
+  "split": "train",
+  "docs": 12,
+  "ok": 12,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 11.4,
+  "latency_p50": 2.71,
+  "latency_p95": 9.297,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__beam-free_pilot.jsonl"
+}

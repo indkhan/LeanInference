@@ -1,0 +1,129 @@
+[
+  {
+    "doc_id": "train-00000",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Retention schedule, data protection notice, fraud prevention, and document handling boilerplate included on page 1."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached; tools are disabled and I cannot make further tool calls.\n\nSummary of work completed:\n- Received and parsed the SkyWay Airlines claim statement (an OCR'd travel claim document).\n- Extracted all schema-relevant fields from the document text, including claim reference, policy number, insured name, claim category, date of loss, line item, total, and payout IBAN.\n- Cross-checked the line item (\"Overtime surcharge\" $685.00) against the stated total (identical, so no subtotal/total conflict).\n- Prepared the final output JSON matching the required schema.\n\nRemaining tasks not completed:\n- None of substance; the extraction was fully derived from the provided text. The only unmet step was delivering the final answer through a tool-free channel per the step limit.\n\nRecommendation for next step:\n- Re-run the task (or continue with a fresh turn) so the JSON can be emitted as the sole output. The ready-to-submit result is:\n\n{\"claim_id\":\"CLM-2023-100000\",\"policy_number\":\"POL-XD31-316434\",\"claimant_name\":\"EVELYN HAWKINS\",\"date_of_incident\":\"2024-11-20\",\"date_of_service\":null,\"provider_name\":\"SkyWay Airlines\",\"line_items\":[{\"description\":\"Overtime sur"
+  },
+  {
+    "doc_id": "train-00001",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Amounts stated in CHF."
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2024-100001\", \"policy_number\": \"POL-DI16-182673\", \"claimant_name\": \"Joshua Case\", \"date_of_incident\": \"2025-12-04\", \"date_of_service\": \"2025-12-11\", \"provider_name\": \"St. Cain Medical Center\", \"line_items\": [{\"description\": \"Physical therapy session (45 min)\", \"amount\": \"1601.00\"}, {\"description\": \"Emergency department visit, level 3\", \"amount\": \"960.00\"}, {\"description\": \"Physician consultation\", \"amount\": \"1551.00\"}], \"total_amount\": \"4112.00\", \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": \"GB92SIME74931619405770\", \"notes\": \"Amounts stated in CHF.\"}"
+  },
+  {
+    "doc_id": "train-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2026-100003\", \"policy_number\": \"POL-IS90-440583\", \"claimant_name\": \"James Martin\", \"date_of_incident\": \"2024-11-08\", \"date_of_service\": null, \"provider_name\": \"Precision Auto Repair\", \"line_items\": [{\"description\": \"Paint and refinish, rear panel\", \"amount\": \"911.00\"}, {\"description\": \"ADAS recalibration\", \"amount\": \"137.00\"}], \"total_amount\": \"1048.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": \"8B8BE6ZUBRX1UH82G\", \"claim_type\": \"auto\", \"payout_iban\": \"GB91VJXN06559408069494\", \"notes\": \"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00004",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": "Case note: Documents follow by courier."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached. Tools are disabled and I cannot make any further tool calls.\n\nSummary of work completed so far:\n- Read and parsed the ClaimPilot claim document (Graham Collision Center — Statement of Account).\n- Identified all key fields from the text: claim reference, claim type, patient/claimant, policy number, VIN, ICD-10 damage code, six itemized line items, total charges, electronic payment IBAN, and the case note.\n- Verified arithmetic: 1396.00 + 1041.00 + 1294.00 + 564.00 + 797.00 + 286.00 = 5378.00, matching the stated TOTAL CHARGES.\n- Confirmed field formats against the schema: claim_id pattern (CLM-2023-100004), policy pattern (POL-FJ56-545917), amounts as two-decimal strings, IBAN normalized by removing spaces and uppercasing (GB95NOVX00764447792424).\n\nRemaining tasks not completed:\n- Emitting the final JSON object was blocked by the step limit.\n\nRecommended next step — the completed extraction, ready to output verbatim as the final answer:\n\n{\"claim_id\": \"CLM-2023-100004\", \"policy_number\": \"POL-FJ56-545917\", \"claimant_name\": \"JENNIFER STEWART\", \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": \"Graham Collision Center\", \""
+  },
+  {
+    "doc_id": "train-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Total stated as 391,00 with no currency symbol or ISO code on the document."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached; tools are disabled and no further tool calls were made.\n\n**What has been accomplished so far:**\n- The ClaimPilot fax document for medical claim CLM-2024-100005 was received and parsed in-context.\n- Key fields were identified directly from the text:\n  - Claim ID: CLM-2024-100005\n  - Policy: POL-KY40-115688\n  - Claimant: LISA DUNLAP\n  - Loss date: 21/01/2024 → 2024-01-21\n  - Service date: 30.01.2024 → 2024-01-30\n  - Provider: St. Burch Medical Center\n  - Code: S61.401\n  - Total: 391,00 → \"391.00\" (currency ambiguous: European-style decimal comma, no ISO currency stated → null)\n  - IBAN: GB87 QQRK 0718 3688 8271 51 → GB87QQRK07183688827151\n  - Claim type: medical, no VIN (n/a)\n  - No itemized charges are listed, so line_items = null\n- Boilerplate sections (payment processing, office hours, document handling, retention, claim processing) contain no extractable claim values.\n\n**Remaining tasks not completed:**\n- Emitting the final single JSON object as the response was blocked by the step-limit constraint.\n\n**Recommendation for next step:**\n- Resume the agent for one final turn so it can emit the output JSON only:\n\n```json\n{\"claim_id\":\"CLM"
+  },
+  {
+    "doc_id": "train-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Eric Cole",
+        "pred": "Mr./Ms. Eric Cole"
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "AMERISAFE CLAIM SERVICES"
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Settlement is subject to the terms, conditions, limitations and exclusions of the policy; amounts may be subject to a policy excess or deductible applied at settlement stage. Fraud prevention and data protection notices included."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached. Tool use is disabled, so I cannot call any tools until the next user input.\n\n**Summary of work completed so far:**\n- Received and reviewed the ClaimPilot claim document (AMERISAFE CLAIM SERVICES statement, Claim Ref: CLM-2025-100006, insured Mr./Ms. Eric Cole, claim category: medical).\n- Parsed all extractable fields mentally from the OCR'd text:\n  - claim_id: CLM-2025-100006 (matches required pattern CLM-YYYY-NNNNNN)\n  - policy_number: not stated in the document → null\n  - claimant_name: Mr./Ms. Eric Cole\n  - date_of_incident (date of loss): 16/02/2025 → 2025-02-16\n  - date_of_service: 02/22/2025 → 2025-02-22\n  - provider_name: AMERISAFE CLAIM SERVICES\n  - line_items: Physician consultation 434.00; X-ray, 2 views 962.00; Wound dressing and supplies 151.00; Emergency department visit, level 3 332.00; Laboratory panel, CBC 1651.00\n  - total_amount: 3530.00 (final total stated; also equals sum of line items)\n  - currency: USD\n  - diagnosis_or_damage_code: not stated → null\n  - vehicle_vin: null (medical claim)\n  - claim_type: medical\n  - payout_iban: GB28 ZSFB 9797 7233 5534 05 → GB28ZSFB97977233553405\n  - notes: boilerplate fraud/handl"
+  },
+  {
+    "doc_id": "train-00007",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Amounts stated in GBP. Incident date 12/08/2025 read as day/month/year. Ref code: FIRE-ENG-01. Submitted by Andrew, Claims intake, from billing@gomez.com."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached; tools are disabled and I am responding with text only.\n\n**Work completed so far:**\n- Read and parsed the claim email for CLM-2026-100007 (property claim, GBP).\n- Identified all key fields: claim ID, policy number, claimant, incident date, provider, damage/ref code, five itemized charges totalling £2,948.00, payout IBAN, and claim type.\n- Verified the line items sum exactly to the stated total (962.00 + 582.00 + 97.00 + 899.00 + 408.00 = 2948.00).\n- Determined there is no date of service, no vehicle VIN (non-auto claim), and no other currency besides GBP.\n\n**Remaining tasks:**\n- Emit the final JSON object (not delivered via tool output; provided below as text).\n\n**Recommendation:** The extraction is complete. The result below should be captured as the agent's output; no further tool calls are needed.\n\n{\"claim_id\": \"CLM-2026-100007\", \"policy_number\": \"POL-GF48-651425\", \"claimant_name\": \"Scott Smith\", \"date_of_incident\": \"2025-08-12\", \"date_of_service\": null, \"provider_name\": \"HomeShield Contractors\", \"line_items\": [{\"description\": \"Labor (2.5 hrs)\", \"amount\": \"962.00\"}, {\"description\": \"Disposal fee\", \"amount\": \"582.00\"}, {\"description\""
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability. Document handled via automated intake pipeline; retention, coverage, data protection, fraud prevention and accessibility notices as stated in the document."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached; tools are disabled and I am responding with text only.\n\nSummary of work completed so far:\n- The claim document (Ray Collision Center vehicle repair estimate) was received and fully read in the prompt; no tool calls were needed or made to parse it.\n- All extractable fields were identified:\n  - claim_id: CLM-2024-100009\n  - policy_number: POL-SB14-793943\n  - claimant_name: Joel Gibson\n  - date_of_incident (loss date): 25.06.2024 → 2024-06-25\n  - date_of_service: not stated in the document → null\n  - provider_name: Ray Collision Center\n  - line_items: Wheel alignment 864.00; Paint and refinish, rear panel 1039.00; ADAS recalibration 286.00; Wheel alignment 1227.00; Rear bumper cover 519.00\n  - total_amount: £3,935.00 → \"3935.00\"\n  - currency: GBP\n  - diagnosis_or_damage_code: BMP-31A\n  - vehicle_vin: PDV5ZLHYWSYB2L0RP\n  - claim_type: auto\n  - payout_iban: GB48IFHU29386090690404 (spaces removed, uppercased)\n  - notes: the document's boilerplate (\"All work subject to parts availability.\" plus the regulatory/retention/coverage/fraud/data-protection notices)\n\nResulting JSON object (the intended final output of this task):\n\n{\"claim_id\": \"CLM-"
+  },
+  {
+    "doc_id": "train-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Ricky Rodriguez",
+        "pred": "Mr./Ms. Ricky Rodriguez"
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached.\n\n**Summary of work completed so far:**\n- Read and parsed the ClaimPilot claim document (Bakerburgh Urgent Care Statement of Account).\n- Extracted all required schema fields from the text: claim reference (CLM-2025-100010), policy number (POL-SM71-400923), claimant (Mr./Ms. Ricky Rodriguez), injury date (01/28/2026), diagnosis code (S83.511), four line items totaling $2,598.00 USD, payout IBAN (GB32AMLS77452297394225), claim type (medical), and case note.\n- Determined no date of service, provider distinct from header (Bakerburgh Urgent Care is the provider), and vehicle VIN (not applicable to medical claims).\n- The final extraction result would be:\n\n{\"claim_id\":\"CLM-2025-100010\",\"policy_number\":\"POL-SM71-400923\",\"claimant_name\":\"Mr./Ms. Ricky Rodriguez\",\"date_of_incident\":\"2026-01-28\",\"date_of_service\":null,\"provider_name\":\"Bakerburgh Urgent Care\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"234.00\"},{\"description\":\"Medication administration\",\"amount\":\"917.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"507.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"940.00\"}],\"total_amo"
+  }
+]

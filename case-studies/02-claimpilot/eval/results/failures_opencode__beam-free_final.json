@@ -1,0 +1,41 @@
+[
+  {
+    "doc_id": "test-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "```json\n{\n  \"claim_id\": \"CLM-2026-300003\",\n  \"policy_number\": \"POL-ST92-858581\",\n  \"claimant_name\": \"Megan Williams\",\n  \"date_of_incident\": \"2024-07-20\",\n  \"date_of_service\": null,\n  \"provider_name\": \"HomeShield Contractors\",\n  \"line_items\": [\n    {\n      \"description\": \"Labor (2.5 hrs)\",\n      \"amount\": \"1178.00\"\n    }\n  ],\n  \"total_amount\": \"1178.00\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"HAIL-04\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"property\",\n  \"payout_iban\": \"GB74ONBS12662731888172\",\n  \"notes\": \"All work subject to parts availability.\"\n}\n```"
+  },
+  {
+    "doc_id": "test-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300005\",\"policy_number\":\"POL-CC57-910062\",\"claimant_name\":\"JOSHUA ORR\",\"date_of_incident\":\"2023-11-05\",\"date_of_service\":\"2023-11-08\",\"provider_name\":null,\"line_items\":[{\"description\":\"Physical therapy session (45 min)\",\"amount\":\"1181.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"78.94\"}],\"total_amount\":\"1259.94\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB65ZKLA91054245897315\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300009\",\n  \"policy_number\": \"POL-TA21-486772\",\n  \"claimant_name\": \"Carrie Weaver\",\n  \"date_of_incident\": \"2025-05-15\",\n  \"date_of_service\": \"2025-05-23\",\n  \"provider_name\": \"St. Wilson Medical Center\",\n  \"line_items\": [\n    {\"description\": \"Medication administration\", \"amount\": \"1752.00\"},\n    {\"description\": \"Wound dressing and supplies\", \"amount\": \"189.00\"},\n    {\"description\": \"X-ray, 2 views\", \"amount\": \"79.00\"},\n    {\"description\": \"Emergency department visit, level 3\", \"amount\": \"1565.00\"},\n    {\"description\": \"Medication administration\", \"amount\": \"1119.00\"},\n    {\"description\": \"Emergency department visit, level 3\", \"amount\": \"1666.00\"}\n  ],\n  \"total_amount\": \"6370.00\",\n  \"currency\": \"CHF\",\n  \"diagnosis_or_damage_code\": \"J06.9\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB80ADPM42042619706778\",\n  \"notes\": \"All work subject to parts availability.\"\n}"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "model": "opencode/big-pickle",
+  "tag": "pilot",
+  "transport": "hosted_free",
+  "split": "train",
+  "docs": 12,
+  "ok": 12,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 70.9,
+  "latency_p50": 21.318,
+  "latency_p95": 35.679,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__big-pickle_pilot.jsonl"
+}

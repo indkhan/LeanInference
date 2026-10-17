@@ -1,0 +1,1 @@
+{"doc_id": "test-00350", "family": "ocr_scan", "model": "opencode/beam-free", "tag": "probe", "transport": "hosted_free", "ok": false, "error": "provider error: Rate limit exceeded. Please try again later.", "attempts": 3, "latency_s": 2.795, "raw": "", "parsed": null, "tokens_in_est": 1362, "tokens_out_est": 0, "ts": 1792248250, "cached": false}

@@ -1,0 +1,80 @@
+[
+  {
+    "doc_id": "train-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "**Maximum steps for this agent have been reached.** Tools are disabled for the remainder of this turn; this is a text-only response.\n\n**Work accomplished so far:** The task in this session required no tool usage — it was a single-pass extraction of a Vehicle Repair Estimate document that was provided as plain text. That extraction is complete and no intermediate work was lost. The full field set was parsed from the document: claim ID, policy number, claimant, VIN, loss date, provider, two line items, the estimate total, currency, the payout account, and the claim-specific note. Fields with no value in the document (`date_of_service`, `diagnosis_or_damage_code`) were set to `null` per the rules rather than guessed.\n\n**Remaining tasks:** None for the extraction itself — the deliverable below is the final, complete output.\n\n**Recommendations for next steps:** Paste the JSON into the next step for schema validation (pattern checks on `claim_id`, `policy_number`, and amount formats should all pass), or have a new session re-run it for a cross-check.\n\nCompleted extraction:\n\n```json\n{\n  \"claim_id\": \"CLM-2026-100003\",\n  \"policy_number\": \"POL-IS90-440583\",\n  \"claimant_name\": \"James Martin\","
+  },
+  {
+    "doc_id": "train-00004",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "payout_iban",
+        "truth": "GB95NOVX00764447792424",
+        "pred": "GB95NOVX00764444792424"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2023-100004\",\n  \"policy_number\": \"POL-FJ56-545917\",\n  \"claimant_name\": \"JENNIFER STEWART\",\n  \"date_of_incident\": null,\n  \"date_of_service\": null,\n  \"provider_name\": \"Graham Collision Center\",\n  \"line_items\": [\n    {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"1396.00\"},\n    {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"1041.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"1294.00\"},\n    {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"564.00\"},\n    {\"description\": \"Rear bumper cover\", \"amount\": \"797.00\"},\n    {\"description\": \"Wheel alignment\", \"amount\": \"286.00\"}\n  ],\n  \"total_amount\": \"5378.00\",\n  \"currency\": null,\n  \"diagnosis_or_damage_code\": \"FIRE-ENG-01\",\n  \"vehicle_vin\": \"W5NN01F2BZ98A80CS\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB95NOVX00764444792424\",\n  \"notes\": \"Documents follow by courier.\"\n}"
+  },
+  {
+    "doc_id": "train-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "GBP"
+      }
+    ],
+    "raw": "```json\n{\n  \"claim_id\": \"CLM-2024-100005\",\n  \"policy_number\": \"POL-KY40-115688\",\n  \"claimant_name\": \"LISA DUNLAP\",\n  \"date_of_incident\": \"2024-01-21\",\n  \"date_of_service\": \"2024-01-30\",\n  \"provider_name\": \"St. Burch Medical Center\",\n  \"line_items\": null,\n  \"total_amount\": \"391.00\",\n  \"currency\": \"GBP\",\n  \"diagnosis_or_damage_code\": \"S61.401\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB87QQRK07183688827151\",\n  \"notes\": null\n}\n```"
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-100009\",\"policy_number\":\"POL-SB14-793943\",\"claimant_name\":\"Joel Gibson\",\"date_of_incident\":\"2024-06-25\",\"date_of_service\":null,\"provider_name\":\"Ray Collision Center\",\"line_items\":[{\"description\":\"Wheel alignment\",\"amount\":\"864.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"1039.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"286.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1227.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"519.00\"}],\"total_amount\":\"3935.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"BMP-31A\",\"vehicle_vin\":\"PDV5ZLHYWSYB2L0RP\",\"claim_type\":\"auto\",\"payout_iban\":\"GB48IFHU29386090690404\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Ricky Rodriguez",
+        "pred": "Mr./Ms. Ricky Rodriguez"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-100010\",\"policy_number\":\"POL-SM71-400923\",\"claimant_name\":\"Mr./Ms. Ricky Rodriguez\",\"date_of_incident\":\"2026-01-28\",\"date_of_service\":null,\"provider_name\":\"Bakerburgh Urgent Care\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"234.00\"},{\"description\":\"Medication administration\",\"amount\":\"917.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"507.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"940.00\"}],\"total_amount\":\"2598.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB32AMLS77452297394225\",\"notes\":\"Adjuster site visit scheduled.\"}"
+  },
+  {
+    "doc_id": "train-00011",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-100011\",\n  \"policy_number\": \"POL-MR46-937502\",\n  \"claimant_name\": \"Jackie Moss\",\n  \"date_of_incident\": null,\n  \"date_of_service\": null,\n  \"provider_name\": null,\n  \"line_items\": [\n    {\"description\": \"Radiator support bracket\", \"amount\": \"1716.00\"},\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"907.00\"},\n    {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"523.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"783.00\"},\n    {\"description\": \"Tax / VAT\", \"amount\": \"300.43\"}\n  ],\n  \"total_amount\": \"4229.43\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": \"KFEHX0EJLT3ZV9K4H\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB83VCGG42799522861323\",\n  \"notes\": \"CONFIDENTIAL - FOR CLAIMS USE ONLY\"\n}"
+  }
+]

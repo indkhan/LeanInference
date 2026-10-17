@@ -1,0 +1,98 @@
+[
+  {
+    "doc_id": "train-00000",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "SkyWay Airlines",
+        "pred": null
+      }
+    ],
+    "raw": "I was unable to complete the extraction — the step limit was reached before I could emit the JSON output.\n\n**What was accomplished:** The document text was parsed and all field values were identified from the \"SkyWay Airlines Statement\" document.\n\n**Remaining task:** Emitting the single JSON object with no markdown fences or surrounding text. Below is the extraction result:\n\n```json\n{\n  \"claim_id\": \"CLM-2023-100000\",\n  \"policy_number\": \"POL-XD31-316434\",\n  \"claimant_name\": \"EVELYN HAWKINS\",\n  \"date_of_incident\": \"2024-11-20\",\n  \"date_of_service\": null,\n  \"provider_name\": null,\n  \"line_items\": [\n    {\"description\": \"Overtime surcharge\", \"amount\": \"685.00\"}\n  ],\n  \"total_amount\": \"685.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"travel\",\n  \"payout_iban\": \"GB09ZPGT12884383635803\",\n  \"notes\": null\n}\n```\n\n**Notes on the extraction:**\n- `date_of_incident` derived from \"Date of loss: November 20, 2024\" → 2024-11-20.\n- `date_of_service`, `provider_name`, `diagnosis_or_damage_code` are not stated anywhere in the document → null.\n- `vehicle_vin` is null because `claim_type` is \"travel\" (per the rule that VIN applies only to auto claims"
+  },
+  {
+    "doc_id": "train-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2026-100003\", \"policy_number\": \"POL-IS90-440583\", \"claimant_name\": \"James Martin\", \"date_of_incident\": \"2024-11-08\", \"date_of_service\": null, \"provider_name\": \"Precision Auto Repair\", \"line_items\": [{\"description\": \"Paint and refinish, rear panel\", \"amount\": \"911.00\"}, {\"description\": \"ADAS recalibration\", \"amount\": \"137.00\"}], \"total_amount\": \"1048.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": \"8B8BE6ZUBRX1UH82G\", \"claim_type\": \"auto\", \"payout_iban\": \"GB91VJXN06559408069494\", \"notes\": \"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00004",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": "Case note: Documents follow by courier."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-100004\",\"policy_number\":\"POL-FJ56-545917\",\"claimant_name\":\"JENNIFER STEWART\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":\"Graham Collision Center\",\"line_items\":[{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"1396.00\"},{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"1041.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"1294.00\"},{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"564.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"797.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"286.00\"}],\"total_amount\":\"5378.00\",\"currency\":null,\"diagnosis_or_damage_code\":\"FIRE-ENG-01\",\"vehicle_vin\":\"W5NN01F2BZ98A80CS\",\"claim_type\":\"auto\",\"payout_iban\":\"GB95NOVX00764447792424\",\"notes\":\"Case note: Documents follow by courier.\"}"
+  },
+  {
+    "doc_id": "train-00008",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "policy_number",
+        "truth": "POL-UK76-419693",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB86ZVMM72693917725002",
+        "pred": null
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-100008\",\"policy_number\":null,\"claimant_name\":\"CASEY JOHNSON\",\"date_of_incident\":\"2024-11-29\",\"date_of_service\":null,\"provider_name\":\"Grand South Jameschester Hotel\",\"line_items\":[{\"description\":\"Materials and consumables\",\"amount\":\"1121.00\"},{\"description\":\"Diagnostic fee\",\"amount\":\"1184.00\"},{\"description\":\"Materials and consumables\",\"amount\":\"1245.00\"},{\"description\":\"Overtime surcharge\",\"amount\":\"1519.00\"},{\"description\":\"Service call-out\",\"amount\":\"1699.00\"},{\"description\":\"Disposal fee\",\"amount\":\"98.00\"}],\"total_amount\":\"6866.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"travel\",\"payout_iban\":null,\"notes\":\"Insured requested expedited handling.\"}"
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2024-100009\", \"policy_number\": \"POL-SB14-793943\", \"claimant_name\": \"Joel Gibson\", \"date_of_incident\": \"2024-06-25\", \"date_of_service\": null, \"provider_name\": \"Ray Collision Center\", \"line_items\": [{\"description\": \"Wheel alignment\", \"amount\": \"864.00\"}, {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"1039.00\"}, {\"description\": \"ADAS recalibration\", \"amount\": \"286.00\"}, {\"description\": \"Wheel alignment\", \"amount\": \"1227.00\"}, {\"description\": \"Rear bumper cover\", \"amount\": \"519.00\"}], \"total_amount\": \"3935.00\", \"currency\": \"GBP\", \"diagnosis_or_damage_code\": \"BMP-31A\", \"vehicle_vin\": \"PDV5ZLHYWSYB2L0RP\", \"claim_type\": \"auto\", \"payout_iban\": \"GB48IFHU29386090690404\", \"notes\": \"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Ricky Rodriguez",
+        "pred": "Mr./Ms. Ricky Rodriguez"
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2025-100010\", \"policy_number\": \"POL-SM71-400923\", \"claimant_name\": \"Mr./Ms. Ricky Rodriguez\", \"date_of_incident\": \"2026-01-28\", \"date_of_service\": null, \"provider_name\": \"Bakerburgh Urgent Care\", \"line_items\": [{\"description\": \"Medication administration\", \"amount\": \"234.00\"}, {\"description\": \"Medication administration\", \"amount\": \"917.00\"}, {\"description\": \"Emergency department visit, level 3\", \"amount\": \"507.00\"}, {\"description\": \"Emergency department visit, level 3\", \"amount\": \"940.00\"}], \"total_amount\": \"2598.00\", \"currency\": \"USD\", \"diagnosis_or_damage_code\": \"S83.511\", \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": \"GB32AMLS77452297394225\", \"notes\": \"Adjuster site visit scheduled.\"}\n\nNote: the harness reported that the step limit was reached, so no tools were invoked. The JSON above is complete — it satisfies every required field, uses `null` where the document states no value (`date_of_service`), and no further work remains for this document."
+  },
+  {
+    "doc_id": "train-00011",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-100011\",\"policy_number\":\"POL-MR46-937502\",\"claimant_name\":\"Jackie Moss\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":null,\"line_items\":[{\"description\":\"Radiator support bracket\",\"amount\":\"1716.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"907.00\"},{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"523.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"783.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"300.43\"}],\"total_amount\":\"4229.43\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":\"KFEHX0EJLT3ZV9K4H\",\"claim_type\":\"auto\",\"payout_iban\":\"GB83VCGG42799522861323\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  }
+]

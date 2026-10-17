@@ -1,0 +1,15 @@
+{
+  "model": "opencode/beam-free",
+  "tag": "final",
+  "transport": "hosted_free",
+  "split": "test",
+  "docs": 12,
+  "ok": 12,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 9.0,
+  "latency_p50": 2.652,
+  "latency_p95": 6.798,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__beam-free_final.jsonl"
+}

@@ -1,0 +1,18 @@
+{
+  "split": "train",
+  "docs": 1500,
+  "problems": 0,
+  "problem_examples": [],
+  "families": {
+    "invoice_formal": 250,
+    "email_thread": 250,
+    "ocr_scan": 250,
+    "auto_repair_estimate": 250,
+    "medical_bill": 250,
+    "fax_memo": 250
+  },
+  "nulls_total": 5363,
+  "nulls_avg_per_doc": 3.58,
+  "chars_p50": 2559,
+  "est_tokens_p50": 639
+}

@@ -1,0 +1,17 @@
+{
+  "model": "opencode/beam-free",
+  "tag": "probe",
+  "transport": "hosted_free",
+  "split": "test",
+  "docs": 1,
+  "ok": 0,
+  "ok_rate": 0.0,
+  "cache_hits": 0,
+  "wall_s": 42.9,
+  "latency_p50": 2.795,
+  "latency_p95": 2.795,
+  "errors": [
+    "provider error: Rate limit exceeded. Please try again later."
+  ],
+  "results_file": "eval\\results\\results_opencode__beam-free_probe.jsonl"
+}

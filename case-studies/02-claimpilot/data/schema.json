@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://leaninference.dev/claimpilot/schema.json",
+  "title": "ClaimPilot claim extraction schema",
+  "description": "Fixed extraction contract for ClaimPilot claim documents. Every field is always present. A field is null when the document does not state it - null is a correct answer, invented values are errors. Canonical forms: dates YYYY-MM-DD, currency ISO-4217, amounts decimal strings with exactly 2 decimals and no thousands separators or symbols.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "policy_number",
+    "claimant_name",
+    "date_of_incident",
+    "date_of_service",
+    "provider_name",
+    "line_items",
+    "total_amount",
+    "currency",
+    "diagnosis_or_damage_code",
+    "vehicle_vin",
+    "claim_type",
+    "payout_iban",
+    "notes"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLM-[0-9]{4}-[0-9]{6}$"
+    },
+    "policy_number": {
+      "type": ["string", "null"],
+      "pattern": "^POL-[A-Z]{2}[0-9]{2}-[0-9]{6}$"
+    },
+    "claimant_name": {
+      "type": ["string", "null"],
+      "minLength": 2,
+      "description": "Person name exactly as stated in the document (case/spacing normalized by the metric, not by the model)."
+    },
+    "date_of_incident": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "date_of_service": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "provider_name": {
+      "type": ["string", "null"],
+      "minLength": 2
+    },
+    "line_items": {
+      "oneOf": [
+        {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["description", "amount"],
+            "properties": {
+              "description": {"type": "string", "minLength": 2},
+              "amount": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{2}$"}
+            }
+          }
+        },
+        {"type": "null"}
+      ]
+    },
+    "total_amount": {
+      "type": ["string", "null"],
+      "pattern": "^-?[0-9]+\\.[0-9]{2}$"
+    },
+    "currency": {
+      "type": ["string", "null"],
+      "enum": ["USD", "EUR", "GBP", "CHF", null]
+    },
+    "diagnosis_or_damage_code": {
+      "type": ["string", "null"],
+      "minLength": 2
+    },
+    "vehicle_vin": {
+      "type": ["string", "null"],
+      "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+      "description": "Auto claims only. Null for every other claim type."
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": ["auto", "medical", "property", "travel", "other"]
+    },
+    "payout_iban": {
+      "type": ["string", "null"],
+      "minLength": 15,
+      "description": "IBAN-like payout account, no spaces, uppercase."
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "minLength": 3
+    }
+  }
+}
