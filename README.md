@@ -1,2 +1,3 @@
 # LeanInference
 AI optimization, model adaptation, and production engineering for startups.
+We help startups cut their LLM costs without losing quality. I build an evaluation set from your real usage, benchmark your current setup against cheaper options (smaller hosted models, open-source models, RAG, fine-tuning), and implement the one that wins. Fine-tuning only when it clearly beats simpler options.
