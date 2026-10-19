@@ -3,13 +3,15 @@
   "tag": "final",
   "transport": "hosted_free",
   "split": "test",
-  "docs": 12,
-  "ok": 12,
-  "ok_rate": 1.0,
-  "cache_hits": 0,
-  "wall_s": 24.6,
-  "latency_p50": 8.73,
-  "latency_p95": 11.938,
-  "errors": [],
+  "docs": 150,
+  "ok": 149,
+  "ok_rate": 0.9933,
+  "cache_hits": 12,
+  "wall_s": 474.3,
+  "latency_p50": 7.573,
+  "latency_p95": 16.377,
+  "errors": [
+    "provider error: Rate limit exceeded. Please try again later."
+  ],
   "results_file": "eval\\results\\results_opencode__deepseek-v4.1-flash-free_final.jsonl"
 }

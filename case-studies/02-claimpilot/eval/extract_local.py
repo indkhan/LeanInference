@@ -77,6 +77,62 @@ LM_SCHEMA = {
 }
 
 
+def build_grammar_prefix_fn(tokenizer, schema):
+    """lm-format-enforcer prefix function, built without its transformers
+    integration - that module imports transformers.tokenization_utils, which
+    transformers 5.x removed. Logic mirrors the integration."""
+    from lmformatenforcer import JsonSchemaParser, TokenEnforcer, TokenEnforcerTokenizerData
+
+    vocab_size = len(tokenizer)
+    token_0 = tokenizer.encode("0")[-1]
+    special_ids = set(tokenizer.all_special_ids)
+    regular_tokens = []
+    for token_idx in range(vocab_size):
+        if token_idx in special_ids:
+            continue
+        decoded_after_0 = tokenizer.decode([token_0, token_idx])[1:]
+        decoded_regular = tokenizer.decode([token_idx])
+        is_word_start_token = len(decoded_after_0) > len(decoded_regular)
+        regular_tokens.append((token_idx, decoded_after_0, is_word_start_token))
+
+    def decode_fn(tokens):
+        return tokenizer.decode(tokens).rstrip("\ufffd")
+
+    data = TokenEnforcerTokenizerData(regular_tokens, decode_fn, tokenizer.eos_token_id,
+                                      False, vocab_size)
+    enforcer = TokenEnforcer(data, JsonSchemaParser(schema))
+
+    def prefix_fn(batch_id, sent):
+        return enforcer.get_allowed_tokens(sent.tolist()).allowed_tokens
+
+    return prefix_fn
+
+
+def load_model(model_id: str, adapter: str | None):
+    """Load the 4-bit model. The checkpoint used here is already quantized
+    (unsloth bnb-4bit), so only pass BitsAndBytesConfig when it is not."""
+    from transformers import AutoConfig, AutoModelForCausalLM
+
+    cfg = AutoConfig.from_pretrained(model_id)
+    qcfg = getattr(cfg, "quantization_config", None)
+    if qcfg is not None:
+        print(f"pre-quantized checkpoint: {qcfg.get('bnb_4bit_quant_type', '?')} "
+              f"compute={qcfg.get('bnb_4bit_compute_dtype', '?')}", flush=True)
+        model = AutoModelForCausalLM.from_pretrained(model_id, device_map={"": 0},
+                                                    **load_dtype_kwarg())
+    else:
+        from transformers import BitsAndBytesConfig
+        bnb = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                                 bnb_4bit_compute_dtype=torch.float16, bnb_4bit_use_double_quant=True)
+        model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=bnb,
+                                                     device_map={"": 0}, **load_dtype_kwarg())
+    if adapter:
+        from peft import PeftModel
+        model = PeftModel.from_pretrained(model, adapter)
+    model.eval()
+    return model
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="Qwen/Qwen3-4B-Instruct-2507")
@@ -90,29 +146,19 @@ def main():
     ap.add_argument("--no-cache", action="store_true")
     args = ap.parse_args()
 
-    from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+    from transformers import AutoTokenizer
 
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    bnb = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
-                             bnb_4bit_compute_dtype=torch.float16, bnb_4bit_use_double_quant=True)
     print(f"loading {args.model} (4-bit)... adapter={args.adapter}", flush=True)
-    model = AutoModelForCausalLM.from_pretrained(args.model, quantization_config=bnb,
-                                                 device_map={"": 0}, **load_dtype_kwarg())
-    if args.adapter:
-        from peft import PeftModel
-        model = PeftModel.from_pretrained(model, args.adapter)
-    model.eval()
+    model = load_model(args.model, args.adapter)
 
     prefix_fn = None
     if not args.no_grammar:
         try:
-            from lmformatenforcer import JsonSchemaParser
-            from lmformatenforcer.integrations.transformers import build_transformers_prefix_allowed_tokens_fn
-            parser = JsonSchemaParser(LM_SCHEMA)
-            prefix_fn = build_transformers_prefix_allowed_tokens_fn(tokenizer, parser)
+            prefix_fn = build_grammar_prefix_fn(tokenizer, LM_SCHEMA)
             print("constrained decoding: lm-format-enforcer ON", flush=True)
         except Exception as ex:  # noqa: BLE001
             print(f"WARNING lm-format-enforcer unavailable ({ex}); running unconstrained", flush=True)
