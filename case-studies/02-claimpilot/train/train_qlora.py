@@ -77,7 +77,7 @@ def build_dataset(tokenizer, docs, max_len: int) -> Dataset:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="Qwen/Qwen3-4B-Instruct-2507")
+    ap.add_argument("--model", default="unsloth/Qwen3-4B-Instruct-2507-bnb-4bit")
     ap.add_argument("--out", default=str(CASE / "train" / "artifacts" / "qwen3-4b-lora"))
     ap.add_argument("--epochs", type=float, default=2.0)
     ap.add_argument("--max-len", type=int, default=1536)
@@ -122,7 +122,10 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         args.model, quantization_config=bnb, device_map={"": 0}, **load_model_kwargs()
     )
-    model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True)
+    # prepare_model_for_kbit_training upcasts the unquantized embeddings + LM head to fp32
+    # (~3 GB on this 151K-vocab model) and OOMs the 6 GB card; only the checkpointing hooks are needed.
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+    model.enable_input_require_grads()
     lora = LoraConfig(
         r=args.lora_r, lora_alpha=args.lora_alpha, lora_dropout=0.05, bias="none",
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
@@ -155,7 +158,7 @@ def main():
         max_steps=args.max_steps,
         learning_rate=args.lr,
         lr_scheduler_type="cosine",
-        warmup_ratio=0.03,
+        warmup_steps=20,
         logging_steps=5,
         save_strategy="epoch",
         eval_strategy="epoch" if eval_ds is not None else "no",
@@ -170,7 +173,21 @@ def main():
         save_total_limit=3,
     )
 
-    trainer = Trainer(model=model, args=targs, train_dataset=ds, eval_dataset=eval_ds, data_collator=collator)
+    class TailLossTrainer(Trainer):
+        """Loss only over the answer tail. Full-vocab logits for a ~1.8K-token prompt
+        (151K vocab, fp32 upcast) OOM'd the 6 GB card. With micro-batch 1 and no padding
+        the answer is the last k tokens, so only those logit positions are computed."""
+
+        def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
+            labels = inputs.pop("labels")
+            ids = inputs["input_ids"]
+            k = int((labels[0] != -100).sum().item())
+            out = model(input_ids=ids, attention_mask=inputs["attention_mask"], logits_to_keep=k + 1)
+            logits = out.logits[0, :-1, :].float()
+            loss = torch.nn.functional.cross_entropy(logits, ids[0, -k:])
+            return (loss, out) if return_outputs else loss
+
+    trainer = TailLossTrainer(model=model, args=targs, train_dataset=ds, eval_dataset=eval_ds, data_collator=collator)
 
     train_config = {
         "model": args.model,
