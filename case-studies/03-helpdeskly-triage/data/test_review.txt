@@ -1,0 +1,700 @@
+t03246|account_access|high|negative|Two-factor codes keep getting rejected. I've been locked out since on the 12th. my gmail And note: this is time-sensitive. very disappointed.
+t01307|account_access|high|negative|I can't log in: the password reset emails never arrive in the email I signed up with. today at the latest. this is unacceptable.
+t03447|account_access|high|negative|account locked help urgent. seems like I always have bad luck with you.
+t02275|account_access|high|negative|My account is locked after too many attempts. What do I do? the email I signed up with (urgent) seems like I always have bad luck with you.
+t00850|account_access|high|negative|I can't log in: the password reset emails never arrive in my hotmail. (this is time-sensitive) I'm honestly furious.
+t03313|account_access|high|neutral|Two-factor codes keep getting rejected. I've been locked out since this morning. the email I signed up with (urgent)
+t00782|account_access|high|neutral|I can't log in: the password reset emails never arrive in my gmail. Also, can I exchange the hair dryer for a size 9? I clearly ordered the wrong size. And note: today at the latest.
+t00813|account_access|high|neutral|Forgot my password, and now it says the account is locked too. my hotmail (today at the latest)
+t00893|account_access|high|neutral|I can't log in: the password reset emails never arrive in the email I signed up with. And note: ASAP.
+t03734|account_access|high|neutral|Forgot my password, and now it says the account is locked too. my gmail (today at the latest)
+t04546|account_access|high|neutral|account locked help ASAP.
+t04407|account_access|high|neutral|account locked help Also, do your gift cards expire? Thinking of getting one for my sister. And note: no rush at all.
+t02856|account_access|high|neutral|My account is locked after too many attempts. What do I do? the email I signed up with this is time-sensitive.
+t04548|account_access|high|neutral|Forgot my password, and now it says the account is locked too. the email I signed up with And note: urgent.
+t01251|account_access|high|positive|Forgot my password, and now it says the account is locked too. my work email And note: urgent. long-time customer, generally happy.
+t03715|account_access|high|positive|Forgot my password, and now it says the account is locked too. my hotmail (this is time-sensitive) you've been great every time before.
+t04349|account_access|high|positive|reset email never comes And note: ASAP. I appreciate your help.
+t01818|account_access|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, cant log in Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (when you get a minute) ridiculous.
+t02792|account_access|low|neutral|No puedo iniciar sesión, cuenta bloqueada. And note: when you get a minute.
+t01337|account_access|low|neutral|Two-factor codes keep getting rejected. I've been locked out since on the 12th. the email I signed up with whenever you can.
+t01848|account_access|low|neutral|My account is locked after too many attempts. What do I do? my work email (when you get a minute)
+t01281|account_access|low|positive|Two-factor codes keep getting rejected. I've been locked out since last Friday. my gmail whenever you can. you've been great every time before.
+t02663|account_access|low|positive|I can't log in: the password reset emails never arrive in the email I signed up with. (no rush at all) long-time customer, generally happy.
+t04639|account_access|medium|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, My account is locked after too many attempts. What do I do? the email I signed up with Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, enough. Every answer I get is a template. I demand someone in charge looks at ORD-76055 personally. (this week if possible) ridiculous.
+t02814|account_access|medium|negative|Two-factor codes keep getting rejected. I've been locked out since two days ago. the email I signed up with soon-ish. ridiculous.
+t03007|account_access|medium|negative|My account is locked after too many attempts. What do I do? my work email Also, i need to change the delivery address on order ORD-53660: it should go to my new place, 12 Maple Court in Leeds. (in the next few days) I'm honestly furious.
+t03367|account_access|medium|negative|Two-factor codes keep getting rejected. I've been locked out since last week. my hotmail in the next few days. very disappointed.
+t02827|account_access|medium|negative|Forgot my password, and now it says the account is locked too. my hotmail (before the weekend) seems like I always have bad luck with you.
+t03084|account_access|medium|negative|Two-factor codes keep getting rejected. I've been locked out since two days ago. my gmail And note: before the weekend. very disappointed.
+t00126|account_access|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Two-factor codes keep getting rejected. I've been locked out since two days ago. my gmail Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. soon-ish.
+t02779|account_access|medium|neutral|I can't log in: the password reset emails never arrive in my gmail. Also, i need to change the delivery address on order ORD-50508: it should go to my new place, 402 Oak Avenue, Portland. before the weekend.
+t01382|account_access|medium|neutral|Two-factor codes keep getting rejected. I've been locked out since this morning. the email I signed up with And note: before the weekend.
+t01078|account_access|medium|neutral|I can't log in: the password reset emails never arrive in my hotmail. soon-ish.
+t02985|account_access|medium|neutral|Two-factor codes keep getting rejected. I've been locked out since yesterday. my work email (before the weekend)
+t00784|account_access|medium|neutral|Two-factor codes keep getting rejected. I've been locked out since yesterday. the email I signed up with (soon-ish)
+t03511|account_access|medium|neutral|Forgot my password, and now it says the account is locked too. my work email And note: before the weekend.
+t03535|account_access|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I can't log in: the password reset emails never arrive in my hotmail. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (in the next few days)
+t04210|account_access|medium|positive|I don't usually write to support, so I hope you read this fully. Two-factor codes keep getting rejected. I've been locked out since last week. my work email Also I ordered from your summer collection before and that was perfect, to be fair. in the next few days. long-time customer, generally happy.
+t00738|cancel_order|high|neutral|Bitte stornieren Sie Bestellung ORD-81770. And note: the event is on Sunday.
+t02003|cancel_order|high|neutral|Can I still cancel ORD-98225? It hasn't shipped yet as far as I can see. (this is time-sensitive)
+t02022|cancel_order|high|neutral|Please cancel order ORD-86758. I ordered the wrong thing and reordered seconds later. And note: urgent.
+t02961|cancel_order|high|neutral|Please cancel order ORD-65328. I ordered the wrong thing and reordered seconds later. (the event is on Sunday)
+t03204|cancel_order|high|neutral|First of all I want to say your packaging quality is usually great. Can I still cancel ORD-28202? It hasn't shipped yet as far as I can see. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. today at the latest.
+t04540|cancel_order|high|neutral|Please cancel order ORD-40198. I ordered the wrong thing and reordered seconds later. And note: ASAP.
+t01597|cancel_order|high|positive|Cancel the phone case order please (ORD-61723), found it cheaper elsewhere, sorry! Also, the bluetooth speaker arrived with a torn seam and stuffing coming out. What now, order ORD-71955? (urgent) you've been great every time before.
+t02735|cancel_order|low|negative|Bitte stornieren Sie Bestellung ORD-18955. when you get a minute. ridiculous.
+t03410|cancel_order|low|negative|Can I still cancel ORD-79235? It hasn't shipped yet as far as I can see. Also, please refund $59.90 for order ORD-81558: the sneakers simply doesn't do what the page said it would. (whenever you can) seems like I always have bad luck with you.
+t02455|cancel_order|low|negative|Please cancel order ORD-65977. I ordered the wrong thing and reordered seconds later. when you get a minute. ridiculous.
+t02203|cancel_order|low|negative|cancel order 48213 Also, hi, I placed order ORD-67105 this morning and there has been no tracking update since. Where is it? And note: no rush at all. I'm honestly furious.
+t02729|cancel_order|low|neutral|Can I still cancel ORD-58322? It hasn't shipped yet as far as I can see. Also, i was charged $17.25 twice for order ORD-37343. One of them needs to be reversed. (not urgent, just asking)
+t00227|cancel_order|low|neutral|Can I still cancel ORD-87402? It hasn't shipped yet as far as I can see. Also, the sneakers doesn't fit. How do I set up a return for order ORD-78425? And note: whenever you can.
+t02357|cancel_order|low|neutral|Can I still cancel ORD-69094? It hasn't shipped yet as far as I can see. And note: not urgent, just asking.
+t04841|cancel_order|low|neutral|Cancel the electric shaver order please (ORD-28640), found it cheaper elsewhere, sorry! And note: no rush at all.
+t02223|cancel_order|low|neutral|Please cancel order ORD-71638. I ordered the wrong thing and reordered seconds later. whenever you can.
+t00562|cancel_order|low|neutral|Can I still cancel ORD-76342? It hasn't shipped yet as far as I can see. no rush at all.
+t04972|cancel_order|low|neutral|Cancel the electric shaver order please (ORD-49655), found it cheaper elsewhere, sorry! And note: when you get a minute.
+t00832|cancel_order|low|neutral|Please cancel order ORD-44447. I ordered the wrong thing and reordered seconds later. (not urgent, just asking)
+t03523|cancel_order|low|neutral|cancel pls (when you get a minute)
+t02183|cancel_order|low|neutral|Please cancel order ORD-36081. I ordered the wrong thing and reordered seconds later. And note: no rush at all.
+t02305|cancel_order|low|neutral|Please cancel order ORD-19961. I ordered the wrong thing and reordered seconds later. when you get a minute.
+t00877|cancel_order|low|neutral|Can I still cancel ORD-79316? It hasn't shipped yet as far as I can see. (not urgent, just asking)
+t01919|cancel_order|low|positive|Cancel the desk lamp order please (ORD-14562), found it cheaper elsewhere, sorry! (not urgent, just asking) love your shop otherwise.
+t00243|cancel_order|low|positive|cancel it, reorder And note: whenever you can. long-time customer, generally happy.
+t02298|cancel_order|medium|negative|Can I still cancel ORD-55367? It hasn't shipped yet as far as I can see. And note: in the next few days. this is unacceptable.
+t00114|cancel_order|medium|negative|Please cancel order ORD-10585. I ordered the wrong thing and reordered seconds later. before the weekend. ridiculous.
+t02876|cancel_order|medium|negative|cancel pls (before the weekend) ridiculous.
+t01926|cancel_order|medium|negative|Can I still cancel ORD-86012? It hasn't shipped yet as far as I can see. Also, the computer mouse doesn't fit. How do I set up a return for order ORD-96241? in the next few days. this is unacceptable.
+t02354|cancel_order|medium|negative|Please cancel order ORD-49789. I ordered the wrong thing and reordered seconds later. in the next few days. I'm honestly furious.
+t00378|cancel_order|medium|neutral|Can I still cancel ORD-27492? It hasn't shipped yet as far as I can see. before the weekend.
+t00069|cancel_order|medium|neutral|Cancel the air fryer order please (ORD-29834), found it cheaper elsewhere, sorry! (in the next few days)
+t00936|cancel_order|medium|neutral|Cancel the yoga mat order please (ORD-56795), found it cheaper elsewhere, sorry! (in the next few days)
+t02877|cancel_order|medium|neutral|Cancel the backpack order please (ORD-28886), found it cheaper elsewhere, sorry! before the weekend.
+t04343|cancel_order|medium|neutral|Veuillez annuler la commande ORD-63804. (before the weekend)
+t02802|cancel_order|medium|neutral|Veuillez annuler la commande ORD-49118. (soon-ish)
+t02123|cancel_order|medium|neutral|Please cancel order ORD-57797. I ordered the wrong thing and reordered seconds later. before the weekend.
+t03659|cancel_order|medium|neutral|I don't usually write to support, so I hope you read this fully. Please cancel order ORD-20409. I ordered the wrong thing and reordered seconds later. Also I ordered from your summer collection before and that was perfect, to be fair. in the next few days.
+t04336|cancel_order|medium|neutral|Can I still cancel ORD-10170? It hasn't shipped yet as far as I can see. before the weekend.
+t01562|cancel_order|medium|neutral|Please cancel order ORD-98218. I ordered the wrong thing and reordered seconds later. And note: in the next few days.
+t03166|cancel_order|medium|positive|Cancel the desk lamp order please (ORD-68544), found it cheaper elsewhere, sorry! soon-ish. you've been great every time before.
+t01718|cancel_order|medium|positive|Can I still cancel ORD-57588? It hasn't shipped yet as far as I can see. And note: soon-ish. you've been great every time before.
+t03920|cancel_order|medium|positive|Please cancel order ORD-92627. I ordered the wrong thing and reordered seconds later. And note: in the next few days. love your shop otherwise.
+t02722|complaint_escalation|high|negative|supervisor, today, or I dispute (urgent) seems like I always have bad luck with you.
+t01640|complaint_escalation|high|negative|This is the third broken item in a row and your support keeps replying with the same copied answer. I want a manager, now. (not urgent, just asking) I'm honestly furious.
+t03554|complaint_escalation|high|negative|If nobody gets back to me about my case today I will dispute the charge and post about this everywhere. Get me a human. (urgent) seems like I always have bad luck with you.
+t01086|complaint_escalation|high|negative|Inacceptable ! Je veux parler à un responsable MAINTENANT. today at the latest. very disappointed.
+t04956|complaint_escalation|high|negative|I don't usually write to support, so I hope you read this fully. I've emailed five times about order ORD-27861 and nobody fixed anything. I want a supervisor to call me. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. Bitte antworten Sie mir bald, danke. this is time-sensitive. I'm honestly furious.
+t01959|complaint_escalation|high|negative|I've emailed five times about order ORD-23775 and nobody fixed anything. I want a supervisor to call me. ASAP. this is unacceptable.
+t04878|complaint_escalation|high|negative|If nobody gets back to me about my case today I will dispute the charge and post about this everywhere. Get me a human. ASAP. this is unacceptable.
+t02365|complaint_escalation|high|negative|This is the second broken item in a row and your support keeps replying with the same copied answer. I want a manager, now. this is time-sensitive. seems like I always have bad luck with you.
+t03155|complaint_escalation|high|negative|This is the second broken item in a row and your support keeps replying with the same copied answer. I want a manager, now. And note: ASAP. this is unacceptable.
+t01109|complaint_escalation|high|negative|I've emailed five times about order ORD-42540 and nobody fixed anything. I want a supervisor to call me. Merci de me répondre rapidement. (today at the latest) this is unacceptable.
+t00846|complaint_escalation|high|negative|Enough. Every answer I get is a template. I demand someone in charge looks at ORD-23186 personally. And note: no rush at all. this is unacceptable.
+t03537|complaint_escalation|high|negative|I've emailed five times about order ORD-66237 and nobody fixed anything. I want a supervisor to call me. (urgent) seems like I always have bad luck with you.
+t02878|complaint_escalation|high|negative|¡Inaceptable! Quiero hablar con un responsable AHORA. (today at the latest) I'm honestly furious.
+t03696|complaint_escalation|high|negative|supervisor, today, OR I dispute !! And note: this is time-sensitive. this is unacceptable.
+t01739|complaint_escalation|high|negative|Enough. Every answer I get is a template. I demand someone in charge looks at ORD-46685 personally. And note: this is time-sensitive. I'm honestly furious.
+t03242|complaint_escalation|high|negative|I don't usually write to support, so I hope you read this fully. I've emailed five times about order ORD-22105 and nobody fixed anything. I want a supervisor to call me. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: today at the latest. very disappointed.
+t01019|complaint_escalation|high|neutral|This is THE third broken item in a row AND your support keeps replying with THE same copied answer. I want a manager, now. !! And note: this is time-sensitive.
+t00713|complaint_escalation|low|negative|Enough. Every answer I get is a template. I demand someone in charge looks at ORD-53487 personally. And note: when you get a minute. ridiculous.
+t01501|complaint_escalation|medium|negative|I've emailed five times about order ORD-35294 and nobody fixed anything. I want a supervisor to call me. (soon-ish) I'm honestly furious.
+t01943|complaint_escalation|medium|negative|If nobody gets back to me about my case today I will dispute the charge and post about this everywhere. Get me a human. (before the weekend) very disappointed.
+t00145|complaint_escalation|medium|negative|If nobody gets back to me about my case today I will dispute the charge and post about this everywhere. Get me a human. Also, do your gift cards expire? Thinking of getting one for my sister. this week if possible. seems like I always have bad luck with you.
+t01250|complaint_escalation|medium|negative|Enough. Every answer I get is a TEMPLATE. I DEMAND someone in charge looks at ORD-70381 PERSONALLY. !! (before the weekend) I'm honestly furious.
+t04711|damaged_item|high|negative|The plant pot arrived with a torn seam and stuffing coming out. What now, order ORD-23517? (today at the latest) very disappointed.
+t03941|damaged_item|high|negative|I don't usually write to support, so I hope you read this fully. The bluetooth speaker arrived with a torn seam and stuffing coming out. What now, order ORD-38750? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: ASAP. I'm honestly furious.
+t02245|damaged_item|high|negative|There is a huge dent on the charging cable and one cable won't even connect. Order ORD-81806. (we fly out on vacation Friday) I'm honestly furious.
+t00304|damaged_item|high|negative|There is a huge dent on the charging cable and one cable won't even connect. Order ORD-32652. Also, i would like to apply as a wholesale partner. Who do I talk to? we fly out on vacation Friday. ridiculous.
+t01113|damaged_item|high|negative|Just opened the package and the air fryer IS shattered. THIS is THE second time something like this happens! !!! (the event is on Sunday) seems like I always have bad luck with you.
+t03506|damaged_item|high|negative|The yoga mat arrived with a torn seam and stuffing coming out. What now, order ORD-11602? Also, i'd like my money back for the mechanical keyboard from order ORD-78669. It arrived fine but it's not what I expected. I need it before my move on Thursday. ridiculous.
+t04017|damaged_item|high|negative|Just opened the package and the wireless earbuds is shattered. This is the third time something like this happens! (we fly out on vacation Friday) I'm honestly furious.
+t04895|damaged_item|high|negative|I don't usually write to support, so I hope you read this fully. The coffee maker arrived broken: the box was crushed and the lid is cracked straight through. Order ORD-77049. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. the event is on Sunday. very disappointed.
+t03835|damaged_item|high|negative|There is a huge dent on the desk lamp and one cable won't even connect. Order ORD-43570. my daughter's birthday is Saturday. seems like I always have bad luck with you.
+t02012|damaged_item|high|negative|Just opened the package and the computer mouse is shattered. This is the second time something like this happens! urgent. seems like I always have bad luck with you.
+t03667|damaged_item|high|negative|The coffee maker arrived with a torn seam and stuffing coming out. What now, order ORD-62381? when you get a minute. very disappointed.
+t02918|damaged_item|high|negative|Just opened the package and the plant pot is shattered. This is the second time something like this happens! ASAP. very disappointed.
+t02963|damaged_item|high|neutral|I don't usually write to support, so I hope you read this FULLY. There is a huge dent on the garden hose and one cable won't even connect. Order ORD-87119. Also I ordered from YOUR SUMMER collection before and that was perfect, to be fair. !! And note: I need it before my move on Thursday.
+t02026|damaged_item|high|neutral|The mechanical keyboard arrived with a torn seam and stuffing coming out. What now, order ORD-59048? And note: my daughter's birthday is Saturday.
+t01010|damaged_item|high|neutral|There is a huge dent on the coffee MAKER AND one cable won't even CONNECT. Order ORD-36499. !!! I need it before my move on Thursday.
+t00848|damaged_item|high|neutral|There is a huge dent on the desk lamp and one cable won't even connect. Order ORD-19339. Also, please cancel order ORD-42667. I ordered the wrong thing and reordered seconds later. And note: today at the latest.
+t00515|damaged_item|high|neutral|The mechanical keyboard arrived broken: the box was crushed and the lid is cracked straight through. Order ORD-69893. And note: we fly out on vacation Friday.
+t02726|damaged_item|high|neutral|I don't usually write to support, so I hope you read this fully. There is a huge dent on the plant pot and one cable won't even connect. Order ORD-59971. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. Also, you sent me the blue phone case but I ordered the red one. Order ORD-61546. (the event is on Sunday)
+t01039|damaged_item|high|positive|There is a huge dent on the hair dryer and one cable won't even connect. Order ORD-73370. ASAP. thanks in advance.
+t03490|damaged_item|low|negative|THE mechanical keyboard arrived with a torn SEAM AND stuffing coming out. What now, order ORD-16894? !! And note: whenever you can. very disappointed.
+t04280|damaged_item|low|negative|item broke on arrival no rush at all. I'm honestly furious.
+t03729|damaged_item|low|negative|There is a huge dent on the plant pot and one cable won't even connect. Order ORD-54594. (whenever you can) seems like I always have bad luck with you.
+t00921|damaged_item|low|negative|Just opened the package and the mechanical keyboard is shattered. This is the second time something like this happens! when you get a minute. I'm honestly furious.
+t02220|damaged_item|low|negative|Just opened the PACKAGE and the phone case IS shattered. This is the third time something like THIS happens! !! And note: whenever you can. very disappointed.
+t02570|damaged_item|low|negative|There is a huge dent on the backpack and one cable won't even connect. Order ORD-62745. (no rush at all) this is unacceptable.
+t04233|damaged_item|low|neutral|Perfect, just perfect. Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Just opened the package and the smartwatch band is shattered. This is the third time something like this happens! Also I ordered from your summer collection before and that was perfect, to be fair. (when you get a minute)
+t00530|damaged_item|low|neutral|First of all I want to say your packaging quality is usually great. The hair dryer arrived broken: the box was crushed and the lid is cracked straight through. Order ORD-59518. Also I ordered from your summer collection before and that was perfect, to be fair. when you get a minute.
+t00187|damaged_item|low|neutral|Just opened the package and the mechanical keyboard is shattered. This is the third time something like this happens! when you get a minute.
+t01570|damaged_item|medium|negative|Perfect, just perfect. The kettle arrived with a torn seam and stuffing coming out. What now, order ORD-49716? before the weekend. very disappointed.
+t00737|damaged_item|medium|negative|There is a huge dent on the charging cable and one cable won't even connect. Order ORD-61875. And note: in the next few days. this is unacceptable.
+t00616|damaged_item|medium|negative|Just opened the package and the desk lamp is shattered. This is the second time something like this happens! Also, the kettle doesn't fit. How do I set up a return for order ORD-75308? And note: this week if possible. seems like I always have bad luck with you.
+t00494|damaged_item|medium|negative|The backpack arrived with a torn seam and stuffing coming out. What now, order ORD-69884? And note: before the weekend. very disappointed.
+t04051|damaged_item|medium|negative|Just opened the package and the hair DRYER is shattered. THIS is the second time SOMETHING like this happens! !! before the weekend. seems like I always have bad luck with you.
+t03789|damaged_item|medium|negative|There is a huge dent on the phone case and one cable won't even connect. Order ORD-46508. And note: soon-ish. very disappointed.
+t02565|damaged_item|medium|negative|The desk lamp arrived with a torn seam and stuffing coming out. What now, order ORD-66347? And note: this week if possible. very disappointed.
+t01639|damaged_item|medium|negative|The smartwatch band arrived with a torn seam and stuffing coming out. What now, order ORD-92384? (this week if possible) ridiculous.
+t03042|damaged_item|medium|negative|kettle came shattered And note: soon-ish. ridiculous.
+t00797|damaged_item|medium|negative|The bluetooth speaker arrived broken: the box was crushed and the lid is cracked straight through. Order ORD-27819. (this week if possible) ridiculous.
+t04413|damaged_item|medium|negative|There is a huge dent on THE coffee maker AND one cable won't even CONNECT. Order ORD-63129. !!! (in the next few days) very disappointed.
+t00464|damaged_item|medium|negative|Just opened the package and the backpack is shattered. This is the second time something like this happens! And note: soon-ish. I'm honestly furious.
+t04095|damaged_item|medium|neutral|El electric shaver llegó roto, pedido ORD-10108. (before the weekend)
+t02629|damaged_item|medium|neutral|First of all I want to say YOUR PACKAGING quality is usually great. The smartwatch band arrived with a torn seam and stuffing coming out. What NOW, order ORD-35293? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. !!! Por favor respóndanme pronto, gracias. (soon-ish)
+t00325|damaged_item|medium|neutral|The bluetooth speaker arrived broken: the box was crushed and the lid is cracked straight through. Order ORD-77699. And note: before the weekend.
+t02617|damaged_item|medium|neutral|There is a huge dent on the electric shaver and one cable won't even connect. Order ORD-78724. this week if possible.
+t04930|damaged_item|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, There is a huge dent on the plant pot and one cable won't even connect. Order ORD-16820. Also I ordered from your summer collection before and that was perfect, to be fair. And note: soon-ish.
+t03542|damaged_item|medium|positive|Just opened the package and the kettle is shattered. This is the second time something like this happens! in the next few days. I appreciate your help.
+t03225|damaged_item|medium|positive|There is a huge DENT ON the wireless earbuds and one cable won't even CONNECT. Order ORD-97497. !!! in the next few days. long-time customer, generally happy.
+t02274|order_status|high|negative|My order ORD-24571 was supposed to arrive on the 12th and the tracking page still shows nothing. (I need it before my move on Thursday) seems like I always have bad luck with you.
+t00866|order_status|high|negative|The tracking for ORD-50385 hasn't moved in five days. Is the parcel lost? And note: we fly out on vacation Friday. seems like I always have bad luck with you.
+t02184|order_status|high|neutral|Fantastic. First of all I want to say your packaging quality is usually great. Could you check what happened to order ORD-79346? The courier never picked it up as far as I can tell. Also I ordered from your summer collection before and that was perfect, to be fair. this is time-sensitive.
+t04012|order_status|high|neutral|I don't usually write to support, so I hope you read this fully. Order ORD-27482 still says processing this morning. Any idea when it actually ships? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (urgent)
+t03263|order_status|high|neutral|Could you check what happened to order ORD-91313? The courier never picked it up as far as I can tell. the event is on Sunday.
+t00022|order_status|high|neutral|Oh great, another one. Could you check what happened to order ORD-35440? The courier never picked it up as far as I can tell. we fly out on vacation Friday.
+t00536|order_status|high|neutral|order 48213 where? (today at the latest)
+t01628|order_status|high|neutral|First of all I want to say your packaging quality is usually great. Hi, I placed order ORD-83356 on the 12th and there has been no tracking update since. Where is it? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. this is time-sensitive.
+t04111|order_status|high|neutral|Perfect, just perfect. my stuff where?? urgent.
+t02164|order_status|high|neutral|Order ORD-17153 still says processing last week. Any idea when it actually ships? Also, there is a huge dent on the wireless earbuds and one cable won't even connect. Order ORD-11426. (my daughter's birthday is Saturday)
+t02798|order_status|high|neutral|Order ORD-22212 still says processing two days ago. Any idea when it actually ships? And note: the event is on Sunday.
+t02109|order_status|high|neutral|tracking never moved, why (my daughter's birthday is Saturday)
+t01721|order_status|high|neutral|Sigo sin recibir el pedido ORD-16746. And note: I need it before my move on Thursday.
+t01816|order_status|high|neutral|The tracking for ORD-83085 hasn't moved in five days. Is the parcel lost? this is time-sensitive.
+t02522|order_status|high|neutral|Order ORD-25003 still says processing last week. Any idea when it actually ships? ASAP.
+t01692|order_status|high|positive|The tracking for ORD-80697 hasn't moved in five days. Is the parcel lost? we fly out on vacation Friday. I appreciate your help.
+t04437|order_status|low|negative|Hi, I placed order ORD-35074 on the 12th and there has been no tracking update since. Where is it? And note: no rush at all. this is unacceptable.
+t00272|order_status|low|negative|My ORDER ORD-18139 was supposed to arrive two days ago and the tracking PAGE STILL shows nothing. !! Also, i'd like my money back for the garden hose from order ORD-54744. It arrived fine but it's not what I expected. no rush at all. this is unacceptable.
+t00202|order_status|low|negative|my stuff where?? when you get a minute. seems like I always have bad luck with you.
+t01719|order_status|low|negative|The tracking for ORD-69614 hasn't moved in five days. Is the parcel lost? (no rush at all) very disappointed.
+t04726|order_status|low|negative|I don't usually write to support, so I hope you read this fully. my stuff where?? Also I ordered from your summer collection before and that was perfect, to be fair. And note: when you get a minute. I'm honestly furious.
+t00808|order_status|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, my stuff where?? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: whenever you can. ridiculous.
+t04228|order_status|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, The tracking for ORD-63295 hasn't moved in five days. Is the parcel lost? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (whenever you can) I'm honestly furious.
+t00983|order_status|low|negative|First of all I want to say your packaging quality is usually great. order 48213 where? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (not urgent, just asking) ridiculous.
+t04892|order_status|low|negative|The tracking for ORD-14759 hasn't moved in five days. Is the parcel lost? (no rush at all) ridiculous.
+t04286|order_status|low|negative|Perfect, just perfect. tracking never moved, why (not urgent, just asking) this is unacceptable.
+t00012|order_status|low|negative|Perfect, just perfect. My order ORD-65992 was supposed to arrive yesterday and the tracking page still shows nothing. (no rush at all) ridiculous.
+t02642|order_status|low|negative|Ich habe mein Paket ORD-48924 immer noch nicht. And note: no rush at all. seems like I always have bad luck with you.
+t01410|order_status|low|negative|Sorry in advance for the long email, I've been a customer since 2019 AND I honestly enjoy your PRODUCTS, Hi, I placed order ORD-32794 on the 12th and there has been no tracking update since. Where is it? ALSO I ordered from your summer collection before and that was perfect, to be fair. !! (not urgent, just asking) very disappointed.
+t00592|order_status|low|negative|I don't usually write to support, so I hope you read this fully. Where is my stuff?? ORD-69882 Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (when you get a minute) this is unacceptable.
+t01933|order_status|low|negative|Hi, I placed order ORD-95438 this morning and there has been no tracking update since. Where is it? (whenever you can) ridiculous.
+t01359|order_status|low|negative|Could you check what happened to order ORD-32219? The courier never picked it up as far as I can tell. (no rush at all) seems like I always have bad luck with you.
+t03390|order_status|low|negative|Sorry in advance for the long email, I've been a customer SINCE 2019 and I honestly enjoy your products, Could you check what happened to ORDER ORD-41151? The courier never picked it up as far as I can tell. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. !!! (when you get a minute) very disappointed.
+t01593|order_status|low|negative|My order ORD-50026 was supposed to arrive last Friday and the tracking page still shows nothing. And note: no rush at all. ridiculous.
+t03015|order_status|low|neutral|Ich habe mein Paket ORD-52208 immer noch nicht. And note: when you get a minute.
+t00622|order_status|low|neutral|Fantastic. tracking never moved, WHY !! And note: not urgent, just asking.
+t01246|order_status|low|neutral|My order ORD-48587 was supposed to arrive yesterday and the tracking page still shows nothing. Bitte antworten Sie mir bald, danke. And note: not urgent, just asking.
+t03227|order_status|low|neutral|Could you check what happened to order ORD-31689? The courier never picked it up as far as I can tell. no rush at all.
+t04415|order_status|low|neutral|Order ORD-42575 still says processing this morning. Any idea when it actually ships? And note: whenever you can.
+t03716|order_status|low|neutral|¿Dónde está mi pedido ORD-50136? whenever you can.
+t00915|order_status|low|neutral|The tracking for ORD-76102 hasn't moved in five days. Is the parcel lost? And note: when you get a minute.
+t00437|order_status|low|neutral|HI, I placed order ORD-43135 on the 12th and there has BEEN NO tracking update since. Where is it? !!! no rush at all.
+t04755|order_status|low|neutral|Fantastic. The tracking for ORD-25802 hasn't moved in five days. Is the parcel lost? And note: not urgent, just asking.
+t00657|order_status|low|neutral|Oh great, another one. My order ORD-63913 was supposed to arrive this morning and the tracking page still shows nothing. no rush at all.
+t03984|order_status|low|neutral|Hi, I placed order ORD-37140 yesterday and there has been no tracking update since. Where is it? when you get a minute.
+t03235|order_status|low|neutral|Hi, I placed order ORD-72098 yesterday and there has been no tracking update since. Where is it? when you get a minute.
+t02572|order_status|low|neutral|Could you check what happened TO order ORD-55695? The courier never picked IT up as far as I can tell. !! And note: when you get a minute.
+t02746|order_status|low|neutral|My order ORD-75148 was supposed to arrive yesterday and the tracking page still shows nothing. And note: no rush at all.
+t01650|order_status|low|neutral|Order ORD-23246 still says processing two days ago. Any idea when it actually ships? (when you get a minute)
+t04422|order_status|low|neutral|Where is my stuff?? ORD-92003 whenever you can.
+t03861|order_status|low|neutral|Could you check what happened to order ORD-33741? The courier never picked it up as far as I can tell. (whenever you can)
+t02844|order_status|low|neutral|tracking never moved, why when you get a minute.
+t02603|order_status|low|neutral|Hi, I placed order ORD-48374 this morning and there has been no tracking update since. Where is it? when you get a minute.
+t03291|order_status|low|neutral|my stuff WHERE?? !!! (not urgent, just asking)
+t01126|order_status|low|neutral|Could you check what happened to order ORD-32245? The courier never picked it up as far as I can tell. Merci de me répondre rapidement. (not urgent, just asking)
+t03425|order_status|low|neutral|Perfect, just perfect. Where is my stuff?? ORD-47655 Also, money back pls, order ORD-10936, the sneakers. when you get a minute.
+t01390|order_status|low|neutral|Could you check what happened to order ORD-49512? The courier never picked it up as far as I can tell. Also, my loyalty points disappeared after my last purchase. Where did they go? And note: not urgent, just asking.
+t01736|order_status|low|neutral|Order ORD-22074 still says processing on the 12th. Any idea when it actually ships? And note: whenever you can.
+t03911|order_status|low|neutral|Order ORD-42809 still says processing on the 12th. Any idea when it actually ships? (no rush at all)
+t02230|order_status|low|neutral|Hi, I placed order ORD-81540 YESTERDAY and there HAS been no tracking update SINCE. Where is it? !!! no rush at all.
+t00801|order_status|low|neutral|Hi, I placed order ORD-57083 last Friday and there has been no tracking update since. Where is it? (whenever you can)
+t02533|order_status|low|neutral|Hi, I placed order ORD-31836 last Friday and there has been no tracking update since. Where is it? not urgent, just asking.
+t00415|order_status|low|neutral|Wo bleibt meine Bestellung ORD-38965? no rush at all.
+t04672|order_status|low|neutral|Where is my stuff?? ORD-45076 !!! (whenever you can)
+t04176|order_status|low|neutral|Order ORD-12571 still SAYS processing on the 12th. Any idea WHEN IT actually ships? !!! Also, do your gift cards expire? Thinking of getting one for my sister. And note: no rush at all.
+t00512|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, My order ORD-65265 was supposed to arrive last week and the tracking page still shows nothing. Also I ordered from your summer collection before and that was perfect, to be fair. no rush at all.
+t01087|order_status|low|neutral|my stuff where?? (no rush at all)
+t00778|order_status|low|neutral|Hi, I placed order ORD-63361 this morning and there has been no tracking update since. Where is it? whenever you can.
+t03995|order_status|low|neutral|Where is my stuff?? ORD-99886 And note: when you get a minute.
+t02589|order_status|low|neutral|First of all I want to say your packaging quality is usually great. My order ORD-37589 was supposed to arrive yesterday and the tracking page still shows nothing. Also I ordered from your summer collection before and that was perfect, to be fair. (when you get a minute)
+t02981|order_status|low|neutral|Oh great, another one. my stuff where?? not urgent, just asking.
+t04974|order_status|low|neutral|The tracking for ORD-63787 hasn't moved in five days. Is the parcel lost? no rush at all.
+t01614|order_status|low|neutral|First of all I want to say your packaging quality is usually great. My order ORD-12889 was supposed to arrive yesterday and the tracking page still shows nothing. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, just realised I used my old address for ORD-88128. Please update it to Birch Lane 14 in Rotterdam before it ships. (when you get a minute)
+t03596|order_status|low|neutral|My ORDER ORD-73678 was SUPPOSED to arrive yesterday and THE tracking page still shows nothing. !! (no rush at all)
+t01261|order_status|low|neutral|My order ORD-85976 was supposed to arrive last week and the tracking page still shows nothing. not urgent, just asking.
+t00612|order_status|low|neutral|Order ORD-81916 still says processing this morning. Any idea when it actually ships? no rush at all.
+t02315|order_status|low|neutral|Hi, I placed order ORD-42130 on the 12th and there has been no tracking update since. Where is it? And note: when you get a minute.
+t02154|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, order 48213 where? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (when you get a minute)
+t01064|order_status|low|neutral|Could you check what happened to order ORD-58452? The courier never picked it up as far as I can tell. no rush at all.
+t00060|order_status|low|neutral|Hi, I placed order ORD-97026 last Friday and there has been no tracking update since. Where is it? And note: when you get a minute.
+t01419|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, The tracking for ORD-33731 hasn't moved in five days. Is the parcel lost? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. whenever you can.
+t02330|order_status|low|neutral|The TRACKING for ORD-46803 HASN'T MOVED in five days. Is the parcel lost? !! (no rush at all)
+t01320|order_status|low|neutral|The tracking for ORD-43336 hasn't moved in five days. Is the parcel lost? (whenever you can)
+t04695|order_status|low|neutral|tracking never MOVED, why !!! whenever you can.
+t03436|order_status|low|neutral|Where is my stuff?? ORD-71126 no rush at all.
+t01335|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Where is my stuff?? ORD-40885 Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. Also, does the desk lamp shrink in the wash? Sizing chart is unclear. And note: not urgent, just asking.
+t03838|order_status|low|neutral|ORDER ORD-96703 STILL says processing last Friday. Any idea WHEN it actually ships? !!! And note: whenever you can.
+t01192|order_status|low|neutral|The tracking for ORD-27493 hasn't moved in five days. Is the parcel lost? Por favor respóndanme pronto, gracias. (whenever you can)
+t00997|order_status|low|neutral|Could you check what happened to order ORD-51303? The courier never picked it up as far as I can tell. (whenever you can)
+t02745|order_status|low|neutral|I don't usually write to support, so I hope you read this fully. Hi, I placed order ORD-47386 last week and there has been no tracking update since. Where is it? Also I ordered from your summer collection before and that was perfect, to be fair. whenever you can.
+t04179|order_status|low|neutral|I don't usually write to support, so I hope you read this fully. My order ORD-91698 was supposed to arrive two days ago and the tracking page still shows nothing. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, my loyalty points disappeared after my last purchase. Where did they go? whenever you can.
+t00865|order_status|low|neutral|Where is my stuff?? ORD-19831 not urgent, just asking.
+t04496|order_status|low|neutral|order 48213 where? !! And note: when you get a minute.
+t03613|order_status|low|neutral|Hi, I placed order ORD-70016 yesterday and there has been no tracking update since. Where is it? And note: not urgent, just asking.
+t00928|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, tracking never moved, why Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: no rush at all.
+t01519|order_status|low|neutral|Where is my stuff?? ORD-31701 And note: when you get a minute.
+t01393|order_status|low|neutral|Hi, I placed order ORD-59040 yesterday and there has been no tracking update since. Where is it? not urgent, just asking.
+t04630|order_status|low|neutral|The tracking for ORD-67674 hasn't moved in five days. Is the parcel lost? when you get a minute.
+t00956|order_status|low|neutral|HI, I placed order ORD-10165 last FRIDAY and there HAS been no tracking update since. Where is it? !!! not urgent, just asking.
+t02667|order_status|low|neutral|Where is my stuff?? ORD-20593 And note: whenever you can.
+t01915|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Where is my stuff?? ORD-55649 Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (no rush at all)
+t01457|order_status|low|neutral|I don't USUALLY write to support, so I hope you read this fully. tracking never moved, why ALSO my colleague placed an order last month and had zero problems, which makes this all the more CONFUSING. !!! Also, is the desk lamp available in size XL again? Page says out of stock. And note: when you get a minute.
+t02267|order_status|low|neutral|Where is my stuff?? ORD-32446 no rush at all.
+t02074|order_status|low|neutral|Where is my stuff?? ORD-30383 Also, do your gift cards expire? Thinking of getting one for my sister. not urgent, just asking.
+t01203|order_status|low|neutral|my stuff WHERE?? !! (whenever you can)
+t00863|order_status|low|neutral|Oh great, another one. Order ORD-85854 still says processing this morning. Any idea when it actually ships? And note: when you get a minute.
+t03457|order_status|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, My order ORD-72701 was supposed to arrive this morning and the tracking page still shows nothing. Also I ordered from your summer collection before and that was perfect, to be fair. not urgent, just asking.
+t01168|order_status|low|neutral|Order ORD-79721 still says processing two days ago. Any idea when it actually ships? (no rush at all)
+t04380|order_status|low|neutral|Hi, I placed order ORD-55043 two days ago and there has been no tracking update since. Where is it? And note: whenever you can.
+t00843|order_status|low|neutral|Where is my stuff?? ORD-79678 (no rush at all)
+t00876|order_status|low|neutral|tracking never moved, why Por favor respóndanme pronto, gracias. (not urgent, just asking)
+t02567|order_status|low|neutral|First of all I want to say your packaging quality is usually great. tracking never moved, why Also I ordered from your summer collection before and that was perfect, to be fair. And note: whenever you can.
+t04950|order_status|low|neutral|Where is my stuff?? ORD-96859 Also, i need to change the delivery address on order ORD-76519: it should go to my new place, 12 Maple Court in Leeds. whenever you can.
+t03195|order_status|low|neutral|¿Dónde está mi pedido ORD-62829? (no rush at all)
+t04914|order_status|low|neutral|Could you check what happened to order ORD-11498? The courier never picked it up as far as I can tell. (when you get a minute)
+t02873|order_status|low|neutral|I don't usually write to support, so I hope you read this fully. order 48213 where? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (whenever you can)
+t03646|order_status|low|neutral|tracking never moved, why Also, wrong size arrived: I ordered S and the box says M. Order ORD-87638. no rush at all.
+t01752|order_status|low|neutral|Perfect, just perfect. ORDER ORD-49646 still says processing last Friday. ANY idea when it actually SHIPS? !! when you get a minute.
+t03818|order_status|low|positive|Hi, I placed ORDER ORD-25649 yesterday and there has BEEN no TRACKING update since. Where is it? !!! Por favor respóndanme pronto, gracias. And note: no rush at all. love your shop otherwise.
+t01619|order_status|low|positive|My order ORD-94771 was supposed to arrive on the 12th and the tracking page still shows nothing. And note: whenever you can. you've been great every time before.
+t01097|order_status|low|positive|Hi, I placed order ORD-55432 yesterday and there has been no tracking update since. Where is it? And note: not urgent, just asking. you've been great every time before.
+t00393|order_status|low|positive|Could you check what happened to order ORD-46079? The courier never picked it up as far as I can tell. And note: not urgent, just asking. love your shop otherwise.
+t03172|order_status|low|positive|Could you check what happened to order ORD-33677? The courier never picked it up as far as I can tell. And note: no rush at all. thanks in advance.
+t04570|order_status|low|positive|Where is my stuff?? ORD-20207 no rush at all. love your shop otherwise.
+t02569|order_status|low|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, My order ORD-72204 was supposed to arrive last week and the tracking page still shows nothing. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: whenever you can. I appreciate your help.
+t02292|order_status|low|positive|The tracking FOR ORD-87169 hasn't moved IN five days. Is the PARCEL lost? !!! And note: when you get a minute. you've been great every time before.
+t04209|order_status|low|positive|Could you check what happened to order ORD-24713? The courier never picked it up as far as I can tell. (no rush at all) I appreciate your help.
+t04212|order_status|low|positive|The tracking for ORD-95697 hasn't moved in five days. Is the parcel lost? And note: not urgent, just asking. thanks in advance.
+t01897|order_status|low|positive|my stuff where?? And note: not urgent, just asking. long-time customer, generally happy.
+t04998|order_status|low|positive|The tracking for ORD-62059 hasn't moved in five days. Is the parcel lost? (no rush at all) you've been great every time before.
+t02761|order_status|low|positive|Could you check what happened to order ORD-56416? The courier NEVER PICKED it up as far as I can TELL. !!! no rush at all. I appreciate your help.
+t01082|order_status|low|positive|My order ORD-49897 was supposed to arrive two days ago and the tracking page still shows nothing. Also, i've emailed five times about order ORD-44374 and nobody fixed anything. I want a supervisor to call me. And note: not urgent, just asking. long-time customer, generally happy.
+t04702|order_status|low|positive|Hi, I placed order ORD-29713 on the 12th and there has been no tracking update since. Where is it? And note: no rush at all. long-time customer, generally happy.
+t02810|order_status|low|positive|Order ORD-87949 STILL SAYS processing LAST Friday. Any idea when it actually ships? !!! whenever you can. long-time customer, generally happy.
+t01523|order_status|medium|negative|Where is my stuff?? ORD-86671 Also, do your gift cards expire? Thinking of getting one for my sister. (in the next few days) seems like I always have bad luck with you.
+t01918|order_status|medium|negative|Je n'ai toujours pas reçu la commande ORD-50407. And note: this week if possible. this is unacceptable.
+t02899|order_status|medium|negative|Oh great, another one. The tracking for ORD-11028 hasn't moved in five days. Is the parcel lost? in the next few days. seems like I always have bad luck with you.
+t00687|order_status|medium|negative|The tracking for ORD-39678 hasn't moved in five days. Is the parcel lost? (soon-ish) very disappointed.
+t00089|order_status|medium|negative|My order ORD-90220 was supposed to arrive yesterday and the tracking page still shows nothing. (this week if possible) seems like I always have bad luck with you.
+t02134|order_status|medium|negative|order 48213 where? Also, please cancel order ORD-19552. I ordered the wrong thing and reordered seconds later. (soon-ish) I'm honestly furious.
+t04395|order_status|medium|negative|Order ORD-19534 still says processing last Friday. Any idea when it actually ships? in the next few days. seems like I always have bad luck with you.
+t01118|order_status|medium|negative|Hi, I PLACED order ORD-14388 two days ago and THERE has been no tracking update SINCE. Where is it? !! And note: soon-ish. seems like I always have bad luck with you.
+t03265|order_status|medium|negative|Hi, I placed order ORD-54005 last Friday and there has been no tracking update since. Where is it? before the weekend. very disappointed.
+t03884|order_status|medium|negative|Order ORD-72218 still says processing two days ago. Any idea when it actually ships? before the weekend. this is unacceptable.
+t00653|order_status|medium|neutral|The tracking for ORD-28912 hasn't moved in five days. Is the parcel lost? (in the next few days)
+t02236|order_status|medium|neutral|Where is my stuff?? ORD-76606 And note: this week if possible.
+t04438|order_status|medium|neutral|The tracking for ORD-94609 hasn't MOVED in FIVE days. IS the parcel lost? !! before the weekend.
+t04619|order_status|medium|neutral|Order ORD-86153 still says processing last Friday. Any idea when it actually ships? (in the next few days)
+t04847|order_status|medium|neutral|Perfect, just perfect. order 48213 where? And note: in the next few days.
+t02382|order_status|medium|neutral|Could you check what happened to order ORD-77109? The courier never picked it up as far as I can tell. before the weekend.
+t02055|order_status|medium|neutral|I don't usually write to support, so I hope you read this fully. Order ORD-78668 still says processing this morning. Any idea when it actually ships? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: in the next few days.
+t04493|order_status|medium|neutral|My order ORD-61866 was supposed to arrive on the 12th and the tracking page still shows nothing. And note: soon-ish.
+t00895|order_status|medium|neutral|First of all I want to say your packaging quality is usually great. Could you check what happened to order ORD-49199? The courier never picked it up as far as I can tell. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (soon-ish)
+t00741|order_status|medium|neutral|tracking never moved, WHY !!! soon-ish.
+t01868|order_status|medium|neutral|Where is my stuff?? ORD-79309 And note: soon-ish.
+t00610|order_status|medium|neutral|My order ORD-61975 was supposed to arrive yesterday and the tracking page still shows nothing. And note: this week if possible.
+t02724|order_status|medium|neutral|I don't usually write to support, so I hope you read this fully. The tracking for ORD-50330 hasn't moved in FIVE days. Is the parcel lost? Also I ordered from YOUR summer collection BEFORE and that was perfect, to be fair. !!! Also, i was charged $89 twice for order ORD-10529. One of them needs to be reversed. in the next few days.
+t04194|order_status|medium|neutral|Sigo sin recibir el pedido ORD-56001. And note: soon-ish.
+t00035|order_status|medium|neutral|Oh great, another one. HI, I placed ORDER ORD-86076 two days ago and there HAS been no tracking update since. Where is it? !! (soon-ish)
+t01229|order_status|medium|neutral|Could you check what happened to order ORD-66805? The courier never picked it up as far as I can tell. And note: soon-ish.
+t02931|order_status|medium|neutral|The tracking for ORD-97788 hasn't moved in five days. Is the parcel lost? (soon-ish)
+t01862|order_status|medium|neutral|my stuff where?? before the weekend.
+t02715|order_status|medium|neutral|Hi, I placed order ORD-18926 on the 12th and there has been no tracking update since. Where is it? And note: this week if possible.
+t00994|order_status|medium|neutral|¿Dónde está mi pedido ORD-45570? And note: soon-ish.
+t00977|order_status|medium|neutral|Where is my stuff?? ORD-41321 (soon-ish)
+t03394|order_status|medium|neutral|¿Dónde está mi pedido ORD-83682? And note: before the weekend.
+t03683|order_status|medium|neutral|Hi, I placed order ORD-68125 last week and there has been no tracking update since. Where is it? soon-ish.
+t02217|order_status|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Order ORD-51392 still says processing on the 12th. Any idea when it actually ships? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. before the weekend.
+t02653|order_status|medium|neutral|The tracking for ORD-26439 hasn't moved in five days. Is the parcel lost? And note: before the weekend.
+t02318|order_status|medium|neutral|Order ORD-61071 still says processing on the 12th. Any idea when it actually ships? Also, i've emailed five times about order ORD-16227 and nobody fixed anything. I want a supervisor to call me. soon-ish.
+t04558|order_status|medium|neutral|I don't usually write to support, so I hope you read this fully. The tracking for ORD-32168 hasn't moved in five days. Is the parcel lost? Also I ordered from your summer collection before and that was perfect, to be fair. And note: before the weekend.
+t02301|order_status|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Could you check what happened to order ORD-47367? The courier never picked it up as far as I can tell. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: this week if possible.
+t00591|order_status|medium|neutral|Fantastic. my stuff where?? in the next few days.
+t03466|order_status|medium|neutral|First of all I want to say your packaging quality is usually great. tracking never moved, why Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: before the weekend.
+t03759|order_status|medium|neutral|Could you check what happened to ORDER ORD-16334? The courier never picked it UP as FAR as I can tell. !!! And note: before the weekend.
+t01427|order_status|medium|neutral|The tracking for ORD-18316 hasn't moved in five days. Is the parcel lost? soon-ish.
+t02591|order_status|medium|neutral|My order ORD-71089 was supposed to arrive LAST Friday AND the tracking page still shows NOTHING. !! soon-ish.
+t01199|order_status|medium|neutral|Order ORD-56732 still says processing last week. Any idea when it actually ships? before the weekend.
+t02075|order_status|medium|neutral|The tracking for ORD-64649 HASN'T moved in five days. Is THE parcel lost? !! soon-ish.
+t00735|order_status|medium|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Hi, I placed order ORD-56717 two days ago and there has been no tracking update since. Where is it? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. soon-ish. love your shop otherwise.
+t01600|order_status|medium|positive|Where is my stuff?? ORD-85613 And note: in the next few days. you've been great every time before.
+t04420|order_status|medium|positive|The tracking for ORD-57611 hasn't moved in five days. Is the parcel lost? in the next few days. long-time customer, generally happy.
+t02631|order_status|medium|positive|Could you CHECK what happened TO order ORD-81674? The courier never picked it up as FAR as I can tell. !!! (before the weekend) I appreciate your help.
+t01164|order_status|medium|positive|Where is my stuff?? ORD-29412 Also, does the bluetooth speaker shrink in the wash? Sizing chart is unclear. And note: before the weekend. you've been great every time before.
+t03434|order_status|medium|positive|First of all I want to say your packaging quality is usually great. Hi, I placed order ORD-64926 yesterday and there has been no tracking update since. Where is it? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: before the weekend. you've been great every time before.
+t02841|order_status|medium|positive|The tracking for ORD-77269 HASN'T moved in five days. Is the parcel lost? !!! before the weekend. thanks in advance.
+t03314|order_status|medium|positive|Hi, I placed order ORD-23242 last week and there has been no tracking update since. Where is it? Also, what is the difference between the charging cable and the desk chair? Which one is better for daily use? (this week if possible) I appreciate your help.
+t03318|order_status|medium|positive|First of all I want to say your packaging quality is usually great. The tracking for ORD-11365 hasn't moved in five DAYS. Is the parcel lost? Also, unrelated: the loyalty programme interface confuses ME a bit, but that's for another DAY I guess. !! And note: this week if possible. you've been great every time before.
+t02613|order_status|medium|positive|Could you check what happened to order ORD-81860? The courier never picked it up as far as I can tell. soon-ish. long-time customer, generally happy.
+t04967|other|high|neutral|My loyalty points disappeared after my last purchase. Where did they go? And note: this is time-sensitive.
+t04018|other|high|positive|Feedback: the returns label page prints badly in Firefox, worth checking. this is time-sensitive. I appreciate your help.
+t04531|other|low|negative|I would like to apply as a wholesale partner. Who do I talk to? And note: when you get a minute. seems like I always have bad luck with you.
+t03819|other|low|negative|My loyalty points disappeared after my last purchase. Where did they go? no rush at all. very disappointed.
+t01863|other|low|negative|First of all I want to say your packaging quality is usually great. Please remove me from the marketing list for good. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: when you get a minute. ridiculous.
+t03050|other|low|neutral|My loyalty points disappeared after my last purchase. Where did they go? (whenever you can)
+t00587|other|low|neutral|Please remove me from the marketing list for good. (no rush at all)
+t02525|other|low|neutral|First of all I want to say your packaging quality is usually great. Please remove me from the marketing list for good. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. not urgent, just asking.
+t02768|other|low|neutral|Les cartes cadeaux expirent-elles ? (when you get a minute)
+t02198|other|low|neutral|Feedback: the returns label page prints badly in Firefox, worth checking. And note: not urgent, just asking.
+t01507|other|low|neutral|First of all I want to say your packaging quality is usually great. My loyalty points disappeared after my last purchase. Where did they go? Also I ordered from your summer collection before and that was perfect, to be fair. (whenever you can)
+t03805|other|low|neutral|Please remove me from the marketing list for good. (when you get a minute)
+t04738|other|low|neutral|Please remove me from the marketing list for good. when you get a minute.
+t03065|other|low|neutral|I don't usually write to support, so I hope you read this fully. loyalty points gone Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: whenever you can.
+t02219|other|low|neutral|I would like to apply as a wholesale partner. Who do I talk to? (when you get a minute)
+t00680|other|low|neutral|Feedback: the returns label page prints badly in Firefox, worth checking. no rush at all.
+t04240|other|low|neutral|Please remove me from the marketing list for good. Also, will the water bottle charging cable work with a Pixel 9? Thinking of ordering tonight. And note: not urgent, just asking.
+t02028|other|low|neutral|gift cards expire? not urgent, just asking.
+t02816|other|low|neutral|Please remove me from the marketing list for good. not urgent, just asking.
+t01616|other|low|neutral|My loyalty points disappeared after my last purchase. Where did they go? And note: whenever you can.
+t02370|other|low|neutral|Feedback: the returns label page prints badly in Firefox, worth checking. (not urgent, just asking)
+t00852|other|low|neutral|Feedback: the returns label page prints badly in Firefox, worth checking. when you get a minute.
+t03719|other|low|neutral|My loyalty points disappeared after my last purchase. Where did they go? (not urgent, just asking)
+t04273|other|low|neutral|I would like to apply as a wholesale partner. Who do I talk to? no rush at all.
+t00753|other|low|neutral|My loyalty points disappeared after my last purchase. Where did they go? (no rush at all)
+t04424|other|low|neutral|loyalty points gone (not urgent, just asking)
+t04515|other|low|neutral|Do your gift cards expire? Thinking of getting one for my sister. not urgent, just asking.
+t04538|other|low|neutral|Do your gift cards expire? Thinking of getting one for my sister. (whenever you can)
+t04371|other|low|neutral|¿Vencen las tarjetas de regalo? (not urgent, just asking)
+t02006|other|low|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I would like to apply as a wholesale partner. Who do I talk to? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (no rush at all) you've been great every time before.
+t04284|other|low|positive|I would like to apply as a wholesale partner. Who do I talk to? not urgent, just asking. love your shop otherwise.
+t00241|other|low|positive|I don't usually write to support, so I hope you read this fully. Feedback: the returns label page prints badly in Firefox, worth checking. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. whenever you can. you've been great every time before.
+t00919|other|low|positive|I don't usually write to support, so I hope you read this fully. Do your gift cards expire? Thinking of getting one for my sister. Also I ordered from your summer collection before and that was perfect, to be fair. And note: no rush at all. love your shop otherwise.
+t01327|other|medium|neutral|I would like to apply as a wholesale partner. Who do I talk to? And note: before the weekend.
+t03189|other|medium|neutral|I would like to apply as a wholesale partner. Who do I talk to? And note: before the weekend.
+t02389|other|medium|neutral|My loyalty points disappeared after my last purchase. Where did they go? this week if possible.
+t00220|other|medium|neutral|I would like to apply as a wholesale partner. Who do I talk to? in the next few days.
+t04158|other|medium|positive|First of all I want to say your packaging quality is usually great. gift cards expire? Also I ordered from your summer collection before and that was perfect, to be fair. And note: this week if possible. long-time customer, generally happy.
+t02772|payment_issue|high|negative|card declined twice today And note: today at the latest. seems like I always have bad luck with you.
+t01924|payment_issue|high|negative|Checkout kept failing with payment error 3 yesterday. Is something wrong with my card on your side? And note: we fly out on vacation Friday. seems like I always have bad luck with you.
+t04907|payment_issue|high|negative|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? And note: the event is on Sunday. I'm honestly furious.
+t03603|payment_issue|high|negative|First of all I want to say your packaging quality is usually great. Checkout kept failing with payment error 3 two days ago. Is something wrong with my card on your side? Also I ordered from your summer collection before and that was perfect, to be fair. And note: my daughter's birthday is Saturday. this is unacceptable.
+t01758|payment_issue|high|negative|I paid $239 but the site says transaction failed. Did the money actually leave my account? (today at the latest) seems like I always have bad luck with you.
+t03914|payment_issue|high|negative|I paid $89 but the site says transaction failed. Did the money actually leave my account? Also, there is a huge dent on the water bottle and one cable won't even connect. Order ORD-19731. I need it before my move on Thursday. very disappointed.
+t02078|payment_issue|high|negative|payment error 3?? Also, i want to swap the green over-ear headphones for the same thing in black, order ORD-26642. And note: ASAP. this is unacceptable.
+t01874|payment_issue|high|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? And note: we fly out on vacation Friday.
+t00975|payment_issue|high|neutral|First of all I want to say your packaging quality is usually great. My card was declined at checkout twice, and there is definitely money on it. Can you look into it? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. this is time-sensitive.
+t01894|payment_issue|high|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? Also, i can't log in: the password reset emails never arrive in the email I signed up with. (this is time-sensitive)
+t00626|payment_issue|high|neutral|I paid $120.99 but the site says transaction failed. Did the money actually leave my account? And note: I need it before my move on Thursday.
+t04825|payment_issue|high|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? Also, i can't log in: the password reset emails never arrive in my gmail. we fly out on vacation Friday.
+t00670|payment_issue|high|neutral|I don't usually write to support, so I hope you read this fully. My card was declined at checkout twice, and there is definitely money on it. Can you look into it? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. urgent.
+t00005|payment_issue|high|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? the event is on Sunday.
+t01174|payment_issue|high|neutral|I paid $89 but the site says transaction failed. Did the money actually leave my account? (this is time-sensitive)
+t04301|payment_issue|high|positive|charged twice, fix it today at the latest. love your shop otherwise.
+t04508|payment_issue|low|negative|Mir wurde $239 doppelt abgebucht. And note: when you get a minute. very disappointed.
+t00358|payment_issue|low|negative|Checkout kept failing with payment error 3 last Friday. Is something wrong with my card on your side? (no rush at all) this is unacceptable.
+t01248|payment_issue|low|negative|I don't usually write to support, so I hope you read this fully. I paid $239 but the site says transaction failed. Did the money actually leave my account? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: no rush at all. very disappointed.
+t03536|payment_issue|low|negative|Checkout kept failing with payment error 3 on the 12th. Is something wrong with my card on your side? no rush at all. ridiculous.
+t03327|payment_issue|low|neutral|I paid $59.90 but the site says transaction failed. Did the money actually leave my account? (not urgent, just asking)
+t02334|payment_issue|low|neutral|I was charged $59.90 twice for order ORD-78336. One of them needs to be reversed. (no rush at all)
+t01089|payment_issue|low|neutral|Checkout kept failing with payment error 3 this morning. Is something wrong with my card on your side? And note: no rush at all.
+t02238|payment_issue|low|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? Also, does the smartwatch band come with batteries or do I need to buy them separately? (not urgent, just asking)
+t00529|payment_issue|low|neutral|I paid $239 but the site says transaction failed. Did the money actually leave my account? And note: no rush at all.
+t01366|payment_issue|low|positive|I paid $17.25 but the site says transaction failed. Did the money actually leave my account? And note: not urgent, just asking. love your shop otherwise.
+t03267|payment_issue|medium|negative|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? (in the next few days) this is unacceptable.
+t00130|payment_issue|medium|negative|payment error 3?? this week if possible. seems like I always have bad luck with you.
+t00085|payment_issue|medium|negative|On m'a débité deux fois $59.90. And note: before the weekend. ridiculous.
+t04151|payment_issue|medium|negative|Checkout kept failing with payment error 3 last week. Is something wrong with my card on your side? (this week if possible) this is unacceptable.
+t02528|payment_issue|medium|negative|I was charged $239 twice for order ORD-25662. One of them needs to be reversed. (before the weekend) very disappointed.
+t04358|payment_issue|medium|negative|Checkout kept failing with payment error 3 this morning. Is something wrong with my card on your side? And note: before the weekend. I'm honestly furious.
+t01543|payment_issue|medium|negative|Checkout kept failing with payment error 3 two days ago. Is something wrong with my card on your side? Also, does the water bottle shrink in the wash? Sizing chart is unclear. And note: in the next few days. I'm honestly furious.
+t01659|payment_issue|medium|negative|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? (before the weekend) seems like I always have bad luck with you.
+t04713|payment_issue|medium|neutral|Me cobraron $89 dos veces. And note: soon-ish.
+t03198|payment_issue|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I paid $34.50 but the site says transaction failed. Did the money actually leave my account? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: soon-ish.
+t02944|payment_issue|medium|neutral|payment error 3?? Also, there is a huge dent on the yoga mat and one cable won't even connect. Order ORD-32854. And note: in the next few days.
+t00079|payment_issue|medium|neutral|I paid $89 but the site says transaction failed. Did the money actually leave my account? this week if possible.
+t01836|payment_issue|medium|neutral|Checkout kept failing with payment error 3 last week. Is something wrong with my card on your side? And note: before the weekend.
+t02035|payment_issue|medium|neutral|I was charged $17.25 twice for order ORD-45800. One of them needs to be reversed. (before the weekend)
+t04625|payment_issue|medium|neutral|card declined twice today (soon-ish)
+t02681|payment_issue|medium|neutral|My card was declined at checkout twice, and there is definitely money on it. Can you look into it? And note: before the weekend.
+t01889|payment_issue|medium|positive|payment error 3?? before the weekend. long-time customer, generally happy.
+t03662|payment_issue|medium|positive|First of all I want to say your packaging quality is usually great. charged twice, fix it Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (soon-ish) you've been great every time before.
+t04057|product_question|high|negative|Does the garden hose come with batteries or do I need to buy them separately? ASAP. seems like I always have bad luck with you.
+t02076|product_question|high|neutral|I don't usually write to support, so I hope you read this fully. Does the electric shaver come with batteries or do I need to buy them separately? Also I ordered from your summer collection before and that was perfect, to be fair. (this is time-sensitive)
+t02969|product_question|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Will the phone case charging cable work with a Pixel 9? Thinking of ordering tonight. Also I ordered from your summer collection before and that was perfect, to be fair. And note: not urgent, just asking. I'm honestly furious.
+t04230|product_question|low|negative|Is the mechanical keyboard available in size 9 again? Page says out of stock. when you get a minute. this is unacceptable.
+t04494|product_question|low|negative|What is the difference between the desk lamp and the monitor stand? Which one is better for daily use? And note: no rush at all. I'm honestly furious.
+t02840|product_question|low|negative|size 9 back in stock? (no rush at all) seems like I always have bad luck with you.
+t01315|product_question|low|negative|Does the bluetooth speaker shrink in the wash? Sizing chart is unclear. (when you get a minute) this is unacceptable.
+t02634|product_question|low|neutral|Does the garden hose shrink in the wash? Sizing chart is unclear. no rush at all.
+t03638|product_question|low|neutral|Does the electric shaver come with batteries or do I need to buy them separately? whenever you can.
+t03439|product_question|low|neutral|Is the electric shaver available in size 10 again? Page says out of stock. (whenever you can)
+t04251|product_question|low|neutral|¿La air fryer incluye pilas? no rush at all.
+t01236|product_question|low|neutral|Does the smartwatch band come with batteries or do I need to buy them separately? no rush at all.
+t03824|product_question|low|neutral|Does the over-ear headphones come with batteries or do I need to buy them separately? And note: when you get a minute.
+t01054|product_question|low|neutral|Does the plant pot shrink in the wash? Sizing chart is unclear. And note: when you get a minute.
+t02839|product_question|low|neutral|Will the electric shaver charging cable work with a Pixel 9? Thinking of ordering tonight. And note: when you get a minute.
+t01184|product_question|low|neutral|Will the garden hose charging cable work with a Pixel 9? Thinking of ordering tonight. (whenever you can)
+t03487|product_question|low|neutral|Is the coffee maker available in size 10 again? Page says out of stock. And note: whenever you can.
+t02173|product_question|low|neutral|What is the difference between the air fryer and the toaster? Which one is better for daily use? whenever you can.
+t00193|product_question|low|neutral|Will the sneakers charging cable work with a Pixel 9? Thinking of ordering tonight. (when you get a minute)
+t04368|product_question|low|neutral|Does the water bottle shrink in the wash? Sizing chart is unclear. And note: not urgent, just asking.
+t02042|product_question|low|neutral|Does the air fryer come with batteries or do I need to buy them separately? whenever you can.
+t03775|product_question|low|neutral|What is the difference between the phone case and the monitor stand? Which one is better for daily use? when you get a minute.
+t03010|product_question|low|neutral|Will the over-ear headphones charging cable work with a Pixel 9? Thinking of ordering tonight. (no rush at all)
+t02622|product_question|low|neutral|Does the smartwatch band shrink in the wash? Sizing chart is unclear. (when you get a minute)
+t00715|product_question|low|neutral|Is the wireless earbuds available in size 10 again? Page says out of stock. no rush at all.
+t02555|product_question|low|neutral|Is the electric shaver available in size 41 again? Page says out of stock. (no rush at all)
+t00508|product_question|low|neutral|Is the coffee maker available in size 10 again? Page says out of stock. (when you get a minute)
+t02332|product_question|low|neutral|Does the desk lamp come with batteries or do I need to buy them separately? (not urgent, just asking)
+t03871|product_question|low|neutral|Will the plant pot charging cable work with a Pixel 9? Thinking of ordering tonight. Por favor respóndanme pronto, gracias. (when you get a minute)
+t02524|product_question|low|neutral|First of all I want to say your packaging quality is usually great. What is the difference between the plant pot and the toaster? Which one is better for daily use? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. whenever you can.
+t03048|product_question|low|neutral|What is the difference between the hair dryer and the toaster? Which one is better for daily use? not urgent, just asking.
+t04170|product_question|low|neutral|Does the desk lamp come with batteries or do I need to buy them separately? when you get a minute.
+t04103|product_question|low|neutral|First of all I want to say your packaging quality is usually great. Does the over-ear headphones shrink in the wash? Sizing chart is unclear. Also I ordered from your summer collection before and that was perfect, to be fair. when you get a minute.
+t03897|product_question|low|neutral|First of all I want to say your packaging quality is usually great. Will the air fryer charging cable work with a Pixel 9? Thinking of ordering tonight. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. whenever you can.
+t02732|product_question|low|neutral|Will the plant pot charging cable work with a Pixel 9? Thinking of ordering tonight. And note: no rush at all.
+t01740|product_question|low|neutral|will the cable fit pixel 9? And note: not urgent, just asking.
+t02057|product_question|low|neutral|First of all I want to say your packaging quality is usually great. does the kettle come with batteries? Also I ordered from your summer collection before and that was perfect, to be fair. (not urgent, just asking)
+t00192|product_question|low|neutral|First of all I want to say your packaging quality is usually great. Does the garden hose come with batteries or do I need to buy them separately? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: when you get a minute.
+t02094|product_question|low|neutral|What is the difference between the kettle and the bookends? Which one is better for daily use? (not urgent, just asking)
+t01643|product_question|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Does the smartwatch band shrink in the wash? Sizing chart is unclear. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (when you get a minute)
+t03428|product_question|low|neutral|What is the difference between the over-ear headphones and the toaster? Which one is better for daily use? (not urgent, just asking)
+t04362|product_question|low|neutral|Does the wireless earbuds come with batteries or do I need to buy them separately? (whenever you can)
+t00269|product_question|low|neutral|Is the over-ear headphones available in size L again? Page says out of stock. Merci de me répondre rapidement. when you get a minute.
+t03171|product_question|low|neutral|Does the garden hose come with batteries or do I need to buy them separately? And note: when you get a minute.
+t03273|product_question|low|neutral|What is the difference between the plant pot and the toaster? Which one is better for daily use? And note: whenever you can.
+t03574|product_question|low|neutral|What is the difference between the garden hose and the kitchen scale? Which one is better for daily use? And note: no rush at all.
+t04479|product_question|low|neutral|What is the difference between the water bottle and the monitor stand? Which one is better for daily use? (not urgent, just asking)
+t03175|product_question|low|neutral|Does the mechanical keyboard shrink in the wash? Sizing chart is unclear. no rush at all.
+t04543|product_question|low|neutral|First of all I want to say your packaging quality is usually great. What is the difference between the smartwatch band and the kitchen scale? Which one is better for daily use? Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: no rush at all.
+t04232|product_question|low|neutral|What is the difference between the water bottle and the bookends? Which one is better for daily use? no rush at all.
+t03070|product_question|low|neutral|Does the garden hose shrink in the wash? Sizing chart is unclear. (not urgent, just asking)
+t01999|product_question|low|positive|¿La mechanical keyboard incluye pilas? when you get a minute. thanks in advance.
+t00252|product_question|low|positive|Is the electric shaver available in size 9 again? Page says out of stock. And note: no rush at all. I appreciate your help.
+t01352|product_question|low|positive|What is the difference between the plant pot and the kitchen scale? Which one is better for daily use? no rush at all. thanks in advance.
+t02333|product_question|low|positive|Does the wireless earbuds come with batteries or do I need to buy them separately? not urgent, just asking. thanks in advance.
+t00287|product_question|low|positive|does the kettle come with batteries? not urgent, just asking. thanks in advance.
+t02545|product_question|low|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Will the smartwatch band charging cable work with a Pixel 9? Thinking of ordering tonight. Also I ordered from your summer collection before and that was perfect, to be fair. when you get a minute. love your shop otherwise.
+t04261|product_question|low|positive|Is the plant pot available in size S again? Page says out of stock. no rush at all. love your shop otherwise.
+t00344|product_question|low|positive|Does the charging cable come with batteries or do I need to buy them separately? (when you get a minute) I appreciate your help.
+t01045|product_question|low|positive|Is the desk lamp available in size 41 again? Page says out of stock. (when you get a minute) thanks in advance.
+t02645|product_question|low|positive|Will the over-ear headphones charging cable work with a Pixel 9? Thinking of ordering tonight. And note: when you get a minute. I appreciate your help.
+t03592|product_question|low|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, What is the difference between the bluetooth speaker and the toaster? Which one is better for daily use? Also I ordered from your summer collection before and that was perfect, to be fair. (when you get a minute) you've been great every time before.
+t04595|product_question|low|positive|Does the electric shaver come with batteries or do I need to buy them separately? when you get a minute. love your shop otherwise.
+t04709|product_question|low|positive|First of all I want to say your packaging quality is usually great. Is the phone case available in size 41 again? Page says out of stock. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: when you get a minute. I appreciate your help.
+t01751|product_question|low|positive|Will the garden hose charging cable work with a Pixel 9? Thinking of ordering tonight. And note: whenever you can. long-time customer, generally happy.
+t03526|product_question|medium|neutral|Does the charging cable shrink in the wash? Sizing chart is unclear. before the weekend.
+t01510|product_question|medium|neutral|Will the backpack charging cable work with a Pixel 9? Thinking of ordering tonight. Also, hi, I placed order ORD-67430 last Friday and there has been no tracking update since. Where is it? And note: soon-ish.
+t02422|product_question|medium|neutral|Hat der kettle Batterien dabei? before the weekend.
+t00523|product_question|medium|neutral|Will the sneakers charging cable work with a Pixel 9? Thinking of ordering tonight. in the next few days.
+t00636|product_question|medium|neutral|Does the phone case shrink in the wash? Sizing chart is unclear. And note: this week if possible.
+t01981|product_question|medium|positive|First of all I want to say your packaging quality is usually great. Is the electric shaver available in size S again? Page says out of stock. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. before the weekend. you've been great every time before.
+t01517|product_question|medium|positive|Does the garden hose shrink in the wash? Sizing chart is unclear. this week if possible. long-time customer, generally happy.
+t03183|refund_request|high|negative|Money back pls, order ORD-12734, the bluetooth speaker. And note: my daughter's birthday is Saturday. very disappointed.
+t00757|refund_request|high|negative|Please refund $17.25 for order ORD-82794: the desk lamp simply doesn't do what the page said it would. And note: we fly out on vacation Friday. this is unacceptable.
+t01686|refund_request|high|negative|Please refund $34.50 for order ORD-11670: the backpack simply doesn't do what the page said it would. ASAP. seems like I always have bad luck with you.
+t02481|refund_request|high|negative|Please refund $17.25 for order ORD-40914: the over-ear headphones simply doesn't do what the page said it would. And note: today at the latest. I'm honestly furious.
+t00337|refund_request|high|negative|Please refund $239 for order ORD-15178: the sneakers simply doesn't do what the page said it would. And note: the event is on Sunday. very disappointed.
+t03174|refund_request|high|negative|Money back pls, order ORD-65848, the mechanical keyboard. I need it before my move on Thursday. this is unacceptable.
+t04770|refund_request|high|neutral|The coffee maker stopped working after two uses. Refund order ORD-47571 please. (I need it before my move on Thursday)
+t03718|refund_request|high|neutral|I'd like my money back for the air fryer from order ORD-61520. It arrived fine but it's not what I expected. (we fly out on vacation Friday)
+t04617|refund_request|high|neutral|Money back pls, order ORD-73179, the sneakers. Also, i need to change the delivery address on order ORD-19015: it should go to my new place, 402 Oak Avenue, Portland. (I need it before my move on Thursday)
+t04504|refund_request|high|neutral|Money back pls, order ORD-44220, the coffee maker. I need it before my move on Thursday.
+t04458|refund_request|high|neutral|Money back pls, order ORD-25697, the wireless earbuds. (this is time-sensitive)
+t00152|refund_request|high|neutral|Money back pls, order ORD-64956, the phone case. And note: I need it before my move on Thursday.
+t04451|refund_request|high|neutral|I want a refund for the water bottle, order ORD-21961. It's still unopened and I changed my mind. I need it before my move on Thursday.
+t02442|refund_request|high|neutral|I don't usually write to support, so I hope you read this fully. Money back pls, order ORD-85177, the phone case. Also I ordered from your summer collection before and that was perfect, to be fair. whenever you can.
+t02917|refund_request|high|positive|I don't usually write to support, so I hope you read this fully. Money back pls, order ORD-30300, the smartwatch band. Also I ordered from your summer collection before and that was perfect, to be fair. (this is time-sensitive) you've been great every time before.
+t00353|refund_request|high|positive|I'd like my money back for the mechanical keyboard from order ORD-60521. It arrived fine but it's not what I expected. And note: I need it before my move on Thursday. love your shop otherwise.
+t03783|refund_request|low|negative|I'd like my money back for the mechanical keyboard from order ORD-79092. It arrived fine but it's not what I expected. And note: whenever you can. seems like I always have bad luck with you.
+t00346|refund_request|low|negative|Money back pls, order ORD-53981, the mechanical keyboard. And note: when you get a minute. ridiculous.
+t02750|refund_request|low|negative|Money back pls, order ORD-72405, the air fryer. And note: whenever you can. I'm honestly furious.
+t00686|refund_request|low|negative|First of all I want to say your packaging quality is usually great. Please refund $120.99 for order ORD-41421: the sneakers simply doesn't do what the page said it would. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, enough. Every answer I get is a template. I demand someone in charge looks at ORD-70729 personally. (whenever you can) ridiculous.
+t04239|refund_request|low|negative|Ich möchte das Geld für den charging cable zurückerstatten bekommen, Bestellung ORD-40792. whenever you can. ridiculous.
+t04260|refund_request|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I want a refund for the yoga mat, order ORD-76446. It's still unopened and I changed my mind. Also I ordered from your summer collection before and that was perfect, to be fair. (whenever you can) seems like I always have bad luck with you.
+t03647|refund_request|low|negative|Please refund $59.90 for order ORD-44385: the backpack simply doesn't do what the page said it would. whenever you can. seems like I always have bad luck with you.
+t02418|refund_request|low|negative|The air fryer stopped working after two uses. Refund order ORD-93447 please. (no rush at all) seems like I always have bad luck with you.
+t01389|refund_request|low|negative|The yoga mat stopped working after two uses. Refund order ORD-32267 please. (whenever you can) this is unacceptable.
+t00177|refund_request|low|neutral|The desk lamp stopped working after two uses. Refund order ORD-13442 please. (whenever you can)
+t04324|refund_request|low|neutral|I want a refund for the plant pot, order ORD-11789. It's still unopened and I changed my mind. (whenever you can)
+t03664|refund_request|low|neutral|Please refund $17.25 for order ORD-32430: the hair dryer simply doesn't do what the page said it would. Also, the computer mouse doesn't fit. How do I set up a return for order ORD-55729? And note: no rush at all.
+t04660|refund_request|low|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I'd like my money back for the yoga mat from order ORD-34574. It arrived fine but it's not what I expected. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. And note: whenever you can.
+t03333|refund_request|low|neutral|The computer mouse stopped working after two uses. Refund order ORD-31165 please. And note: whenever you can.
+t02195|refund_request|low|neutral|I don't usually write to support, so I hope you read this fully. I'd like my money back for the bluetooth speaker from order ORD-32691. It arrived fine but it's not what I expected. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: whenever you can.
+t04566|refund_request|low|neutral|The air fryer stopped working after two uses. Refund order ORD-56026 please. Also, the box contained two of the same toaster and none of the hair dryer. ORD-72524 And note: whenever you can.
+t04044|refund_request|low|neutral|First of all I want to say your packaging quality is usually great. The desk lamp stopped working after two uses. Refund order ORD-20663 please. Also I ordered from your summer collection before and that was perfect, to be fair. (not urgent, just asking)
+t04169|refund_request|low|neutral|I want a refund for the computer mouse, order ORD-79816. It's still unopened and I changed my mind. (when you get a minute)
+t00829|refund_request|low|neutral|Money back pls, order ORD-23811, the plant pot. And note: not urgent, just asking.
+t01677|refund_request|low|neutral|The hair dryer stopped working after two uses. Refund order ORD-14136 please. not urgent, just asking.
+t01200|refund_request|low|neutral|Please refund $59.90 for order ORD-89927: the garden hose simply doesn't do what the page said it would. And note: when you get a minute.
+t01021|refund_request|low|neutral|First of all I want to say your packaging quality is usually great. Money back pls, order ORD-29756, the smartwatch band. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (no rush at all)
+t02124|refund_request|low|neutral|The backpack stopped working after two uses. Refund order ORD-26421 please. (when you get a minute)
+t00745|refund_request|low|neutral|First of all I want to say your packaging quality is usually great. Money back pls, order ORD-40189, the hair dryer. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. no rush at all.
+t00578|refund_request|low|neutral|Ich möchte das Geld für den phone case zurückerstatten bekommen, Bestellung ORD-72692. (whenever you can)
+t04908|refund_request|low|neutral|Money back pls, order ORD-55886, the hair dryer. not urgent, just asking.
+t02419|refund_request|low|neutral|The hair dryer stopped working after two uses. Refund order ORD-93593 please. when you get a minute.
+t03917|refund_request|low|positive|Please refund $120.99 for order ORD-53140: the smartwatch band simply doesn't do what the page said it would. (when you get a minute) love your shop otherwise.
+t01613|refund_request|low|positive|I'd like my money back for the smartwatch band from order ORD-98769. It arrived fine but it's not what I expected. when you get a minute. love your shop otherwise.
+t01695|refund_request|low|positive|I want a refund for the mechanical keyboard, order ORD-36479. It's still unopened and I changed my mind. whenever you can. I appreciate your help.
+t04173|refund_request|medium|negative|Je veux un remboursement pour le water bottle, commande ORD-62462. this week if possible. I'm honestly furious.
+t02705|refund_request|medium|negative|I'd like my money back for the yoga mat from order ORD-13324. It arrived fine but it's not what I expected. And note: soon-ish. ridiculous.
+t00161|refund_request|medium|negative|I want a refund for the plant pot, order ORD-47490. It's still unopened and I changed my mind. And note: soon-ish. very disappointed.
+t03011|refund_request|medium|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Money back pls, order ORD-42560, the coffee maker. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (this week if possible) seems like I always have bad luck with you.
+t01107|refund_request|medium|negative|I don't usually write to support, so I hope you read this fully. Please refund $120.99 for order ORD-47916: the backpack simply doesn't do what the page said it would. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. before the weekend. I'm honestly furious.
+t00602|refund_request|medium|negative|Ich möchte das Geld für den wireless earbuds zurückerstatten bekommen, Bestellung ORD-17944. (in the next few days) this is unacceptable.
+t01759|refund_request|medium|negative|Ich möchte das Geld für den coffee maker zurückerstatten bekommen, Bestellung ORD-19771. in the next few days. seems like I always have bad luck with you.
+t04971|refund_request|medium|negative|Please refund $59.90 for order ORD-95005: the yoga mat simply doesn't do what the page said it would. in the next few days. this is unacceptable.
+t01369|refund_request|medium|negative|money back pls before the weekend. this is unacceptable.
+t04244|refund_request|medium|negative|First of all I want to say your packaging quality is usually great. Please refund $59.90 for order ORD-69486: the charging cable simply doesn't do what the page said it would. Also I ordered from your summer collection before and that was perfect, to be fair. And note: in the next few days. this is unacceptable.
+t04038|refund_request|medium|negative|money back pls Por favor respóndanme pronto, gracias. soon-ish. ridiculous.
+t02163|refund_request|medium|negative|I want a refund for the wireless earbuds, order ORD-90472. It's still unopened and I changed my mind. And note: before the weekend. seems like I always have bad luck with you.
+t02935|refund_request|medium|neutral|I want a refund for the over-ear headphones, order ORD-29179. It's still unopened and I changed my mind. Por favor respóndanme pronto, gracias. (before the weekend)
+t01487|refund_request|medium|neutral|I'd like my money back for the desk lamp from order ORD-98240. It arrived fine but it's not what I expected. this week if possible.
+t01038|refund_request|medium|neutral|First of all I want to say your packaging quality is usually great. I want a refund for the desk lamp, order ORD-80105. It's still unopened and I changed my mind. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: before the weekend.
+t04771|refund_request|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, The yoga mat stopped working after two uses. Refund order ORD-54479 please. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, please cancel order ORD-36066. I ordered the wrong thing and reordered seconds later. soon-ish.
+t01747|refund_request|medium|neutral|The sneakers stopped working after two uses. Refund order ORD-49879 please. this week if possible.
+t02380|refund_request|medium|neutral|Money back pls, order ORD-14159, the sneakers. And note: soon-ish.
+t04788|refund_request|medium|neutral|The computer mouse stopped working after two uses. Refund order ORD-75254 please. And note: soon-ish.
+t03587|refund_request|medium|neutral|First of all I want to say your packaging quality is usually great. Please refund $120.99 for order ORD-41381: the yoga mat simply doesn't do what the page said it would. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (this week if possible)
+t00908|refund_request|medium|neutral|I don't usually write to support, so I hope you read this fully. I'd like my money back for the yoga mat from order ORD-31469. It arrived fine but it's not what I expected. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. Bitte antworten Sie mir bald, danke. (this week if possible)
+t01214|refund_request|medium|neutral|I want a refund for the water bottle, order ORD-44257. It's still unopened and I changed my mind. (before the weekend)
+t02016|refund_request|medium|neutral|The over-ear headphones stopped working after two uses. Refund order ORD-17686 please. And note: before the weekend.
+t04818|refund_request|medium|neutral|I want a refund for the air fryer, order ORD-10692. It's still unopened and I changed my mind. And note: this week if possible.
+t00584|refund_request|medium|neutral|Money back pls, order ORD-32285, the garden hose. this week if possible.
+t00470|refund_request|medium|neutral|I want a refund for the desk lamp, order ORD-83480. It's still unopened and I changed my mind. And note: before the weekend.
+t01388|refund_request|medium|neutral|Je veux un remboursement pour le garden hose, commande ORD-23854. before the weekend.
+t00074|refund_request|medium|neutral|The garden hose stopped working after two uses. Refund order ORD-24433 please. (in the next few days)
+t03656|refund_request|medium|neutral|Money back pls, order ORD-50176, the bluetooth speaker. in the next few days.
+t00040|refund_request|medium|neutral|Money back pls, order ORD-69165, the bluetooth speaker. And note: in the next few days.
+t01917|refund_request|medium|neutral|Please refund $120.99 for order ORD-28056: the yoga mat simply doesn't do what the page said it would. And note: in the next few days.
+t02445|refund_request|medium|positive|I don't usually write to support, so I hope you read this fully. Please refund $17.25 for order ORD-60480: the mechanical keyboard simply doesn't do what the page said it would. Also I ordered from your summer collection before and that was perfect, to be fair. this week if possible. long-time customer, generally happy.
+t00696|refund_request|medium|positive|First of all I want to say your packaging quality is usually great. Money back pls, order ORD-29921, the phone case. Also I ordered from your summer collection before and that was perfect, to be fair. Also, i can't log in: the password reset emails never arrive in my hotmail. And note: in the next few days. I appreciate your help.
+t04547|refund_request|medium|positive|Money back pls, order ORD-44502, the phone case. And note: in the next few days. you've been great every time before.
+t01059|refund_request|medium|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, I'd like my money back for the plant pot from order ORD-73249. It arrived fine but it's not what I expected. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (before the weekend) thanks in advance.
+t00188|return_exchange|high|negative|The backpack doesn't fit. How do I set up a return for order ORD-74068? we fly out on vacation Friday. very disappointed.
+t04491|return_exchange|high|neutral|return label where? this is time-sensitive.
+t02007|return_exchange|high|neutral|Can I exchange the kettle for a size XL? I clearly ordered the wrong size. Also, i need to change the delivery address on order ORD-13975: it should go to my new place, Birch Lane 14 in Rotterdam. And note: when you get a minute.
+t04099|return_exchange|high|neutral|I want to swap the red sneakers for the same thing in grey, order ORD-95136. (today at the latest)
+t03934|return_exchange|high|neutral|Can I exchange the desk lamp for a size L? I clearly ordered the wrong size. this is time-sensitive.
+t03215|return_exchange|low|negative|I want to swap the white garden hose for the same thing in black, order ORD-95483. (whenever you can) this is unacceptable.
+t04715|return_exchange|low|negative|Can I exchange the bluetooth speaker for a size S? I clearly ordered the wrong size. (when you get a minute) very disappointed.
+t00663|return_exchange|low|negative|I want to swap the red phone case for the same thing in grey, order ORD-50722. when you get a minute. seems like I always have bad luck with you.
+t04588|return_exchange|low|negative|I want to swap the black garden hose for the same thing in black, order ORD-96846. And note: whenever you can. this is unacceptable.
+t04725|return_exchange|low|negative|I need to return the phone case from order ORD-10972. Can you tell me the process and where the return label is? Bitte antworten Sie mir bald, danke. And note: not urgent, just asking. seems like I always have bad luck with you.
+t01985|return_exchange|low|negative|Can I exchange the bluetooth speaker for a size 9? I clearly ordered the wrong size. And note: whenever you can. seems like I always have bad luck with you.
+t03760|return_exchange|low|neutral|Can I exchange the wireless earbuds for a size M? I clearly ordered the wrong size. And note: not urgent, just asking.
+t02352|return_exchange|low|neutral|I want to swap the green charging cable for the same thing in black, order ORD-35458. not urgent, just asking.
+t02990|return_exchange|low|neutral|Can I exchange the electric shaver for a size 9? I clearly ordered the wrong size. And note: no rush at all.
+t04109|return_exchange|low|neutral|I need to return the over-ear headphones from order ORD-10104. Can you tell me the process and where the return label is? (whenever you can)
+t04775|return_exchange|low|neutral|I need to return the yoga mat from order ORD-37934. Can you tell me the process and where the return label is? not urgent, just asking.
+t04072|return_exchange|low|neutral|I need to return the electric shaver from order ORD-42163. Can you tell me the process and where the return label is? And note: when you get a minute.
+t04706|return_exchange|low|neutral|I want to swap the black coffee maker for the same thing in white, order ORD-53039. Also, you sent me the grey electric shaver but I ordered the red one. Order ORD-79586. (when you get a minute)
+t04746|return_exchange|low|neutral|exchange size pls And note: no rush at all.
+t04757|return_exchange|low|neutral|I want to swap the white smartwatch band for the same thing in green, order ORD-15565. (no rush at all)
+t03968|return_exchange|low|neutral|Can I exchange the charging cable for a size L? I clearly ordered the wrong size. no rush at all.
+t01633|return_exchange|low|neutral|The yoga mat doesn't fit. How do I set up a return for order ORD-43829? whenever you can.
+t00173|return_exchange|low|neutral|Can I exchange the coffee maker for a size XL? I clearly ordered the wrong size. And note: no rush at all.
+t02851|return_exchange|low|neutral|exchange size pls And note: when you get a minute.
+t04461|return_exchange|low|neutral|I want to swap the black air fryer for the same thing in white, order ORD-54915. no rush at all.
+t04643|return_exchange|low|neutral|Can I exchange the electric shaver for a size S? I clearly ordered the wrong size. And note: when you get a minute.
+t00598|return_exchange|low|neutral|Can I exchange the plant pot for a size XL? I clearly ordered the wrong size. whenever you can.
+t03419|return_exchange|low|neutral|First of all I want to say your packaging quality is usually great. The bluetooth speaker doesn't fit. How do I set up a return for order ORD-10544? Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, my account is locked after too many attempts. What do I do? my work email (when you get a minute)
+t03278|return_exchange|low|neutral|I need to return the bluetooth speaker from order ORD-55612. Can you tell me the process and where the return label is? (when you get a minute)
+t01976|return_exchange|low|positive|I need to return the kettle from order ORD-82138. Can you tell me the process and where the return label is? (whenever you can) thanks in advance.
+t04559|return_exchange|low|positive|First of all I want to say your packaging quality is usually great. Can I exchange the mechanical keyboard for a size S? I clearly ordered the wrong size. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (no rush at all) love your shop otherwise.
+t02254|return_exchange|low|positive|I don't usually write to support, so I hope you read this fully. exchange size pls Also I ordered from your summer collection before and that was perfect, to be fair. And note: when you get a minute. thanks in advance.
+t03162|return_exchange|low|positive|Can I exchange the computer mouse for a size 9? I clearly ordered the wrong size. And note: no rush at all. love your shop otherwise.
+t01235|return_exchange|low|positive|The air fryer doesn't fit. How do I set up a return for order ORD-84194? whenever you can. love your shop otherwise.
+t04167|return_exchange|medium|negative|I want to swap the white computer mouse for the same thing in black, order ORD-14406. Also, please cancel order ORD-26575. I ordered the wrong thing and reordered seconds later. in the next few days. this is unacceptable.
+t01084|return_exchange|medium|negative|Can I exchange the plant pot for a size 41? I clearly ordered the wrong size. And note: soon-ish. I'm honestly furious.
+t00766|return_exchange|medium|negative|I need to return the air fryer from order ORD-57909. Can you tell me the process and where the return label is? And note: before the weekend. ridiculous.
+t00522|return_exchange|medium|negative|exchange size pls And note: soon-ish. I'm honestly furious.
+t04172|return_exchange|medium|negative|return label where? (this week if possible) this is unacceptable.
+t01828|return_exchange|medium|negative|The yoga mat doesn't fit. How do I set up a return for order ORD-43351? And note: soon-ish. very disappointed.
+t01987|return_exchange|medium|neutral|Can I exchange the hair dryer for a size 41? I clearly ordered the wrong size. Also, does the bluetooth speaker shrink in the wash? Sizing chart is unclear. this week if possible.
+t03024|return_exchange|medium|neutral|I need to return the bluetooth speaker from order ORD-85629. Can you tell me the process and where the return label is? And note: in the next few days.
+t03817|return_exchange|medium|neutral|I need to return the wireless earbuds from order ORD-80984. Can you tell me the process and where the return label is? this week if possible.
+t03527|return_exchange|medium|neutral|return label where? this week if possible.
+t03529|return_exchange|medium|neutral|I need to return the sneakers from order ORD-12558. Can you tell me the process and where the return label is? (soon-ish)
+t01586|return_exchange|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Can I exchange the backpack for a size M? I clearly ordered the wrong size. Also I ordered from your summer collection before and that was perfect, to be fair. (this week if possible)
+t02755|return_exchange|medium|neutral|I want to swap the red water bottle for the same thing in black, order ORD-26012. this week if possible.
+t01973|return_exchange|medium|neutral|Can I exchange the yoga mat for a size 42? I clearly ordered the wrong size. before the weekend.
+t02359|return_exchange|medium|neutral|Can I exchange the electric shaver for a size 41? I clearly ordered the wrong size. before the weekend.
+t04959|return_exchange|medium|neutral|Can I exchange the desk lamp for a size XL? I clearly ordered the wrong size. Also, my card was declined at checkout twice, and there is definitely money on it. Can you look into it? And note: soon-ish.
+t03961|return_exchange|medium|neutral|I need to return the charging cable from order ORD-70689. Can you tell me the process and where the return label is? And note: in the next few days.
+t00124|return_exchange|medium|neutral|The bluetooth speaker doesn't fit. How do I set up a return for order ORD-83651? Also, you sent me the black phone case but I ordered the white one. Order ORD-32497. And note: in the next few days.
+t03326|return_exchange|medium|neutral|I need to return the smartwatch band from order ORD-11153. Can you tell me the process and where the return label is? (in the next few days)
+t03586|return_exchange|medium|neutral|Can I exchange the water bottle for a size 42? I clearly ordered the wrong size. soon-ish.
+t00048|return_exchange|medium|neutral|Can I exchange the backpack for a size M? I clearly ordered the wrong size. And note: this week if possible.
+t01273|return_exchange|medium|neutral|I want to swap the white garden hose for the same thing in grey, order ORD-20528. before the weekend.
+t04204|return_exchange|medium|neutral|Ich möchte den wireless earbuds zurückschicken und die Größe 41 bekommen. And note: before the weekend.
+t01073|return_exchange|medium|neutral|how do I return this this week if possible.
+t03121|return_exchange|medium|positive|The computer mouse doesn't fit. How do I set up a return for order ORD-90774? Bitte antworten Sie mir bald, danke. this week if possible. love your shop otherwise.
+t02535|return_exchange|medium|positive|I want to swap the white desk lamp for the same thing in green, order ORD-34207. (this week if possible) thanks in advance.
+t03332|return_exchange|medium|positive|Can I exchange the hair dryer for a size 10? I clearly ordered the wrong size. in the next few days. love your shop otherwise.
+t00691|return_exchange|medium|positive|how do I return this And note: this week if possible. I appreciate your help.
+t00383|return_exchange|medium|positive|Can I exchange the air fryer for a size L? I clearly ordered the wrong size. before the weekend. long-time customer, generally happy.
+t00139|shipping_address_change|high|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Just realised I used my old address for ORD-17582. Please update it to Birch Lane 14 in Rotterdam before it ships. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. the event is on Sunday. seems like I always have bad luck with you.
+t00650|shipping_address_change|high|negative|I need to change the delivery address on order ORD-67959: it should go to my new place, 402 Oak Avenue, Portland. And note: this is time-sensitive. very disappointed.
+t01547|shipping_address_change|high|neutral|I need to change the delivery address on order ORD-54996: it should go to my new place, 12 Maple Court in Leeds. my daughter's birthday is Saturday.
+t04552|shipping_address_change|high|neutral|Can you reroute order ORD-21236? The address on it is half missing, correct one is Birch Lane 14 in Rotterdam. today at the latest.
+t00890|shipping_address_change|high|neutral|Can you reroute order ORD-47126? The address on it is half missing, correct one is 402 Oak Avenue, Portland. Merci de me répondre rapidement. And note: the event is on Sunday.
+t00699|shipping_address_change|high|neutral|I need to change the delivery address on order ORD-47529: it should go to my new place, 12 Maple Court in Leeds. (whenever you can)
+t01573|shipping_address_change|high|neutral|I don't usually write to support, so I hope you read this fully. Can you reroute order ORD-30585? The address on it is half missing, correct one is 402 Oak Avenue, Portland. Also I ordered from your summer collection before and that was perfect, to be fair. my daughter's birthday is Saturday.
+t03736|shipping_address_change|high|neutral|Can you reroute order ORD-73378? The address on it is half missing, correct one is 402 Oak Avenue, Portland. (I need it before my move on Thursday)
+t02864|shipping_address_change|high|neutral|I need to change the delivery address on order ORD-46561: it should go to my new place, 12 Maple Court in Leeds. we fly out on vacation Friday.
+t04557|shipping_address_change|high|positive|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Just realised I used my old address for ORD-71985. Please update it to 12 Maple Court in Leeds before it ships. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. urgent. you've been great every time before.
+t01297|shipping_address_change|high|positive|I need to change the delivery address on order ORD-12242: it should go to my new place, Birch Lane 14 in Rotterdam. And note: this is time-sensitive. thanks in advance.
+t03430|shipping_address_change|low|negative|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Just realised I used my old address for ORD-56481. Please update it to 402 Oak Avenue, Portland before it ships. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. whenever you can. I'm honestly furious.
+t04518|shipping_address_change|low|neutral|First of all I want to say your packaging quality is usually great. Just realised I used my old address for ORD-31226. Please update it to 12 Maple Court in Leeds before it ships. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: when you get a minute.
+t02364|shipping_address_change|low|neutral|change my address please no rush at all.
+t03169|shipping_address_change|low|neutral|I need to change the delivery address on order ORD-11690: it should go to my new place, 402 Oak Avenue, Portland. when you get a minute.
+t01034|shipping_address_change|low|neutral|Just realised I used my old address for ORD-57241. Please update it to Birch Lane 14 in Rotterdam before it ships. (no rush at all)
+t04999|shipping_address_change|low|positive|Can you reroute order ORD-37456? The address on it is half missing, correct one is Birch Lane 14 in Rotterdam. no rush at all. I appreciate your help.
+t00410|shipping_address_change|medium|negative|Just realised I used my old address for ORD-97455. Please update it to 402 Oak Avenue, Portland before it ships. (before the weekend) this is unacceptable.
+t03698|shipping_address_change|medium|neutral|Sorry in advance for the long email, I've been a customer since 2019 and I honestly enjoy your products, Just realised I used my old address for ORD-69623. Please update it to Birch Lane 14 in Rotterdam before it ships. Also I ordered from your summer collection before and that was perfect, to be fair. (soon-ish)
+t04989|shipping_address_change|medium|neutral|Can you reroute order ORD-71819? The address on it is half missing, correct one is Birch Lane 14 in Rotterdam. And note: soon-ish.
+t01648|shipping_address_change|medium|neutral|Just realised I used my old address for ORD-76000. Please update it to 402 Oak Avenue, Portland before it ships. And note: this week if possible.
+t00802|shipping_address_change|medium|neutral|Can you reroute order ORD-50871? The address on it is half missing, correct one is Birch Lane 14 in Rotterdam. soon-ish.
+t01841|shipping_address_change|medium|neutral|I don't usually write to support, so I hope you read this fully. Just realised I used my old address for ORD-59801. Please update it to 12 Maple Court in Leeds before it ships. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. And note: in the next few days.
+t00205|shipping_address_change|medium|neutral|I don't usually write to support, so I hope you read this fully. Can you reroute order ORD-23311? The address on it is half missing, correct one is 12 Maple Court in Leeds. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (in the next few days)
+t02512|shipping_address_change|medium|neutral|Just realised I used my old address for ORD-52142. Please update it to Birch Lane 14 in Rotterdam before it ships. Also, cancel the charging cable order please (ORD-47059), found it cheaper elsewhere, sorry! And note: soon-ish.
+t01486|shipping_address_change|medium|neutral|I need to change the delivery address on order ORD-28474: it should go to my new place, 402 Oak Avenue, Portland. And note: this week if possible.
+t00580|shipping_address_change|medium|neutral|I need to change the delivery address on order ORD-41527: it should go to my new place, Birch Lane 14 in Rotterdam. soon-ish.
+t02588|shipping_address_change|medium|positive|Just realised I used my old address for ORD-56528. Please update it to Birch Lane 14 in Rotterdam before it ships. this week if possible. love your shop otherwise.
+t01993|wrong_item|high|negative|The box contained two of the same bookends and none of the garden hose. ORD-22816 And note: I need it before my move on Thursday. this is unacceptable.
+t03373|wrong_item|high|negative|The box contained two of the same toaster and none of the computer mouse. ORD-95753 (today at the latest) ridiculous.
+t01430|wrong_item|high|negative|I don't usually write to support, so I hope you read this fully. You sent me the blue water bottle but I ordered the grey one. Order ORD-23238. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. we fly out on vacation Friday. I'm honestly furious.
+t01218|wrong_item|high|negative|You sent me the grey mechanical keyboard but I ordered the green one. Order ORD-36137. today at the latest. seems like I always have bad luck with you.
+t04926|wrong_item|high|negative|First of all I want to say your packaging quality is usually great. Wrong size arrived: I ordered M and the box says 10. Order ORD-53871. Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. Also, will the over-ear headphones charging cable work with a Pixel 9? Thinking of ordering tonight. I need it before my move on Thursday. this is unacceptable.
+t04716|wrong_item|high|negative|I received a monitor stand instead of the wireless earbuds I actually ordered. ORD-58592 And note: urgent. this is unacceptable.
+t04731|wrong_item|high|neutral|I received a bookends instead of the plant pot I actually ordered. ORD-94718 Merci de me répondre rapidement. And note: I need it before my move on Thursday.
+t00369|wrong_item|high|neutral|You sent me the green charging cable but I ordered the black one. Order ORD-77377. my daughter's birthday is Saturday.
+t03258|wrong_item|high|neutral|you sent the wrong thing And note: this is time-sensitive.
+t00726|wrong_item|high|neutral|Wrong size arrived: I ordered 42 and the box says 41. Order ORD-42964. Also, where is my stuff?? ORD-70115 (today at the latest)
+t02965|wrong_item|high|neutral|The box contained two of the same desk chair and none of the coffee maker. ORD-58781 (we fly out on vacation Friday)
+t00717|wrong_item|high|neutral|You sent me the black yoga mat but I ordered the blue one. Order ORD-22789. And note: when you get a minute.
+t02777|wrong_item|high|positive|I received a desk chair instead of the wireless earbuds I actually ordered. ORD-97792 (my daughter's birthday is Saturday) thanks in advance.
+t02656|wrong_item|low|negative|Wrong size arrived: I ordered M and the box says M. Order ORD-43991. when you get a minute. I'm honestly furious.
+t00244|wrong_item|low|negative|Perfect, just perfect. I received a kitchen scale instead of the kettle I actually ordered. ORD-69668 (not urgent, just asking) ridiculous.
+t01302|wrong_item|low|negative|You sent ME the grey BACKPACK BUT I ordered the grey one. Order ORD-74351. !! Also, please remove me from the marketing list for good. (not urgent, just asking) seems like I always have bad luck with you.
+t03510|wrong_item|low|negative|this isn't what I ordered Also, just realised I used my old address for ORD-75334. Please update it to 402 Oak Avenue, Portland before it ships. And note: no rush at all. ridiculous.
+t03099|wrong_item|low|neutral|You sent me the green garden hose but I ordered the black one. Order ORD-11439. whenever you can.
+t02097|wrong_item|low|neutral|First of all I want TO say your packaging quality is usually GREAT. this isn't what I ordered Also, unrelated: the loyalty programme interface confuses me a bit, BUT that's for another day I guess. !! (no rush at all)
+t04545|wrong_item|medium|negative|I received a kitchen scale instead of the desk lamp I actually ordered. ORD-93308 And note: in the next few days. seems like I always have bad luck with you.
+t01632|wrong_item|medium|negative|Oh great, another one. You sent me the WHITE mechanical KEYBOARD but I ordered the grey one. Order ORD-99625. !!! before the weekend. very disappointed.
+t00779|wrong_item|medium|negative|I don't usually write to support, so I hope you read this fully. The box contained two of the same desk chair and none of the sneakers. ORD-75561 Also, unrelated: the loyalty programme interface confuses me a bit, but that's for another day I guess. (before the weekend) this is unacceptable.
+t04188|wrong_item|medium|negative|I received a desk chair instead of the computer mouse I actually ordered. ORD-40448 (this week if possible) I'm honestly furious.
+t02258|wrong_item|medium|negative|Wrong size arrived: I ordered 42 and the box says 10. Order ORD-80176. (this week if possible) seems like I always have bad luck with you.
+t01589|wrong_item|medium|negative|I received A bookends INSTEAD of the desk lamp I actually ordered. ORD-83246 !! in the next few days. I'm honestly furious.
+t02640|wrong_item|medium|negative|The box contained two of the same bookends and none of the bluetooth speaker. ORD-66918 before the weekend. seems like I always have bad luck with you.
+t00978|wrong_item|medium|negative|You sent me the blue kettle but I ordered the grey one. Order ORD-89303. this week if possible. very disappointed.
+t03751|wrong_item|medium|neutral|I don't usually write to support, so I hope you read this fully. Wrong size arrived: I ordered S and the box says M. Order ORD-99472. Also my colleague placed an order last month and had zero problems, which makes this all the more confusing. (in the next few days)
+t03973|wrong_item|medium|neutral|Oh great, another one. First of all I want to say your packaging quality is usually great. Wrong size arrived: I ordered 42 and the box says M. Order ORD-58366. Also I ordered from your summer collection before and that was perfect, to be fair. (soon-ish)
+t04976|wrong_item|medium|neutral|Me enviaron el bookends en vez del desk lamp que pedí. (soon-ish)
+t02751|wrong_item|medium|neutral|Wrong size arrived: I ordered L and the box says 10. Order ORD-26066. Also, i would like to apply as a wholesale partner. Who do I talk to? (in the next few days)
+t02457|wrong_item|medium|neutral|Perfect, just perfect. I received a monitor stand instead of the charging cable I actually ordered. ORD-30215 (soon-ish)
+t02828|wrong_item|medium|neutral|Oh great, another one. I don't usually write to support, so I hope you read this fully. Wrong size arrived: I ordered M and the box says 10. Order ORD-23652. Also I ordered from your summer collection before and that was perfect, to be fair. (in the next few days)
+t02914|wrong_item|medium|neutral|I received a toaster instead of the water bottle I actually ordered. ORD-74109 before the weekend.
+t01940|wrong_item|medium|positive|I received a desk chair instead of the bluetooth speaker I actually ordered. ORD-70850 And note: this week if possible. love your shop otherwise.

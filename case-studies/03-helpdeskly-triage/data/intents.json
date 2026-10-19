@@ -1,0 +1,50 @@
+{
+  "order_status": {
+    "definition": "Customer asks where an existing order is, when it will ship, or when it will arrive.",
+    "weight": 0.27
+  },
+  "refund_request": {
+    "definition": "Customer asks for their money back for a completed purchase.",
+    "weight": 0.12
+  },
+  "product_question": {
+    "definition": "Pre-purchase question about an item's specs, stock, compatibility or sizing.",
+    "weight": 0.10
+  },
+  "return_exchange": {
+    "definition": "Customer wants to send an item back or swap it for another size or colour.",
+    "weight": 0.09
+  },
+  "damaged_item": {
+    "definition": "The item arrived broken, torn, cracked or malfunctioning out of the box.",
+    "weight": 0.07
+  },
+  "payment_issue": {
+    "definition": "Problems paying or being paid: card declines, duplicate charges, checkout errors, unapplied refunds.",
+    "weight": 0.06
+  },
+  "cancel_order": {
+    "definition": "Customer wants to cancel an existing order that has not been delivered yet.",
+    "weight": 0.06
+  },
+  "wrong_item": {
+    "definition": "Customer received something other than what they ordered: wrong size, colour or entirely different product.",
+    "weight": 0.05
+  },
+  "account_access": {
+    "definition": "Trouble logging in: forgotten password, locked account, missing reset emails, verification loops.",
+    "weight": 0.05
+  },
+  "shipping_address_change": {
+    "definition": "Customer wants the delivery address changed before the order ships.",
+    "weight": 0.04
+  },
+  "other": {
+    "definition": "Anything that does not fit the other eleven categories: gift cards, loyalty points, partnerships, legal notices, feedback about websites.",
+    "weight": 0.06
+  },
+  "complaint_escalation": {
+    "definition": "Customer is angry at how their case has been handled and asks for a manager, a supervisor or a human decision.",
+    "weight": 0.03
+  }
+}
