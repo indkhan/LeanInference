@@ -1,0 +1,80 @@
+{"id":"gen11-0081","bucket":"no_tool","language":"en","request_date":"2026-09-18","request":"yo","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0082","bucket":"no_tool","language":"en","request_date":"2026-10-24","request":"what's the forecast for Berlin on Friday?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0083","bucket":"no_tool","language":"en","request_date":"2026-11-06","request":"are you real?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0084","bucket":"no_tool","language":"en","request_date":"2026-12-13","request":"do you have a favourite colour?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0085","bucket":"no_tool","language":"en","request_date":"2026-01-25","request":"kjhgfdsa","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0086","bucket":"no_tool","language":"en","request_date":"2026-02-06","request":"I hate this app so much","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0087","bucket":"no_tool","language":"en","request_date":"2026-03-17","request":"should I go?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0088","bucket":"no_tool","language":"en","request_date":"2026-04-26","request":"Hi! Hope you're having a good day.","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0089","bucket":"no_tool","language":"en","request_date":"2026-05-09","request":"should I take an umbrella tomorrow?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0090","bucket":"no_tool","language":"en","request_date":"2026-06-14","request":"how do you work?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0091","bucket":"no_tool","language":"en","request_date":"2026-07-22","request":"it's freezing here today, isn't it?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0092","bucket":"no_tool","language":"en","request_date":"2026-08-05","request":"sdfsdf sdf sdf","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0093","bucket":"no_tool","language":"en","request_date":"2026-09-19","request":"Thank you so much for the help earlier.","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0094","bucket":"no_tool","language":"en","request_date":"2026-10-26","request":"what's the temperature outside?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0095","bucket":"no_tool","language":"en","request_date":"2026-11-08","request":"who trained you?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0096","bucket":"no_tool","language":"en","request_date":"2026-12-15","request":"what kind of music do you like?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0097","bucket":"no_tool","language":"en","request_date":"2026-01-13","request":"zzzzzz","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0098","bucket":"no_tool","language":"en","request_date":"2026-02-20","request":"absolute waste of my time","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0099","bucket":"no_tool","language":"en","request_date":"2026-03-07","request":"did you get it?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0100","bucket":"no_tool","language":"en","request_date":"2026-04-03","request":"goodbye 👋","gold":{"type":"none","reason":"goodbye"},"source":"agent-v1"}
+{"id":"gen11-0101","bucket":"no_tool","language":"en","request_date":"2026-05-18","request":"any big stories this morning?","gold":{"type":"none","reason":"off-topic: news"},"source":"agent-v1"}
+{"id":"gen11-0102","bucket":"no_tool","language":"en","request_date":"2026-06-25","request":"do you remember our last chat?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0103","bucket":"no_tool","language":"en","request_date":"2026-07-09","request":"do you believe in aliens?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0104","bucket":"no_tool","language":"en","request_date":"2026-08-13","request":"hmmmmmmm","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0105","bucket":"no_tool","language":"en","request_date":"2026-09-27","request":"thanks a ton","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0106","bucket":"no_tool","language":"en","request_date":"2026-10-02","request":"I'm travelling next week. Any big news stories I should catch up on? I've been offline for days.","gold":{"type":"none","reason":"off-topic: news"},"source":"agent-v1"}
+{"id":"gen11-0107","bucket":"no_tool","language":"en","request_date":"2026-11-13","request":"can you learn new things?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0108","bucket":"no_tool","language":"en","request_date":"2026-12-20","request":"guess what","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0109","bucket":"no_tool","language":"en","request_date":"2026-01-07","request":"asdfasdfasdf","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0110","bucket":"no_tool","language":"en","request_date":"2026-02-11","request":"shocking. just shocking.","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0111","bucket":"no_tool","language":"en","request_date":"2026-03-22","request":"when can we meet?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0112","bucket":"no_tool","language":"en","request_date":"2026-04-28","request":"morning","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0113","bucket":"no_tool","language":"en","request_date":"2026-05-03","request":"what's the score in the Arsenal game?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}
+{"id":"gen11-0114","bucket":"no_tool","language":"en","request_date":"2026-06-09","request":"are you connected to the internet?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0115","bucket":"no_tool","language":"en","request_date":"2026-07-16","request":"how's life?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0116","bucket":"no_tool","language":"en","request_date":"2026-08-23","request":"5463728190","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0117","bucket":"no_tool","language":"en","request_date":"2026-09-05","request":"ta very much","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0118","bucket":"no_tool","language":"en","request_date":"2026-10-11","request":"how did the Lakers do yesterday?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}
+{"id":"gen11-0119","bucket":"no_tool","language":"en","request_date":"2026-11-18","request":"what model are you?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0120","bucket":"no_tool","language":"en","request_date":"2026-12-25","request":"are you having a good Monday?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0121","bucket":"no_tool","language":"en","request_date":"2026-01-21","request":"woof woof","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0122","bucket":"no_tool","language":"en","request_date":"2026-02-27","request":"my driver last week was so rude","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0123","bucket":"no_tool","language":"en","request_date":"2026-03-03","request":"can you call me back?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0124","bucket":"no_tool","language":"en","request_date":"2026-04-14","request":"Bye!","gold":{"type":"none","reason":"goodbye"},"source":"agent-v1"}
+{"id":"gen11-0125","bucket":"no_tool","language":"en","request_date":"2026-05-25","request":"solve for x: 3x + 7 = 22","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0126","bucket":"no_tool","language":"en","request_date":"2026-06-06","request":"are you always right?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0127","bucket":"no_tool","language":"en","request_date":"2026-07-11","request":"I think my plant is dying 😭","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0128","bucket":"no_tool","language":"en","request_date":"2026-08-18","request":"gibberish gibberish gibberish","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0129","bucket":"no_tool","language":"en","request_date":"2026-09-01","request":"have a good one","gold":{"type":"none","reason":"farewell"},"source":"agent-v1"}
+{"id":"gen11-0130","bucket":"no_tool","language":"en","request_date":"2026-10-07","request":"what's the square root of 1764?","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0131","bucket":"no_tool","language":"en","request_date":"2026-11-14","request":"what are your limits?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0132","bucket":"no_tool","language":"en","request_date":"2026-12-21","request":"random characters @#$%^&*","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0133","bucket":"no_tool","language":"en","request_date":"2026-01-05","request":"can't believe how bad this is","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0134","bucket":"no_tool","language":"en","request_date":"2026-02-13","request":"let me know what you think","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0135","bucket":"no_tool","language":"en","request_date":"2026-03-19","request":"you too, thanks","gold":{"type":"none","reason":"acknowledgement"},"source":"agent-v1"}
+{"id":"gen11-0136","bucket":"no_tool","language":"en","request_date":"2026-04-07","request":"how many prime numbers are under 50?","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0137","bucket":"no_tool","language":"en","request_date":"2026-05-12","request":"you're a bot, right?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0138","bucket":"no_tool","language":"en","request_date":"2026-06-17","request":"lksjdflksjdlfkjsldkfj","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0139","bucket":"no_tool","language":"en","request_date":"2026-07-23","request":"tyvm 🙌","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0140","bucket":"no_tool","language":"en","request_date":"2026-08-02","request":"why does my CSS flexbox keep overflowing?","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0141","bucket":"no_tool","language":"en","request_date":"2026-09-10","request":"I'm done with this, honestly","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0142","bucket":"no_tool","language":"en","request_date":"2026-10-16","request":"I appreciate it","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0143","bucket":"no_tool","language":"en","request_date":"2026-11-22","request":"explain recursion in one paragraph","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0144","bucket":"no_tool","language":"en","request_date":"2026-12-28","request":"abcabcabc","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0145","bucket":"no_tool","language":"en","request_date":"2026-01-14","request":"Later!","gold":{"type":"none","reason":"goodbye"},"source":"agent-v1"}
+{"id":"gen11-0146","bucket":"no_tool","language":"en","request_date":"2026-02-22","request":"what's the difference between let and const in JavaScript?","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0147","bucket":"no_tool","language":"en","request_date":"2026-03-27","request":"what a mess","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0148","bucket":"no_tool","language":"en","request_date":"2026-04-05","request":"how do I make chicken curry from scratch?","gold":{"type":"none","reason":"off-topic: recipe"},"source":"agent-v1"}
+{"id":"gen11-0149","bucket":"no_tool","language":"en","request_date":"2026-05-16","request":"x y z","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0150","bucket":"no_tool","language":"en","request_date":"2026-06-23","request":"how long do I boil an egg?","gold":{"type":"none","reason":"off-topic: recipe"},"source":"agent-v1"}
+{"id":"gen11-0151","bucket":"no_tool","language":"en","request_date":"2026-07-06","request":"what a game last night, huh?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0152","bucket":"no_tool","language":"en","request_date":"2026-08-12","request":"how do you say thank you in French?","gold":{"type":"none","reason":"off-topic: translation"},"source":"agent-v1"}
+{"id":"gen11-0153","bucket":"no_tool","language":"en","request_date":"2026-09-22","request":"translate 'where is the train station' into German","gold":{"type":"none","reason":"off-topic: translation"},"source":"agent-v1"}
+{"id":"gen11-0154","bucket":"no_tool","language":"en","request_date":"2026-10-19","request":"who is the president of Brazil?","gold":{"type":"none","reason":"off-topic: trivia"},"source":"agent-v1"}
+{"id":"gen11-0155","bucket":"no_tool","language":"en","request_date":"2026-11-25","request":"who wrote Hamlet?","gold":{"type":"none","reason":"off-topic: trivia"},"source":"agent-v1"}
+{"id":"gen11-0156","bucket":"no_tool","language":"en","request_date":"2026-12-08","request":"what's the tallest mountain in Africa?","gold":{"type":"none","reason":"off-topic: trivia"},"source":"agent-v1"}
+{"id":"gen11-0157","bucket":"no_tool","language":"en","request_date":"2026-01-27","request":"can you recommend a book?","gold":{"type":"none","reason":"off-topic: recommendation"},"source":"agent-v1"}
+{"id":"gen11-0158","bucket":"no_tool","language":"en","request_date":"2026-02-03","request":"recommend a good podcast for my commute","gold":{"type":"none","reason":"off-topic: recommendation"},"source":"agent-v1"}
+{"id":"gen11-0159","bucket":"no_tool","language":"en","request_date":"2026-03-29","request":"explain compound interest with an example","gold":{"type":"none","reason":"off-topic: finance"},"source":"agent-v1"}
+{"id":"gen11-0160","bucket":"no_tool","language":"en","request_date":"2026-04-21","request":"what are the rules of cricket?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}

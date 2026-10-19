@@ -1,0 +1,6 @@
+# Data + validation phase
+jsonschema>=4.22
+tiktoken>=0.7
+
+# Training phase (added when we get there, per-environment)
+# See README: Unsloth for Qwen3.5 QLoRA; cactus-needle[train] for Needle 3.

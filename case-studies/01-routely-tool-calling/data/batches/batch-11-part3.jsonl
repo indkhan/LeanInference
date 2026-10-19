@@ -1,0 +1,80 @@
+{"id":"gen11-0161","bucket":"no_tool","language":"en","request_date":"2026-05-05","request":"hello","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0162","bucket":"no_tool","language":"en","request_date":"2026-06-12","request":"how's the weather looking in Paris tomorrow?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0163","bucket":"no_tool","language":"en","request_date":"2026-07-19","request":"do you get tired?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0164","bucket":"no_tool","language":"en","request_date":"2026-08-26","request":"what's up?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0165","bucket":"no_tool","language":"en","request_date":"2026-09-07","request":"kdjfghsdlkfgh","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0166","bucket":"no_tool","language":"en","request_date":"2026-10-14","request":"I've been on hold for forty minutes. Nobody picks up. This is unbelievable. Honestly, what is going on over there?","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0167","bucket":"no_tool","language":"en","request_date":"2026-11-21","request":"did it go through?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0168","bucket":"no_tool","language":"en","request_date":"2026-12-26","request":"thank you","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0169","bucket":"no_tool","language":"en","request_date":"2026-01-08","request":"any chance of thunderstorms tonight?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0170","bucket":"no_tool","language":"en","request_date":"2026-02-15","request":"how many languages do you speak?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0171","bucket":"no_tool","language":"en","request_date":"2026-03-23","request":"describe your dream holiday","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0172","bucket":"no_tool","language":"en","request_date":"2026-04-11","request":"mnbvcxz","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0173","bucket":"no_tool","language":"en","request_date":"2026-05-17","request":"good night!","gold":{"type":"none","reason":"farewell"},"source":"agent-v1"}
+{"id":"gen11-0174","bucket":"no_tool","language":"en","request_date":"2026-06-24","request":"do I need a coat today?","gold":{"type":"none","reason":"off-topic: weather"},"source":"agent-v1"}
+{"id":"gen11-0175","bucket":"no_tool","language":"en","request_date":"2026-07-03","request":"can you see me right now?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0176","bucket":"no_tool","language":"en","request_date":"2026-08-09","request":"if you were a superhero, what power would you pick?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0177","bucket":"no_tool","language":"en","request_date":"2026-09-14","request":"hmm","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0178","bucket":"no_tool","language":"en","request_date":"2026-10-20","request":"so frustrating","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0179","bucket":"no_tool","language":"en","request_date":"2026-11-26","request":"are we still on for Tuesday?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0180","bucket":"no_tool","language":"en","request_date":"2026-12-06","request":"Good evening!","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0181","bucket":"no_tool","language":"en","request_date":"2026-01-15","request":"did anything important happen overnight?","gold":{"type":"none","reason":"off-topic: news"},"source":"agent-v1"}
+{"id":"gen11-0182","bucket":"no_tool","language":"en","request_date":"2026-02-24","request":"who is your boss?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0183","bucket":"no_tool","language":"en","request_date":"2026-03-04","request":"tell me something interesting","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0184","bucket":"no_tool","language":"en","request_date":"2026-04-13","request":"uhhhhhh","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0185","bucket":"no_tool","language":"en","request_date":"2026-05-21","request":"cool cool","gold":{"type":"none","reason":"acknowledgement"},"source":"agent-v1"}
+{"id":"gen11-0186","bucket":"no_tool","language":"en","request_date":"2026-06-07","request":"what's in the news about the election?","gold":{"type":"none","reason":"off-topic: news"},"source":"agent-v1"}
+{"id":"gen11-0187","bucket":"no_tool","language":"en","request_date":"2026-07-14","request":"what should I call you?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0188","bucket":"no_tool","language":"en","request_date":"2026-08-19","request":"you're no help at all","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0189","bucket":"no_tool","language":"en","request_date":"2026-09-04","request":"can you book a table for two?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0190","bucket":"no_tool","language":"en","request_date":"2026-10-10","request":"Perfect, thanks for the quick reply","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0191","bucket":"no_tool","language":"en","request_date":"2026-11-15","request":"who's playing in the Champions League final?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}
+{"id":"gen11-0192","bucket":"no_tool","language":"en","request_date":"2026-12-23","request":"are you the same assistant I spoke to yesterday?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0193","bucket":"no_tool","language":"en","request_date":"2026-01-20","request":"do robots dream of electric sheep?","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0194","bucket":"no_tool","language":"en","request_date":"2026-02-08","request":"AJSKFJASLFJ","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0195","bucket":"no_tool","language":"en","request_date":"2026-03-15","request":"bye for now","gold":{"type":"none","reason":"goodbye"},"source":"agent-v1"}
+{"id":"gen11-0196","bucket":"no_tool","language":"en","request_date":"2026-04-18","request":"who's top of the Premier League table?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}
+{"id":"gen11-0197","bucket":"no_tool","language":"en","request_date":"2026-05-24","request":"never using this again","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0198","bucket":"no_tool","language":"en","request_date":"2026-06-04","request":"what should I do about it?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0199","bucket":"no_tool","language":"en","request_date":"2026-07-10","request":"g'day","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0200","bucket":"no_tool","language":"en","request_date":"2026-08-16","request":"what were the results of the F1 race?","gold":{"type":"none","reason":"off-topic: sports"},"source":"agent-v1"}
+{"id":"gen11-0201","bucket":"no_tool","language":"en","request_date":"2026-09-09","request":"how smart are you?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0202","bucket":"no_tool","language":"en","request_date":"2026-10-18","request":"sing me a song","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0203","bucket":"no_tool","language":"en","request_date":"2026-11-23","request":"dghjdghjdghj","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0204","bucket":"no_tool","language":"en","request_date":"2026-12-09","request":"Hey! Long time no chat.","gold":{"type":"none","reason":"greeting"},"source":"agent-v1"}
+{"id":"gen11-0205","bucket":"no_tool","language":"en","request_date":"2026-01-03","request":"what's 47 times 89?","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0206","bucket":"no_tool","language":"en","request_date":"2026-02-10","request":"do you have a phone number?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0207","bucket":"no_tool","language":"en","request_date":"2026-03-24","request":"can you take care of the thing we discussed?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0208","bucket":"no_tool","language":"en","request_date":"2026-04-19","request":"You're the best, thank you!","gold":{"type":"none","reason":"thanks"},"source":"agent-v1"}
+{"id":"gen11-0209","bucket":"no_tool","language":"en","request_date":"2026-05-07","request":"integrate x squared","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0210","bucket":"no_tool","language":"en","request_date":"2026-06-16","request":"terrible experience, honestly terrible","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0211","bucket":"no_tool","language":"en","request_date":"2026-07-26","request":"my kid just said the funniest thing","gold":{"type":"none","reason":"small talk"},"source":"agent-v1"}
+{"id":"gen11-0212","bucket":"no_tool","language":"en","request_date":"2026-08-11","request":"slash slash slash","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0213","bucket":"no_tool","language":"en","request_date":"2026-09-13","request":"night night","gold":{"type":"none","reason":"goodbye"},"source":"agent-v1"}
+{"id":"gen11-0214","bucket":"no_tool","language":"en","request_date":"2026-10-22","request":"what's 3/8 as a decimal?","gold":{"type":"none","reason":"off-topic: math"},"source":"agent-v1"}
+{"id":"gen11-0215","bucket":"no_tool","language":"en","request_date":"2026-11-28","request":"can you talk to other apps?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0216","bucket":"no_tool","language":"en","request_date":"2026-12-11","request":"forward this to the team","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0217","bucket":"no_tool","language":"en","request_date":"2026-01-12","request":"ok","gold":{"type":"none","reason":"acknowledgement"},"source":"agent-v1"}
+{"id":"gen11-0218","bucket":"no_tool","language":"en","request_date":"2026-02-17","request":"how do I centre a div?","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0219","bucket":"no_tool","language":"en","request_date":"2026-03-06","request":"unbelievable, honestly unbelievable","gold":{"type":"none","reason":"venting, no request"},"source":"agent-v1"}
+{"id":"gen11-0220","bucket":"no_tool","language":"en","request_date":"2026-04-22","request":"Alright, that's everything","gold":{"type":"none","reason":"acknowledgement"},"source":"agent-v1"}
+{"id":"gen11-0221","bucket":"no_tool","language":"en","request_date":"2026-05-26","request":"write a bash script that renames all files in a folder","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0222","bucket":"no_tool","language":"en","request_date":"2026-06-05","request":"are you recording this?","gold":{"type":"none","reason":"assistant meta question"},"source":"agent-v1"}
+{"id":"gen11-0223","bucket":"no_tool","language":"en","request_date":"2026-07-12","request":"I've got a joke for you: why don't scientists trust atoms? Because they make up everything!","gold":{"type":"none","reason":"joke, no request"},"source":"agent-v1"}
+{"id":"gen11-0224","bucket":"no_tool","language":"en","request_date":"2026-08-21","request":"nothing to say","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0225","bucket":"no_tool","language":"en","request_date":"2026-09-20","request":"any news on that thing?","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0226","bucket":"no_tool","language":"en","request_date":"2026-10-23","request":"why is my Docker build so slow?","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0227","bucket":"no_tool","language":"en","request_date":"2026-11-05","request":"beep boop","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0228","bucket":"no_tool","language":"en","request_date":"2026-12-12","request":"convert this JSON to YAML","gold":{"type":"none","reason":"off-topic: code"},"source":"agent-v1"}
+{"id":"gen11-0229","bucket":"no_tool","language":"en","request_date":"2026-01-17","request":"I'll send it over later","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0230","bucket":"no_tool","language":"en","request_date":"2026-02-19","request":"what can I make with leftover pasta?","gold":{"type":"none","reason":"off-topic: recipe"},"source":"agent-v1"}
+{"id":"gen11-0231","bucket":"no_tool","language":"en","request_date":"2026-03-12","request":"-----Original Message----- Sent from my iPhone","gold":{"type":"none","reason":"pasted text, no request"},"source":"agent-v1"}
+{"id":"gen11-0232","bucket":"no_tool","language":"en","request_date":"2026-04-24","request":"best way to roast vegetables?","gold":{"type":"none","reason":"off-topic: recipe"},"source":"agent-v1"}
+{"id":"gen11-0233","bucket":"no_tool","language":"en","request_date":"2026-05-11","request":"please check and confirm","gold":{"type":"none","reason":"no shipping context"},"source":"agent-v1"}
+{"id":"gen11-0234","bucket":"no_tool","language":"en","request_date":"2026-06-18","request":"how do I cook rice without it going mushy?","gold":{"type":"none","reason":"off-topic: recipe"},"source":"agent-v1"}
+{"id":"gen11-0235","bucket":"no_tool","language":"en","request_date":"2026-07-24","request":"the quick brown fox jumps over the lazy dog","gold":{"type":"none","reason":"gibberish"},"source":"agent-v1"}
+{"id":"gen11-0236","bucket":"no_tool","language":"en","request_date":"2026-08-22","request":"what does 'bon appetit' mean?","gold":{"type":"none","reason":"off-topic: translation"},"source":"agent-v1"}
+{"id":"gen11-0237","bucket":"no_tool","language":"en","request_date":"2026-09-23","request":"how do you pronounce 'quinoa'?","gold":{"type":"none","reason":"off-topic: language"},"source":"agent-v1"}
+{"id":"gen11-0238","bucket":"no_tool","language":"en","request_date":"2026-10-25","request":"translate 'happy birthday' into Italian","gold":{"type":"none","reason":"off-topic: translation"},"source":"agent-v1"}
+{"id":"gen11-0239","bucket":"no_tool","language":"en","request_date":"2026-11-09","request":"explain how a combustion engine works","gold":{"type":"none","reason":"off-topic: explanation"},"source":"agent-v1"}
+{"id":"gen11-0240","bucket":"no_tool","language":"en","request_date":"2026-12-14","request":"what's the difference between a metaphor and a simile?","gold":{"type":"none","reason":"off-topic: language"},"source":"agent-v1"}
