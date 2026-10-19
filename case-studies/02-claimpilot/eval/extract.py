@@ -264,7 +264,16 @@ def main():
                 break
     wall = time.perf_counter() - t0
 
-    records.sort(key=lambda r: r["doc_id"])
+    # Rebuild the results file from the cache for the WHOLE split, not just this
+    # invocation: a partial rerun (e.g. --limit 12) must not clobber earlier results.
+    # ponytail: reads every cache file on each run, fine at 400 docs.
+    full_docs = [json.loads(line) for line in (SPLITS / f"{args.split}.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    by_id = {}
+    for d in full_docs:
+        cf = cache_dir / f"{d['id']}.json"
+        if cf.exists():
+            by_id[d["id"]] = json.loads(cf.read_text(encoding="utf-8"))
+    records = sorted(by_id.values(), key=lambda r: r["doc_id"])
     out_file = RESULTS / f"results_{slug}_{args.tag}.jsonl"
     with out_file.open("w", encoding="utf-8") as f:
         for r in records:

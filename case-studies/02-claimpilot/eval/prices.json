@@ -10,20 +10,45 @@
   },
   "per_mtok_usd": {
     "frontier_baselines": [
-      { "name": "Claude Fable 5.1", "vendor": "Anthropic", "input": 10.0, "output": 50.0 },
-      { "name": "Claude Opus 5.5", "vendor": "Anthropic", "input": 4.0, "output": 20.0 },
-      { "name": "Claude Sonnet 5.5", "vendor": "Anthropic", "input": 2.0, "output": 10.0 },
-      { "name": "GPT-6 Astra", "vendor": "OpenAI", "input": 10.0, "output": 50.0 },
-      { "name": "GPT-6.1 Sol", "vendor": "OpenAI", "input": 2.0, "output": 10.0 }
+      {
+        "name": "Claude Fable 5.1",
+        "vendor": "Anthropic",
+        "input": 10.0,
+        "output": 50.0
+      },
+      {
+        "name": "Claude Opus 5.5",
+        "vendor": "Anthropic",
+        "input": 4.0,
+        "output": 20.0
+      },
+      {
+        "name": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "input": 2.0,
+        "output": 10.0
+      },
+      {
+        "name": "GPT-6 Astra",
+        "vendor": "OpenAI",
+        "input": 10.0,
+        "output": 50.0
+      },
+      {
+        "name": "GPT-6.1 Sol",
+        "vendor": "OpenAI",
+        "input": 2.0,
+        "output": 10.0
+      }
     ],
     "cheap_hosted": [
       {
         "name": "DeepSeek V4.1 Flash",
         "vendor": "DeepSeek",
         "input_off_peak": 0.15,
-        "input_peak": 0.30,
-        "output_off_peak": 0.60,
-        "output_peak": 1.20,
+        "input_peak": 0.3,
+        "output_off_peak": 0.6,
+        "output_peak": 1.2,
         "note": "billed half-rate off-peak; peak = weekdays 01:00-04:00 and 06:00-10:00 UTC"
       }
     ]
@@ -31,8 +56,8 @@
   "run_cost_map": {
     "opencode/deepseek-v4.1-flash-free": {
       "equivalence": "DeepSeek V4.1 Flash",
-      "input": 0.30,
-      "output": 1.20,
+      "input": 0.3,
+      "output": 1.2,
       "note": "peak-rate list price; our runs were on the free tier ($0 paid)"
     }
   },
@@ -49,13 +74,30 @@
     "name": "NVIDIA L4 24GB (Runpod Secure Cloud, on-demand)",
     "usd_per_hour": 0.59,
     "alternatives": [
-      { "name": "RTX 4090 24GB (Runpod Secure Cloud)", "usd_per_hour": 0.89 },
-      { "name": "L4 24GB (Runpod Community Cloud)", "usd_per_hour": 0.44 }
+      {
+        "name": "RTX 4090 24GB (Runpod Secure Cloud)",
+        "usd_per_hour": 0.89
+      },
+      {
+        "name": "L4 24GB (Runpod Community Cloud)",
+        "usd_per_hour": 0.44
+      }
     ],
     "note": "Reference hardware for the self-hosted candidate's running cost. Our measurements were taken on an RTX 3050 Laptop 6GB (slower than an L4), so deployment-cost figures are conservative in a different direction; both machines are single-GPU serial serving."
   },
   "frontier_assumption": {
     "docs_per_month": 500000,
     "tokens_per_doc_note": "ClaimPilot brief assumes ~1,500 input tokens per document; we also compute the bill from our measured token counts."
+  },
+  "client_current_model": "Claude Opus 5.5",
+  "frontier_accuracy_assumed": {
+    "statement": "Status-quo accuracy is ASSUMED to be at least the measured baseline proxy; the nearest published figure is Claude Opus 5.5 = 94.1% on Roboflow Vision Evals 'OCR - Structured JSON' (high effort), an image-OCR task, not our text-extraction task, so it is cited for context only.",
+    "source": "https://playground.roboflow.com/models/anthropic/claude-opus-5-5 (Vision Evals updated 2026-10-13)",
+    "retrieved": "2026-10-19"
+  },
+  "local_cpu": {
+    "name": "AWS c7i.xlarge (4 vCPU, 8 GiB, us-east-1 on-demand Linux)",
+    "usd_per_hour": 0.1785,
+    "source": "https://instances.vantage.sh/aws/ec2/c7i.xlarge (retrieved 2026-10-19)"
   }
 }

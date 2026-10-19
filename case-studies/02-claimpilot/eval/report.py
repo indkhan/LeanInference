@@ -1,201 +1,188 @@
-"""Build the final results table (markdown + json) from run summaries + prices.
+"""Print + write the ClaimPilot results table, per-field breakdown, winner and failure cases.
 
 Usage:
-  python eval/report.py [--baseline-slug <summary suffix>]
+  python eval/report.py
 
-Reads eval/results/summary_*.json (one per run), eval/prices.json (real list
-prices with source URLs and fetch dates), and writes:
-  eval/results/final_table.md    - the deliverable table
-  eval/results/final_table.json  - same data, structured
+Inputs (all produced by real runs):
+  eval/results/summary_<run>.json   - from eval/metrics.py (400-doc hand-verified test split)
+  eval/prices.json                  - list prices with source URLs + retrieval date
+Outputs:
+  eval/results/final_table.md / final_table.json
 
-Cost rules (all documented in the output):
-  - hosted list-price cost: measured mean tokens/doc x published per-MTok prices
-  - local deployment cost: reference GPU $/hr x measured p50 seconds/doc,
-    serial single-stream (no batching) - conservative in both directions
-  - "as run": what we actually paid ($0 for the free tier; own hardware for local)
+Cost rules:
+  - hosted:  measured mean tokens/doc x published $/MTok of the priced model
+  - self-hosted: always-on reference machines needed to serve 500K docs/month at the
+    measured p50 seconds/doc, serial single stream (no batching; measured on a slower
+    RTX 3050 Laptop) -> monthly = machines x $/h x 730 h
+Winner rule (brief, Step 4): cheapest system that runs inside the client's own cloud,
+with field micro-F1 >= baseline and total_amount accuracy >= baseline.
 """
 
 from __future__ import annotations
 
-import argparse
 import json
+import math
 from pathlib import Path
 
 CASE = Path(__file__).resolve().parent.parent
 RESULTS = CASE / "eval" / "results"
 PRICES = json.loads((CASE / "eval" / "prices.json").read_text(encoding="utf-8"))
+DOCS_PER_MONTH = PRICES["frontier_assumption"]["docs_per_month"]
+HOURS_PER_MONTH = 730
+FIELDS = ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service",
+          "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code",
+          "vehicle_vin", "claim_type", "payout_iban", "notes"]
 
-MONTHLY_DOCS = PRICES["frontier_assumption"]["docs_per_month"]
-
-
-def load_summaries() -> list[dict]:
-    rows = []
-    for f in sorted(RESULTS.glob("summary_*.json")):
-        s = json.loads(f.read_text(encoding="utf-8"))
-        s["_file"] = f.name
-        rows.append(s)
-    return rows
-
-
-def hosted_cost_per_1k(s: dict, price_in: float, price_out: float) -> float:
-    tin = s.get("tokens_in_mean") or 0.0
-    tout = s.get("tokens_out_mean") or 0.0
-    return (tin * price_in + tout * price_out) / 1e6 * 1000.0
-
-
-def local_deploy_cost_per_1k(s: dict) -> float:
-    gpu = PRICES["local_gpu"]["usd_per_hour"]
-    p50 = s.get("latency_p50") or 0.0
-    return gpu * (p50 * 1000.0 / 3600.0)
+# ponytail: the lineup is fixed by the brief, so it lives here, not in a config file.
+SYSTEMS = [
+    {"name": "Baseline proxy: beam-free", "after": "opencode__beam-free_final",
+     "price": "frontier", "where": "third-party API", "own_cloud": False, "baseline": True},
+    {"name": "Candidate A: DeepSeek V4.1 Flash", "after": "opencode__deepseek-v4.1-flash-free_final",
+     "price": "DeepSeek V4.1 Flash", "where": "third-party API", "own_cloud": False},
+    {"name": "Candidate A2: Nemotron 3.5 Super", "after": "opencode__nemotron-3.5-super-vl-free_final",
+     "price": None, "where": "third-party API", "own_cloud": False},
+    {"name": "Candidate B: Qwen3-4B QLoRA + constrained JSON",
+     "before": "local__Qwen3-4B-Instruct-2507-bnb-4bit_before-ft",
+     "after": "local__Qwen3-4B-Instruct-2507-bnb-4bit__qwen3-4b-lora_after-ft",
+     "price": "local_gpu", "where": "self-hosted GPU (own cloud)", "own_cloud": True},
+    {"name": "Candidate C: Needle 3 LoRA (.cact)", "before": "needle3-base_before", "after": "needle3-ft_after",
+     "price": "local_cpu", "where": "self-hosted CPU / on-device", "own_cloud": True},
+]
 
 
-def as_run_cost(s: dict):
-    t = s.get("transport")
-    if t == "hosted_free":
-        return 0.0
-    if t == "local_transformers":
-        return local_deploy_cost_per_1k(s)
-    return None  # local_needle: CPU-only, no GPU/NPU needed - see notes
+def load(run):
+    p = RESULTS / f"summary_{run}.json" if run else None
+    return json.loads(p.read_text(encoding="utf-8")) if p and p.exists() else None
 
 
-def where_it_runs(t: str) -> str:
-    if t == "hosted_free":
-        return "vendor API (free tier in this study)"
-    if t == "local_transformers":
-        return "own GPU, 4-bit + grammar"
-    if t == "local_needle":
-        return "own CPU/edge, 29 MB binary (no GPU)"
-    return t or "?"
+def frontier_model():
+    name = PRICES["client_current_model"]
+    return next(m for m in PRICES["per_mtok_usd"]["frontier_baselines"] if m["name"] == name)
 
 
-def role_of(run: str) -> str:
-    for key in sorted(PRICES.get("run_roles", {}), key=len, reverse=True):
-        if key in run:
-            return PRICES["run_roles"][key]
-    return ""
+def hosted_per_doc(s, pin, pout, tokens_in=None):
+    return ((tokens_in or s["tokens_in_mean"]) * pin + s["tokens_out_mean"] * pout) / 1e6
 
 
-def fmt(v, nd=4):
-    if v is None:
-        return "-"
-    if isinstance(v, float):
-        return f"{v:.{nd}f}".rstrip("0").rstrip(".")
-    return str(v)
+def cost(sd, s):
+    """-> (usd_per_1k, monthly_usd, basis)"""
+    p = sd["price"]
+    if p is None:
+        return None, None, "no published list price for this model"
+    if s is None:
+        return None, None, "not run"
+    if p == "frontier":
+        m = frontier_model()
+        d = hosted_per_doc(s, m["input"], m["output"])
+        return d * 1000, d * DOCS_PER_MONTH, f"priced as {m['name']} list price x measured tokens"
+    if p in PRICES:  # self-hosted reference machine
+        ref = PRICES[p]
+        units = max(1, math.ceil(DOCS_PER_MONTH * s["latency_p50"] / (HOURS_PER_MONTH * 3600)))
+        monthly = units * ref["usd_per_hour"] * HOURS_PER_MONTH
+        return monthly / DOCS_PER_MONTH * 1000, monthly, (
+            f"{units} x {ref['name']} (${ref['usd_per_hour']}/h) always-on at measured p50 {s['latency_p50']:.2f}s/doc")
+    m = next(x for x in PRICES["per_mtok_usd"]["cheap_hosted"] if x["name"] == p)
+    d = hosted_per_doc(s, m["input_peak"], m["output_peak"])
+    return d * 1000, d * DOCS_PER_MONTH, f"{m['name']} peak list price x measured tokens"
+
+
+def f(v, nd=3):
+    return "-" if v is None else f"{v:.{nd}f}"
+
+
+def pct(v):
+    return "-" if v is None else f"{v * 100:.1f}%"
+
+
+def money(v):
+    return "-" if v is None else f"{v:,.0f}"
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--baseline-slug", default=None,
-                    help="substring of the run to use for the frontier bill scenario (default: first hosted run)")
-    args = ap.parse_args()
-
-    summaries = load_summaries()
-    if not summaries:
-        raise SystemExit("no summary_*.json found - run eval/extract.py first")
-
-    # pick the token profile for the frontier-bill scenario: prefer the baseline proxy run
-    base = None
-    if args.baseline_slug:
-        base = next((s for s in summaries if args.baseline_slug in s["_file"]), None)
-    if base is None:
-        base = next((s for s in summaries if s.get("transport") == "hosted_free"), summaries[0])
-
     rows = []
-    for s in summaries:
-        run = s["_file"].replace("summary_", "").replace(".json", "")
-        row = {
-            "run": run,
-            "role": role_of(run),
-            "model": s.get("model"),
-            "tag": s.get("tag"),
-            "transport": s.get("transport"),
-            "docs": s.get("docs"),
-            "valid_json_schema_rate": s.get("valid_schema_rate"),
-            "doc_exact_rate": s.get("doc_exact_rate"),
-            "micro_f1": s.get("micro_f1"),
-            "macro_f1": s.get("macro_f1"),
-            "total_amount_accuracy": s.get("total_amount_accuracy"),
-            "null_discipline": s.get("null_discipline"),
-            "latency_p50": s.get("latency_p50"),
-            "latency_p95": s.get("latency_p95"),
-            "tokens_in_mean": s.get("tokens_in_mean"),
-            "tokens_out_mean": s.get("tokens_out_mean"),
-            "as_run_cost_per_1k": as_run_cost(s),
-        }
-        equiv = PRICES["run_cost_map"].get(s.get("model"))
-        if equiv and s.get("transport") == "hosted_free":
-            p1k = hosted_cost_per_1k(s, equiv["input"], equiv["output"])
-            row["list_equiv_per_1k"] = p1k
-            row["list_equiv_note"] = f"priced as {equiv['equivalence']} (${equiv['input']}/${equiv['output']} per MTok peak)"
-            row["monthly_500k_list"] = p1k * MONTHLY_DOCS / 1000.0
-        elif s.get("transport") in ("hosted_free", "local_transformers"):
-            row["list_equiv_per_1k"] = None
-        rows.append(row)
+    for sd in SYSTEMS:
+        b, a = load(sd.get("before")), load(sd["after"])
+        usd1k, monthly, basis = cost(sd, a)
+        rows.append({**sd, "b": b, "a": a, "usd1k": usd1k, "monthly": monthly, "basis": basis})
+    base = next(r for r in rows if r.get("baseline"))
+    fm, fr = frontier_model(), PRICES["frontier_accuracy_assumed"]
 
-    # frontier scenario: same measured token profile, frontier prices
-    tin, tout = base.get("tokens_in_mean"), base.get("tokens_out_mean")
-    doc_tokens = PRICES["frontier_assumption"]
-    frontier_rows = []
-    for m in PRICES["per_mtok_usd"]["frontier_baselines"]:
-        per_doc = ((tin or 0) * m["input"] + (tout or 0) * m["output"]) / 1e6
-        per_doc_brief = (1500 * m["input"] + (tout or 0) * m["output"]) / 1e6
-        frontier_rows.append({
-            "model": m["name"], "vendor": m["vendor"],
-            "usd_per_1k_docs_measured_tokens": round(per_doc * 1000, 4),
-            "monthly_500k_measured_tokens": round(per_doc * MONTHLY_DOCS, 2),
-            "monthly_500k_brief_1500tok": round(per_doc_brief * MONTHLY_DOCS, 2),
-        })
-    cheapest_local = min((r for r in rows if r.get("transport") == "local_transformers"),
-                         key=lambda r: r["micro_f1"] or 0, default=None)
+    out = ["# ClaimPilot extraction - results (400-document hand-verified test split)", "",
+           f"Prices: `eval/prices.json` (retrieved {PRICES['as_of']}). Volume: {DOCS_PER_MONTH:,} docs/month.", "",
+           "| Model | Field F1 (before -> after) | Doc exact | Valid JSON | Amount acc | p95 (s) | $/1K docs | Monthly $ | Runs where | Docs |",
+           "|---|---|---|---|---|---|---|---|---|---|"]
+    if base["a"]:  # status quo: accuracy assumed, cost at the brief's 1,500 input tokens
+        d = hosted_per_doc(base["a"], fm["input"], fm["output"], tokens_in=1500)
+        out.append(f"| Status quo: {fm['name']} | assumed* | - | - | - | - | {d * 1000:.2f} | "
+                   f"{money(d * DOCS_PER_MONTH)} | third-party API | not run |")
+    for r in rows:
+        a, b = r["a"], r["b"]
+        before = "n/a (no FT)" if "before" not in r else (f(b["micro_f1"]) if b else "-")
+        out.append(
+            f"| {r['name']} | {before} -> {f(a and a['micro_f1'])} | {pct(a and a['doc_exact_rate'])} | "
+            f"{pct(a and a['valid_schema_rate'])} | {pct(a and a['total_amount_accuracy'])} | "
+            f"{f(a and a['latency_p95'], 1)} | {f(r['usd1k'], 2)} | {money(r['monthly'])} | {r['where']} | "
+            f"{a['docs'] if a else 'not run'} |")
+    out += ["", f"\\* {fr['statement']} Source: {fr['source']} (retrieved {fr['retrieved']}). Not measured here "
+            f"($0 budget, no paid frontier access); the measured bar is the baseline proxy row. Status-quo cost = "
+            f"{fm['name']} list price (${fm['input']}/${fm['output']} per MTok) x the brief's 1,500 input tokens + "
+            f"the proxy's measured output tokens.", "", "Cost basis per row:"]
+    out += [f"- {r['name']}: {r['basis']}" for r in rows]
+    out.append("")
 
-    lines = []
-    lines.append("# ClaimPilot extraction - results table")
-    lines.append("")
-    lines.append(f"All numbers from real runs on {PRICES['as_of']}. Cost model: measured mean tokens/doc x "
-                 f"published list prices (see `eval/prices.json` for source URLs). 500,000 docs/month = "
-                 f"the client's volume assumption.")
-    lines.append("")
-    lines.append("| System | Role | Valid JSON+schema % | Doc exact % | Field micro-F1 | total_amount acc. | Null discipline | p95 latency (s) | $/1K docs (as run) | $/1K docs (list price) | Where it runs | Docs |")
-    lines.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
-    for r in sorted(rows, key=lambda r: -(r["micro_f1"] or 0)):
-        lines.append(
-            f"| {r['model']} [{r['tag']}] | {r['role']} | {fmt(r['valid_json_schema_rate'])} | {fmt(r['doc_exact_rate'])} | "
-            f"{fmt(r['micro_f1'])} | {fmt(r['total_amount_accuracy'])} | {fmt(r['null_discipline'])} | "
-            f"{fmt(r['latency_p95'], 1)} | {fmt(r['as_run_cost_per_1k'], 2) if r['as_run_cost_per_1k'] is not None else '-'} | "
-            f"{fmt(r['list_equiv_per_1k'], 4) if r.get('list_equiv_per_1k') is not None else '-'} | "
-            f"{where_it_runs(r['transport'])} | {r['docs']} |"
-        )
-    lines.append("")
-    lines.append("Notes:")
-    lines.append("- Hosted runs cost $0 as run (free tier models). List-price equivalents priced from the "
-                 "model's own vendor page where a public price exists.")
-    lines.append("- Local rows: deployment cost = reference GPU ("
-                 f"{PRICES['local_gpu']['name']}, ${PRICES['local_gpu']['usd_per_hour']}/h) x measured p50 latency, "
-                 "serial single-stream, no batching; our measured latencies come from an RTX 3050 Laptop 6GB "
-                 "which is slower than the reference GPU. Batching would improve this further (not measured).")
-    lines.append("")
-    lines.append(f"## The client's current bill at {MONTHLY_DOCS:,} docs/month (frontier list prices)")
-    lines.append("")
-    lines.append(f"Token profile measured on our baseline proxy run ({base.get('model')}, tag {base.get('tag')}): "
-                 f"~{fmt(tin, 0)} input tokens and ~{fmt(tout, 0)} output tokens per doc.")
-    lines.append("")
-    lines.append("| Frontier model | $/1K docs (measured tokens) | $/month (measured tokens) | $/month (brief's 1,500-token assumption) |")
-    lines.append("|---|---|---|---|")
-    for fr in frontier_rows:
-        lines.append(f"| {fr['model']} ({fr['vendor']}) | {fr['usd_per_1k_docs_measured_tokens']} | "
-                     f"${fr['monthly_500k_measured_tokens']:,.0f} | ${fr['monthly_500k_brief_1500tok']:,.0f} |")
-    lines.append("")
-    lines.append("## Cheapest hosted candidate (real list price)")
-    for m in PRICES["per_mtok_usd"]["cheap_hosted"]:
-        lines.append(f"- {m['name']} ({m['vendor']}): ${m['input_off_peak']}-${m['input_peak']} per MTok input, "
-                     f"${m['output_off_peak']}-${m['output_peak']} per MTok output ({m['note']}).")
-    lines.append("")
+    shown = [r for r in rows if r["a"]]
+    out += ["## Per-field F1 (final version of each system)", "",
+            "| Field | " + " | ".join(r["name"].split(":")[0] for r in shown) + " |",
+            "|---|" + "---|" * len(shown)]
+    for fld in FIELDS:
+        out.append(f"| {fld} | " + " | ".join(f(r["a"]["per_field"].get(fld, {}).get("f1")) for r in shown) + " |")
+    out.append("| null discipline | " + " | ".join(f(r["a"]["null_discipline"]) for r in shown) + " |")
+    out.append("")
 
-    (RESULTS / "final_table.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    (RESULTS / "final_table.json").write_text(
-        json.dumps({"as_of": PRICES["as_of"], "runs": rows, "frontier_scenarios": frontier_rows},
-                   indent=2, default=str), encoding="utf-8")
-    print("\n".join(lines))
+    winner, bar = None, base["a"]
+    if bar:
+        ok = [r for r in rows if r["own_cloud"] and r["a"] and r["monthly"] is not None
+              and r["a"]["micro_f1"] >= bar["micro_f1"]
+              and r["a"]["total_amount_accuracy"] >= bar["total_amount_accuracy"]]
+        winner = min(ok, key=lambda r: r["monthly"], default=None)
+        out += ["## Winner (brief Step 4 rule)", "",
+                f"Bar = baseline proxy: micro-F1 {f(bar['micro_f1'], 4)}, total_amount acc {pct(bar['total_amount_accuracy'])}."]
+        for r in (r for r in rows if r["own_cloud"]):
+            a = r["a"]
+            out.append(f"- {r['name']}: " + ("not run" if not a else
+                       f"F1 {f(a['micro_f1'], 4)} ({'>=' if a['micro_f1'] >= bar['micro_f1'] else '<'} bar), "
+                       f"amount {pct(a['total_amount_accuracy'])} "
+                       f"({'>=' if a['total_amount_accuracy'] >= bar['total_amount_accuracy'] else '<'} bar)"))
+        out += ["", f"**Winner: {winner['name']}**" if winner else
+                "**No self-hosted system met the bar** - see the write-up for the closest option.", ""]
+
+    pick = winner or max((r for r in rows if r["own_cloud"] and r["a"]),
+                         key=lambda r: r["a"]["micro_f1"], default=None)
+    if pick:
+        fails = json.loads((RESULTS / f"failures_{pick['after']}.json").read_text(encoding="utf-8"))
+        seen, chosen = set(), []
+        for fl in fails:  # one case per distinct failing-field pattern first, then fill
+            key = tuple(sorted(d["field"] for d in fl["diffs"])) or ("error",)
+            if key not in seen:
+                seen.add(key)
+                chosen.append(fl)
+        chosen += [x for x in fails if x not in chosen]
+        out += [f"## Failure cases - {pick['name']} ({len(fails)} of {pick['a']['docs']} docs not exact)", ""]
+        for fl in chosen[:10]:
+            out.append(f"- `{fl['doc_id']}` ({fl['family']})" + (f" error: {fl['error']}" if fl.get("error") else ""))
+            for d in fl["diffs"]:
+                out.append(f"  - {d['field']}: truth `{json.dumps(d['truth'], ensure_ascii=False)[:120]}` "
+                           f"pred `{json.dumps(d['pred'], ensure_ascii=False)[:120]}`")
+        out.append("")
+
+    text = "\n".join(out) + "\n"
+    (RESULTS / "final_table.md").write_text(text, encoding="utf-8")
+    (RESULTS / "final_table.json").write_text(json.dumps(
+        {"as_of": PRICES["as_of"], "winner": winner and winner["name"],
+         "rows": [{k: v for k, v in r.items() if k not in ("a", "b")}
+                  | {"micro_f1_before": r["b"] and r["b"]["micro_f1"], "micro_f1_after": r["a"] and r["a"]["micro_f1"]}
+                  for r in rows]}, indent=2), encoding="utf-8")
+    print(text)
 
 
 if __name__ == "__main__":
