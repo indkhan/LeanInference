@@ -12,3 +12,9 @@ train/qwen/data/*.jsonl
 *.gguf
 *.pt
 *.pth
+unsloth_compiled_cache/
+train/qwen/out/
+train/needle/out/
+*.bin
+*.gguf
+*.pt
