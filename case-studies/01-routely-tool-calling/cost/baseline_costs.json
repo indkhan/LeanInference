@@ -15,12 +15,12 @@
       "cost_per_month_uncached": 116080.0,
       "cost_per_month_cached": 20608.0
     },
-    "gpt-6-luna": {
-      "label": "GPT-6 Luna (prompted small API model - candidate A)",
-      "cost_per_call_uncached": 0.00058,
-      "cost_per_1m_calls_uncached": 580.4,
-      "cost_per_month_uncached": 1160.8,
-      "cost_per_month_cached": 206.08
+    "deepseek-v4.1-flash": {
+      "label": "DeepSeek V4.1 Flash (prompted small hosted model - candidate A; measured on free OpenCode tier, priced at list off-peak)",
+      "cost_per_call_uncached": 0.000856,
+      "cost_per_1m_calls_uncached": 855.6,
+      "cost_per_month_uncached": 1711.2,
+      "cost_per_month_cached": null
     }
   },
   "note": "assumed list prices x token counts; no paid API runs"

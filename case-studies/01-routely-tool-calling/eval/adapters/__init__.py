@@ -25,7 +25,16 @@ def get_adapter(name: str):
     if name == "vllm":
         from .vllm import VLLMAdapter
         return VLLMAdapter
+    if name == "opencode":
+        from .opencode import OpenCodeAdapter
+        return OpenCodeAdapter
     if name == "needle":
         from .needle import NeedleAdapter
         return NeedleAdapter
-    raise SystemExit(f"unknown adapter {name!r} (choose: mock, openai, vllm, needle)")
+    if name == "opencode":
+        from .opencode import OpenCodeAdapter
+        return OpenCodeAdapter
+    if name == "hf":
+        from .hf import HFAdapter
+        return HFAdapter
+    raise SystemExit(f"unknown adapter {name!r} (choose: mock, openai, opencode, vllm, needle)")

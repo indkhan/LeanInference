@@ -93,7 +93,7 @@ def load_jsonl(path: Path):
 
 def main(argv):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--adapter", required=True, choices=["mock", "openai", "vllm", "needle"])
+    ap.add_argument("--adapter", required=True, choices=["mock", "openai", "opencode", "vllm", "needle"])
     ap.add_argument("--model", required=True)
     ap.add_argument("--split", default=str(DEFAULT_SPLIT))
     ap.add_argument("--out", default=None, help="results JSONL (default eval/results/<slug>.jsonl)")
@@ -104,6 +104,7 @@ def main(argv):
     ap.add_argument("--extra-body", default=None, help="JSON merged into the request body")
     ap.add_argument("--no-thinking", action="store_true", help="vllm: enable_thinking=false")
     ap.add_argument("--needle-cmd", default=None)
+    ap.add_argument("--adapter-path", default=None, help="hf: LoRA adapter dir")
     ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--max-tokens", type=int, default=1024)
     ap.add_argument("--prompt-file", default=None, help="override the built-in system prompt")
@@ -132,7 +133,10 @@ def main(argv):
 
     done_ids = set()
     if out_path.exists():
-        done_ids = {r["id"] for r in load_jsonl(out_path)}
+        kept = [r for r in load_jsonl(out_path) if not r.get("error")]  # retry adapter errors
+        out_path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in kept),
+                            encoding="utf-8")
+        done_ids = {r["id"] for r in kept}
         if done_ids:
             print(f"resuming: {len(done_ids)} ids already in {out_path.name}")
 
@@ -141,7 +145,7 @@ def main(argv):
     adapter = adapter_cls(
         model=args.model, seed=args.seed, base_url=args.base_url,
         api_key_env=args.api_key_env, extra_body=extra_body,
-        no_thinking=args.no_thinking, needle_cmd=args.needle_cmd,
+        no_thinking=args.no_thinking, needle_cmd=args.needle_cmd, adapter_path=args.adapter_path,
         temperature=args.temperature, max_tokens=args.max_tokens)
 
     todo = [r for r in records if r["id"] not in done_ids]

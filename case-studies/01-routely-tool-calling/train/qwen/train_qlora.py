@@ -97,6 +97,11 @@ def main(argv):
             target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
                             "gate_proj", "up_proj", "down_proj"],
             use_gradient_checkpointing="unsloth", random_state=args.seed)
+        # Qwen3.5 checkpoints load as a multimodal Processor (Qwen3VLProcessor). The text-only
+        # task never has images, and SFTTrainer's multimodal path raised
+        # "Unsupported image file" (run 20261017-164132). Train with the inner text tokenizer.
+        tokenizer = getattr(tokenizer, "tokenizer", tokenizer)
+        print(f"text-only tokenizer: {type(tokenizer).__name__}")
         tokenizer.padding_side = "right"
 
         def render(example):
@@ -146,8 +151,13 @@ def main(argv):
         import inspect
         t_sig = inspect.signature(SFTTrainer.__init__).parameters
         ctor = {"model": model, "train_dataset": ds_train, "eval_dataset": ds_val, "args": cfg}
-        ctor["processing_class" if "processing_class" in t_sig else "tokenizer"] = tokenizer
+        # text-only tokenizer: passing a multimodal Processor made TRL try to decode images (run 1)
+        ctor["processing_class" if "processing_class" in t_sig else "tokenizer"] = tok_raw
         trainer = SFTTrainer(**ctor)
+        # loss on the assistant JSON only - the 5k-token system prompt is identical every row
+        from unsloth.chat_templates import train_on_responses_only
+        trainer = train_on_responses_only(trainer, instruction_part="<|im_start|>user\n",
+                                          response_part="<|im_start|>assistant\n")
         print(f"[{run_id}] training ... (this is the long part)")
         stats = trainer.train()
         minutes = round((time.time() - t0) / 60, 1)

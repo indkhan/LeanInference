@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-17",
-  "note": "List prices verified against llm-stats.com model pages (gpt-6-astra, gpt-6-luna) on 2026-10-17 during benchmark research. Re-verify on provider pricing pages before publishing. No paid API runs were made; this file drives the assumed-cost math only.",
+  "note": "List prices from vendor pages retrieved 2026-10-17 (GPT-6 Astra: llm-stats.com model page; DeepSeek: api-docs.deepseek.com). Re-verify before publishing. No paid API runs were made; this file drives the assumed-cost math only.",
   "models": {
     "gpt-6-astra": {
       "label": "GPT-6 Astra (frontier baseline - the bill being replaced)",
@@ -9,12 +9,14 @@
       "output_per_million": 50.0,
       "accuracy_source": "assumed from published benchmarks - see writeup/RESULTS.md (source + date stamped there)"
     },
-    "gpt-6-luna": {
-      "label": "GPT-6 Luna (prompted small API model - candidate A)",
-      "input_per_million": 0.1,
-      "cached_input_per_million": 0.01,
-      "output_per_million": 0.5,
-      "accuracy_source": "assumed from published benchmarks or left not-run under the $0 rule"
+    "deepseek-v4.1-flash": {
+      "label": "DeepSeek V4.1 Flash (prompted small hosted model - candidate A; measured on free OpenCode tier, priced at list off-peak)",
+      "input_per_million": 0.15,
+      "cached_input_per_million": null,
+      "output_per_million": 0.6,
+      "peak_input_per_million": 0.3,
+      "peak_output_per_million": 1.2,
+      "accuracy_source": "measured on eval/results (free OpenCode tier, $0). List price from DeepSeek pricing page per case-2 prices file, retrieved 2026-10-17 (https://api-docs.deepseek.com/quick_start/pricing)"
     }
   },
   "token_assumptions": {
