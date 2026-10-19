@@ -77,7 +77,7 @@ def build_dataset(tokenizer, docs, max_len: int) -> Dataset:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="unsloth/Qwen3-4B-Instruct-2507-bnb-4bit")
+    ap.add_argument("--model", default="Qwen/Qwen3.5-0.8B")
     ap.add_argument("--out", default=str(CASE / "train" / "artifacts" / "qwen3-4b-lora"))
     ap.add_argument("--epochs", type=float, default=2.0)
     ap.add_argument("--max-len", type=int, default=1536)
