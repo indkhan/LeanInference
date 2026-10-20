@@ -1,0 +1,4 @@
+torch 2.11.0+cu128 cuda=True gpu=NVIDIA GeForce RTX 3050 6GB Laptop GPU
+dataset: 24 rows, token lens p50=1625 p95=1748 max=1824
+loading base model (4-bit NF4)...
+trainable params: 33,030,144 || all params: 4,055,498,240 || trainable%: 0.8145

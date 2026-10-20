@@ -3,6 +3,7 @@
 # jaxlib on the Windows side; see logs/experiments.md E5).
 # Data and outputs stay in the Windows repo via /mnt/c.
 set -euo pipefail
+export XLA_PYTHON_CLIENT_PREALLOCATE=false XLA_PYTHON_CLIENT_ALLOCATOR=platform
 
 CASE=/mnt/c/Users/mgsuk/.t3/worktrees/LeanInference/t3-4e600564/case-studies/02-claimpilot
 VENV=/root/.venvs/claimpilot
@@ -22,7 +23,7 @@ echo "starting fine-tune ..."
 "$VENV/bin/needle" finetune train/needle_train.jsonl \
   --checkpoint train/needle_out/checkpoints/needle3.safetensors \
   --epochs 3 \
-  --batch-size 16 \
+  --batch-size 1 \
   --max-len 2304 \
   --val-split 0.1 \
   --seed 0 \
