@@ -79,7 +79,7 @@ def cosine_nn(train_vecs, train_labels, queries, k=1):
     return out
 
 
-def stage_before(texts, embed, log_prefix=""):
+def stage_before(texts, embed, embed_info):
     t0 = time.time()
     intent_labels = list(INTENT_DEFS)
     ivec = embed(list(INTENT_DEFS.values()))
@@ -98,7 +98,7 @@ def stage_before(texts, embed, log_prefix=""):
     return preds, {"mode": "zero-shot prototypes from label definitions", **embed_info}, embed_s
 
 
-def stage_after(train, val, texts, embed, log_prefix=""):
+def stage_after(train, val, texts, embed, embed_info):
     import numpy as np
     from sklearn.linear_model import LogisticRegression
     from sklearn.neighbors import KNeighborsClassifier
@@ -171,9 +171,9 @@ def main():
     for stage in stages:
         tag = f"b_{args.embedder}_{stage}"
         if stage == "before":
-            preds, meta, run_s = stage_before(texts, embed)
+            preds, meta, run_s = stage_before(texts, embed, embed_info)
         else:
-            preds, meta, run_s = stage_after(train, val, texts, embed)
+            preds, meta, run_s = stage_after(train, val, texts, embed, embed_info)
         res = dict(metrics(preds, golds))
         log_experiment(tag, intent=res["intent"], urgency=res["urgency"],
                         sentiment=res["sentiment"], latency=probe, config=meta,
