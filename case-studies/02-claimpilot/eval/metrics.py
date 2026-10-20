@@ -199,6 +199,11 @@ def items_pr(pred, truth):
     return tp, fp, fn
 
 
+def _mean(xs):
+    xs = [x for x in xs if x is not None]
+    return round(statistics.fmean(xs), 7) if xs else None
+
+
 def prf(tp, fp, fn):
     p = tp / (tp + fp) if (tp + fp) else (1.0 if fn == 0 else 0.0)
     r = tp / (tp + fn) if (tp + fn) else (1.0 if fp == 0 else 0.0)
@@ -210,12 +215,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", required=True)
     ap.add_argument("--split", default="test")
+    ap.add_argument("--ids-file", help="score only these doc ids (e.g. data/splits/test_subset50.txt); "
+                    "outputs get the file's stem as a suffix")
     args = ap.parse_args()
 
     run_file = Path(args.run)
     if not run_file.is_absolute():
         run_file = CASE / run_file
     records = [json.loads(l) for l in run_file.read_text(encoding="utf-8").splitlines() if l.strip()]
+    if args.ids_file:
+        keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
+        records = [r for r in records if r["doc_id"] in keep]
     targets = {json.loads(l)["id"]: json.loads(l) for l in
                (SPLITS / f"{args.split}.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()}
 
@@ -254,7 +264,7 @@ def main():
             p = pred.get(field) if isinstance(pred, dict) else None
             m = schema_ok and field_match(field, p, t)
             if field == "line_items":
-                itp, ifp, ifn = items_pr(p if isinstance(p, dict) else None, t)
+                itp, ifp, ifn = items_pr(p, t)
                 item_tp += itp
                 item_fp += ifp
                 item_fn += ifn
@@ -337,12 +347,17 @@ def main():
         "latency_p95": lats[min(len(lats) - 1, int(len(lats) * 0.95))] if lats else None,
         "tokens_in_mean": round(statistics.fmean(tin), 1) if tin else None,
         "tokens_out_mean": round(statistics.fmean(tout), 1) if tout else None,
+        # provider-measured (OpenRouter usage); None for runs without it
+        "usage_tokens_in_mean": _mean(r.get("usage", {}).get("tokens_in") for r in records),
+        "usage_tokens_out_mean": _mean(r.get("usage", {}).get("tokens_out") for r in records),
+        "cost_usd_mean": _mean(r.get("cost_usd") for r in records),
+        "cost_usd_total": round(sum(r.get("cost_usd") or 0 for r in records), 4),
         "per_field": per_field,
         "per_family": family_out,
         "errors": sum(1 for r in records if r.get("error")),
     }
 
-    slug = run_file.stem.replace("results_", "")
+    slug = run_file.stem.replace("results_", "") + (f"__{Path(args.ids_file).stem}" if args.ids_file else "")
     out = RESULTS / f"summary_{slug}.json"
     out.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     (RESULTS / f"failures_{slug}.json").write_text(json.dumps(failures, indent=2, ensure_ascii=False), encoding="utf-8")

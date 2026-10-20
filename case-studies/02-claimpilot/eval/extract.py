@@ -5,6 +5,10 @@ Transports:
   hosted_free   - `opencode run --agent extractor` against the free hosted
                   models on the local OpenCode provider (no API cost).
   local_llamacpp - grammar-constrained local inference (M3; implemented later).
+  openrouter    - OpenRouter chat completions, schema in the prompt only
+                  (the client's current setup). Needs OPENROUTER_API_KEY.
+  openrouter_schema - same, plus response_format json_schema (structured output).
+  openrouter_json - same, plus response_format json_object (JSON mode).
 
 Every model call is made at most once per (model, tag, document): results are
 cached under eval/cache/<slug>/<tag>/<doc_id>.json and reused on re-runs.
@@ -42,7 +46,7 @@ ENCODER = tiktoken.get_encoding("cl100k_base")
 
 
 def slugify(model: str) -> str:
-    return model.replace("/", "__").replace("#", "_")
+    return model.replace("/", "__").replace("#", "_").replace(":", "_")
 
 
 def find_opencode() -> list[str]:
@@ -137,11 +141,93 @@ def run_hosted(model: str, text: str, timeout: float) -> dict:
         return {"raw": raw, "parsed": None, "error": f"parse: {ex}", "latency_s": latency}
 
 
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+# data/schema.json without patterns/oneOf: the subset both lm-format-enforcer and
+# hosted structured-output APIs accept. Shared with eval/extract_local.py.
+LM_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service",
+                 "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code",
+                 "vehicle_vin", "claim_type", "payout_iban", "notes"],
+    "properties": {
+        "claim_id": {"type": "string"},
+        "policy_number": {"type": ["string", "null"]},
+        "claimant_name": {"type": ["string", "null"]},
+        "date_of_incident": {"type": ["string", "null"]},
+        "date_of_service": {"type": ["string", "null"]},
+        "provider_name": {"type": ["string", "null"]},
+        "line_items": {
+            "anyOf": [
+                {"type": "array", "items": {
+                    "type": "object", "additionalProperties": False,
+                    "required": ["description", "amount"],
+                    "properties": {"description": {"type": "string"}, "amount": {"type": "string"}}}},
+                {"type": "null"},
+            ]
+        },
+        "total_amount": {"type": ["string", "null"]},
+        "currency": {"anyOf": [{"type": "string", "enum": ["USD", "EUR", "GBP", "CHF"]}, {"type": "null"}]},
+        "diagnosis_or_damage_code": {"type": ["string", "null"]},
+        "vehicle_vin": {"type": ["string", "null"]},
+        "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
+        "payout_iban": {"type": ["string", "null"]},
+        "notes": {"type": ["string", "null"]},
+    },
+}
+
+
+def run_openrouter(model: str, text: str, timeout: float, mode: str = "prompt") -> dict:
+    """One chat completion. Usage (real token counts + billed $) comes back in the record."""
+    import os
+    import urllib.error
+    import urllib.request
+
+    body = {
+        "model": model, "temperature": 0, "max_tokens": 2048,
+        "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": text}],
+        "usage": {"include": True},
+    }
+    if mode == "json":
+        body["response_format"] = {"type": "json_object"}
+    elif mode == "schema":
+        body["response_format"] = {"type": "json_schema", "json_schema": {
+            "name": "claim", "strict": True, "schema": LM_SCHEMA}}
+    req = urllib.request.Request(OPENROUTER_URL, data=json.dumps(body).encode(), headers={
+        "Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}",
+        "Content-Type": "application/json"})
+    t0 = time.perf_counter()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            resp = json.loads(r.read())
+    except urllib.error.HTTPError as ex:
+        msg = ex.read().decode("utf-8", "replace")[:400]
+        kind = "rate limit" if ex.code == 429 else "provider error"
+        return {"raw": "", "parsed": None, "error": f"{kind}: HTTP {ex.code} {msg}",
+                "latency_s": time.perf_counter() - t0}
+    except Exception as ex:  # noqa: BLE001  (timeouts, resets)
+        return {"raw": "", "parsed": None, "error": f"transport: {ex}", "latency_s": time.perf_counter() - t0}
+    latency = time.perf_counter() - t0
+    if "error" in resp:
+        return {"raw": "", "parsed": None, "error": f"provider error: {json.dumps(resp['error'])[:400]}",
+                "latency_s": latency}
+    raw = resp["choices"][0]["message"].get("content") or ""
+    u = resp.get("usage") or {}
+    usage = {"tokens_in": u.get("prompt_tokens"), "tokens_out": u.get("completion_tokens"),
+             "cost_usd": u.get("cost"), "provider": resp.get("provider"), "served_model": resp.get("model")}
+    try:
+        return {"raw": raw, "parsed": extract_json_object(raw), "error": None, "latency_s": latency, "usage": usage}
+    except Exception as ex:  # noqa: BLE001
+        return {"raw": raw, "parsed": None, "error": f"parse: {ex}", "latency_s": latency, "usage": usage}
+
+
 def run_local(model: str, text: str, timeout: float) -> dict:  # noqa: ARG001
     raise NotImplementedError("local_llamacpp transport lands in M3")
 
 
-TRANSPORTS = {"hosted_free": run_hosted, "local_llamacpp": run_local}
+TRANSPORTS = {"hosted_free": run_hosted, "local_llamacpp": run_local, "openrouter": run_openrouter,
+              "openrouter_schema": lambda m, t, to: run_openrouter(m, t, to, mode="schema"),
+              "openrouter_json": lambda m, t, to: run_openrouter(m, t, to, mode="json")}
 
 
 def one_doc(doc: dict, model: str, tag: str, transport: str, timeout: float,
@@ -165,7 +251,8 @@ def one_doc(doc: dict, model: str, tag: str, transport: str, timeout: float,
         attempts.append(res)
         if res.get("parsed") is not None:
             break
-        if "rate limit" in (res.get("error") or "").lower() and attempt < retries:
+        err = (res.get("error") or "").lower()
+        if attempt < retries and ("rate limit" in err or "transport" in err or "http 5" in err):
             time.sleep(retry_sleep)
     total_latency = round(sum(a.get("latency_s", 0.0) for a in attempts), 3)
 
@@ -187,6 +274,10 @@ def one_doc(doc: dict, model: str, tag: str, transport: str, timeout: float,
         "ts": int(time.time()),
         "cached": False,
     }
+    if res.get("usage"):
+        # measured by the provider; preferred over the tiktoken estimates above
+        rec["usage"] = res["usage"]
+        rec["cost_usd"] = sum((a.get("usage") or {}).get("cost_usd") or 0 for a in attempts)
     cache_file.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
     return rec
 
@@ -198,6 +289,7 @@ def main():
     ap.add_argument("--split", default="test")
     ap.add_argument("--limit", type=int, default=0, help="0 = all documents")
     ap.add_argument("--offset", type=int, default=0)
+    ap.add_argument("--ids-file", help="run only these doc ids, one per line")
     ap.add_argument("--tag", default="before", help="run label, e.g. pilot / before / after")
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--timeout", type=float, default=300.0)
@@ -213,6 +305,9 @@ def main():
     args = ap.parse_args()
 
     docs = [json.loads(line) for line in (SPLITS / f"{args.split}.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    if args.ids_file:
+        keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
+        docs = [d for d in docs if d["id"] in keep]
     docs = docs[args.offset:]
     if args.limit:
         docs = docs[:args.limit]

@@ -1,0 +1,177 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "tag": "probe",
+  "transport": "openrouter_schema",
+  "run_file": "eval\\results\\results_anthropic__claude-haiku-5.5_probe.jsonl",
+  "split": "train",
+  "docs": 1,
+  "parsed_ok": 1,
+  "valid_schema_rate": 1.0,
+  "doc_exact_rate": 1.0,
+  "micro_precision": 1.0,
+  "micro_recall": 1.0,
+  "micro_f1": 1.0,
+  "macro_f1": 1.0,
+  "item_micro_precision": 1.0,
+  "item_micro_recall": 1.0,
+  "null_discipline": 1.0,
+  "total_amount_accuracy": 1.0,
+  "latency_p50": 5.125,
+  "latency_p95": 5.125,
+  "tokens_in_mean": 1345.0,
+  "tokens_out_mean": 128.0,
+  "usage_tokens_in_mean": 2953.0,
+  "usage_tokens_out_mean": 204.0,
+  "cost_usd_mean": 0.0003973,
+  "cost_usd_total": 0.0004,
+  "per_field": {
+    "claim_id": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "policy_number": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "claimant_name": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "date_of_incident": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "date_of_service": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1
+    },
+    "provider_name": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "total_amount": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "currency": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "diagnosis_or_damage_code": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1
+    },
+    "vehicle_vin": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1
+    },
+    "claim_type": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "payout_iban": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "notes": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1
+    },
+    "line_items": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    }
+  },
+  "per_family": {
+    "invoice_formal": {
+      "docs": 1,
+      "doc_exact_rate": 1.0,
+      "micro_f1": 1.0
+    }
+  },
+  "errors": 0
+}

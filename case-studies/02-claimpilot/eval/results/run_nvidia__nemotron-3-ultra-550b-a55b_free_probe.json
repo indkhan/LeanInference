@@ -1,0 +1,15 @@
+{
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "tag": "probe",
+  "transport": "openrouter",
+  "split": "train",
+  "docs": 1,
+  "ok": 1,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 27.2,
+  "latency_p50": 27.067,
+  "latency_p95": 27.067,
+  "errors": [],
+  "results_file": "eval\\results\\results_nvidia__nemotron-3-ultra-550b-a55b_free_probe.jsonl"
+}

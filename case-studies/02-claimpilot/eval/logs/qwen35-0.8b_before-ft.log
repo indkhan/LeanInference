@@ -1,0 +1,28 @@
+loading Qwen/Qwen3.5-0.8B (4-bit)... adapter=None
+W1020 22:10:44.806000 39180 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1020 22:10:46.548000 39180 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py:5118: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<07:50,  1.48s/it]Loading weights:   2%|1         | 6/320 [00:01<01:13,  4.30it/s]Loading weights:   4%|4         | 13/320 [00:01<00:29, 10.51it/s]Loading weights:   8%|8         | 26/320 [00:01<00:11, 24.81it/s]Loading weights:  12%|#1        | 37/320 [00:02<00:07, 36.64it/s]Loading weights:  14%|#4        | 46/320 [00:02<00:06, 44.82it/s]Loading weights:  20%|##        | 65/320 [00:02<00:03, 71.88it/s]Loading weights:  25%|##5       | 80/320 [00:02<00:02, 85.19it/s]Loading weights:  30%|##9       | 95/320 [00:02<00:02, 97.52it/s]Loading weights:  37%|###6      | 117/320 [00:02<00:01, 126.38it/s]Loading weights:  42%|####1     | 133/320 [00:02<00:01, 126.64it/s]Loading weights:  46%|####6     | 148/320 [00:02<00:01, 126.13it/s]Loading weights:  51%|#####     | 162/320 [00:03<00:01, 114.62it/s]Loading weights:  55%|#####4    | 175/320 [00:03<00:01, 108.89it/s]Loading weights:  58%|#####8    | 187/320 [00:03<00:01, 110.98it/s]Loading weights:  64%|######3   | 204/320 [00:03<00:00, 123.90it/s]Loading weights:  70%|#######   | 224/320 [00:03<00:00, 139.49it/s]Loading weights:  75%|#######4  | 239/320 [00:03<00:00, 132.74it/s]Loading weights:  79%|#######9  | 254/320 [00:03<00:00, 133.28it/s]Loading weights:  84%|########4 | 269/320 [00:03<00:00, 137.64it/s]Loading weights:  88%|########8 | 283/320 [00:03<00:00, 133.52it/s]Loading weights:  93%|#########2| 297/320 [00:04<00:00, 132.41it/s]Loading weights:  97%|#########7| 311/320 [00:04<00:00, 118.33it/s]Loading weights: 100%|##########| 320/320 [00:04<00:00, 75.08it/s] 
+constrained decoding: lm-format-enforcer ON
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[1/400] test-00000 ok   25.2s in=1335 out=256
+[2/400] test-00001 ok   33.7s in=1526 out=343
+[3/400] test-00002 ok   28.9s in=1363 out=294
+[4/400] test-00003 ERR  59.8s in=1514 out=600  parse: unbalanced JSON in reply
+[5/400] test-00004 ok   48.8s in=1419 out=432
+[6/400] test-00005 ok   28.1s in=1342 out=264
+[7/400] test-00006 ok   32.6s in=1501 out=371
+[8/400] test-00007 ok   19.8s in=1485 out=261
+[9/400] test-00008 ok   42.2s in=1531 out=484
+[10/400] test-00009 ok   39.0s in=1111 out=416
+[11/400] test-00010 ok   64.6s in=1593 out=441
+[12/400] test-00011 ok   49.1s in=1563 out=378
+[13/400] test-00012 ok   37.8s in=1365 out=312
+[14/400] test-00013 ok   22.3s in=1408 out=297
+[15/400] test-00014 ok   32.7s in=1519 out=279
+[16/400] test-00015 ok   62.6s in=1539 out=437
+[17/400] test-00016 ok   60.6s in=1550 out=346

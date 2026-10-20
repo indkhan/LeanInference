@@ -128,3 +128,30 @@ consistent with the pilot; the full split decides the headline numbers.
   before-FT eval, then the full QLoRA run.
 
 
+
+## E7 — Resume on 2026-10-20: Qwen3.5-0.8B adapter check, harness fixes, hosted transport
+
+- **The 9.07 eval_loss was a metric bug, not overfitting.** The trainer's eval used the default
+  `per_device_eval_batch_size=8` (13 eval steps for 100 docs) with right padding, while `TailLossTrainer`
+  assumes one unpadded row: it took row 0's answer length and scored the *last k positions of the padded
+  batch* - pad tokens. Recomputed properly (`train/val_loss.py`, one row at a time, answer tokens only,
+  19,214 tokens): **val loss 0.00149 after epoch 1 (checkpoint-94), 0.00136 after epoch 2** (final adapter).
+  Generation on val-00000..09 (no grammar): **10/10 valid, 10/10 doc-exact, micro-F1 1.000**, p50 18.6 s,
+  peak VRAM 1.13 GB. Fix: `per_device_eval_batch_size=1` in `train/train_qlora.py`. The adapter is reused
+  as-is; nothing retrained.
+- **Constrained-decoding schema was broken.** `LM_SCHEMA.currency` was `{"type": ["string","null"], "enum":
+  [..., None]}`; lm-format-enforcer raises `Unsupported enum type` once generation reaches that field, so the
+  first test run produced truncated JSON. Rewritten as `anyOf [{enum}, {null}]` (same contract). The schema
+  now lives in `eval/extract.py` and is shared by the local runner and hosted structured-output calls
+  (Anthropic's structured output also rejected the old form). First run discarded and re-launched.
+- **metrics.py bug:** item-level line_items P/R was always 0 (`items_pr` was handed `None` unless the
+  prediction was a dict; line_items is a list). Fixed; field-level line_items scoring was unaffected.
+- **Hosted transport:** OpenRouter adapters added (`openrouter`, `openrouter_schema`, `openrouter_json`,
+  real usage tokens + billed $ recorded per call). The account had $0 credits and a 50 req/day free cap, so
+  only 3 probe calls were made (Claude Haiku 5.5 $0.0004; Opus 5.5 refused HTTP 402; nemotron-3-ultra:free
+  OK). OpenCode's free tier came back the same day, so hosted runs went back to OpenCode; OpenRouter stays as
+  a fallback. Model slugs with `:` are now filesystem-safe on Windows.
+- **Smart App Control is off now** (`SmartAppControlState=Off`); `import jax` works on Windows (CPU only, no
+  CUDA jaxlib for Windows), so Needle training stays in WSL for the GPU.
+- Candidate A resume: `opencode/deepseek-v4.1-flash-free` had 274/400 successes cached; the remaining
+  126 are re-run (cached failures are retried).

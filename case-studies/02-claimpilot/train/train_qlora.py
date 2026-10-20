@@ -153,6 +153,9 @@ def main():
     targs = TrainingArguments(
         output_dir=str(out_dir / "checkpoints"),
         per_device_train_batch_size=1,
+        # TailLossTrainer assumes one unpadded row; the default eval batch (8, right-padded)
+        # scored pad tokens and reported eval_loss ~9 on a model that is exact on val.
+        per_device_eval_batch_size=1,
         gradient_accumulation_steps=args.grad_accum,
         num_train_epochs=args.epochs,
         max_steps=args.max_steps,

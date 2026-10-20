@@ -32,7 +32,7 @@ CACHE = CASE / "eval" / "cache"
 SYSTEM_PROMPT = (CASE / "data" / "extract_system.md").read_text(encoding="utf-8")
 
 sys.path.insert(0, str(CASE / "eval"))
-from extract import extract_json_object, slugify, ENCODER  # noqa: E402
+from extract import extract_json_object, slugify, ENCODER, LM_SCHEMA  # noqa: E402
 
 
 def load_dtype_kwarg():
@@ -44,37 +44,6 @@ def load_dtype_kwarg():
         return {"dtype": torch.float16}
 
 
-LM_SCHEMA = {
-    "type": "object",
-    "additionalProperties": False,
-    "required": ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service",
-                 "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code",
-                 "vehicle_vin", "claim_type", "payout_iban", "notes"],
-    "properties": {
-        "claim_id": {"type": "string"},
-        "policy_number": {"type": ["string", "null"]},
-        "claimant_name": {"type": ["string", "null"]},
-        "date_of_incident": {"type": ["string", "null"]},
-        "date_of_service": {"type": ["string", "null"]},
-        "provider_name": {"type": ["string", "null"]},
-        "line_items": {
-            "anyOf": [
-                {"type": "array", "items": {
-                    "type": "object", "additionalProperties": False,
-                    "required": ["description", "amount"],
-                    "properties": {"description": {"type": "string"}, "amount": {"type": "string"}}}},
-                {"type": "null"},
-            ]
-        },
-        "total_amount": {"type": ["string", "null"]},
-        "currency": {"type": ["string", "null"], "enum": ["USD", "EUR", "GBP", "CHF", None]},
-        "diagnosis_or_damage_code": {"type": ["string", "null"]},
-        "vehicle_vin": {"type": ["string", "null"]},
-        "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
-        "payout_iban": {"type": ["string", "null"]},
-        "notes": {"type": ["string", "null"]},
-    },
-}
 
 
 def build_grammar_prefix_fn(tokenizer, schema):
@@ -140,6 +109,7 @@ def main():
     ap.add_argument("--split", default="test")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--offset", type=int, default=0)
+    ap.add_argument("--ids-file", help="run only these doc ids, one per line")
     ap.add_argument("--tag", required=True)
     ap.add_argument("--max-new", type=int, default=448)
     ap.add_argument("--no-grammar", action="store_true")
@@ -164,6 +134,9 @@ def main():
             print(f"WARNING lm-format-enforcer unavailable ({ex}); running unconstrained", flush=True)
 
     docs = [json.loads(l) for l in (SPLITS / f"{args.split}.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    if args.ids_file:
+        keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
+        docs = [d for d in docs if d["id"] in keep]
     docs = docs[args.offset:]
     if args.limit:
         docs = docs[: args.limit]

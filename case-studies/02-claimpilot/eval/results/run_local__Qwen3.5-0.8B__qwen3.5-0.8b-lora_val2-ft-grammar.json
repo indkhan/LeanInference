@@ -1,0 +1,16 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "val2-ft-grammar",
+  "transport": "local_transformers",
+  "split": "val",
+  "docs": 2,
+  "ok": 2,
+  "ok_rate": 1.0,
+  "wall_s": 56.6,
+  "latency_p50": 31.771,
+  "latency_p95": 31.771,
+  "errors": [],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_val2-ft-grammar.jsonl",
+  "grammar": true,
+  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
+}

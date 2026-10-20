@@ -1,0 +1,2 @@
+{"adapter": "train/artifacts/qwen3.5-0.8b-lora/checkpoints/checkpoint-94", "val_docs": 100, "answer_tokens": 19214, "val_loss": 0.00149, "ppl": 1.0015}
+{"adapter": "train/artifacts/qwen3.5-0.8b-lora", "val_docs": 100, "answer_tokens": 19214, "val_loss": 0.00136, "ppl": 1.0014}
