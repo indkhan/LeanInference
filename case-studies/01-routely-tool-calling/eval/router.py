@@ -86,3 +86,47 @@ def main():
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     main()
+
+
+class LearnedRouter:
+    """Char+word TF-IDF + logistic regression fitted on the TRAIN split's gold tool names.
+    BM25 over schema text tops out at 77% recall@10 (multilingual/slang requests share few
+    words with the schemas); this reaches ~99% recall@5 on val. k is chosen on val."""
+
+    def __init__(self):
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.linear_model import LogisticRegression
+        from sklearn.pipeline import make_pipeline, make_union
+        X, y = [], []
+        for line in (ROOT / "data" / "splits" / "train.jsonl").read_text(encoding="utf-8").splitlines():
+            r = json.loads(line)
+            for c in r["gold"].get("calls", []) if r["gold"]["type"] == "call" else []:
+                X.append(r["request"])
+                y.append(c["name"])
+        self.model = make_pipeline(
+            make_union(TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 5), sublinear_tf=True),
+                       TfidfVectorizer(sublinear_tf=True)),
+            LogisticRegression(C=20, max_iter=3000)).fit(X, y)
+        self.by_name = {t["function"]["name"]: t for t in TOOLS}
+
+    def top_k(self, query: str, k: int) -> list[str]:
+        p = self.model.predict_proba([query])[0]
+        return [self.model.classes_[i] for i in p.argsort()[::-1][:k]]
+
+    def tools_doc(self, query: str, k: int, must: tuple[str, ...] = ()) -> str:
+        """Compact JSON of the top-k schemas; `must` (train only) swaps in gold tools the router missed."""
+        names = self.top_k(query, k)
+        for m in must:
+            if m not in names:
+                names[-1] = m
+        return json.dumps([self.by_name[n] for n in names], ensure_ascii=False, separators=(",", ":"))
+
+
+_learned = None
+
+
+def learned_router() -> LearnedRouter:
+    global _learned
+    if _learned is None:
+        _learned = LearnedRouter()
+    return _learned

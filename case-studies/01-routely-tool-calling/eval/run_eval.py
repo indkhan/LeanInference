@@ -93,7 +93,7 @@ def load_jsonl(path: Path):
 
 def main(argv):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--adapter", required=True, choices=["mock", "openai", "opencode", "vllm", "needle"])
+    ap.add_argument("--adapter", required=True, choices=["mock", "openai", "opencode", "vllm", "needle", "hf"])
     ap.add_argument("--model", required=True)
     ap.add_argument("--split", default=str(DEFAULT_SPLIT))
     ap.add_argument("--out", default=None, help="results JSONL (default eval/results/<slug>.jsonl)")
@@ -108,6 +108,8 @@ def main(argv):
     ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--max-tokens", type=int, default=1024)
     ap.add_argument("--prompt-file", default=None, help="override the built-in system prompt")
+    ap.add_argument("--route-k", type=int, default=0,
+                    help="prompt carries only the top-k tools from the learned router (eval/router.py)")
     args = ap.parse_args(argv)
 
     split_path = Path(args.split)
@@ -157,6 +159,10 @@ def main(argv):
     with open(out_path, "a", encoding="utf-8", newline="\n") as fh:
         for i, rec in enumerate(todo, start=1):
             t0 = time.perf_counter()
+            if args.route_k:
+                from router import learned_router
+                tools_doc = learned_router().tools_doc(rec["request"], args.route_k)
+                system = SYSTEM_PROMPT.replace("<<TOOLS>>", tools_doc)
             result = adapter.predict(rec, system, tools_doc)
             elapsed_ms = int((time.perf_counter() - t0) * 1000)
             raw = result.get("text", "")

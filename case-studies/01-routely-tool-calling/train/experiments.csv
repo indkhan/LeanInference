@@ -2,3 +2,7 @@ run_id,date,stage,base_model,epochs,seq_len,lr,lora_r,batch,grad_accum,status,mi
 20261017-164132-qwen3.5-0.8b,2026-10-17 16:41,qlora,Qwen/Qwen3.5-0.8B,2.0,6144,0.0002,16,1,8,FAILED,3.4,"RuntimeError: Unsupported image file. Only jpeg, png, webp and gif are currently supported. For avif and heic format, please rely on `decode_avif` and `decode_heic` directly."
 20261017-164554-qwen3.5-0.8b,2026-10-17 16:45,qlora,Qwen/Qwen3.5-0.8B,2.0,6144,0.0002,16,1,8,FAILED,11.8,ImportError: DLL load failed while importing cuda_utils: An Application Control policy has blocked this file.
 20261019-180652-needle3-router-bm25,2026-10-19 18:06,router,none (stdlib BM25 over tool name+description+params),0,0,0,0,1,1,DONE,0.1,"top-k tool router for Needle (prompt budget). test recall k=3 61.05%, k=5 66.98%, k=8 73.63%, k=10 76.96%; val k=8 77.38%, k=10 79.17%. Recall caps Needle accuracy."
+20261019-180139-qwen3.5-0.8b,2026-10-19 18:01,qlora,Qwen/Qwen3.5-0.8B,2.0,5120,0.0002,16,1,8,FAILED,37.4,RuntimeError: Unsloth: No or negligible GPU memory available for fused cross entropy.
+20261019-212008-qwen3.5-0.8b-peft,2026-10-19 21:20,qlora-peft,Qwen/Qwen3.5-0.8B,1.0,full,0.0002,16,1,16,FAILED,17.4,"AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors m"
