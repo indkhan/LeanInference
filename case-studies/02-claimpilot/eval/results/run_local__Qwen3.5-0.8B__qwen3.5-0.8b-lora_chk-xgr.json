@@ -1,0 +1,16 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "chk-xgr",
+  "transport": "local_transformers",
+  "split": "test",
+  "docs": 8,
+  "ok": 8,
+  "ok_rate": 1.0,
+  "wall_s": 0.0,
+  "latency_p50": 3.903,
+  "latency_p95": 3.903,
+  "errors": [],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_chk-xgr.jsonl",
+  "grammar": "xgrammar",
+  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
+}

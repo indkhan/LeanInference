@@ -1,0 +1,176 @@
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\needle_extract.py:115: UserWarning: these weights carry no confidence head trained for them, so this agent reports confidence as None; platform fine-tunes keep the head
+  agent = Needle(tools=tools, system=system, weights=args.weights, stateless=True,
+{
+  "model": "needle3-ft-fullkv",
+  "tag": "val",
+  "transport": "local_needle",
+  "run_file": "eval\\results\\results_needle3-ft-fullkv_val.jsonl",
+  "split": "val",
+  "docs": 100,
+  "parsed_ok": 88,
+  "valid_schema_rate": 0.88,
+  "doc_exact_rate": 0.19,
+  "micro_precision": 0.8727,
+  "micro_recall": 0.7666,
+  "micro_f1": 0.8162,
+  "macro_f1": 0.815,
+  "item_micro_precision": 0.8083,
+  "item_micro_recall": 0.6736,
+  "null_discipline": 0.9669,
+  "total_amount_accuracy": 0.75,
+  "latency_p50": 5.001,
+  "latency_p95": 9.611,
+  "tokens_in_mean": 586.4,
+  "tokens_out_mean": 295.1,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "errors": 12
+}
+
+per-field F1:
+  claim_id                   f1=0.936  acc=0.880  tp=88 fp=0 fn=12 tn=0
+  policy_number              f1=0.916  acc=0.870  tp=71 fp=0 fn=13 tn=16
+  claimant_name              f1=0.772  acc=0.655  tp=66 fp=14 fn=25 tn=8
+  date_of_incident           f1=0.772  acc=0.649  tp=66 fp=16 fn=23 tn=6
+  date_of_service            f1=0.725  acc=0.784  tp=29 fp=8 fn=14 tn=51
+  provider_name              f1=0.921  acc=0.860  tp=82 fp=0 fn=14 tn=4
+  total_amount               f1=0.829  acc=0.750  tp=63 fp=10 fn=16 tn=15
+  currency                   f1=0.900  acc=0.818  tp=81 fp=7 fn=11 tn=0
+  diagnosis_or_damage_code   f1=0.897  acc=0.905  tp=39 fp=1 fn=8 tn=47
+  vehicle_vin                f1=0.857  acc=0.935  tp=18 fp=1 fn=5 tn=69
+  claim_type                 f1=0.936  acc=0.880  tp=88 fp=0 fn=12 tn=0
+  payout_iban                f1=0.650  acc=0.537  tp=52 fp=23 fn=33 tn=13
+  notes                      f1=0.850  acc=0.935  tp=17 fp=0 fn=6 tn=70
+  line_items                 f1=0.449  acc=0.363  tp=35 fp=36 fn=50 tn=14
+
+wrote eval\results\summary_needle3-ft-fullkv_val.json
+label=needle3-ft-fullkv weights=train/needle_out/tuned_fullkv.cact split=val docs=100 tag=val
+agent ready in 1.97s
+[1/100] val-00000 ok    5.13s
+[2/100] val-00001 ok    6.27s
+[3/100] val-00002 ok    2.51s
+[4/100] val-00003 ok    5.99s
+[5/100] val-00004 ok    5.04s
+[6/100] val-00005 ok    4.00s
+[7/100] val-00006 ok    4.64s
+[8/100] val-00007 ok    5.32s
+[9/100] val-00008 ok    4.35s
+[10/100] val-00009 ok    4.00s
+[11/100] val-00010 ERR   9.75s  no function_calls in response
+[12/100] val-00011 ok    4.93s
+[13/100] val-00012 ok    4.46s
+[14/100] val-00013 ERR   9.35s  no function_calls in response
+[15/100] val-00014 ok    3.87s
+[16/100] val-00015 ok    4.11s
+[17/100] val-00016 ok    5.56s
+[18/100] val-00017 ok    4.46s
+[19/100] val-00018 ok    6.56s
+[20/100] val-00019 ok    5.57s
+[21/100] val-00020 ERR   9.81s  no function_calls in response
+[22/100] val-00021 ok    4.58s
+[23/100] val-00022 ERR   8.88s  no function_calls in response
+[24/100] val-00023 ok    6.11s
+[25/100] val-00024 ok    3.86s
+[26/100] val-00025 ok    4.93s
+[27/100] val-00026 ok    2.44s
+[28/100] val-00027 ok    4.87s
+[29/100] val-00028 ERR   9.61s  no function_calls in response
+[30/100] val-00029 ok    5.25s
+[31/100] val-00030 ok    4.02s
+[32/100] val-00031 ok    5.36s
+[33/100] val-00032 ok    5.15s
+[34/100] val-00033 ok    2.40s
+[35/100] val-00034 ok    4.95s
+[36/100] val-00035 ok    2.64s
+[37/100] val-00036 ok    5.90s
+[38/100] val-00037 ERR   9.40s  no function_calls in response
+[39/100] val-00038 ERR   9.74s  no function_calls in response
+[40/100] val-00039 ok    4.22s
+[41/100] val-00040 ERR   6.75s  no function_calls in response
+[42/100] val-00041 ok    4.63s
+[43/100] val-00042 ok    4.52s
+[44/100] val-00043 ok    3.76s
+[45/100] val-00044 ok    5.51s
+[46/100] val-00045 ok    2.05s
+[47/100] val-00046 ok    2.66s
+[48/100] val-00047 ok    5.58s
+[49/100] val-00048 ok    5.47s
+[50/100] val-00049 ok    5.00s
+[51/100] val-00050 ok    4.20s
+[52/100] val-00051 ok    5.34s
+[53/100] val-00052 ok    5.00s
+[54/100] val-00053 ok    4.82s
+[55/100] val-00054 ok    4.85s
+[56/100] val-00055 ok    5.48s
+[57/100] val-00056 ok    6.06s
+[58/100] val-00057 ok    4.75s
+[59/100] val-00058 ok    2.08s
+[60/100] val-00059 ok    4.21s
+[61/100] val-00060 ok    4.81s
+[62/100] val-00061 ok    5.24s
+[63/100] val-00062 ok    4.81s
+[64/100] val-00063 ok    4.98s
+[65/100] val-00064 ERR   6.34s  no function_calls in response
+[66/100] val-00065 ERR  10.18s  no function_calls in response
+[67/100] val-00066 ok    5.78s
+[68/100] val-00067 ok    4.81s
+[69/100] val-00068 ok    5.26s
+[70/100] val-00069 ok    5.85s
+[71/100] val-00070 ok    4.26s
+[72/100] val-00071 ok    5.63s
+[73/100] val-00072 ok    4.89s
+[74/100] val-00073 ok    6.04s
+[75/100] val-00074 ok    5.75s
+[76/100] val-00075 ok    4.93s
+[77/100] val-00076 ok    4.04s
+[78/100] val-00077 ok    6.13s
+[79/100] val-00078 ERR   6.96s  no function_calls in response
+[80/100] val-00079 ok    5.64s
+[81/100] val-00080 ERR   3.07s  no function_calls in response
+[82/100] val-00081 ok    5.39s
+[83/100] val-00082 ok    4.32s
+[84/100] val-00083 ok    3.42s
+[85/100] val-00084 ok    5.57s
+[86/100] val-00085 ok    5.73s
+[87/100] val-00086 ok    5.58s
+[88/100] val-00087 ok    5.24s
+[89/100] val-00088 ok    5.00s
+[90/100] val-00089 ok    5.12s
+[91/100] val-00090 ok    4.93s
+[92/100] val-00091 ok    4.92s
+[93/100] val-00092 ok    6.19s
+[94/100] val-00093 ok    5.14s
+[95/100] val-00094 ok    4.64s
+[96/100] val-00095 ok    5.29s
+[97/100] val-00096 ok    4.17s
+[98/100] val-00097 ok    3.96s
+[99/100] val-00098 ok    5.16s
+[100/100] val-00099 ok    4.56s
+{
+  "model": "needle3-ft-fullkv",
+  "tag": "val",
+  "transport": "local_needle",
+  "split": "val",
+  "docs": 100,
+  "ok": 88,
+  "ok_rate": 0.88,
+  "cache_hits": 0,
+  "wall_s": 522.7,
+  "latency_p50": 5.001,
+  "latency_p95": 9.398,
+  "errors": [
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response"
+  ]
+}
+wrote eval\results\results_needle3-ft-fullkv_val.jsonl

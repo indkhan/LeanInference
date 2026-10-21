@@ -39,13 +39,15 @@ SYSTEMS = [
      "price": "frontier", "where": "third-party API", "own_cloud": False, "baseline": True},
     {"name": "Candidate A: DeepSeek V4.1 Flash", "after": "opencode__deepseek-v4.1-flash-free_final",
      "price": "DeepSeek V4.1 Flash", "where": "third-party API", "own_cloud": False},
-    {"name": "Candidate A2: Nemotron 3.5 Super", "after": "opencode__nemotron-3.5-super-vl-free_final",
-     "price": None, "where": "third-party API", "own_cloud": False},
-    {"name": "Candidate B: Qwen3-4B QLoRA + constrained JSON",
-     "before": "local__Qwen3-4B-Instruct-2507-bnb-4bit_before-ft",
-     "after": "local__Qwen3-4B-Instruct-2507-bnb-4bit__qwen3-4b-lora_after-ft",
+    # B: cost sized from batch-8 throughput (latency_p50 of the after run = s/doc at batch 8);
+    # the p95 column comes from a separate batch-1 run (single-request serving latency).
+    {"name": "Candidate B: Qwen3.5-0.8B QLoRA + xgrammar JSON",
+     "before": "local__Qwen3.5-0.8B_before-ft-xgr",
+     "after": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_after-ft-xgr",
+     "latency": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_latency-b1",
      "price": "local_gpu", "where": "self-hosted GPU (own cloud)", "own_cloud": True},
-    {"name": "Candidate C: Needle 3 LoRA (.cact)", "before": "needle3-base_before", "after": "needle3-ft_after",
+    {"name": "Candidate C: Needle 3 LoRA (.cact, full KV window)", "before": "needle3-base_before",
+     "after": "needle3-ft-fullkv_after",
      "price": "local_cpu", "where": "self-hosted CPU / on-device", "own_cloud": True},
 ]
 
@@ -103,7 +105,9 @@ def main():
     for sd in SYSTEMS:
         b, a = load(sd.get("before")), load(sd["after"])
         usd1k, monthly, basis = cost(sd, a)
-        rows.append({**sd, "b": b, "a": a, "usd1k": usd1k, "monthly": monthly, "basis": basis})
+        lat = load(sd.get("latency")) or a
+        rows.append({**sd, "b": b, "a": a, "usd1k": usd1k, "monthly": monthly, "basis": basis,
+                     "p95": lat and lat["latency_p95"]})
     base = next(r for r in rows if r.get("baseline"))
     fm, fr = frontier_model(), PRICES["frontier_accuracy_assumed"]
 
@@ -121,7 +125,7 @@ def main():
         out.append(
             f"| {r['name']} | {before} -> {f(a and a['micro_f1'])} | {pct(a and a['doc_exact_rate'])} | "
             f"{pct(a and a['valid_schema_rate'])} | {pct(a and a['total_amount_accuracy'])} | "
-            f"{f(a and a['latency_p95'], 1)} | {f(r['usd1k'], 2)} | {money(r['monthly'])} | {r['where']} | "
+            f"{f(r['p95'], 1)} | {f(r['usd1k'], 2)} | {money(r['monthly'])} | {r['where']} | "
             f"{a['docs'] if a else 'not run'} |")
     out += ["", f"\\* {fr['statement']} Source: {fr['source']} (retrieved {fr['retrieved']}). Not measured here "
             f"($0 budget, no paid frontier access); the measured bar is the baseline proxy row. Status-quo cost = "

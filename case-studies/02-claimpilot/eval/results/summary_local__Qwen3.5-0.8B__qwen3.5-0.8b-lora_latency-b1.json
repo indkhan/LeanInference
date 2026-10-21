@@ -1,0 +1,202 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "latency-b1",
+  "transport": "local_transformers",
+  "run_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_latency-b1.jsonl",
+  "split": "test",
+  "docs": 50,
+  "parsed_ok": 50,
+  "valid_schema_rate": 1.0,
+  "doc_exact_rate": 0.88,
+  "micro_precision": 0.9887,
+  "micro_recall": 0.9887,
+  "micro_f1": 0.9887,
+  "macro_f1": 0.9903,
+  "item_micro_precision": 1.0,
+  "item_micro_recall": 1.0,
+  "null_discipline": 1.0,
+  "total_amount_accuracy": 1.0,
+  "latency_p50": 18.593,
+  "latency_p95": 23.807,
+  "tokens_in_mean": 1414.3,
+  "tokens_out_mean": 203.4,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "per_field": {
+    "claim_id": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 50,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "policy_number": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 44,
+      "fp": 0,
+      "fn": 0,
+      "tn": 6
+    },
+    "claimant_name": {
+      "precision": 0.9111,
+      "recall": 0.9111,
+      "f1": 0.9111,
+      "accuracy": 0.8519,
+      "tp": 41,
+      "fp": 4,
+      "fn": 4,
+      "tn": 5
+    },
+    "date_of_incident": {
+      "precision": 0.9535,
+      "recall": 0.9535,
+      "f1": 0.9535,
+      "accuracy": 0.9231,
+      "tp": 41,
+      "fp": 2,
+      "fn": 2,
+      "tn": 7
+    },
+    "date_of_service": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 22,
+      "fp": 0,
+      "fn": 0,
+      "tn": 28
+    },
+    "provider_name": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 48,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2
+    },
+    "total_amount": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 45,
+      "fp": 0,
+      "fn": 0,
+      "tn": 5
+    },
+    "currency": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 45,
+      "fp": 0,
+      "fn": 0,
+      "tn": 5
+    },
+    "diagnosis_or_damage_code": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0,
+      "tn": 20
+    },
+    "vehicle_vin": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "tn": 38
+    },
+    "claim_type": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 50,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "payout_iban": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "tn": 10
+    },
+    "notes": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "tn": 40
+    },
+    "line_items": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "tp": 45,
+      "fp": 0,
+      "fn": 0,
+      "tn": 5
+    }
+  },
+  "per_family": {
+    "auto_repair_estimate": {
+      "docs": 8,
+      "doc_exact_rate": 1.0,
+      "micro_f1": 1.0
+    },
+    "email_thread": {
+      "docs": 9,
+      "doc_exact_rate": 1.0,
+      "micro_f1": 1.0
+    },
+    "fax_memo": {
+      "docs": 8,
+      "doc_exact_rate": 0.875,
+      "micro_f1": 0.9884
+    },
+    "invoice_formal": {
+      "docs": 9,
+      "doc_exact_rate": 0.7778,
+      "micro_f1": 0.9785
+    },
+    "medical_bill": {
+      "docs": 8,
+      "doc_exact_rate": 0.875,
+      "micro_f1": 0.988
+    },
+    "ocr_scan": {
+      "docs": 8,
+      "doc_exact_rate": 0.75,
+      "micro_f1": 0.9747
+    }
+  },
+  "errors": 0
+}

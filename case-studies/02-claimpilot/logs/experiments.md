@@ -214,3 +214,21 @@ both for ~6 h (Needle stuck at step 108); killed. Alone, Needle trains at ~1.7 s
   amount acc 8.6%); full-KV archive micro-F1 **0.816** (doc exact 19%, valid 88%, amount acc 75%, null
   discipline 0.967, p50 5.0 s / p95 9.6 s on the laptop CPU). Weakest fields: line_items 0.449, payout_iban
   0.650, date_of_service 0.725. The full-KV archive is the one run on the test split.
+
+## E11 — Final test-split rows and the decision (2026-10-21)
+
+| system | micro-F1 before -> after | doc exact | valid | amount acc | null disc. | p95 |
+|---|---|---|---|---|---|---|
+| baseline proxy beam-free | 0.974 | 69.25% | 100% | 95.75% | 0.950 | 20.0 s |
+| A: DeepSeek V4.1 Flash | 0.967 | 63.0% | 99.75% | 97.26% | 0.941 | 25.9 s |
+| B: Qwen3.5-0.8B QLoRA + xgrammar | 0.366 -> **0.991** | **93.75%** | 99.75% | **99.5%** | **1.000** | 23.8 s (batch 1, laptop) |
+| C: Needle 3 LoRA, full-KV .cact | 0.000 -> 0.776 | 16.25% | 85.0% | 69.0% | 0.955 | 11.2 s (CPU) |
+
+- Base Needle: 400/400 "tool call truncated: token budget exhausted", no record emitted (as in E4).
+- Qwen batch-1 latency: 50 test docs, p50 18.6 s / p95 23.8 s on the RTX 3050 laptop (Qwen3.5's
+  linear-attention kernels fall back to PyTorch on Windows). Monthly cost is sized from batch-8
+  throughput (6.07 s/doc) on 2 always-on L4s: $861/month; status quo (Opus 5.5 list, brief's 1,500
+  input tokens) $5,132/month.
+- **Winner (brief Step 4): B** - only own-cloud system with micro-F1 and total_amount accuracy >= the
+  baseline proxy. Write-up: `README.md`; failure analysis: `FAILURES.md`; table: `eval/results/final_table.md`.
+- The Nemotron backup hosted row was dropped: its free tier stopped at 39/400 successful docs (E5/E6).
