@@ -122,6 +122,34 @@ def call_model(model, system, text, timeout=180):
     return raw, None, lat
 
 
+def call_openrouter(model, system, text, timeout=180):
+    """OpenRouter chat completion, same prompt split as the OpenCode path (system + ticket).
+    Needs OPENROUTER_API_KEY. Returns (raw, error, latency_s)."""
+    import os
+    import urllib.error
+    import urllib.request
+    body = {"model": model, "temperature": 0, "max_tokens": 1024,
+            "messages": [{"role": "system", "content": system},
+                         {"role": "user", "content": f"Ticket: {text}\nAnswer:"}]}
+    req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions",
+                                 data=json.dumps(body).encode(), headers={
+                                     "Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}",
+                                     "Content-Type": "application/json"})
+    t0 = time.perf_counter()
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            resp = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        msg = e.read().decode("utf-8", "replace")[:200]
+        return None, ("Rate limit exceeded: " if e.code == 429 else f"HTTP {e.code}: ") + msg, time.perf_counter() - t0
+    except Exception as e:  # noqa: BLE001
+        return None, f"transport: {e}", time.perf_counter() - t0
+    lat = time.perf_counter() - t0
+    if "error" in resp:
+        return None, json.dumps(resp["error"])[:200], lat
+    return resp["choices"][0]["message"].get("content") or None, None, lat
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="opencode/deepseek-v4.1-flash-free")
@@ -129,16 +157,22 @@ def main():
     ap.add_argument("--split", choices=["val", "test"], required=True)
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--transport", choices=["opencode", "openrouter"], default="opencode")
+    ap.add_argument("--ids-file", help="only these ticket ids (fixed seeded subset)")
     ap.add_argument("--attempts", type=int, default=6, help="tries per ticket (rate-limit backoff)")
     ap.add_argument("--role", default="a", help="output tag prefix: a = candidate A, base = baseline proxy")
     args = ap.parse_args()
 
     rows = load(args.split)
+    if args.ids_file:
+        keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
+        rows = [r for r in rows if r["id"] in keep]
+    call = call_openrouter if args.transport == "openrouter" else call_model
     if args.limit:
         rows = rows[: args.limit]
     shots = pick_shots() if args.stage == "few_shot" else []
     system = build_system(args.stage, shots)
-    slug = args.model.replace("/", "_")
+    slug = args.model.replace("/", "_").replace(":", "_")
     cache_path = ARTIFACTS / f"a_{slug}_{args.stage}_{args.split}.jsonl"
     done = {}
     if cache_path.exists():
@@ -153,7 +187,7 @@ def main():
     def work(r):
         # Free tier rate-limits: retry with backoff. Only successful records are cached.
         for attempt in range(args.attempts):
-            raw, err, lat = call_model(args.model, system, r["text"])
+            raw, err, lat = call(args.model, system, r["text"])
             pred, parse_err = None, None
             if raw is not None:
                 try:
@@ -201,12 +235,14 @@ def main():
     lats.sort()
     p95 = lats[min(len(lats) - 1, int(len(lats) * 0.95))] if lats else None
     p50 = lats[len(lats) // 2] if lats else None
-    tag = f"{args.role}_{args.stage}_{args.split}"
+    tag = f"{args.role}_{args.stage}_{args.split}" + (f"_{Path(args.ids_file).stem}" if args.ids_file else "")
     log_experiment(tag, model=args.model, intent=res["intent"], urgency=res["urgency"],
                    sentiment=res["sentiment"], failed_calls=n_fail, n=len(rows),
                    latency={"p50_s": p50, "p95_s": p95}, config={
                        "k_per_intent": K_PER_INTENT if args.stage == "few_shot" else 0,
-                       "system_chars": len(system), "transport": "opencode run (CLI, per call)"})
+                       "system_chars": len(system),
+                       "transport": "openrouter chat completions" if args.transport == "openrouter" else "opencode run (CLI, per call)",
+                       "ids_file": args.ids_file})
     (ARTIFACTS / f"preds_{tag}.json").write_text(json.dumps(
         {"name": tag, "model": args.model, "predictions": preds, "gold": golds,
          "ids": [r["id"] for r in rows], "metrics": res, "failed_calls": n_fail,
