@@ -5,6 +5,7 @@ training and inference inputs are byte-identical.
 
 Usage (from the case-study dir):
   uv run python train/qwen/prepare_data.py
+  uv run python train/qwen/prepare_data.py --prompt-file eval/prompt_noschema.md   # no tool schemas
 
 Output:
   train/qwen/data/train-chat.jsonl   (2,432 examples)
@@ -51,13 +52,17 @@ def main():
 
     k = int(sys.argv[sys.argv.index("--route-k") + 1]) if "--route-k" in sys.argv else 0
     sfx = f"-k{k}" if k else ""
+    if "--prompt-file" in sys.argv:  # e.g. eval/prompt_noschema.md -> train-chat-noschema.jsonl
+        pf = Path(sys.argv[sys.argv.index("--prompt-file") + 1])
+        system = (ROOT / pf).read_text(encoding="utf-8").replace("<<TOOLS>>", tools_doc)
+        sfx = "-" + pf.stem.replace("prompt_", "")
     n_train = build(ROOT / "data" / "splits" / "train.jsonl",
                     ROOT / "train" / "qwen" / "data" / f"train-chat{sfx}.jsonl", system, k)
     n_val = build(ROOT / "data" / "splits" / "val.jsonl",
                   ROOT / "train" / "qwen" / "data" / f"val-chat{sfx}.jsonl", system, k)
 
-    print(f"train: {n_train} examples -> train/qwen/data/train-chat.jsonl")
-    print(f"val:   {n_val} examples -> train/qwen/data/val-chat.jsonl")
+    print(f"train: {n_train} examples -> train/qwen/data/train-chat{sfx}.jsonl")
+    print(f"val:   {n_val} examples -> train/qwen/data/val-chat{sfx}.jsonl")
     print(f"system prompt: {len(system)} chars  (tools doc: {len(tools_doc)} chars)")
     print(f"rough size per example: ~{int(len(system) / 3.6) + 120} tokens (Qwen tokenizer will differ)")
     return 0
