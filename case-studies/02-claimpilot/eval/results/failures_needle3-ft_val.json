@@ -1,0 +1,5017 @@
+[
+  {
+    "doc_id": "val-00000",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200000",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MJ60-894620",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Brittany Schultz",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-18",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Smithville Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2764.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "COL-REAR-02",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "AFF2J9LLE6YABP2TK",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB53ACEP76093823178141",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "636.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "1643.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "449.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "36.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 256.6, \"decode_tps\": 220.3, \"peak_ram_mb\": 160.9, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00001",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200001",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Ryan Dennis",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-12-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-01-10",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Jacksonburgh Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3009.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB85PNGD87915023883316",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Towing and recovery",
+            "amount": "501.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "141.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1662.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "705.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 296.9, \"decode_tps\": 210.6, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00002",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "South Toni General Hospital",
+        "pred": "Greenwood Health"
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-200002\", \"policy_number\": \"POL-IE13-106523\", \"claimant_name\": \"Robert Ford\", \"date_of_incident\": \"2025-12-29\", \"date_of_service\": \"2026-01-06\", \"provider_name\": \"Greenwood Health\", \"line_items\": [{\"description\": \"Physician consultation\", \"amount\": \"309.00\"}, {\"description\": \"Tax / VAT\", \"amount\": \"20.16\"}], \"total_amount\": \"329.16\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": \"K21.9\", \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 237.1, \"decode_tps\": 182.1, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [\"record_claim.provider_name\", \"record_claim.total_amount\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200003",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Michelle Valenzuela",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "South Lisa Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "BMP-31A",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB05WINY13045692222076",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1309.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1210.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "1522.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "1467.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "132.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "670.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "385.64"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 244.0, \"decode_tps\": 209.0, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00004",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200004",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-GR58-765603",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Erin Morrison",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-09-02",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Chapman Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "163.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "SCR-DOOR-L",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "Z4JN7NMG9H3266DUD",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB85BHWF91195150699470",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "163.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 240.7, \"decode_tps\": 208.0, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200005",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Rhonda Lopez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-11",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Lopez Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1044.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M54.5",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 236.5, \"decode_tps\": 200.7, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200006",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-QK32-192785",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "William Sanchez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-01-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "154.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "LGS8V0ET0DNGH9ZZT",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB44OHMV47268596457884",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "154.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 240.1, \"decode_tps\": 205.2, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00007",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200007",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Sherri Chapman",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-31",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Miller-Smith",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6093.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": "other"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB88YSYZ73116265715067",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Replacement parts",
+            "amount": "1330.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1240.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1678.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "334.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "1511.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"other\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 237.6, \"decode_tps\": 200.4, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00008",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200008",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-QC39-642338",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-03-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Grand North Donna Hotel",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "486.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Photos available on request.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Overtime surcharge",
+            "amount": "486.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 237.4, \"decode_tps\": 198.0, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200009",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VQ56-926972",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Ashley Sanchez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-03-15",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-03-18",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Lake Jonathan General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2426.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB32EFXO31218571679734",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1675.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "751.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 243.5, \"decode_tps\": 208.5, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200010",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NX46-963118",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Kayla Flores",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-11-27",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1065.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "UJMJ2HVWGDG6F5X62",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB54OEWW18126444097722",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Photos available on request.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "1065.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 251.3, \"decode_tps\": 203.2, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00011",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200011",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ZJ51-641818",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Maurice Gomez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-10",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-01-15",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Haynes Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1204.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB53DPAS06568698553639",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "1204.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 249.7, \"decode_tps\": 208.0, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00012",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200012",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-IK95-236121",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jeffrey Tanner",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Barrera Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1116.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB70BVRK88876851155021",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "647.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "469.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 242.3, \"decode_tps\": 197.4, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00013",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200013",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-AH87-749996",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Wyatt Moore",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-02",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-02-06",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Stephanieside Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB44EPKX71439725010632",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Adjuster site visit scheduled.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "609.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "492.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "759.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "641.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "493.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "814.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 244.7, \"decode_tps\": 213.7, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00014",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200014",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-01-29",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "FIRE-ENG-01",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB77PENH59506415000302",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 283.2, \"decode_tps\": 212.3, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00015",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200015",
+        "pred": "CLM-2026-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-JA41-823601",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-05-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB97CXVJ18580271978131",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Overtime surcharge",
+            "amount": "48.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "357.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "161.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2026-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 244.8, \"decode_tps\": 196.9, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00016",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200016",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VK70-562078",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Christina Paul",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-02-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Port Laurenstad Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2701.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "ADAS recalibration",
+            "amount": "1364.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "982.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "355.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 249.1, \"decode_tps\": 213.8, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00017",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200017",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EI30-539195",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Katie Barron",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-10-18",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "SkyWay Airlines",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB86YZBM67854439254485",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Inspection fee",
+            "amount": "715.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "1659.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "1722.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "614.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "1485.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "186.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 243.4, \"decode_tps\": 203.5, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00018",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200018",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-KJ21-626052",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Brian Chambers",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-01",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Gomez Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3647.22",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physician consultation",
+            "amount": "253.00"
+          },
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "815.00"
+          },
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "200.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1388.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "664.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "327.22"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 260.9, \"decode_tps\": 213.3, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00019",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200019",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MH85-332317",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Diana Ellis",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-03-02",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "SkyWay Airlines",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "470.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB37KMGQ13901297532881",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 254.6, \"decode_tps\": 215.5, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00020",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200020",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EM13-330281",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Corey Washington",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Lake Thomaston Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4829.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB02NXNO30106357186102",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1578.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "205.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1039.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "738.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "548.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "721.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 248.3, \"decode_tps\": 215.3, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00021",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200021",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EQ30-270828",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-12-02",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Reyes Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "430.19",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB16UTGD15741573717596",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "404.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "26.19"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 253.3, \"decode_tps\": 213.8, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00022",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200022",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-PO83-937086",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Benjamin Flynn",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-12-07",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-12-09",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "New Richardside General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "K21.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB44CGVC81782467352231",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "211.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "494.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 252.9, \"decode_tps\": 204.2, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00023",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200023",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UG92-168900",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Christopher Jackson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-11-27",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4337.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "COL-REAR-02",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Materials and consumables",
+            "amount": "630.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1526.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "326.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "101.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "495.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "1259.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 263.2, \"decode_tps\": 220.5, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00024",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200024",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-BW55-241739",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Stephen Dunlap",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-09-11",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Hernandezburgh Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "465.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB83UMKG46523280101431",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "465.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 243.5, \"decode_tps\": 188.8, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00025",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200025",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-SQ37-849234",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Gregory Martin",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-11",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB02GGHY74896846015628",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 234.8, \"decode_tps\": 184.7, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00026",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "St. Williams Medical Center",
+        "pred": "Medical Center"
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-200026\", \"policy_number\": \"POL-KX42-841453\", \"claimant_name\": \"Teresa Vega\", \"date_of_incident\": \"2024-01-08\", \"date_of_service\": \"2024-01-17\", \"provider_name\": \"Medical Center\", \"line_items\": [{\"description\": \"Laboratory panel, CBC\", \"amount\": \"1296.00\"}], \"total_amount\": \"1296.00\", \"currency\": \"USD\", \"diagnosis_or_damage_code\": \"S83.511\", \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": \"GB78UQIB52591824132269\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 222.9, \"decode_tps\": 176.0, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [\"record_claim.total_amount\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00027",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200027",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NN60-248151",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Samantha Peters",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Griffin Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3523.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "BMP-31A",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "GUYU0MZB5X9UEAZWZ",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB60XAZY95578840369169",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Adjuster site visit scheduled.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "815.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1554.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "1154.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 229.6, \"decode_tps\": 189.1, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00028",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200028",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-JG71-439815",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Alicia Hanson DDS",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-12-01",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Connieburgh Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "424.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "H6XV6YYAF16WHVL0S",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB29EFGG29756422763806",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 271.3, \"decode_tps\": 223.7, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00029",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200029",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MM63-546423",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Robert Avila",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-20",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Michelleview Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1541.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "GLASS-WS",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "V3DFR7JKLNT9XD4JB",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB84IYON25546854884458",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1451.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "90.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 241.1, \"decode_tps\": 182.9, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00030",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200030",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Theresa Caldwell",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-09-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-09-28",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Paul Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "333.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "333.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 225.4, \"decode_tps\": 184.3, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00031",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200031",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-LL25-539357",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Amanda Strickland",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-06-17",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Bell Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "864.42",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "560.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "243.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "61.42"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 233.7, \"decode_tps\": 194.4, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00032",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200032",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-WX56-900107",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Bruce Mann",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-05-16",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-05-19",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Dodson Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "348.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Insured requested expedited handling.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "348.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 233.7, \"decode_tps\": 188.6, \"peak_ram_mb\": 161.0, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00033",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "Thompson Clinic",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB54HAWI52103335024823",
+        "pred": "HWI5210335024823"
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1398.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1676.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "431.00"
+          }
+        ],
+        "pred": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1398.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1176.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "431.00"
+          }
+        ]
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200033\", \"policy_number\": \"POL-VV82-341064\", \"claimant_name\": \"ANGELA WILSON\", \"date_of_incident\": \"2024-04-07\", \"date_of_service\": null, \"provider_name\": null, \"line_items\": [{\"description\": \"Laboratory panel, CBC\", \"amount\": \"1398.00\"}, {\"description\": \"MRI without contrast\", \"amount\": \"1176.00\"}, {\"description\": \"Emergency department visit, level 3\", \"amount\": \"431.00\"}], \"total_amount\": \"3505.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": \"HWI5210335024823\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 226.5, \"decode_tps\": 170.3, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [\"record_claim.total_amount\", \"record_claim.payout_iban\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00034",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200034",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-GB35-222612",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-11-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Brady Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5321.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "SD79B08Y3E0DCHGG8",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB90KOYB69231617030705",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1640.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "476.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "953.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "782.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "1344.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "126.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 230.4, \"decode_tps\": 198.2, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00035",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "total_amount",
+        "truth": "3369.00",
+        "pred": "369.00"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "L03.115",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB53YGHD47182835659583",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "57.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "1042.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1747.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "523.00"
+          }
+        ],
+        "pred": [
+          {
+            "description": "MRI without contrast",
+            "amount": "57.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "1042.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1747.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "523.00"
+          },
+          {
+            "description": "TOTAL $3,369.00",
+            "amount": "3369.00"
+          }
+        ]
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2026-200035\", \"policy_number\": \"POL-HL84-291763\", \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": \"2026-08-03\", \"provider_name\": \"Philipbury General Hospital\", \"line_items\": [{\"description\": \"MRI without contrast\", \"amount\": \"57.00\"}, {\"description\": \"Medication administration\", \"amount\": \"1042.00\"}, {\"description\": \"MRI without contrast\", \"amount\": \"1747.00\"}, {\"description\": \"Physician consultation\", \"amount\": \"523.00\"}, {\"description\": \"TOTAL $3,369.00\", \"amount\": \"3369.00\"}], \"total_amount\": \"369.00\", \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 227.0, \"decode_tps\": 178.0, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00036",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200036",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EA73-105435",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Ryan Wilson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-04-29",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Grand Kingstad Hotel",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5089.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Inspection fee",
+            "amount": "1073.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "89.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "489.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "1775.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "1663.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 234.2, \"decode_tps\": 197.3, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00037",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200037",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-YA31-171817",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Matthew Hardin",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-08-10",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Jacksonborough General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB55MSQD45517731603561",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1315.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1699.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "247.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1800.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 230.4, \"decode_tps\": 188.0, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00038",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200038",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NC91-928139",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Greg Rodriguez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-03-01",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "DP6W3H5CTUFTK2CBB",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB16TCHW83695934314068",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "ADAS recalibration",
+            "amount": "1339.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "860.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "467.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1346.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "391.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "342.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 232.1, \"decode_tps\": 194.6, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00039",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200039",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VH44-426959",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Tanya Murphy",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-12-24",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-01-10",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1385.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "HAIL-04",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "LYV2BW1YW8AFXJN8U",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB09EPTA18442823112026",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Second occurrence at the same address.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1385.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 224.7, \"decode_tps\": 183.4, \"peak_ram_mb\": 161.1, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00040",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200040",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ST21-876167",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Nicholas Meyer",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-11-30",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Gray-Buckley",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB43NQSZ54903019092202",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Diagnostic fee",
+            "amount": "577.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "1786.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1170.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "309.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "484.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1171.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 225.0, \"decode_tps\": 218.0, \"peak_ram_mb\": 161.3}"
+  },
+  {
+    "doc_id": "val-00041",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200041",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-DK42-467404",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Brittany Chapman",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-06-30",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1545.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": "other"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB54TQDJ04020153063272",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Insured requested expedited handling.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"other\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 280.3, \"decode_tps\": 198.0, \"peak_ram_mb\": 161.4, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00042",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200042",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-BB89-790838",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Kelly Berry",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "BMP-31A",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB15SXCZ09093134075163",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Subcontractor labor",
+            "amount": "1682.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "1344.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 227.8, \"decode_tps\": 191.9, \"peak_ram_mb\": 161.4, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00043",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200043",
+        "pred": "CLM-2026-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EL55-209280",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Christian Nicholson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-05-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "SCR-DOOR-L",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB81XCYY69080190461784",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2026-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 221.9, \"decode_tps\": 183.5, \"peak_ram_mb\": 161.4, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00044",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200044",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VT91-932026",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Cody Lynch",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-06-21",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Baxter Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3112.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB11NJCY84302654656313",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1527.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "809.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "776.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 230.6, \"decode_tps\": 193.5, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00045",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB65KYCD86815841832276",
+        "pred": "GB65KYCD86815541832276"
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200045\", \"policy_number\": \"POL-MI45-454602\", \"claimant_name\": \"Chelsea Hanson\", \"date_of_incident\": \"2025-01-26\", \"date_of_service\": null, \"provider_name\": null, \"line_items\": [{\"description\": \"Towing and recovery\", \"amount\": \"402.00\"}], \"total_amount\": \"402.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": \"GB65KYCD86815541832276\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 227.7, \"decode_tps\": 171.0, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [\"record_claim.payout_iban\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00046",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Jeffery Reyes",
+        "pred": "Rayedelle"
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "HAIL-04",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "Z4CD02FMEDPMNUUUJ",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "1459.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "893.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "26.00"
+          }
+        ],
+        "pred": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "1559.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "893.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "26.00"
+          }
+        ]
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-200046\", \"policy_number\": \"POL-EH91-100035\", \"claimant_name\": \"Rayedelle\", \"date_of_incident\": \"2024-01-02\", \"date_of_service\": \"2024-01-10\", \"provider_name\": null, \"line_items\": [{\"description\": \"Radiator support bracket\", \"amount\": \"1559.00\"}, {\"description\": \"Radiator support bracket\", \"amount\": \"893.00\"}, {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"26.00\"}], \"total_amount\": \"2378.00\", \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": \"GB69NVDO11956948173118\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 221.9, \"decode_tps\": 179.5, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [\"record_claim.claimant_name\", \"record_claim.total_amount\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00047",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200047",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-PZ25-699231",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Mackenzie Davis",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-03-04",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Sweeneychester Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2012.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB89DNGO06801169659183",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Replacement parts",
+            "amount": "343.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "1632.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "37.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 232.7, \"decode_tps\": 193.9, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00048",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200048",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-RK42-972911",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jill Wilkinson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-06-02",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Burns Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2623.07",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "LURY5H6X3VUFZT9WE",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB46GXGF77328154105200",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wheel alignment",
+            "amount": "808.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "769.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "860.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "186.07"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 229.4, \"decode_tps\": 190.3, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00049",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200049",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NL14-219499",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Diane Hester",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-03-11",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-03-13",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Port Michaelside Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1425.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB75CKHJ11090666918318",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1425.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 227.8, \"decode_tps\": 196.6, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00050",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200050",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MQ79-272163",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Morgan Williamson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-18",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Brooks Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4119.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "COL-REAR-02",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "9WHKD0ZPFUYLR14YC",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 222.9, \"decode_tps\": 186.1, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00051",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200051",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-WD14-532102",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Robin Crawford",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-03-02",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4824.34",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB04FYOH68375665419029",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Disposal fee",
+            "amount": "1546.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "539.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "98.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1139.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1152.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "350.34"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 229.1, \"decode_tps\": 191.8, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00052",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200052",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-GG65-125127",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Richard Martin",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5685.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB52HWUG41560443538727",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Service call-out",
+            "amount": "1136.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "1626.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "1318.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "1605.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 282.6, \"decode_tps\": 217.3, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00053",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200053",
+        "pred": "CLM-2024-200"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VH41-462872",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Tracy Ferguson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-12-27",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-12-29",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Berry Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3569.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "867.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "1791.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "765.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "146.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 228.9, \"decode_tps\": 188.0, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00054",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-200054",
+        "pred": "CLM-2025-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-RG52-384712",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Mindy Barnes",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-17",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-05-23",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Jordanfurt General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2952.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "CHF"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "H10.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": "medical"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB84JWLX03882668236777",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Second occurrence at the same address.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1407.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "99.00"
+          },
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1446.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 239.7, \"decode_tps\": 197.8, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00055",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200055",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "William Charles",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1311.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "FIRE-ENG-01",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB76NSMX32634071849784",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "601.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "323.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "387.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 233.8, \"decode_tps\": 194.4, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00056",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200056",
+        "pred": "CLM-202"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-JJ39-700181",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Adam Alexander",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-07-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-08-06",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": "EUR"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB72IXTS93935924531895",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Adjuster site visit scheduled.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Overtime surcharge",
+            "amount": "234.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "568.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "108.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "1755.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "137.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "560.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-202\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 235.4, \"decode_tps\": 198.2, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00057",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200057",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-AH37-544423",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jennifer Sampson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Johnshire Travel Partners",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "201.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "travel",
+        "pred": "travel"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB35AJMR92558775581742",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Diagnostic fee",
+            "amount": "64.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "137.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"travel\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 230.6, \"decode_tps\": 186.1, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00058",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-23",
+        "pred": "2025-06-25"
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-200058\", \"policy_number\": \"POL-DU65-116556\", \"claimant_name\": \"Eric Thomas\", \"date_of_incident\": \"2025-06-25\", \"date_of_service\": \"2025-06-10\", \"provider_name\": null, \"line_items\": null, \"total_amount\": \"1667.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": \"P9H8NT90L6NA20VD0\", \"claim_type\": \"auto\", \"payout_iban\": \"GB57NTZB33269200142638\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 233.6, \"decode_tps\": 170.2, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [\"record_claim.total_amount\"], \"negation\": false}}"
+  },
+  {
+    "doc_id": "val-00059",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-200059",
+        "pred": "CLM-2026-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-JK21-355404",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Carolyn Lopez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-17",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB55PTGU37336348379016",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2026-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 226.8, \"decode_tps\": 181.5, \"peak_ram_mb\": 161.5, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  }
+]

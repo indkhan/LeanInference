@@ -210,3 +210,7 @@ both for ~6 h (Needle stuck at step 108); killed. Alone, Needle trains at ~1.7 s
   runs once on the 400-doc test split. Base Needle (published archive) runs the "before" row.
 - **xgrammar check:** the 8 test docs whose line items lmfe had corrupted come out **8/8 doc-exact**
   with xgrammar, at 3.9 s/doc (batch 8) vs 9.2 s/doc with lmfe.
+- **Needle build chosen on val (100 docs):** default 256-window archive micro-F1 **0.097** (valid schema 8%,
+  amount acc 8.6%); full-KV archive micro-F1 **0.816** (doc exact 19%, valid 88%, amount acc 75%, null
+  discipline 0.967, p50 5.0 s / p95 9.6 s on the laptop CPU). Weakest fields: line_items 0.449, payout_iban
+  0.650, date_of_service 0.725. The full-KV archive is the one run on the test split.

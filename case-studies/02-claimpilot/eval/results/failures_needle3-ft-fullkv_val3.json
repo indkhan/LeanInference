@@ -1,0 +1,58 @@
+[
+  {
+    "doc_id": "val-00001",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "payout_iban",
+        "truth": "GB85PNGD87915023883316",
+        "pred": "GB85PNGD879150023883316"
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Towing and recovery",
+            "amount": "501.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "141.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1662.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "705.00"
+          }
+        ],
+        "pred": [
+          {
+            "description": "Towing and recovery",
+            "amount": "501.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "141.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1662.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "705.00"
+          },
+          {
+            "description": "Total: Overtime surcharge",
+            "amount": "795.00"
+          }
+        ]
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-200001\", \"policy_number\": null, \"claimant_name\": \"RYAN DENNIS\", \"date_of_incident\": \"2025-12-25\", \"date_of_service\": \"2026-01-10\", \"provider_name\": \"Jacksonburgh Restoration Services\", \"line_items\": [{\"description\": \"Towing and recovery\", \"amount\": \"501.00\"}, {\"description\": \"Disposal fee\", \"amount\": \"141.00\"}, {\"description\": \"Diagnostic fee\", \"amount\": \"1662.00\"}, {\"description\": \"Overtime surcharge\", \"amount\": \"705.00\"}, {\"description\": \"Total: Overtime surcharge\", \"amount\": \"795.00\"}], \"total_amount\": \"3009.00\", \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": \"GB85PNGD879150023883316\", \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 181.2, \"decode_tps\": 136.2, \"peak_ram_mb\": 171.3, \"validation\": {\"ungrounded\": [\"record_claim.total_amount\", \"record_claim.payout_iban\"], \"negation\": true}}"
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "model": "needle3-ft-fullkv",
+  "tag": "val",
+  "transport": "local_needle",
+  "run_file": "eval\\results\\results_needle3-ft-fullkv_val.jsonl",
+  "split": "val",
+  "docs": 100,
+  "parsed_ok": 88,
+  "valid_schema_rate": 0.88,
+  "doc_exact_rate": 0.19,
+  "micro_precision": 0.8727,
+  "micro_recall": 0.7666,
+  "micro_f1": 0.8162,
+  "macro_f1": 0.815,
+  "item_micro_precision": 0.8083,
+  "item_micro_recall": 0.6736,
+  "null_discipline": 0.9669,
+  "total_amount_accuracy": 0.75,
+  "latency_p50": 5.001,
+  "latency_p95": 9.611,
+  "tokens_in_mean": 586.4,
+  "tokens_out_mean": 295.1,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "per_field": {
+    "claim_id": {
+      "precision": 1.0,
+      "recall": 0.88,
+      "f1": 0.9362,
+      "accuracy": 0.88,
+      "tp": 88,
+      "fp": 0,
+      "fn": 12,
+      "tn": 0
+    },
+    "policy_number": {
+      "precision": 1.0,
+      "recall": 0.8452,
+      "f1": 0.9161,
+      "accuracy": 0.87,
+      "tp": 71,
+      "fp": 0,
+      "fn": 13,
+      "tn": 16
+    },
+    "claimant_name": {
+      "precision": 0.825,
+      "recall": 0.7253,
+      "f1": 0.7719,
+      "accuracy": 0.6549,
+      "tp": 66,
+      "fp": 14,
+      "fn": 25,
+      "tn": 8
+    },
+    "date_of_incident": {
+      "precision": 0.8049,
+      "recall": 0.7416,
+      "f1": 0.7719,
+      "accuracy": 0.6486,
+      "tp": 66,
+      "fp": 16,
+      "fn": 23,
+      "tn": 6
+    },
+    "date_of_service": {
+      "precision": 0.7838,
+      "recall": 0.6744,
+      "f1": 0.725,
+      "accuracy": 0.7843,
+      "tp": 29,
+      "fp": 8,
+      "fn": 14,
+      "tn": 51
+    },
+    "provider_name": {
+      "precision": 1.0,
+      "recall": 0.8542,
+      "f1": 0.9213,
+      "accuracy": 0.86,
+      "tp": 82,
+      "fp": 0,
+      "fn": 14,
+      "tn": 4
+    },
+    "total_amount": {
+      "precision": 0.863,
+      "recall": 0.7975,
+      "f1": 0.8289,
+      "accuracy": 0.75,
+      "tp": 63,
+      "fp": 10,
+      "fn": 16,
+      "tn": 15
+    },
+    "currency": {
+      "precision": 0.9205,
+      "recall": 0.8804,
+      "f1": 0.9,
+      "accuracy": 0.8182,
+      "tp": 81,
+      "fp": 7,
+      "fn": 11,
+      "tn": 0
+    },
+    "diagnosis_or_damage_code": {
+      "precision": 0.975,
+      "recall": 0.8298,
+      "f1": 0.8966,
+      "accuracy": 0.9053,
+      "tp": 39,
+      "fp": 1,
+      "fn": 8,
+      "tn": 47
+    },
+    "vehicle_vin": {
+      "precision": 0.9474,
+      "recall": 0.7826,
+      "f1": 0.8571,
+      "accuracy": 0.9355,
+      "tp": 18,
+      "fp": 1,
+      "fn": 5,
+      "tn": 69
+    },
+    "claim_type": {
+      "precision": 1.0,
+      "recall": 0.88,
+      "f1": 0.9362,
+      "accuracy": 0.88,
+      "tp": 88,
+      "fp": 0,
+      "fn": 12,
+      "tn": 0
+    },
+    "payout_iban": {
+      "precision": 0.6933,
+      "recall": 0.6118,
+      "f1": 0.65,
+      "accuracy": 0.5372,
+      "tp": 52,
+      "fp": 23,
+      "fn": 33,
+      "tn": 13
+    },
+    "notes": {
+      "precision": 1.0,
+      "recall": 0.7391,
+      "f1": 0.85,
+      "accuracy": 0.9355,
+      "tp": 17,
+      "fp": 0,
+      "fn": 6,
+      "tn": 70
+    },
+    "line_items": {
+      "precision": 0.493,
+      "recall": 0.4118,
+      "f1": 0.4487,
+      "accuracy": 0.363,
+      "tp": 35,
+      "fp": 36,
+      "fn": 50,
+      "tn": 14
+    }
+  },
+  "per_family": {
+    "auto_repair_estimate": {
+      "docs": 17,
+      "doc_exact_rate": 0.1176,
+      "micro_f1": 0.8661
+    },
+    "email_thread": {
+      "docs": 17,
+      "doc_exact_rate": 0.3529,
+      "micro_f1": 0.8287
+    },
+    "fax_memo": {
+      "docs": 16,
+      "doc_exact_rate": 0.125,
+      "micro_f1": 0.8063
+    },
+    "invoice_formal": {
+      "docs": 17,
+      "doc_exact_rate": 0.1176,
+      "micro_f1": 0.8319
+    },
+    "medical_bill": {
+      "docs": 16,
+      "doc_exact_rate": 0.125,
+      "micro_f1": 0.7172
+    },
+    "ocr_scan": {
+      "docs": 17,
+      "doc_exact_rate": 0.2941,
+      "micro_f1": 0.8317
+    }
+  },
+  "errors": 12
+}
