@@ -388,3 +388,35 @@ model=opencode/deepseek-v4.1-flash-free transport=hosted_free split=test docs=40
 [387/400] test-00388 ok     6.2s
 [388/400] test-00387 ok     6.8s
 [389/400] test-00386 ok    10.7s
+[390/400] test-00389 ok     8.1s
+[391/400] test-00390 ok     5.0s
+[392/400] test-00392 ok     5.8s
+[393/400] test-00391 ok     7.6s
+[394/400] test-00394 ok     6.2s
+[395/400] test-00393 ok     7.6s
+[396/400] test-00395 ERR    4.5s  provider error: Rate limit exceeded. Please try again later.
+[397/400] test-00396 ERR    5.9s  provider error: Rate limit exceeded. Please try again later.
+[398/400] test-00397 ERR    4.2s  provider error: Rate limit exceeded. Please try again later.
+[399/400] test-00398 ERR    3.6s  provider error: Rate limit exceeded. Please try again later.
+[400/400] test-00399 ERR    4.6s  provider error: Rate limit exceeded. Please try again later.
+{
+  "model": "opencode/deepseek-v4.1-flash-free",
+  "tag": "final",
+  "transport": "hosted_free",
+  "split": "test",
+  "docs": 400,
+  "ok": 395,
+  "ok_rate": 0.9875,
+  "cache_hits": 0,
+  "wall_s": 325.4,
+  "latency_p50": 7.441,
+  "latency_p95": 25.908,
+  "errors": [
+    "provider error: Rate limit exceeded. Please try again later.",
+    "provider error: Rate limit exceeded. Please try again later.",
+    "provider error: Rate limit exceeded. Please try again later.",
+    "provider error: Rate limit exceeded. Please try again later.",
+    "provider error: Rate limit exceeded. Please try again later."
+  ],
+  "results_file": "eval\\results\\results_opencode__deepseek-v4.1-flash-free_final.jsonl"
+}

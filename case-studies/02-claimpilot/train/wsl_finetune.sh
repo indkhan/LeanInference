@@ -2,6 +2,8 @@
 # Needle 3 LoRA fine-tune, run under WSL2 (Windows Smart App Control blocks
 # jaxlib on the Windows side; see logs/experiments.md E5).
 # Data and outputs stay in the Windows repo via /mnt/c.
+# 2 epochs: the first 3-epoch run already reached val 0.049 after epoch 1, then died at
+# step 1944/4050 with nothing saved (the CLI only writes the adapter at the end).
 set -euo pipefail
 export XLA_PYTHON_CLIENT_PREALLOCATE=false XLA_PYTHON_CLIENT_ALLOCATOR=platform
 
@@ -19,10 +21,10 @@ print("checkpoint:", p)
 PY
 fi
 
-echo "starting fine-tune ..."
+echo "starting fine-tune $(date -Is) ..."
 "$VENV/bin/needle" finetune train/needle_train.jsonl \
   --checkpoint train/needle_out/checkpoints/needle3.safetensors \
-  --epochs 3 \
+  --epochs 2 \
   --batch-size 1 \
   --max-len 2304 \
   --val-split 0.1 \
@@ -30,4 +32,7 @@ echo "starting fine-tune ..."
   --out train/needle_out/adapter.safetensors \
   --checkpoint-dir train/needle_out/checkpoints
 
-echo "fine-tune done"
+echo "fine-tune done $(date -Is)"
+"$VENV/bin/needle" build train/needle_out/checkpoints/needle3.safetensors \
+  --lora train/needle_out/adapter.safetensors --out train/needle_out/tuned.cact
+echo "build done $(date -Is)"

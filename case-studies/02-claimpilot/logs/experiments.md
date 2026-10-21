@@ -155,3 +155,18 @@ consistent with the pilot; the full split decides the headline numbers.
   CUDA jaxlib for Windows), so Needle training stays in WSL for the GPU.
 - Candidate A resume: `opencode/deepseek-v4.1-flash-free` had 274/400 successes cached; the remaining
   126 are re-run (cached failures are retried).
+
+## E8 — Hosted rows final, local-eval memory leak, process survival (2026-10-21)
+
+- **Candidate A complete:** `opencode/deepseek-v4.1-flash-free` 400/400 on the test split (126 resumed from
+  cache; the last 5 needed three paced retries on the free tier's rate limit). Micro-F1 **0.9670**, doc
+  exact 63.0%, valid schema 99.75%, total_amount acc **97.26%**, null discipline 0.941, p95 25.9 s.
+- **Baseline proxy** `opencode/beam-free` re-scored with the fixed metrics: micro-F1 **0.9738**, doc exact
+  69.25%, valid 100%, total_amount acc **95.75%**, null discipline 0.950, p95 20.0 s.
+- **Local eval crashed with `RuntimeError: bad allocation` (host RAM) every ~70-90 docs.** Cause: one shared
+  lm-format-enforcer `TokenEnforcer` caches every prefix state it ever sees. Fix: the vocab scan is built
+  once, a fresh enforcer per document. Runs resume from the per-doc cache, so no doc was re-run.
+- **Jobs launched from the agent session die when the session goes idle** (twice overnight: base-Qwen eval
+  at doc 149, then at 325; fine-tuned eval at 131). The GPU queue (`gpu_queue.ps1`, one GPU job at a time,
+  each step resumable) and the hosted runs are now started through WMI (`Win32_Process.Create`), outside
+  the session's process tree.

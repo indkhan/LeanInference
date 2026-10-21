@@ -24,5 +24,804 @@
       }
     ],
     "raw": "{\"claim_id\":\"CLM-2024-300009\",\"policy_number\":\"POL-TA21-486772\",\"claimant_name\":\"Carrie Weaver\",\"date_of_incident\":\"2025-05-15\",\"date_of_service\":\"2025-05-23\",\"provider_name\":\"St. Wilson Medical Center\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"1752.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"189.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"79.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"1565.00\"},{\"description\":\"Medication administration\",\"amount\":\"1119.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"1666.00\"}],\"total_amount\":\"6370.00\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":\"J06.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB80ADPM42042619706778\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00015",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Richard Hill",
+        "pred": "Mr./Ms. Richard Hill"
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300015\",\"policy_number\":\"POL-HC62-982373\",\"claimant_name\":\"Mr./Ms. Richard Hill\",\"date_of_incident\":\"2025-12-22\",\"date_of_service\":null,\"provider_name\":\"New James Auto Body & Paint\",\"line_items\":[{\"description\":\"Radiator support bracket\",\"amount\":\"1249.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"1052.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"1405.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1054.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"373.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"697.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"322.13\"}],\"total_amount\":\"6152.13\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":null,\"claim_type\":\"auto\",\"payout_iban\":\"GB93TNBX36771675441098\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00019",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": "7550.96"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-300019\",\n  \"policy_number\": \"POL-IF53-776908\",\n  \"claimant_name\": \"Seth Ford\",\n  \"date_of_incident\": \"2024-01-21\",\n  \"date_of_service\": \"2024-01-30\",\n  \"provider_name\": \"Zimmermanshire Urgent Care\",\n  \"line_items\": [\n    {\"description\": \"Medication administration\", \"amount\": \"1485.00\"},\n    {\"description\": \"MRI without contrast\", \"amount\": \"492.00\"},\n    {\"description\": \"Laboratory panel, CBC\", \"amount\": \"1793.00\"},\n    {\"description\": \"Medication administration\", \"amount\": \"892.00\"},\n    {\"description\": \"Physical therapy session (45 min)\", \"amount\": \"1528.00\"},\n    {\"description\": \"X-ray, 2 views\", \"amount\": \"692.00\"},\n    {\"description\": \"Tax / VAT\", \"amount\": \"668.96\"}\n  ],\n  \"total_amount\": \"7550.96\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"M25.561\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB48QTMR94858733712777\",\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00021",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300021\",\"policy_number\":\"POL-HZ27-195109\",\"claimant_name\":\"Cheyenne Herring\",\"date_of_incident\":\"2025-02-21\",\"date_of_service\":\"2025-02-21\",\"provider_name\":\"Dawson Clinic\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"1568.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"132.75\"}],\"total_amount\":\"1700.75\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"J06.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB48CUVX23847030117752\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00025",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Jennifer Frank",
+        "pred": "Mr./Ms. Jennifer Frank"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300025\",\n  \"policy_number\": \"POL-XB60-527984\",\n  \"claimant_name\": \"Mr./Ms. Jennifer Frank\",\n  \"date_of_incident\": \"2025-01-20\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Moreno-Hernandez\",\n  \"line_items\": [\n    { \"description\": \"Overtime surcharge\", \"amount\": \"505.00\" },\n    { \"description\": \"Diagnostic fee\", \"amount\": \"1220.00\" },\n    { \"description\": \"Subcontractor labor\", \"amount\": \"1603.00\" }\n  ],\n  \"total_amount\": \"3328.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"other\",\n  \"payout_iban\": \"GB45FPSR12514764986500\",\n  \"notes\": \"Documents follow by courier.\"\n}"
+  },
+  {
+    "doc_id": "test-00026",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "GBP"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300026\",\"policy_number\":\"POL-LA43-600943\",\"claimant_name\":\"Roger Ingram\",\"date_of_incident\":null,\"date_of_service\":\"2025-06-16\",\"provider_name\":\"East Jesus Urgent Care\",\"line_items\":[{\"description\":\"X-ray, 2 views\",\"amount\":\"1240.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"1698.00\"}],\"total_amount\":\"2938.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"H10.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB07QHGW22065900186970\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00027",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300027\",\"policy_number\":\"POL-ZH97-567892\",\"claimant_name\":\"Shannon Holt\",\"date_of_incident\":\"2024-03-19\",\"date_of_service\":null,\"provider_name\":\"Ochoastad Restoration Services\",\"line_items\":[{\"description\":\"Materials and consumables\",\"amount\":\"25.00\"},{\"description\":\"Replacement parts\",\"amount\":\"391.00\"},{\"description\":\"Service call-out\",\"amount\":\"666.00\"},{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"1167.00\"},{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"1686.00\"}],\"total_amount\":\"3935.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB12BSXU89311408971960\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00028",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Benjamin Turner",
+        "pred": "Mr./Ms. Benjamin Turner"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300028\",\"policy_number\":\"POL-XU92-913684\",\"claimant_name\":\"Mr./Ms. Benjamin Turner\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":\"Johnson Ltd\",\"line_items\":[{\"description\":\"Materials and consumables\",\"amount\":\"1780.00\"},{\"description\":\"Subcontractor labor\",\"amount\":\"337.00\"},{\"description\":\"Materials and consumables\",\"amount\":\"490.00\"},{\"description\":\"Overtime surcharge\",\"amount\":\"233.00\"},{\"description\":\"Towing and recovery\",\"amount\":\"1204.00\"},{\"description\":\"Diagnostic fee\",\"amount\":\"748.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"450.32\"}],\"total_amount\":\"5242.32\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":\"GB74XUZQ47120240031775\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00029",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300029\",\"policy_number\":\"POL-XG76-718709\",\"claimant_name\":\"KEVIN HAWKINS\",\"date_of_incident\":\"2024-04-05\",\"date_of_service\":\"2024-04-06\",\"provider_name\":\"Midwest Motor Works\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"1587.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1679.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"1784.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"784.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"330.24\"}],\"total_amount\":\"6164.24\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"BMP-31A\",\"vehicle_vin\":\"VXSU1ZB28E85RKUEC\",\"claim_type\":\"auto\",\"payout_iban\":\"GB84VJQV37813008587739\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00031",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Mason Taylor",
+        "pred": "Mr./Ms. Mason Taylor"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300031\",\"policy_number\":\"POL-QL61-223007\",\"claimant_name\":\"Mr./Ms. Mason Taylor\",\"date_of_incident\":\"2025-02-12\",\"date_of_service\":\"2025-02-13\",\"provider_name\":\"Delgado Clinic\",\"line_items\":[{\"description\":\"X-ray, 2 views\",\"amount\":\"270.00\"}],\"total_amount\":\"270.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"S61.401\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB46MTTT70314809375577\",\"notes\":\"Customer asked for a call back before 5 pm.\"}"
+  },
+  {
+    "doc_id": "test-00033",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Francisco Arnold",
+        "pred": "Mr./Ms. Francisco Arnold"
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": "Customer asked for a call back before 5 pm.\nAll work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300033\",\"policy_number\":\"POL-WS63-824189\",\"claimant_name\":\"Mr./Ms. Francisco Arnold\",\"date_of_incident\":\"2026-03-16\",\"date_of_service\":\"2026-03-31\",\"provider_name\":\"Precision Auto Repair\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"1792.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1399.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"653.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"1556.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"828.00\"}],\"total_amount\":\"6228.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":null,\"claim_type\":\"auto\",\"payout_iban\":\"GB16WDQE40580614521692\",\"notes\":\"Customer asked for a call back before 5 pm.\\nAll work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00038",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_service",
+        "truth": "2026-09-10",
+        "pred": "2026-10-09"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-300038\",\n  \"policy_number\": \"POL-VH71-850602\",\n  \"claimant_name\": null,\n  \"date_of_incident\": \"2026-09-03\",\n  \"date_of_service\": \"2026-10-09\",\n  \"provider_name\": \"Cherylstad Auto Body & Paint\",\n  \"line_items\": [\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"1288.00\"},\n    {\"description\": \"Tax / VAT\", \"amount\": \"89.36\"}\n  ],\n  \"total_amount\": \"1377.36\",\n  \"currency\": null,\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": \"AUWLEUVYJUMX2UVAX\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": null,\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00041",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300041\",\n  \"policy_number\": \"POL-NG35-299254\",\n  \"claimant_name\": \"Chelsea Fields\",\n  \"date_of_incident\": \"2023-11-01\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Jones, Brown and Perez\",\n  \"line_items\": [\n    {\"description\": \"Inspection fee\", \"amount\": \"1062.00\"},\n    {\"description\": \"Towing and recovery\", \"amount\": \"179.00\"},\n    {\"description\": \"Service call-out\", \"amount\": \"1298.00\"}\n  ],\n  \"total_amount\": \"2539.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"other\",\n  \"payout_iban\": \"GB18HFQL46798460047713\",\n  \"notes\": \"CONFIDENTIAL - FOR CLAIMS USE ONLY\"\n}"
+  },
+  {
+    "doc_id": "test-00044",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-07",
+        "pred": "2026-07-08"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300044\",\"policy_number\":null,\"claimant_name\":\"Gary Huffman\",\"date_of_incident\":\"2026-07-08\",\"date_of_service\":null,\"provider_name\":\"Leahfort Auto Body & Paint\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"65.00\"}],\"total_amount\":\"65.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":\"C3U0KC7TL2P0ZZ4KR\",\"claim_type\":\"auto\",\"payout_iban\":null,\"notes\":\"Documents follow by courier.\"}"
+  },
+  {
+    "doc_id": "test-00045",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Photos available on request.",
+        "pred": "Photos available on request. All work subject to parts availability."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300045\",\n  \"policy_number\": \"POL-CX90-977905\",\n  \"claimant_name\": \"Amy Marshall\",\n  \"date_of_incident\": \"2025-06-30\",\n  \"date_of_service\": null,\n  \"provider_name\": \"HomeShield Contractors\",\n  \"line_items\": [\n    {\"description\": \"Subcontractor labor\", \"amount\": \"948.00\"},\n    {\"description\": \"Overtime surcharge\", \"amount\": \"861.00\"},\n    {\"description\": \"Materials and consumables\", \"amount\": \"1693.00\"},\n    {\"description\": \"Inspection fee\", \"amount\": \"1397.00\"},\n    {\"description\": \"Service call-out\", \"amount\": \"1268.00\"}\n  ],\n  \"total_amount\": \"6167.00\",\n  \"currency\": \"GBP\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"property\",\n  \"payout_iban\": null,\n  \"notes\": \"Photos available on request. All work subject to parts availability.\"\n}"
+  },
+  {
+    "doc_id": "test-00046",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "GENERAL HOSPITAL"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-300046\",\n  \"policy_number\": \"POL-SQ67-383053\",\n  \"claimant_name\": \"Thomas Matthews\",\n  \"date_of_incident\": \"2024-10-24\",\n  \"date_of_service\": null,\n  \"provider_name\": \"GENERAL HOSPITAL\",\n  \"line_items\": [\n    {\"description\": \"Physical therapy session (45 min)\", \"amount\": \"1229.00\"},\n    {\"description\": \"Physical therapy session (45 min)\", \"amount\": \"1151.00\"},\n    {\"description\": \"MRI without contrast\", \"amount\": \"489.00\"},\n    {\"description\": \"MRI without contrast\", \"amount\": \"800.00\"},\n    {\"description\": \"Emergency department visit, level 3\", \"amount\": \"1502.00\"}\n  ],\n  \"total_amount\": \"5171.00\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"H10.9\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": null,\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00047",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300047\",\"policy_number\":null,\"claimant_name\":\"Larry Mills\",\"date_of_incident\":\"2023-12-23\",\"date_of_service\":null,\"provider_name\":\"St. Mills Medical Center\",\"line_items\":[{\"description\":\"Wound dressing and supplies\",\"amount\":\"428.00\"},{\"description\":\"Physician consultation\",\"amount\":\"283.00\"},{\"description\":\"Physical therapy session (45 min)\",\"amount\":\"513.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"79.47\"}],\"total_amount\":\"1303.47\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB43WFNB03347127921527\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00051",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": "Documents follow by courier.\nAll work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300051\",\"policy_number\":\"POL-YD25-588705\",\"claimant_name\":\"ALEXANDER BUTLER\",\"date_of_incident\":\"2026-07-12\",\"date_of_service\":\"2026-07-13\",\"provider_name\":\"Howe Clinic\",\"line_items\":[{\"description\":\"Emergency department visit, level 3\",\"amount\":\"749.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"558.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"831.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"1400.00\"}],\"total_amount\":\"3538.00\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB18XMXF38058418159800\",\"notes\":\"Documents follow by courier.\\nAll work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00057",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": "Customer asked for a call back before 5 pm. All work subject to parts availability."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300057\",\n  \"policy_number\": \"POL-RY41-756465\",\n  \"claimant_name\": \"RENEE LEWIS\",\n  \"date_of_incident\": \"2024-11-15\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Midwest Motor Works\",\n  \"line_items\": [\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"1405.00\"},\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"443.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"1325.00\"},\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"965.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"574.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"1518.00\"}\n  ],\n  \"total_amount\": \"6230.00\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"FIRE-ENG-01\",\n  \"vehicle_vin\": \"SXTPBF31B7EWN06SV\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB24LWIX45240276688122\",\n  \"notes\": \"Customer asked for a call back before 5 pm. All work subject to parts availability.\"\n}"
+  },
+  {
+    "doc_id": "test-00059",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300059\",\"policy_number\":\"POL-UX77-290841\",\"claimant_name\":\"Caroline Galvan\",\"date_of_incident\":\"2026-04-09\",\"date_of_service\":null,\"provider_name\":\"Paulmouth General Hospital\",\"line_items\":[{\"description\":\"Physical therapy session (45 min)\",\"amount\":\"1117.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"1671.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"1114.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"1223.00\"},{\"description\":\"Physical therapy session (45 min)\",\"amount\":\"1467.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"369.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"380.37\"}],\"total_amount\":\"7341.37\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"M54.5\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB13ECJS54902690128513\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00063",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Seth Jackson",
+        "pred": "Mr./Ms. Seth Jackson"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300063\",\"policy_number\":null,\"claimant_name\":\"Mr./Ms. Seth Jackson\",\"date_of_incident\":\"2025-08-16\",\"date_of_service\":null,\"provider_name\":\"North Davidfurt General Hospital\",\"line_items\":null,\"total_amount\":\"427.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB14DPZP94115474366979\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00065",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300065\",\"policy_number\":\"POL-FM38-807734\",\"claimant_name\":\"April Austin\",\"date_of_incident\":\"2024-10-16\",\"date_of_service\":null,\"provider_name\":\"Patelburgh Restoration Services\",\"line_items\":[{\"description\":\"Inspection fee\",\"amount\":\"1219.00\"},{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"1123.00\"},{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"1459.00\"}],\"total_amount\":\"3801.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB31MVNH21286045256856\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00069",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300069\",\"policy_number\":\"POL-OX60-835123\",\"claimant_name\":\"JENNIFER HALL\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":\"Russell Collision Center\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"1001.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"61.00\"}],\"total_amount\":\"1062.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":\"L5JK7A5URUP4UPK3M\",\"claim_type\":\"auto\",\"payout_iban\":\"GB53LEYZ69224840454261\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00070",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Richard Russell",
+        "pred": "Mr./Ms. Richard Russell"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300070\",\"policy_number\":\"POL-VO82-393617\",\"claimant_name\":\"Mr./Ms. Richard Russell\",\"date_of_incident\":\"2025-03-22\",\"date_of_service\":\"2025-04-04\",\"provider_name\":\"Karenland Auto Body & Paint\",\"line_items\":null,\"total_amount\":\"1124.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":null,\"claim_type\":\"auto\",\"payout_iban\":\"GB20GKSF88784081425872\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00071",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Insured requested expedited handling.",
+        "pred": "Margin note: Insured requested expedited handling."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300071\",\"policy_number\":\"POL-NN34-387169\",\"claimant_name\":\"KAREN POOLE\",\"date_of_incident\":\"2024-09-13\",\"date_of_service\":null,\"provider_name\":\"Midwest Motor Works\",\"line_items\":[{\"description\":\"ADAS recalibration\",\"amount\":\"1289.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1514.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1192.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"981.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"893.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"354.27\"}],\"total_amount\":\"6223.27\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":\"AL2ZUWSE0FJ07NND4\",\"claim_type\":\"auto\",\"payout_iban\":\"GB56XRVY82223400347374\",\"notes\":\"Margin note: Insured requested expedited handling.\"}"
+  },
+  {
+    "doc_id": "test-00072",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Sherri Johnson",
+        "pred": "Mr./Ms. Sherri Johnson"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300072\",\"policy_number\":\"POL-OG80-377374\",\"claimant_name\":\"Mr./Ms. Sherri Johnson\",\"date_of_incident\":\"2024-06-11\",\"date_of_service\":\"2024-06-20\",\"provider_name\":\"St. Black Medical Center\",\"line_items\":[{\"description\":\"MRI without contrast\",\"amount\":\"1172.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"113.75\"}],\"total_amount\":\"1285.75\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":null,\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00073",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Christopher Black",
+        "pred": "Mr./Ms. Christopher Black"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300073\",\"policy_number\":\"POL-UD24-734027\",\"claimant_name\":\"Mr./Ms. Christopher Black\",\"date_of_incident\":\"2026-03-20\",\"date_of_service\":\"2026-03-24\",\"provider_name\":\"St. Chambers Medical Center\",\"line_items\":null,\"total_amount\":\"1357.00\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":\"R51.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":null,\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00075",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300075\",\"policy_number\":\"POL-NV15-171700\",\"claimant_name\":\"MISTY JOHNSON\",\"date_of_incident\":\"2025-08-17\",\"date_of_service\":\"2025-08-27\",\"provider_name\":\"Apex Property Repair\",\"line_items\":[{\"description\":\"Towing and recovery\",\"amount\":\"1456.00\"},{\"description\":\"Diagnostic fee\",\"amount\":\"1481.00\"}],\"total_amount\":\"2937.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"BMP-31A\",\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB20JCXO62932383085347\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00081",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Insured requested expedited handling.",
+        "pred": "Insured requested expedited handling.\nAll work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300081\",\"policy_number\":\"POL-DU78-493467\",\"claimant_name\":\"CORY SMITH DDS\",\"date_of_incident\":\"2024-01-04\",\"date_of_service\":\"2024-01-12\",\"provider_name\":\"Johnson Clinic\",\"line_items\":null,\"total_amount\":\"3543.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"S93.401\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB16ONRU94271212749335\",\"notes\":\"Insured requested expedited handling.\\nAll work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00083",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300083\",\"policy_number\":null,\"claimant_name\":\"Joseph Bates\",\"date_of_incident\":\"2026-01-07\",\"date_of_service\":null,\"provider_name\":\"Owens-Osborn\",\"line_items\":[{\"description\":\"Replacement parts\",\"amount\":\"865.00\"},{\"description\":\"Replacement parts\",\"amount\":\"1249.00\"},{\"description\":\"Service call-out\",\"amount\":\"1520.00\"},{\"description\":\"Disposal fee\",\"amount\":\"351.00\"},{\"description\":\"Towing and recovery\",\"amount\":\"132.00\"},{\"description\":\"Inspection fee\",\"amount\":\"229.00\"}],\"total_amount\":\"4346.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":\"GB78XCWP83395570340374\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00084",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2025-11-01",
+        "pred": "2025-01-11"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300084\",\"policy_number\":null,\"claimant_name\":\"Jared Baker\",\"date_of_incident\":\"2025-01-11\",\"date_of_service\":null,\"provider_name\":\"West Nancy Restoration Services\",\"line_items\":[{\"description\":\"Disposal fee\",\"amount\":\"1752.00\"},{\"description\":\"Service call-out\",\"amount\":\"1595.00\"},{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"1740.00\"},{\"description\":\"Diagnostic fee\",\"amount\":\"1302.00\"},{\"description\":\"Disposal fee\",\"amount\":\"1608.00\"}],\"total_amount\":\"7997.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB92NFOI85260138585459\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00085",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Patricia Bush",
+        "pred": "Mr./Ms. Patricia Bush"
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2024-300085\", \"policy_number\": \"POL-WK33-334971\", \"claimant_name\": \"Mr./Ms. Patricia Bush\", \"date_of_incident\": \"2025-04-11\", \"date_of_service\": null, \"provider_name\": \"Apex Property Repair\", \"line_items\": [{\"description\": \"Materials and consumables\", \"amount\": \"1392.00\"}, {\"description\": \"Replacement parts\", \"amount\": \"1192.00\"}, {\"description\": \"Subcontractor labor\", \"amount\": \"952.00\"}, {\"description\": \"Service call-out\", \"amount\": \"1558.00\"}, {\"description\": \"Service call-out\", \"amount\": \"885.00\"}], \"total_amount\": \"5979.00\", \"currency\": \"CHF\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": \"GB04ZKWG01130429898920\", \"notes\": null}"
+  },
+  {
+    "doc_id": "test-00087",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300087\",\"policy_number\":\"POL-QW67-792189\",\"claimant_name\":\"Robert Carson\",\"date_of_incident\":\"2026-06-28\",\"date_of_service\":\"2026-07-06\",\"provider_name\":\"Port Danielle Urgent Care\",\"line_items\":[{\"description\":\"X-ray, 2 views\",\"amount\":\"712.00\"},{\"description\":\"Physician consultation\",\"amount\":\"32.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"354.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"504.00\"},{\"description\":\"Physician consultation\",\"amount\":\"147.00\"},{\"description\":\"Medication administration\",\"amount\":\"216.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"162.23\"}],\"total_amount\":\"2127.23\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":null,\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00097",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_service",
+        "truth": "2026-05-10",
+        "pred": "2026-10-05"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300097\",\"policy_number\":\"POL-AV96-830942\",\"claimant_name\":\"ROBIN HENDERSON\",\"date_of_incident\":\"2026-05-07\",\"date_of_service\":\"2026-10-05\",\"provider_name\":\"St. Medina Medical Center\",\"line_items\":[{\"description\":\"X-ray, 2 views\",\"amount\":\"1081.00\"}],\"total_amount\":\"1081.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"K21.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB50KTBL11343490647243\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00099",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Erin Patterson",
+        "pred": "Mr./Ms. Erin Patterson"
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-01-09",
+        "pred": "2026-09-01"
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300099\",\"policy_number\":\"POL-IM42-327680\",\"claimant_name\":\"Mr./Ms. Erin Patterson\",\"date_of_incident\":\"2026-09-01\",\"date_of_service\":null,\"provider_name\":\"Nguyen Clinic\",\"line_items\":null,\"total_amount\":\"2079.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"L03.115\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB19SLYV02539228408989\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00105",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300105\",\"policy_number\":\"POL-SR66-446161\",\"claimant_name\":\"Christine Campbell\",\"date_of_incident\":\"2025-07-19\",\"date_of_service\":null,\"provider_name\":\"Precision Auto Repair\",\"line_items\":null,\"total_amount\":\"1070.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"WTR-INT-07\",\"vehicle_vin\":\"F0SEDXGBZYXXBJP4U\",\"claim_type\":\"auto\",\"payout_iban\":\"GB58DLVU50591526190118\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00106",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "GBP"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300106\",\"policy_number\":\"POL-GA58-404664\",\"claimant_name\":\"MARK SMITH\",\"date_of_incident\":\"2024-01-01\",\"date_of_service\":null,\"provider_name\":\"Sullivan Collision Center\",\"line_items\":null,\"total_amount\":\"314.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"GLASS-WS\",\"vehicle_vin\":\"FXUER4EP53X4KPYFJ\",\"claim_type\":\"auto\",\"payout_iban\":\"GB50CIFU23814571923869\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00111",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300111\",\"policy_number\":null,\"claimant_name\":\"Kyle Zimmerman\",\"date_of_incident\":\"2026-03-20\",\"date_of_service\":\"2026-03-21\",\"provider_name\":\"West Sarah General Hospital\",\"line_items\":[{\"description\":\"MRI without contrast\",\"amount\":\"1203.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"1439.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"948.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"330.62\"}],\"total_amount\":\"3920.62\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":null,\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00112",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Thomas Leon",
+        "pred": "Mr./Ms. Thomas Leon"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300112\",\"policy_number\":\"POL-ZU48-226928\",\"claimant_name\":\"Mr./Ms. Thomas Leon\",\"date_of_incident\":\"2026-01-30\",\"date_of_service\":\"2026-02-14\",\"provider_name\":\"Precision Auto Repair\",\"line_items\":[{\"description\":\"Wheel alignment\",\"amount\":\"1285.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"261.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"389.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"135.88\"}],\"total_amount\":\"2070.88\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"FIRE-ENG-01\",\"vehicle_vin\":\"TEBMGDDMPMU19T80J\",\"claim_type\":\"auto\",\"payout_iban\":null,\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00114",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Matthew Barnes",
+        "pred": "Mr./Ms. Matthew Barnes"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300114\",\"policy_number\":\"POL-MX46-858059\",\"claimant_name\":\"Mr./Ms. Matthew Barnes\",\"date_of_incident\":\"2026-08-15\",\"date_of_service\":\"2026-08-22\",\"provider_name\":\"St. Simpson Medical Center\",\"line_items\":null,\"total_amount\":\"1274.00\",\"currency\":\"CHF\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB12FHOR89255306731157\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00117",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2024-09-12",
+        "pred": "2024-12-09"
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached, so no further tool calls are possible (none were needed for this extraction). The document was already OCR'd as plain text and all claim fields were extracted directly from it.\n\n**Completed:** Field extraction from the repair estimate.\n\n**Remaining:** Nothing except delivering the result.\n\n**Recommended next step:** Validate the extracted record against the ClaimPilot schema and route it for adjudication.\n\n```json\n{\"claim_id\":\"CLM-2024-300117\",\"policy_number\":\"POL-XU81-301233\",\"claimant_name\":\"WENDY CARROLL\",\"date_of_incident\":\"2024-12-09\",\"date_of_service\":null,\"provider_name\":\"Weissstad Auto Body & Paint\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"853.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"565.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"1412.00\"}],\"total_amount\":\"2830.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":\"0TLMZ3LHLNP6Y68MS\",\"claim_type\":\"auto\",\"payout_iban\":null,\"notes\":\"All work subject to parts availability.\"}\n```"
+  },
+  {
+    "doc_id": "test-00119",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2024-09-10",
+        "pred": "2024-10-09"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-300119\",\n  \"policy_number\": \"POL-VJ30-415931\",\n  \"claimant_name\": \"NICOLE GONZALEZ\",\n  \"date_of_incident\": \"2024-10-09\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Apex Property Repair\",\n  \"line_items\": [\n    {\"description\": \"Service call-out\", \"amount\": \"727.00\"},\n    {\"description\": \"Disposal fee\", \"amount\": \"39.00\"},\n    {\"description\": \"Subcontractor labor\", \"amount\": \"220.00\"},\n    {\"description\": \"Overtime surcharge\", \"amount\": \"917.00\"}\n  ],\n  \"total_amount\": \"1903.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": \"BMP-31A\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"property\",\n  \"payout_iban\": null,\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00123",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": "1971.00"
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": "Customer asked for a call back before 5 pm. All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300123\",\"policy_number\":\"POL-KN18-844996\",\"claimant_name\":\"Samuel Rodriguez\",\"date_of_incident\":\"2026-08-23\",\"date_of_service\":null,\"provider_name\":\"Angelaville Travel Partners\",\"line_items\":[{\"description\":\"Materials and consumables\",\"amount\":\"1701.00\"},{\"description\":\"Overtime surcharge\",\"amount\":\"290.00\"}],\"total_amount\":\"1971.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"travel\",\"payout_iban\":\"GB70AWUT10984695481695\",\"notes\":\"Customer asked for a call back before 5 pm. All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00124",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "GENERAL HOSPITAL"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300124\",\"policy_number\":\"POL-IU12-359408\",\"claimant_name\":\"KEVIN MCLEAN\",\"date_of_incident\":\"2025-07-20\",\"date_of_service\":\"2025-07-20\",\"provider_name\":\"GENERAL HOSPITAL\",\"line_items\":null,\"total_amount\":\"1279.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"J06.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB74JRDW28599056125689\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00125",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2025-06-09",
+        "pred": "2025-09-06"
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300125\",\"policy_number\":\"POL-HW89-148677\",\"claimant_name\":\"DEBORAH GOODWIN\",\"date_of_incident\":\"2025-09-06\",\"date_of_service\":null,\"provider_name\":\"SkyWay Airlines\",\"line_items\":[{\"description\":\"Disposal fee\",\"amount\":\"1517.00\"},{\"description\":\"Service call-out\",\"amount\":\"641.00\"}],\"total_amount\":\"2158.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"travel\",\"payout_iban\":\"GB14LSGP10273330761223\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00129",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300129\",\"policy_number\":\"POL-TJ59-265771\",\"claimant_name\":\"Jonathan Horton\",\"date_of_incident\":\"2025-10-20\",\"date_of_service\":null,\"provider_name\":\"Johnson, Diaz and Simmons\",\"line_items\":[{\"description\":\"Towing and recovery\",\"amount\":\"105.00\"},{\"description\":\"Subcontractor labor\",\"amount\":\"1068.00\"},{\"description\":\"Subcontractor labor\",\"amount\":\"586.00\"},{\"description\":\"Subcontractor labor\",\"amount\":\"108.00\"},{\"description\":\"Overtime surcharge\",\"amount\":\"585.00\"}],\"total_amount\":null,\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":null,\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00135",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300135\",\"policy_number\":\"POL-IT74-408242\",\"claimant_name\":\"Gabriel Gonzalez\",\"date_of_incident\":\"2024-10-26\",\"date_of_service\":\"2024-11-01\",\"provider_name\":\"Port Christyfort Urgent Care\",\"line_items\":null,\"total_amount\":\"311.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB31MKJA07852041576414\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00137",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300137\",\"policy_number\":\"POL-LN14-222984\",\"claimant_name\":\"DANIELLE FISHER\",\"date_of_incident\":\"2026-07-11\",\"date_of_service\":null,\"provider_name\":\"East Christopherport Auto Body & Paint\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"1022.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"254.00\"},{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"1107.00\"},{\"description\":\"Tail lamp assembly\",\"amount\":\"1389.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1600.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1224.00\"}],\"total_amount\":\"6596.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":\"KB1JSN9KNAPRDHPSF\",\"claim_type\":\"auto\",\"payout_iban\":null,\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00141",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300141\",\"policy_number\":\"POL-TQ85-237470\",\"claimant_name\":\"ALEXANDER NGUYEN\",\"date_of_incident\":\"2025-10-07\",\"date_of_service\":null,\"provider_name\":\"Flores Group\",\"line_items\":[{\"description\":\"Inspection fee\",\"amount\":\"1020.00\"},{\"description\":\"Overtime surcharge\",\"amount\":\"383.00\"}],\"total_amount\":\"1403.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":\"GB54WGXU56293891034774\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "test-00143",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300143\",\"policy_number\":\"POL-IQ24-814301\",\"claimant_name\":\"Alexander Fitzgerald\",\"date_of_incident\":\"2024-10-10\",\"date_of_service\":\"2024-10-28\",\"provider_name\":\"Midwest Motor Works\",\"line_items\":[{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"490.00\"}],\"total_amount\":\"490.00\",\"currency\":null,\"diagnosis_or_damage_code\":null,\"vehicle_vin\":\"6279PRVB4FWMPRU1K\",\"claim_type\":\"auto\",\"payout_iban\":\"GB32QTMM86591636661213\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00145",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2024-09-08",
+        "pred": "2024-08-09"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300145\",\"policy_number\":null,\"claimant_name\":\"Kathryn Le\",\"date_of_incident\":\"2024-08-09\",\"date_of_service\":null,\"provider_name\":\"Lake Mark Urgent Care\",\"line_items\":[{\"description\":\"Physician consultation\",\"amount\":\"506.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"960.00\"},{\"description\":\"Physical therapy session (45 min)\",\"amount\":\"977.00\"},{\"description\":\"MRI without contrast\",\"amount\":\"453.00\"}],\"total_amount\":\"2896.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB16XSCB96652777414759\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00147",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Adjuster site visit scheduled.",
+        "pred": "Adjuster site visit scheduled.\nAll work subject to parts availability."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-300147\",\n  \"policy_number\": \"POL-BI42-430878\",\n  \"claimant_name\": \"Jonathan Lopez\",\n  \"date_of_incident\": \"2024-12-28\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Port Michael Travel Partners\",\n  \"line_items\": null,\n  \"total_amount\": \"1922.00\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"travel\",\n  \"payout_iban\": \"GB34MLKM74984166361436\",\n  \"notes\": \"Adjuster site visit scheduled.\\nAll work subject to parts availability.\"\n}"
+  },
+  {
+    "doc_id": "test-00149",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300149\",\"policy_number\":\"POL-YG66-822503\",\"claimant_name\":\"Alex Miller\",\"date_of_incident\":\"2026-01-24\",\"date_of_service\":null,\"provider_name\":\"Burns Clinic\",\"line_items\":null,\"total_amount\":null,\"currency\":null,\"diagnosis_or_damage_code\":\"M25.561\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB11DNQE59762336041818\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00153",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_service",
+        "truth": "2024-04-16",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "Authorised Repair Facility"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300153\",\"policy_number\":\"POL-UW59-512110\",\"claimant_name\":\"Michael Donaldson\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":\"Authorised Repair Facility\",\"line_items\":[{\"description\":\"Laboratory panel, CBC\",\"amount\":\"1261.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"556.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"1719.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"322.38\"}],\"total_amount\":\"3858.38\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"R51.9\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":null,\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00159",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached, so no further tool calls will be made.\n\n**Work completed:** The claim document (vehicle repair estimate, Church Collision Center) was read and all schema fields were extracted, including normalization of European-formatted amounts (1.403,00 → 1403.00) and the total (5.606,00 → 5606.00, which matches the sum of the four line items), date conversion (03/31/2024 → 2024-03-31), and IBAN normalization (GB36 HPTX 0269 4813 9697 84 → GB36HPTX02694813969784).\n\n**Remaining tasks:** None for extraction; only the output delivery below.\n\n**Recommendation:** Validate the JSON against the schema and route to ClaimPilot intake; note that currency and policy number are absent from the document and were therefore left null.\n\n```json\n{\"claim_id\":\"CLM-2026-300159\",\"policy_number\":null,\"claimant_name\":\"Trevor Carter\",\"date_of_incident\":\"2024-03-31\",\"date_of_service\":null,\"provider_name\":\"Church Collision Center\",\"line_items\":[{\"description\":\"Radiator support bracket\",\"amount\":\"1403.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1066.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"1661.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1476.00\"}],\"t"
+  },
+  {
+    "doc_id": "test-00161",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300161\",\"policy_number\":\"POL-ER98-999126\",\"claimant_name\":\"DEAN WIGGINS\",\"date_of_incident\":\"2024-11-25\",\"date_of_service\":null,\"provider_name\":\"Carter Ltd\",\"line_items\":null,\"total_amount\":\"2579.00\",\"currency\":null,\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":\"GB07RQXN13666814627443\",\"notes\":\"CONFIDENTIAL - FOR CLAIMS USE ONLY\"}"
+  },
+  {
+    "doc_id": "test-00163",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Richard Greer",
+        "pred": "Mr./Ms. Richard Greer"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-300163\",\"policy_number\":null,\"claimant_name\":\"Mr./Ms. Richard Greer\",\"date_of_incident\":\"2024-10-15\",\"date_of_service\":\"2024-11-02\",\"provider_name\":\"Midwest Motor Works\",\"line_items\":[{\"description\":\"Tail lamp assembly\",\"amount\":\"1416.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"695.00\"},{\"description\":\"Body labor (4.0 hrs)\",\"amount\":\"1487.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"382.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"1709.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"60.00\"}],\"total_amount\":\"5749.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"COL-REAR-02\",\"vehicle_vin\":null,\"claim_type\":\"auto\",\"payout_iban\":\"GB53KEPE96384530261160\",\"notes\":\"Second occurrence at the same address.\"}"
+  },
+  {
+    "doc_id": "test-00166",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2025-08-04",
+        "pred": "2025-04-08"
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": "GBP"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300166\",\"policy_number\":\"POL-VR84-916443\",\"claimant_name\":null,\"date_of_incident\":\"2025-04-08\",\"date_of_service\":null,\"provider_name\":\"Osborne Clinic\",\"line_items\":[{\"description\":\"Laboratory panel, CBC\",\"amount\":\"70.00\"},{\"description\":\"Laboratory panel, CBC\",\"amount\":\"1413.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"109.29\"}],\"total_amount\":\"1592.29\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB20HLTO81617878901664\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00169",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2026-05-10",
+        "pred": "2026-10-05"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300169\",\"policy_number\":\"POL-QD50-875479\",\"claimant_name\":\"EMILY LITTLE\",\"date_of_incident\":\"2026-10-05\",\"date_of_service\":null,\"provider_name\":\"HomeShield Contractors\",\"line_items\":[{\"description\":\"Towing and recovery\",\"amount\":\"263.00\"},{\"description\":\"Inspection fee\",\"amount\":\"824.00\"},{\"description\":\"Replacement parts\",\"amount\":\"1694.00\"}],\"total_amount\":\"2781.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"HAIL-04\",\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB21WXSW53433639394280\",\"notes\":null}"
   }
 ]

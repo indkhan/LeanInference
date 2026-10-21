@@ -1,0 +1,238 @@
+loading Qwen/Qwen3.5-0.8B (4-bit)... adapter=None
+constrained decoding: lm-format-enforcer ON
+[1/400] test-00000 cached
+[2/400] test-00001 cached
+[3/400] test-00002 cached
+[4/400] test-00003 cached
+[5/400] test-00004 cached
+[6/400] test-00005 cached
+[7/400] test-00006 cached
+[8/400] test-00007 cached
+[9/400] test-00008 cached
+[10/400] test-00009 cached
+[11/400] test-00010 cached
+[12/400] test-00011 cached
+[13/400] test-00012 cached
+[14/400] test-00013 cached
+[15/400] test-00014 cached
+[16/400] test-00015 cached
+[17/400] test-00016 cached
+[18/400] test-00017 cached
+[19/400] test-00018 cached
+[20/400] test-00019 cached
+[21/400] test-00020 cached
+[22/400] test-00021 cached
+[23/400] test-00022 cached
+[24/400] test-00023 cached
+[25/400] test-00024 cached
+[26/400] test-00025 cached
+[27/400] test-00026 cached
+[28/400] test-00027 cached
+[29/400] test-00028 cached
+[30/400] test-00029 cached
+[31/400] test-00030 cached
+[32/400] test-00031 cached
+[33/400] test-00032 cached
+[34/400] test-00033 cached
+[35/400] test-00034 cached
+[36/400] test-00035 cached
+[37/400] test-00036 cached
+[38/400] test-00037 cached
+[39/400] test-00038 cached
+[40/400] test-00039 cached
+[41/400] test-00040 cached
+[42/400] test-00041 cached
+[43/400] test-00042 cached
+[44/400] test-00043 cached
+[45/400] test-00044 cached
+[46/400] test-00045 cached
+[47/400] test-00046 cached
+[48/400] test-00047 cached
+[49/400] test-00048 cached
+[50/400] test-00049 cached
+[51/400] test-00050 cached
+[52/400] test-00051 cached
+[53/400] test-00052 cached
+[54/400] test-00053 cached
+[55/400] test-00054 cached
+[56/400] test-00055 cached
+[57/400] test-00056 cached
+[58/400] test-00057 cached
+[59/400] test-00058 cached
+[60/400] test-00059 cached
+[61/400] test-00060 cached
+[62/400] test-00061 cached
+[63/400] test-00062 cached
+[64/400] test-00063 cached
+[65/400] test-00064 cached
+[66/400] test-00065 cached
+[67/400] test-00066 cached
+[68/400] test-00067 cached
+[69/400] test-00068 cached
+[70/400] test-00069 cached
+[71/400] test-00070 cached
+[72/400] test-00071 cached
+[73/400] test-00072 cached
+[74/400] test-00073 cached
+[75/400] test-00074 cached
+[76/400] test-00075 cached
+[77/400] test-00076 cached
+[78/400] test-00077 cached
+[79/400] test-00078 cached
+[80/400] test-00079 cached
+[81/400] test-00080 cached
+[82/400] test-00081 cached
+[83/400] test-00082 cached
+[84/400] test-00083 cached
+[85/400] test-00084 cached
+[86/400] test-00085 cached
+[87/400] test-00086 cached
+[88/400] test-00087 cached
+[89/400] test-00088 cached
+[90/400] test-00089 cached
+[91/400] test-00090 cached
+[92/400] test-00091 cached
+[93/400] test-00092 cached
+[94/400] test-00093 cached
+[95/400] test-00094 cached
+[96/400] test-00095 cached
+[97/400] test-00096 cached
+[98/400] test-00097 cached
+[99/400] test-00098 cached
+[100/400] test-00099 cached
+[101/400] test-00100 cached
+[102/400] test-00101 cached
+[103/400] test-00102 cached
+[104/400] test-00103 cached
+[105/400] test-00104 cached
+[106/400] test-00105 cached
+[107/400] test-00106 cached
+[108/400] test-00107 cached
+[109/400] test-00108 cached
+[110/400] test-00109 cached
+[111/400] test-00110 cached
+[112/400] test-00111 cached
+[113/400] test-00112 cached
+[114/400] test-00113 cached
+[115/400] test-00114 cached
+[116/400] test-00115 cached
+[117/400] test-00116 cached
+[118/400] test-00117 cached
+[119/400] test-00118 cached
+[120/400] test-00119 cached
+[121/400] test-00120 cached
+[122/400] test-00121 cached
+[123/400] test-00122 cached
+[124/400] test-00123 cached
+[125/400] test-00124 cached
+[126/400] test-00125 cached
+[127/400] test-00126 cached
+[128/400] test-00127 cached
+[129/400] test-00128 cached
+[130/400] test-00129 cached
+[131/400] test-00130 cached
+[132/400] test-00131 cached
+[133/400] test-00132 cached
+[134/400] test-00133 cached
+[135/400] test-00134 cached
+[136/400] test-00135 cached
+[137/400] test-00136 cached
+[138/400] test-00137 cached
+[139/400] test-00138 cached
+[140/400] test-00139 cached
+[141/400] test-00140 cached
+[142/400] test-00141 cached
+[143/400] test-00142 cached
+[144/400] test-00143 cached
+[145/400] test-00144 cached
+[146/400] test-00145 cached
+[147/400] test-00146 cached
+[148/400] test-00147 cached
+[149/400] test-00148 cached
+[150/400] test-00149 ok   34.8s in=1301 out=249
+[151/400] test-00150 ERR  87.4s in=1412 out=600  parse: unbalanced JSON in reply
+[152/400] test-00151 ok   49.4s in=1483 out=355
+[153/400] test-00152 ok   19.0s in=1346 out=134
+[154/400] test-00153 ok   46.1s in=1536 out=328
+[155/400] test-00154 ok   45.0s in=1358 out=306
+[156/400] test-00155 ok   59.6s in=1509 out=426
+[157/400] test-00156 ok   38.0s in=1438 out=292
+[158/400] test-00157 ok   40.6s in=1074 out=293
+[159/400] test-00158 ok   28.7s in=1006 out=220
+[160/400] test-00159 ok   54.7s in=1313 out=402
+[161/400] test-00160 ok   65.1s in=1397 out=392
+[162/400] test-00161 ok   44.6s in=1278 out=248
+[163/400] test-00162 ok   62.6s in=1402 out=353
+[164/400] test-00163 ok   61.5s in=1482 out=365
+[165/400] test-00164 ERR  82.4s in=1569 out=600  parse: unbalanced JSON in reply
+[166/400] test-00165 ok   31.6s in=1388 out=248
+[167/400] test-00166 ok   41.6s in=1343 out=303
+[168/400] test-00167 ok   60.3s in=1423 out=458
+[169/400] test-00168 ok   31.8s in=1352 out=240
+[170/400] test-00169 ok   38.1s in=1446 out=294
+[171/400] test-00170 ERR  76.4s in=1556 out=600  parse: unbalanced JSON in reply
+[172/400] test-00171 ok   31.6s in=1392 out=254
+[173/400] test-00172 ok   50.6s in=1321 out=410
+[174/400] test-00173 ok   52.1s in=1490 out=358
+[175/400] test-00174 ok   59.2s in=1435 out=399
+[176/400] test-00175 ok   47.2s in=1510 out=314
+[177/400] test-00176 ok   61.0s in=1445 out=449
+[178/400] test-00177 ok   58.5s in=1396 out=427
+[179/400] test-00178 ok   68.9s in=1515 out=412
+[180/400] test-00179 ok   58.9s in=1452 out=413
+[181/400] test-00180 ok   41.4s in=1423 out=347
+[182/400] test-00181 ok   53.8s in=1456 out=328
+[183/400] test-00182 ok   41.4s in=1449 out=256
+[184/400] test-00183 ok   80.4s in=1447 out=487
+[185/400] test-00184 ok   56.1s in=1468 out=325
+[186/400] test-00185 ok   45.4s in=1070 out=342
+[187/400] test-00186 ok   40.9s in=1328 out=300
+[188/400] test-00187 ok   45.7s in=1538 out=310
+[189/400] test-00188 ok   52.0s in=1107 out=361
+[190/400] test-00189 ok   56.4s in=1399 out=351
+[191/400] test-00190 ok   54.9s in=1032 out=367
+[192/400] test-00191 ok   71.3s in=1512 out=401
+[193/400] test-00192 ok   58.4s in=1098 out=412
+[194/400] test-00193 ok   35.5s in=1432 out=251
+[195/400] test-00194 ok   42.5s in=1538 out=278
+[196/400] test-00195 ok   37.3s in=1311 out=296
+[197/400] test-00196 ok   37.4s in=1398 out=297
+[198/400] test-00197 ok   31.0s in=1253 out=253
+[199/400] test-00198 ok   40.6s in=1305 out=333
+[200/400] test-00199 ok   51.9s in=1511 out=437
+[201/400] test-00200 ERR  74.6s in=1395 out=600  parse: unbalanced JSON in reply
+[202/400] test-00201 ok   31.7s in=1400 out=272
+[203/400] test-00202 ok   27.7s in=983 out=233
+[204/400] test-00203 ok   28.7s in=1375 out=236
+[205/400] test-00204 ok   43.5s in=1441 out=359
+[206/400] test-00205 ok   54.6s in=1463 out=454
+[207/400] test-00206 ok   47.6s in=1646 out=414
+[208/400] test-00207 ok   34.5s in=1445 out=295
+[209/400] test-00208 ok   34.3s in=1381 out=276
+[210/400] test-00209 ok   30.7s in=1309 out=246
+[211/400] test-00210 ok   41.2s in=1318 out=320
+[212/400] test-00211 ok   31.3s in=1331 out=254
+[213/400] test-00212 ok   24.9s in=1283 out=205
+[214/400] test-00213 ok   50.5s in=1567 out=427
+[215/400] test-00214 ERR  78.9s in=1548 out=600  parse: unbalanced JSON in reply
+[216/400] test-00215 ok   41.1s in=1300 out=334
+[217/400] test-00216 ok   33.8s in=1448 out=263
+[218/400] test-00217 ERR  78.7s in=1494 out=600  parse: unbalanced JSON in reply
+[219/400] test-00218 ok   29.3s in=1510 out=249
+[220/400] test-00219 ok   50.9s in=1421 out=412
+[221/400] test-00220 ok   44.0s in=1388 out=352
+[222/400] test-00221 ok   43.4s in=1365 out=367
+[223/400] test-00222 ok   41.1s in=1511 out=347
+[224/400] test-00223 ok   35.4s in=1468 out=314
+[225/400] test-00224 ok   29.8s in=1330 out=249
+[226/400] test-00225 ok   29.0s in=1271 out=243
+[227/400] test-00226 ok   37.9s in=1496 out=320
+[228/400] test-00227 ok   42.0s in=1333 out=351
+[229/400] test-00228 ok   34.1s in=1457 out=291
+[230/400] test-00229 ok   28.6s in=1440 out=246
+[231/400] test-00230 ok   43.9s in=1588 out=366
+[232/400] test-00231 ok   43.7s in=1490 out=361
+[233/400] test-00232 ok   38.8s in=1362 out=307
+[234/400] test-00233 ok   50.4s in=1468 out=402
+[235/400] test-00234 ERR  26.9s in=1335 out=217  parse: unbalanced JSON in reply
+[236/400] test-00235 ERR   1.9s in=1459 out=9  parse: unbalanced JSON in reply

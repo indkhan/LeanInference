@@ -69,12 +69,14 @@ def build_grammar_prefix_fn(tokenizer, schema):
 
     data = TokenEnforcerTokenizerData(regular_tokens, decode_fn, tokenizer.eos_token_id,
                                       False, vocab_size)
-    enforcer = TokenEnforcer(data, JsonSchemaParser(schema))
+    def new_prefix_fn():
+        # A fresh enforcer per document: TokenEnforcer caches every prefix state it has
+        # seen, and one shared instance grew until the process died ("bad allocation")
+        # every ~70-90 docs. The expensive vocab scan above stays shared.
+        enforcer = TokenEnforcer(data, JsonSchemaParser(schema))
+        return lambda batch_id, sent: enforcer.get_allowed_tokens(sent.tolist()).allowed_tokens
 
-    def prefix_fn(batch_id, sent):
-        return enforcer.get_allowed_tokens(sent.tolist()).allowed_tokens
-
-    return prefix_fn
+    return new_prefix_fn
 
 
 def load_model(model_id: str, adapter: str | None):
@@ -167,7 +169,7 @@ def main():
             gen = model.generate(
                 **inputs, max_new_tokens=args.max_new, do_sample=False,
                 pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id,
-                prefix_allowed_tokens_fn=prefix_fn,
+                prefix_allowed_tokens_fn=prefix_fn() if prefix_fn else None,
             )
         latency = time.perf_counter() - t0
         out_ids = gen[0][inputs["input_ids"].shape[1]:]
