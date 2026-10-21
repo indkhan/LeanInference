@@ -194,6 +194,9 @@ def main():
         preds.append(p)
         golds.append({k: r[k] for k in ("intent", "urgency", "sentiment")})
         lats.append(rec["latency_s"])
+    if n_fail:  # incomplete (rate-limited) pass: rerun to resume; only complete runs are results
+        print(f"[A] incomplete: {len(rows) - n_fail}/{len(rows)} done, {n_fail} failed calls - not logged")
+        return
     res = dict(metrics(preds, golds))
     lats.sort()
     p95 = lats[min(len(lats) - 1, int(len(lats) * 0.95))] if lats else None
