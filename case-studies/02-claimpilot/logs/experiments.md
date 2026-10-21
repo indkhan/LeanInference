@@ -193,3 +193,20 @@ mask backend is used.)
 
 Process notes: a GPU smoke test left running beside the Needle job spilled VRAM to system RAM and stalled
 both for ~6 h (Needle stuck at step 108); killed. Alone, Needle trains at ~1.7 s/step.
+
+## E10 — Needle 2-epoch retrain, the KV-window mismatch, xgrammar check (2026-10-21)
+
+- **Needle 3 LoRA, 2 epochs** (WSL2, RTX 3050, ~1.7 s/step alone): 2,700 steps, train loss 0.0145,
+  **val loss 0.0431** (epoch 1: 0.049). The CLI then spends >1 h on its built-in held-out score, which
+  generates with `max_new_tokens=96` while our records are ~300 tokens: it reported "0/150 held-out calls
+  exact" - a truncation artefact, not a measurement. The adapter is only written after that step.
+- **Default `needle build` archive collapses on long documents.** The base checkpoint carries
+  `kv_window=256` and `needle build` writes `min(KV budget, 256)` into the .cact, but the LoRA was trained
+  in JAX over full <=2,304-token rows. On val-00000..02 (2,042 / 3,340 / 490 chars): the 256-window
+  archive cut `claim_id` to `"CLM-2023-"` and nulled every other field on the two long docs (micro-F1
+  0.39); the short doc was near-exact. `train/needle_build_fullkv.py` writes the engine's full KV budget
+  (3,456 tokens; header kv_window 0x0100 -> 0x0D80): **micro-F1 0.94, 2/3 docs exact** on the same three.
+  The build choice is decided on the full val split (100 docs, both archives), then the chosen archive
+  runs once on the 400-doc test split. Base Needle (published archive) runs the "before" row.
+- **xgrammar check:** the 8 test docs whose line items lmfe had corrupted come out **8/8 doc-exact**
+  with xgrammar, at 3.9 s/doc (batch 8) vs 9.2 s/doc with lmfe.
