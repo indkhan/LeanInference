@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "classifier": {
+      "description": "Helpdeskly ticket labelling. Tools disabled, single step: behaves like a plain model API call.",
+      "mode": "primary",
+      "steps": 1
+    }
+  }
+}

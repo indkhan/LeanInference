@@ -14,6 +14,7 @@ Test rows are never shown to the model or used for prompt choice.
 Usage:
   python eval/run_a_hosted.py --stage zero_shot --split val
   python eval/run_a_hosted.py --stage few_shot --split test --workers 2
+  python eval/run_a_hosted.py --model opencode/beam-free --role base --stage zero_shot --split test
 
 Responses are cached per ticket in artifacts/a_<slug>_<stage>_<split>.jsonl, so a
 rerun only calls the model for missing ids.
@@ -94,7 +95,7 @@ def parse(reply):
 
 def call_model(model, system, text, timeout=180):
     prompt = f"{system}\nTicket: {text}\nAnswer:"
-    argv = [find_opencode(), "run", "-m", model, "--format", "json"]
+    argv = [find_opencode(), "run", "--agent", "classifier", "-m", model, "--format", "json"]
     t0 = time.perf_counter()
     try:
         proc = subprocess.run(argv, cwd=str(CASE / "eval"), input=prompt, capture_output=True,
@@ -128,6 +129,7 @@ def main():
     ap.add_argument("--split", choices=["val", "test"], required=True)
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--role", default="a", help="output tag prefix: a = candidate A, base = baseline proxy")
     args = ap.parse_args()
 
     rows = load(args.split)
@@ -141,7 +143,8 @@ def main():
     if cache_path.exists():
         for line in cache_path.read_text(encoding="utf-8").splitlines():
             rec = json.loads(line)
-            done[rec["id"]] = rec
+            if rec["pred"] is not None:  # failed calls (outage, rate limit) are retried
+                done[rec["id"]] = rec
 
     todo = [r for r in rows if r["id"] not in done]
     print(f"[A] {args.model} {args.stage} {args.split}: {len(todo)} to call, {len(done)} cached", flush=True)
@@ -194,7 +197,7 @@ def main():
     lats.sort()
     p95 = lats[min(len(lats) - 1, int(len(lats) * 0.95))] if lats else None
     p50 = lats[len(lats) // 2] if lats else None
-    tag = f"a_{args.stage}_{args.split}"
+    tag = f"{args.role}_{args.stage}_{args.split}"
     log_experiment(tag, model=args.model, intent=res["intent"], urgency=res["urgency"],
                    sentiment=res["sentiment"], failed_calls=n_fail, n=len(rows),
                    latency={"p50_s": p50, "p95_s": p95}, config={

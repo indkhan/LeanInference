@@ -1,0 +1,7150 @@
+{
+ "name": "b_needle_tuned",
+ "predictions": [
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  }
+ ],
+ "gold": [
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "positive"
+  }
+ ],
+ "metrics": {
+  "intent": {
+   "acc": 0.9543,
+   "macro_f1": 0.9516
+  },
+  "urgency": {
+   "acc": 0.8486,
+   "macro_f1": 0.8339,
+   "high_recall": 0.9007
+  },
+  "sentiment": {
+   "acc": 0.8957,
+   "macro_f1": 0.8824
+  }
+ },
+ "latency": {
+  "p50_ms": 96.0,
+  "p95_ms": 222.4,
+  "n": 100
+ },
+ "meta": {
+  "mode": "class-weighted LR, val-selected C, val-tuned P(high) threshold (F2)",
+  "model": "needle3-retrieval-head",
+  "device": "cpu",
+  "train_s": 615.9,
+  "heads": {
+   "intent": {
+    "C": 16.0,
+    "val_macro_f1": 0.9506
+   },
+   "urgency": {
+    "C": 16.0,
+    "val_macro_f1": 0.8521,
+    "threshold": 0.35,
+    "val_curve_t_f2_recall": [
+     [
+      0.05,
+      0.5837,
+      1.0
+     ],
+     [
+      0.1,
+      0.6623,
+      1.0
+     ],
+     [
+      0.15,
+      0.7143,
+      0.9667
+     ],
+     [
+      0.2,
+      0.7682,
+      0.95
+     ],
+     [
+      0.25,
+      0.8116,
+      0.9333
+     ],
+     [
+      0.3,
+      0.8333,
+      0.9167
+     ],
+     [
+      0.35,
+      0.8413,
+      0.8833
+     ],
+     [
+      0.4,
+      0.8007,
+      0.8167
+     ],
+     [
+      0.45,
+      0.777,
+      0.7667
+     ],
+     [
+      0.5,
+      0.6842,
+      0.65
+     ],
+     [
+      0.55,
+      0.6452,
+      0.6
+     ],
+     [
+      0.6,
+      0.5839,
+      0.5333
+     ],
+     [
+      0.65,
+      0.5678,
+      0.5167
+     ],
+     [
+      0.7,
+      0.4356,
+      0.3833
+     ],
+     [
+      0.75,
+      0.4198,
+      0.3667
+     ],
+     [
+      0.8,
+      0.3307,
+      0.2833
+     ],
+     [
+      0.85,
+      0.2191,
+      0.1833
+     ],
+     [
+      0.9,
+      0.0413,
+      0.0333
+     ],
+     [
+      0.95,
+      0.0,
+      0.0
+     ]
+    ]
+   },
+   "sentiment": {
+    "C": 16.0,
+    "val_macro_f1": 0.8945
+   }
+  }
+ },
+ "probe": {
+  "p50_ms": 96.0,
+  "p95_ms": 222.4,
+  "n": 100
+ }
+}

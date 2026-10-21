@@ -5,6 +5,9 @@ Two stages ("before -> after" for the results table):
           sentences, cosine-1NN to intent / urgency / sentiment. Zero training.
   after   embed 4,000 train tickets, train one logistic-regression head and one
           kNN per label (hyper-params picked on the 300-row val set).
+  tuned   class-weighted LR per head (C picked on val) + a val-tuned threshold on
+          P(high) for urgency: "high" when P(high) >= t, t maximising high-class F2 on
+          val (recall weighted 2x: a missed urgent ticket is the costly error).
 
 Two embedder arms with the same code:
   minilm  sentence-transformers/all-MiniLM-L6-v2 (standard open embedding model)
@@ -13,6 +16,7 @@ Two embedder arms with the same code:
 Usage:
   python candidate_b_clf.py --embedder minilm --stage both
   python candidate_b_clf.py --embedder needle --stage both
+  python candidate_b_clf.py --embedder minilm --stage tuned
 
 Writes artifacts/preds_b_<embedder>_<stage>.json and logs every experiment.
 """
@@ -139,6 +143,60 @@ def stage_after(train, val, texts, embed, embed_info):
     return preds, meta, embed_s + train_s
 
 
+def cached_embed(embed, embedder, split, texts):
+    """Embeddings are deterministic; cache them so tuning runs don't re-encode 5,000 tickets."""
+    import numpy as np
+    path = ARTIFACTS / f"emb_{embedder}_{split}.npy"
+    if path.exists():
+        v = np.load(path)
+        if len(v) == len(texts):
+            return v
+    v = np.asarray(embed(texts), dtype="float32")
+    np.save(path, v)
+    return v
+
+
+def stage_tuned(embedder, train, val, test, embed, embed_info):
+    import numpy as np
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import f1_score, fbeta_score
+
+    t0 = time.time()
+    E = {sp: cached_embed(embed, embedder, sp, [r["text"] for r in rows])
+         for sp, rows in (("train", train), ("val", val), ("test", test))}
+    preds = [{} for _ in test]
+    chosen = {}
+    for head in ("intent", "urgency", "sentiment"):
+        ytr, yva = [r[head] for r in train], [r[head] for r in val]
+        best, best_c, best_score = None, None, -1.0
+        for c in (0.25, 1.0, 4.0, 16.0):
+            clf = LogisticRegression(C=c, max_iter=3000, class_weight="balanced").fit(E["train"], ytr)
+            score = f1_score(yva, clf.predict(E["val"]), average="macro", zero_division=0)
+            if score > best_score:
+                best, best_c, best_score = clf, c, score
+        info = {"C": best_c, "val_macro_f1": round(best_score, 4)}
+        test_pred = list(best.predict(E["test"]))
+        if head == "urgency":
+            hi = list(best.classes_).index("high")
+            pv, pt = best.predict_proba(E["val"])[:, hi], best.predict_proba(E["test"])[:, hi]
+            yv = np.array([y == "high" for y in yva])
+            curve = []
+            for t in np.round(np.arange(0.05, 0.96, 0.05), 2):
+                curve.append((float(t), round(fbeta_score(yv, pv >= t, beta=2, zero_division=0), 4),
+                              round(float((pv >= t)[yv].mean()), 4)))
+            t_best = max(curve, key=lambda x: (x[1], x[0]))[0]  # ties -> higher t (fewer false alarms)
+            test_pred = ["high" if p >= t_best else (lab if lab != "high" else
+                         best.classes_[np.argsort(-pr)[1]])
+                         for p, lab, pr in zip(pt, test_pred, best.predict_proba(E["test"]))]
+            info.update({"threshold": t_best, "val_curve_t_f2_recall": curve})
+        chosen[head] = info
+        for i, v in enumerate(test_pred):
+            preds[i][head] = str(v)
+    meta = {"mode": "class-weighted LR, val-selected C, val-tuned P(high) threshold (F2)", **embed_info,
+            "train_s": round(time.time() - t0, 1), "heads": chosen}
+    return preds, meta, time.time() - t0
+
+
 def latency_probe(embed, texts, n=100):
     """Batch-1 single-request latency: one embed + one trivial classifier forward."""
     ts = []
@@ -155,7 +213,7 @@ def latency_probe(embed, texts, n=100):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--embedder", choices=["minilm", "needle"], required=True)
-    ap.add_argument("--stage", choices=["before", "after", "both"], default="both")
+    ap.add_argument("--stage", choices=["before", "after", "both", "tuned"], default="both")
     ap.add_argument("--latency", type=int, default=100)
     args = ap.parse_args()
 
@@ -172,6 +230,8 @@ def main():
         tag = f"b_{args.embedder}_{stage}"
         if stage == "before":
             preds, meta, run_s = stage_before(texts, embed, embed_info)
+        elif stage == "tuned":
+            preds, meta, run_s = stage_tuned(args.embedder, train, val, test, embed, embed_info)
         else:
             preds, meta, run_s = stage_after(train, val, texts, embed, embed_info)
         res = dict(metrics(preds, golds))
