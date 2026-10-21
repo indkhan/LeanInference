@@ -325,8 +325,106 @@ constrained decoding: lm-format-enforcer ON
 [323/400] test-00322 cached
 [324/400] test-00323 cached
 [325/400] test-00324 cached
-[326/400] test-00325 ok   47.6s in=1398 out=380
-[327/400] test-00326 ok   34.0s in=1418 out=260
-[328/400] test-00327 ok   54.3s in=1513 out=450
-[329/400] test-00328 ok   29.7s in=1276 out=269
-[330/400] test-00329 ok   43.5s in=993 out=332
+[326/400] test-00325 cached
+[327/400] test-00326 cached
+[328/400] test-00327 cached
+[329/400] test-00328 cached
+[330/400] test-00329 cached
+[331/400] test-00330 cached
+[332/400] test-00331 cached
+[333/400] test-00332 cached
+[334/400] test-00333 cached
+[335/400] test-00334 cached
+[336/400] test-00335 cached
+[337/400] test-00336 cached
+[338/400] test-00337 cached
+[339/400] test-00338 cached
+[340/400] test-00339 cached
+[341/400] test-00340 cached
+[342/400] test-00341 cached
+[343/400] test-00342 cached
+[344/400] test-00343 cached
+[345/400] test-00344 cached
+[346/400] test-00345 cached
+[347/400] test-00346 cached
+[348/400] test-00347 cached
+[349/400] test-00348 cached
+[350/400] test-00349 cached
+[351/400] test-00350 cached
+[352/400] test-00351 cached
+[353/400] test-00352 cached
+[354/400] test-00353 cached
+[355/400] test-00354 cached
+[356/400] test-00355 cached
+[357/400] test-00356 cached
+[358/400] test-00357 cached
+[359/400] test-00358 cached
+[360/400] test-00359 cached
+[361/400] test-00360 cached
+[362/400] test-00361 cached
+[363/400] test-00362 cached
+[364/400] test-00363 cached
+[365/400] test-00364 cached
+[366/400] test-00365 cached
+[367/400] test-00366 cached
+[368/400] test-00367 cached
+[369/400] test-00368 cached
+[370/400] test-00369 cached
+[371/400] test-00370 cached
+[372/400] test-00371 cached
+[373/400] test-00372 cached
+[374/400] test-00373 cached
+[375/400] test-00374 cached
+[376/400] test-00375 cached
+[377/400] test-00376 cached
+[378/400] test-00377 cached
+[379/400] test-00378 cached
+[380/400] test-00379 cached
+[381/400] test-00380 cached
+[382/400] test-00381 cached
+[383/400] test-00382 cached
+[384/400] test-00383 cached
+[385/400] test-00384 ERR  18.9s/doc (batch 8) in=1509 out=600  parse: unbalanced JSON in reply
+[386/400] test-00385 ok   18.9s/doc (batch 8) in=1514 out=374
+[387/400] test-00386 ok   18.9s/doc (batch 8) in=1452 out=363
+[388/400] test-00387 ok   18.9s/doc (batch 8) in=1509 out=352
+[389/400] test-00388 ok   18.9s/doc (batch 8) in=957 out=274
+[390/400] test-00389 ok   18.9s/doc (batch 8) in=1050 out=379
+[391/400] test-00390 ok   18.9s/doc (batch 8) in=1374 out=426
+[392/400] test-00391 ok   18.9s/doc (batch 8) in=1488 out=393
+[393/400] test-00392 ok   16.9s/doc (batch 8) in=1362 out=356
+[394/400] test-00393 ok   16.9s/doc (batch 8) in=986 out=298
+[395/400] test-00394 ok   16.9s/doc (batch 8) in=1019 out=293
+[396/400] test-00395 ok   16.9s/doc (batch 8) in=1002 out=301
+[397/400] test-00396 ok   16.9s/doc (batch 8) in=1573 out=446
+[398/400] test-00397 ERR  16.9s/doc (batch 8) in=1512 out=600  parse: unbalanced JSON in reply
+[399/400] test-00398 ok   16.9s/doc (batch 8) in=1384 out=516
+[400/400] test-00399 ok   16.9s/doc (batch 8) in=1336 out=242
+{
+  "model": "local__Qwen3.5-0.8B",
+  "tag": "before-ft-grammar",
+  "transport": "local_transformers",
+  "split": "test",
+  "docs": 400,
+  "ok": 370,
+  "ok_rate": 0.925,
+  "wall_s": 289.1,
+  "latency_p50": 38.754,
+  "latency_p95": 71.913,
+  "errors": [
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply"
+  ],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B_before-ft-grammar.jsonl",
+  "grammar": true,
+  "adapter": null
+}
+peak VRAM: 2.62 GB

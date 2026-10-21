@@ -170,3 +170,26 @@ consistent with the pilot; the full split decides the headline numbers.
   at doc 149, then at 325; fine-tuned eval at 131). The GPU queue (`gpu_queue.ps1`, one GPU job at a time,
   each step resumable) and the hosted runs are now started through WMI (`Win32_Process.Create`), outside
   the session's process tree.
+
+## E9 — Qwen3.5-0.8B before/after with lm-format-enforcer, and why it is being re-run (2026-10-21)
+
+400 test docs, 4-bit NF4, constrained decoding with lm-format-enforcer, batch 8 for the uncached docs
+(batch-8 outputs matched the batch-1 cache 16/16).
+
+| run | micro-F1 | doc exact | valid schema | total_amount acc | null discipline |
+|---|---|---|---|---|---|
+| before FT (base) | 0.3547 | 1.25% | 39.5% | 22.6% | 0.455 |
+| after FT (QLoRA adapter) | 0.9644 | 68.0% | 99.5% | **99.25%** | **1.000** |
+
+After FT, every scalar field is >= 0.954 F1 (most 0.99+), but **line_items F1 is 0.663**. All 66 wrong
+line items are the same artifact: a description ending in `)` comes out as `"...hrs),"` (stray comma)
+or `"...hrs"` (dropped paren). Feeding the gold output token by token into the enforcer shows why: Qwen
+tokenizes `)","` (close string + comma + open next key) as ONE token, and lm-format-enforcer rejects it,
+so greedy decoding takes the runner-up `),"` or `"`. The same model was 10/10 exact on val *without* a
+grammar (E7). xgrammar (the engine vLLM uses) accepts the full gold token sequence, so the before/after
+pair is re-run with xgrammar (`--engine xgrammar`, now the default; tags `*-xgr`). The lmfe rows stay in
+the log as evidence. (xgrammar's HF processor needs Triton, which has no Windows build; its pure-torch
+mask backend is used.)
+
+Process notes: a GPU smoke test left running beside the Needle job spilled VRAM to system RAM and stalled
+both for ~6 h (Needle stuck at step 108); killed. Alone, Needle trains at ~1.7 s/step.

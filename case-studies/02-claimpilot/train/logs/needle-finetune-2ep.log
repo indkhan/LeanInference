@@ -1,0 +1,12 @@
+starting fine-tune 2026-10-21T10:03:49+02:00 ...
+  backend   gpu  float32
+  depth     20 layers
+  data      1500 examples  seq_len 2304  cap 2304
+  numerics  CQ W4 STE + A8 (matches export)
+  lora      rank 16  alpha 32  5 weight groups
+  holdout   150 examples for validation
+  schedule  2700 steps  warmup 135  cosine decay  clip 1.0  (compiling...)
+  step      54/2700  loss 1.2387
+  step      108/2700  loss 0.9308
+  step      162/2700  loss 0.5233
+  step      216/2700  loss 0.2896

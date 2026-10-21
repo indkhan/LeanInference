@@ -79,6 +79,25 @@ def build_grammar_prefix_fn(tokenizer, schema):
     return new_prefix_fn
 
 
+def build_xgrammar(tokenizer, model_id, schema):
+    """xgrammar (the engine vLLM uses). lm-format-enforcer rejects tokens that span JSON
+    structure, e.g. Qwen's ')","' (close string + comma + open next key), so the model was
+    pushed to '),"' or '"' - a stray comma or a dropped ')' in line-item descriptions
+    (all 66 line_items errors of the first fine-tuned test run). Returns a factory of
+    per-generate() logits processors."""
+    import xgrammar as xgr
+    from transformers import AutoConfig
+    cfg = AutoConfig.from_pretrained(model_id)
+    vocab = getattr(cfg, "vocab_size", None) or cfg.text_config.vocab_size
+    info = xgr.TokenizerInfo.from_huggingface(tokenizer, vocab_size=vocab)
+    compiled = xgr.GrammarCompiler(info).compile_json_schema(json.dumps(schema))
+    # ponytail: the default CUDA mask kernel needs Triton (no Windows build); pin the pure-torch
+    # backend for the whole module rather than copying contrib.hf.LogitsProcessor.
+    apply = xgr.apply_token_bitmask_inplace
+    xgr.apply_token_bitmask_inplace = lambda lg, bm, **kw: apply(lg, bm, **{**kw, "backend": "torch_native"})
+    return lambda: xgr.contrib.hf.LogitsProcessor(compiled)
+
+
 def load_model(model_id: str, adapter: str | None, fp16: bool = False):
     """Load the 4-bit model. The checkpoint used here is already quantized
     (unsloth bnb-4bit), so only pass BitsAndBytesConfig when it is not."""
@@ -119,6 +138,7 @@ def main():
     ap.add_argument("--no-grammar", action="store_true")
     ap.add_argument("--no-cache", action="store_true")
     ap.add_argument("--batch", type=int, default=1, help="docs per generate call")
+    ap.add_argument("--engine", choices=["xgrammar", "lmfe"], default="xgrammar", help="constrained decoder")
     ap.add_argument("--fp16", action="store_true", help="load fp16 weights instead of 4-bit NF4")
     args = ap.parse_args()
 
@@ -131,8 +151,11 @@ def main():
     print(f"loading {args.model} (4-bit)... adapter={args.adapter}", flush=True)
     model = load_model(args.model, args.adapter, args.fp16)
 
-    prefix_fn = None
-    if not args.no_grammar:
+    prefix_fn = xgr_fn = None
+    if not args.no_grammar and args.engine == "xgrammar":
+        xgr_fn = build_xgrammar(tokenizer, args.model, LM_SCHEMA)
+        print("constrained decoding: xgrammar ON", flush=True)
+    elif not args.no_grammar:
         try:
             prefix_fn = build_grammar_prefix_fn(tokenizer, LM_SCHEMA)
             print("constrained decoding: lm-format-enforcer ON", flush=True)
@@ -182,6 +205,7 @@ def main():
                 **inputs, max_new_tokens=args.max_new, do_sample=False,
                 pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id,
                 prefix_allowed_tokens_fn=(lambda bid, sent: fns[bid](bid, sent)) if fns else None,
+                logits_processor=[xgr_fn()] if xgr_fn else None,
             )
         latency = (time.perf_counter() - t0) / len(chunk)
         for j, doc in enumerate(chunk):
@@ -229,7 +253,7 @@ def main():
         "latency_p95": lats[min(len(lats) - 1, int(len(lats) * 0.95))] if lats else None,
         "errors": [r["error"] for r in records if r["error"]][:10],
         "results_file": str(out_file.relative_to(CASE)),
-        "grammar": prefix_fn is not None,
+        "grammar": None if args.no_grammar else args.engine,
         "adapter": args.adapter,
     }
     (RESULTS / f"run_{slug}_{args.tag}.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
