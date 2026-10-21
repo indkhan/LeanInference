@@ -129,6 +129,7 @@ def main():
     ap.add_argument("--split", choices=["val", "test"], required=True)
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--attempts", type=int, default=6, help="tries per ticket (rate-limit backoff)")
     ap.add_argument("--role", default="a", help="output tag prefix: a = candidate A, base = baseline proxy")
     args = ap.parse_args()
 
@@ -151,7 +152,7 @@ def main():
 
     def work(r):
         # Free tier rate-limits: retry with backoff. Only successful records are cached.
-        for attempt in range(6):
+        for attempt in range(args.attempts):
             raw, err, lat = call_model(args.model, system, r["text"])
             pred, parse_err = None, None
             if raw is not None:
