@@ -18,7 +18,7 @@ import time
 from pathlib import Path
 
 os.environ.setdefault("NEEDLE_TELEMETRY", "0")
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "train"))
 from common_lib import ARTIFACTS, INTENTS, load, log_experiment, metrics  # noqa: E402
 
 SCHEMA = {
@@ -53,8 +53,8 @@ def to_label(resp):
             or args.get("urgency") not in ("low", "medium", "high")
             or args.get("sentiment") not in ("negative", "neutral", "positive")):
         return None, "invalid", timing
-    return ({k: args[k] for k in ("intent", "urgency", "sentiment")}, resp.get("reasoning")),
-           "ok", timing
+    return (({k: args[k] for k in ("intent", "urgency", "sentiment")}, resp.get("reasoning")),
+            "ok", timing)
 
 
 def run_stage(stage, weights, split="test", tag=None):
@@ -63,8 +63,11 @@ def run_stage(stage, weights, split="test", tag=None):
     texts = [r["text"] for r in ticket_rows]
     golds = [{k: r[k] for k in ("intent", "urgency", "sentiment")} for r in ticket_rows]
 
-    agent = needle.Needle(tools=[SCHEMA], system=SYSTEM,
-                          weights=weights if stage == "after" else None)
+    # after: no system prompt - data/needle_train.jsonl has none, and with one the tuned agent
+    # suppressed its own call (counted as a refusal). before: the base model's zero-shot instruction.
+    agent = needle.Needle(tools=[SCHEMA], system=SYSTEM if stage == "before" else None,
+                          weights=weights if stage == "after" else None,
+                          stateless=True)  # each ticket alone: without it every turn stayed in context
     agent.complete("warmup: where is my order ORD-12345?")  # engine spin-up, not scored
 
     preds, raws, ok = [], [], {"ok": 0, "refusal": 0, "invalid": 0}
