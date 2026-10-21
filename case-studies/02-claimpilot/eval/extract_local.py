@@ -79,14 +79,16 @@ def build_grammar_prefix_fn(tokenizer, schema):
     return new_prefix_fn
 
 
-def load_model(model_id: str, adapter: str | None):
+def load_model(model_id: str, adapter: str | None, fp16: bool = False):
     """Load the 4-bit model. The checkpoint used here is already quantized
     (unsloth bnb-4bit), so only pass BitsAndBytesConfig when it is not."""
     from transformers import AutoConfig, AutoModelForCausalLM
 
     cfg = AutoConfig.from_pretrained(model_id)
     qcfg = getattr(cfg, "quantization_config", None)
-    if qcfg is not None:
+    if fp16:  # unquantized weights: no 4-bit dequant per step (fits easily for 0.8B)
+        model = AutoModelForCausalLM.from_pretrained(model_id, device_map={"": 0}, **load_dtype_kwarg())
+    elif qcfg is not None:
         print(f"pre-quantized checkpoint: {qcfg.get('bnb_4bit_quant_type', '?')} "
               f"compute={qcfg.get('bnb_4bit_compute_dtype', '?')}", flush=True)
         model = AutoModelForCausalLM.from_pretrained(model_id, device_map={"": 0},
@@ -116,6 +118,8 @@ def main():
     ap.add_argument("--max-new", type=int, default=448)
     ap.add_argument("--no-grammar", action="store_true")
     ap.add_argument("--no-cache", action="store_true")
+    ap.add_argument("--batch", type=int, default=1, help="docs per generate call")
+    ap.add_argument("--fp16", action="store_true", help="load fp16 weights instead of 4-bit NF4")
     args = ap.parse_args()
 
     from transformers import AutoTokenizer
@@ -125,7 +129,7 @@ def main():
         tokenizer.pad_token = tokenizer.eos_token
 
     print(f"loading {args.model} (4-bit)... adapter={args.adapter}", flush=True)
-    model = load_model(args.model, args.adapter)
+    model = load_model(args.model, args.adapter, args.fp16)
 
     prefix_fn = None
     if not args.no_grammar:
@@ -150,6 +154,7 @@ def main():
 
     records = []
     t_start = time.time()
+    todo = []
     for i, doc in enumerate(docs, 1):
         cache_file = cache_dir / f"{doc['id']}.json"
         if cache_file.exists() and not args.no_cache:
@@ -157,46 +162,55 @@ def main():
             rec["cached"] = True
             records.append(rec)
             print(f"[{i}/{len(docs)}] {doc['id']} cached", flush=True)
-            continue
+        else:
+            todo.append(doc)
 
-        prompt = tokenizer.apply_chat_template(
-            [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": doc["text"]}],
-            tokenize=False, add_generation_prompt=True,
-        )
-        inputs = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).to(model.device)
+    # Batched generation keeps the GPU busy (batch 1 is CPU-bound: per-token grammar checks and
+    # Qwen3.5's PyTorch fallback kernels). Left padding; one grammar enforcer per row.
+    # latency_s = batch wall time / rows (throughput); measure serving latency with --batch 1.
+    tokenizer.padding_side = "left"
+    for b in range(0, len(todo), args.batch):
+        chunk = todo[b:b + args.batch]
+        prompts = [tokenizer.apply_chat_template(
+            [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": d["text"]}],
+            tokenize=False, add_generation_prompt=True) for d in chunk]
+        inputs = tokenizer(prompts, return_tensors="pt", add_special_tokens=False, padding=True).to(model.device)
+        fns = [prefix_fn() for _ in chunk] if prefix_fn else None
         t0 = time.perf_counter()
         with torch.no_grad():
             gen = model.generate(
                 **inputs, max_new_tokens=args.max_new, do_sample=False,
                 pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id,
-                prefix_allowed_tokens_fn=prefix_fn() if prefix_fn else None,
+                prefix_allowed_tokens_fn=(lambda bid, sent: fns[bid](bid, sent)) if fns else None,
             )
-        latency = time.perf_counter() - t0
-        out_ids = gen[0][inputs["input_ids"].shape[1]:]
-        raw = tokenizer.decode(out_ids, skip_special_tokens=True)
-        err = None
-        parsed = None
-        try:
-            parsed = extract_json_object(raw)
-        except Exception as ex:  # noqa: BLE001
-            err = f"parse: {ex}"
-
-        rec = {
-            "doc_id": doc["id"], "family": doc["family"],
-            "model": label, "tag": args.tag, "transport": "local_transformers",
-            "ok": parsed is not None, "error": err,
-            "attempts": 1,
-            "latency_s": round(latency, 3),
-            "raw": raw, "parsed": parsed,
-            "tokens_in_est": int(inputs["input_ids"].shape[1]),
-            "tokens_out_est": int(out_ids.shape[0]),
-            "ts": int(time.time()), "cached": False,
-        }
-        cache_file.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
-        records.append(rec)
-        print(f"[{i}/{len(docs)}] {doc['id']} {'ok ' if parsed is not None else 'ERR'} "
-              f"{latency:5.1f}s in={rec['tokens_in_est']} out={rec['tokens_out_est']}"
-              + (f"  {err[:70]}" if err else ""), flush=True)
+        latency = (time.perf_counter() - t0) / len(chunk)
+        for j, doc in enumerate(chunk):
+            out_ids = gen[j][inputs["input_ids"].shape[1]:]
+            out_ids = out_ids[out_ids != tokenizer.pad_token_id]
+            raw = tokenizer.decode(out_ids, skip_special_tokens=True)
+            err = None
+            parsed = None
+            try:
+                parsed = extract_json_object(raw)
+            except Exception as ex:  # noqa: BLE001
+                err = f"parse: {ex}"
+            rec = {
+                "doc_id": doc["id"], "family": doc["family"],
+                "model": label, "tag": args.tag, "transport": "local_transformers",
+                "ok": parsed is not None, "error": err,
+                "attempts": 1, "batch": len(chunk),
+                "latency_s": round(latency, 3),
+                "raw": raw, "parsed": parsed,
+                "tokens_in_est": int(inputs["attention_mask"][j].sum()),
+                "tokens_out_est": int(out_ids.shape[0]),
+                "ts": int(time.time()), "cached": False,
+            }
+            (cache_dir / f"{doc['id']}.json").write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
+            records.append(rec)
+            print(f"[{len(records)}/{len(docs)}] {doc['id']} {'ok ' if parsed is not None else 'ERR'} "
+                  f"{latency:5.1f}s/doc (batch {len(chunk)}) in={rec['tokens_in_est']} out={rec['tokens_out_est']}"
+                  + (f"  {err[:70]}" if err else ""), flush=True)
+    records.sort(key=lambda r: r["doc_id"])
 
     slug = slugify(label)
     out_file = RESULTS / f"results_{slug}_{args.tag}.jsonl"
