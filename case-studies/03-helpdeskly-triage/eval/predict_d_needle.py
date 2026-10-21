@@ -57,9 +57,9 @@ def to_label(resp):
            "ok", timing
 
 
-def run_stage(stage, weights):
+def run_stage(stage, weights, split="test", tag=None):
     import needle
-    ticket_rows = load("test")
+    ticket_rows = load(split)
     texts = [r["text"] for r in ticket_rows]
     golds = [{k: r[k] for k in ("intent", "urgency", "sentiment")} for r in ticket_rows]
 
@@ -86,11 +86,11 @@ def run_stage(stage, weights):
     probe = {"p50_ms": round(lat[len(lat) // 2], 1),
              "p95_ms": round(lat[int(len(lat) * 0.95)], 1), "n": len(lat)}
     res = dict(metrics(preds, golds))
-    tag = f"d_needle_{stage}"
+    tag = tag or f"d_needle_{stage}"
     log_experiment(tag, intent=res["intent"], urgency=res["urgency"],
                    sentiment=res["sentiment"], latency=probe, turns=ok,
                    mean_decode_tps=median(raws, "decode_tps"), peak_ram_mb=median(raws, "peak_ram_mb"),
-                   weights=str(weights), config="needle3 record-as-tool, 1 call, batch-1", test_n=len(texts))
+                   weights=str(weights), config="needle3 record-as-tool, 1 call, batch-1", split=split, n=len(texts))
     (ARTIFACTS / f"preds_{tag}.json").write_text(json.dumps(
         {"name": tag, "predictions": preds, "gold": golds, "metrics": res,
          "latency": probe, "turns": ok, "raw": raws, "config": "1-tool record, batch-1",
@@ -107,5 +107,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", choices=["before", "after"], required=True)
     ap.add_argument("--weights", default="tuned.cact")
+    ap.add_argument("--split", default="test", choices=["val", "test"])
+    ap.add_argument("--tag", default=None, help="output name (default d_needle_<stage>)")
     args = ap.parse_args()
-    run_stage(args.stage, args.weights)
+    run_stage(args.stage, args.weights, args.split, args.tag)
