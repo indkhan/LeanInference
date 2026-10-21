@@ -90,8 +90,9 @@ def train(args):
                 "labels": torch.tensor([x["labels"] + [-100] * (n - len(x["labels"])) for x in b]),
                 "attention_mask": torch.tensor([[1] * len(x["input_ids"]) + [0] * (n - len(x["input_ids"])) for x in b])}
 
-    targs = TrainingArguments(output_dir=str(OUT / "checkpoints"), per_device_train_batch_size=4,
-                              per_device_eval_batch_size=4, gradient_accumulation_steps=4,
+    # ~170-token rows: batch 16 in one step keeps the GPU busy (same effective batch as 4 x 4)
+    targs = TrainingArguments(output_dir=str(OUT / "checkpoints"), per_device_train_batch_size=16,
+                              per_device_eval_batch_size=16, gradient_accumulation_steps=1,
                               num_train_epochs=args.epochs, learning_rate=2e-4, lr_scheduler_type="cosine",
                               warmup_steps=20, logging_steps=10, eval_strategy="epoch", save_strategy="epoch",
                               save_total_limit=2, fp16=True, report_to=[], seed=42, dataloader_num_workers=0,
@@ -101,7 +102,7 @@ def train(args):
     minutes = (time.time() - t0) / 60
     model.save_pretrained(str(OUT))
     tok.save_pretrained(str(OUT))
-    cfg = {"model": MODEL, "epochs": args.epochs, "lr": 2e-4, "lora_r": 16, "batch": "4 x accum 4",
+    cfg = {"model": MODEL, "epochs": args.epochs, "lr": 2e-4, "lora_r": 16, "batch": "16 x accum 1",
            "train_rows": len(tr), "train_minutes": round(minutes, 1),
            "peak_vram_gb": round(torch.cuda.max_memory_allocated() / 1e9, 2)}
     (OUT / "train_config.json").write_text(json.dumps(cfg, indent=2), encoding="utf-8")
