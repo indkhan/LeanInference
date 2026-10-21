@@ -1,61 +1,56 @@
-r"""Local in-process inference (Unsloth 4-bit) for candidate B, base or + LoRA adapter.
+r"""Local in-process inference (transformers + bitsandbytes 4-bit + PEFT) for candidate B.
 
 Windows has no vLLM, so this replaces the vllm adapter for local runs. Greedy decoding,
-non-thinking chat template (same as training). The shared system prompt is prefilled once
-and its KV cache reused for every request, so latency = request prefill + decode only;
-that is what a prefix-caching server (vLLM/llama.cpp) would do in production.
+non-thinking chat template (same as training), batch 1. Latency = full prefill + decode
+(the no-schema prompts are short, so no prefix-cache trick). Unsloth was dropped: it is
+the part that kept failing on this 6 GB laptop (see train/experiments.csv).
 
-  .venv\Scripts\python.exe eval/run_eval.py --adapter hf --model Qwen/Qwen3-4B-Instruct-2507
-  .venv\Scripts\python.exe eval/run_eval.py --adapter hf --model qwen3-4b-ft \
-      --adapter-path train/qwen/out/Qwen__Qwen3-4B-Instruct-2507/final
+  .venv\Scripts\python.exe eval/run_eval.py --adapter hf --model Qwen/Qwen3.5-0.8B \
+      --prompt-file eval/prompt_noschema.md
+  .venv\Scripts\python.exe eval/run_eval.py --adapter hf --model qwen3.5-0.8b-ft \
+      --adapter-path train/qwen/out/Qwen__Qwen3.5-0.8B-noschema/final --prompt-file eval/prompt_noschema.md
 """
 from __future__ import annotations
 
-import copy
+import json
 import time
+from pathlib import Path
 
 
 class HFAdapter:
     def __init__(self, model: str, adapter_path: str | None = None, max_tokens: int = 256,
                  base_model: str | None = None, **_ignored):
         import torch
-        from unsloth import FastLanguageModel
+        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
         self.torch = torch
-        name = adapter_path or base_model or model
-        self.model, tok = FastLanguageModel.from_pretrained(
-            model_name=name, max_seq_length=8192, dtype=None, load_in_4bit=True)
-        FastLanguageModel.for_inference(self.model)
+        if adapter_path:
+            base = base_model or json.loads((Path(adapter_path) / "adapter_config.json").read_text())[
+                "base_model_name_or_path"]
+        else:
+            base = base_model or model
+        self.model = AutoModelForCausalLM.from_pretrained(
+            base, device_map={"": 0}, dtype=torch.float16,
+            quantization_config=BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                                                   bnb_4bit_compute_dtype=torch.float16,
+                                                   bnb_4bit_use_double_quant=True))
+        if adapter_path:
+            from peft import PeftModel
+            self.model = PeftModel.from_pretrained(self.model, adapter_path)
+        self.model.eval()
+        tok = AutoTokenizer.from_pretrained(base)
         self.tok = getattr(tok, "tokenizer", tok)  # multimodal checkpoints ship a Processor
         self.max_tokens = max_tokens
-        self.prefix_ids = None
-        self.prefix_cache = None
-
-    def _render(self, system, user):
-        msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]
-        try:
-            return self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True,
-                                                enable_thinking=False)
-        except TypeError:
-            return self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
 
     def predict(self, record, system, tools_doc):
         torch = self.torch
         user = f"Today: {record['request_date']}\nRequest: {record['request']}"
-        ids = self.tok(self._render(system, user), return_tensors="pt").input_ids.to("cuda")
-        if self.prefix_ids is None:  # common prefix = everything up to the user text
-            probe = self.tok(self._render(system, "\x00"), return_tensors="pt").input_ids[0]
-            n = 0
-            while n < min(len(probe), ids.shape[1]) and probe[n] == ids[0, n]:
-                n += 1
-            self.prefix_ids = ids[:, :n - 1]
-            with torch.no_grad():
-                self.prefix_cache = self.model(self.prefix_ids, use_cache=True).past_key_values
-        n = self.prefix_ids.shape[1]
-        assert torch.equal(ids[:, :n], self.prefix_ids), "prompt prefix drifted"
+        msgs = [{"role": "system", "content": system}, {"role": "user", "content": user}]
+        text = self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True,
+                                            enable_thinking=False)
+        ids = self.tok(text, return_tensors="pt", add_special_tokens=False).input_ids.to("cuda")
         t0 = time.perf_counter()
         with torch.no_grad():
-            out = self.model.generate(input_ids=ids, past_key_values=copy.deepcopy(self.prefix_cache),
-                                      max_new_tokens=self.max_tokens, do_sample=False,
+            out = self.model.generate(input_ids=ids, max_new_tokens=self.max_tokens, do_sample=False,
                                       pad_token_id=self.tok.eos_token_id)
         torch.cuda.synchronize()
         ms = int((time.perf_counter() - t0) * 1000)
