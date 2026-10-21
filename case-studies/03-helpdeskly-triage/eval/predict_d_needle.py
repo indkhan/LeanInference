@@ -44,7 +44,13 @@ def to_label(resp):
     """Merge one engine turn into (labels|None, kind, timing-fields)."""
     timing = {"prefill_tps": resp.get("prefill_tps"), "decode_tps": resp.get("decode_tps"),
               "peak_ram_mb": resp.get("peak_ram_mb")}
+    # The engine moves calls whose values are not literally in the input to suppressed_calls -
+    # i.e. every enum label of a classifier. needle.extract() itself returns
+    # `function_calls or suppressed_calls`; we do the same and count them as "suppressed".
     calls = (resp or {}).get("function_calls") or []
+    kind = "ok"
+    if not calls:
+        calls, kind = (resp or {}).get("suppressed_calls") or [], "suppressed"
     if not calls:
         return None, "refusal", timing
     args = calls[0].get("arguments", {})
@@ -54,7 +60,7 @@ def to_label(resp):
             or args.get("sentiment") not in ("negative", "neutral", "positive")):
         return None, "invalid", timing
     return (({k: args[k] for k in ("intent", "urgency", "sentiment")}, resp.get("reasoning")),
-            "ok", timing)
+            kind, timing)
 
 
 def run_stage(stage, weights, split="test", tag=None):
@@ -70,7 +76,7 @@ def run_stage(stage, weights, split="test", tag=None):
                           stateless=True)  # each ticket alone: without it every turn stayed in context
     agent.complete("warmup: where is my order ORD-12345?")  # engine spin-up, not scored
 
-    preds, raws, ok = [], [], {"ok": 0, "refusal": 0, "invalid": 0}
+    preds, raws, ok = [], [], {"ok": 0, "suppressed": 0, "refusal": 0, "invalid": 0}
     lat = []
     for i, t in enumerate(texts):
         t0 = time.perf_counter()
