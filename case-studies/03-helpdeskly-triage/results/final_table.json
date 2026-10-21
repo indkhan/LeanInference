@@ -1,0 +1,306 @@
+{
+  "as_of": "2026-10-20",
+  "winner": "C: Qwen3.5-0.8B LoRA label generator",
+  "bar_provisional": true,
+  "rows": [
+    {
+      "name": "Baseline proxy: Nemotron 3 Ultra 550B (zero-shot)",
+      "after": "base_zero_shot_test",
+      "hosted": [
+        "nvidia_nemotron-3-ultra-550b-a55b_free",
+        "zero_shot"
+      ],
+      "price": "frontier",
+      "where": "third-party API",
+      "size": "550B (API)",
+      "train": "none",
+      "baseline": true,
+      "usd1m": null,
+      "monthly": null,
+      "basis": "not complete"
+    },
+    {
+      "name": "Candidate A: MiniMax M3.1 Flash (few-shot)",
+      "after": "a_few_shot_test",
+      "hosted": [
+        "minimax_minimax-m3.1-flash_free",
+        "few_shot"
+      ],
+      "price": "candidate_a",
+      "where": "third-party API",
+      "size": "API",
+      "train": "none (prompt + 24 shots)",
+      "usd1m": 563.2264285714285,
+      "monthly": 563.2264285714285,
+      "basis": "MiniMax M3 (closest paid listing; minimax-m3.1-flash is free-only on OpenRouter) list x 1813 in + 16 out tokens/ticket (measured)",
+      "m": {
+        "intent": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        },
+        "urgency": {
+          "acc": 0.9529,
+          "macro_f1": 0.9448,
+          "high_recall": 0.9362
+        },
+        "sentiment": {
+          "acc": 0.8143,
+          "macro_f1": 0.8053
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        },
+        "urgency": {
+          "acc": 0.9457,
+          "macro_f1": 0.9394,
+          "high_recall": 0.9291
+        },
+        "sentiment": {
+          "acc": 0.8144,
+          "macro_f1": 0.8069
+        }
+      },
+      "p50": 1.517,
+      "p95": 3.656
+    },
+    {
+      "name": "B1: MiniLM-L6 embeddings + LR (no generation)",
+      "before": "b_minilm_before",
+      "after": "b_minilm_tuned",
+      "price": "local_cpu",
+      "where": "self-hosted CPU",
+      "size": "22M params (~90 MB)",
+      "train": "CPU: embed 4,000 tickets 367 s + fit 30 s",
+      "usd1m": 130.305,
+      "monthly": 130.305,
+      "basis": "1 x AWS c7i.xlarge (4 vCPU, 8 GiB, us-east-1 on-demand Linux) ($0.1785/h) at p50 12 ms",
+      "m": {
+        "intent": {
+          "acc": 0.9757,
+          "macro_f1": 0.9724
+        },
+        "urgency": {
+          "acc": 0.74,
+          "macro_f1": 0.73,
+          "high_recall": 0.9362
+        },
+        "sentiment": {
+          "acc": 0.8371,
+          "macro_f1": 0.8008
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 0.9702,
+          "macro_f1": 0.9635
+        },
+        "urgency": {
+          "acc": 0.711,
+          "macro_f1": 0.7083,
+          "high_recall": 0.9449
+        },
+        "sentiment": {
+          "acc": 0.8056,
+          "macro_f1": 0.7828
+        }
+      },
+      "p50": 0.0125,
+      "p95": 0.019899999999999998,
+      "mb": {
+        "intent": {
+          "acc": 0.6257,
+          "macro_f1": 0.608
+        },
+        "urgency": {
+          "acc": 0.4186,
+          "macro_f1": 0.3927,
+          "high_recall": 0.4539
+        },
+        "sentiment": {
+          "acc": 0.4957,
+          "macro_f1": 0.3501
+        }
+      }
+    },
+    {
+      "name": "B2: Needle 3 embeddings + LR (no generation)",
+      "before": "b_needle_before",
+      "after": "b_needle_tuned",
+      "price": "local_cpu",
+      "where": "self-hosted CPU / on-device",
+      "size": "Needle 3 (63 MB .cact)",
+      "train": "CPU: embed + fit 616 s",
+      "usd1m": 130.305,
+      "monthly": 130.305,
+      "basis": "1 x AWS c7i.xlarge (4 vCPU, 8 GiB, us-east-1 on-demand Linux) ($0.1785/h) at p50 96 ms",
+      "m": {
+        "intent": {
+          "acc": 0.9543,
+          "macro_f1": 0.9516
+        },
+        "urgency": {
+          "acc": 0.8486,
+          "macro_f1": 0.8339,
+          "high_recall": 0.9007
+        },
+        "sentiment": {
+          "acc": 0.8957,
+          "macro_f1": 0.8824
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 0.944,
+          "macro_f1": 0.9401
+        },
+        "urgency": {
+          "acc": 0.8214,
+          "macro_f1": 0.8131,
+          "high_recall": 0.8976
+        },
+        "sentiment": {
+          "acc": 0.8809,
+          "macro_f1": 0.8753
+        }
+      },
+      "p50": 0.096,
+      "p95": 0.22240000000000001,
+      "mb": {
+        "intent": {
+          "acc": 0.2,
+          "macro_f1": 0.1843
+        },
+        "urgency": {
+          "acc": 0.59,
+          "macro_f1": 0.4474,
+          "high_recall": 0.0638
+        },
+        "sentiment": {
+          "acc": 0.5671,
+          "macro_f1": 0.525
+        }
+      }
+    },
+    {
+      "name": "C: Qwen3.5-0.8B LoRA label generator",
+      "before": "c_qwen_before",
+      "after": "c_qwen_after",
+      "price": "local_gpu",
+      "where": "self-hosted GPU",
+      "size": "0.8B fp16 (1.6 GB) + 25 MB LoRA",
+      "train": "RTX 3050: 34 min, 2 epochs",
+      "usd1m": 430.7,
+      "monthly": 430.7,
+      "basis": "1 x NVIDIA L4 24GB (Runpod Secure Cloud, on-demand) ($0.59/h) at p50 679 ms",
+      "m": {
+        "intent": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        },
+        "urgency": {
+          "acc": 0.9886,
+          "macro_f1": 0.9862,
+          "high_recall": 0.9433
+        },
+        "sentiment": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        },
+        "urgency": {
+          "acc": 0.986,
+          "macro_f1": 0.9838,
+          "high_recall": 0.937
+        },
+        "sentiment": {
+          "acc": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "p50": 0.6794,
+      "p95": 0.9793999999999999,
+      "mb": {
+        "intent": {
+          "acc": 0.6657,
+          "macro_f1": 0.5506
+        },
+        "urgency": {
+          "acc": 0.38,
+          "macro_f1": 0.3892,
+          "high_recall": 0.4113
+        },
+        "sentiment": {
+          "acc": 0.5457,
+          "macro_f1": 0.5292
+        }
+      }
+    },
+    {
+      "name": "D: Needle 3 LoRA classifier (.cact)",
+      "before": "d_needle_before",
+      "after": "d_needle_after",
+      "price": "local_cpu",
+      "where": "self-hosted CPU / on-device",
+      "size": "63 MB .cact (W4A8)",
+      "train": "RTX 3050 (WSL): 33 min, 2 epochs",
+      "usd1m": 130.305,
+      "monthly": 130.305,
+      "basis": "1 x AWS c7i.xlarge (4 vCPU, 8 GiB, us-east-1 on-demand Linux) ($0.1785/h) at p50 372 ms",
+      "m": {
+        "intent": {
+          "acc": 0.6229,
+          "macro_f1": 0.5757
+        },
+        "urgency": {
+          "acc": 0.9043,
+          "macro_f1": 0.8901,
+          "high_recall": 0.8582
+        },
+        "sentiment": {
+          "acc": 0.9671,
+          "macro_f1": 0.9593
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 0.5884,
+          "macro_f1": 0.5501
+        },
+        "urgency": {
+          "acc": 0.8967,
+          "macro_f1": 0.8849,
+          "high_recall": 0.8425
+        },
+        "sentiment": {
+          "acc": 0.9615,
+          "macro_f1": 0.9571
+        }
+      },
+      "p50": 0.37189999999999995,
+      "p95": 0.505,
+      "mb": {
+        "intent": {
+          "acc": 0.3329,
+          "macro_f1": 0.2444
+        },
+        "urgency": {
+          "acc": 0.3757,
+          "macro_f1": 0.3659,
+          "high_recall": 0.4326
+        },
+        "sentiment": {
+          "acc": 0.4271,
+          "macro_f1": 0.3934
+        }
+      }
+    }
+  ]
+}

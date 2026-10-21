@@ -1,0 +1,7 @@
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4cc4e17c\case-studies\03-helpdeskly-triage\eval\predict_d_needle.py:74: UserWarning: these weights carry no confidence head trained for them, so this agent reports confidence as None; platform fine-tunes keep the head
+  agent = needle.Needle(tools=[SCHEMA], system=SYSTEM if stage == "before" else None,
+  100/300 (0 refused, 0 invalid)
+  200/300 (0 refused, 0 invalid)
+  300/300 (0 refused, 0 invalid)
+[log] d_needle_val_default: {"intent": {"acc": 0.6367, "macro_f1": 0.5715}, "urgency": {"acc": 0.87, "macro_f1": 0.8535, "high_recall": 0.8167}, "sentiment": {"acc": 0.9633, "macro_f1": 0.9519}, "latency": {"p50_ms": 427.8, "p95
+[d_needle_val_default] {'intent': {'acc': 0.6367, 'macro_f1': 0.5715}, 'urgency': {'acc': 0.87, 'macro_f1': 0.8535, 'high_recall': 0.8167}, 'sentiment': {'acc': 0.9633, 'macro_f1': 0.9519}} latency={'p50_ms': 427.8, 'p95_ms': 634.2, 'n': 300} turns={'ok': 27, 'suppressed': 273, 'refusal': 0, 'invalid': 0}

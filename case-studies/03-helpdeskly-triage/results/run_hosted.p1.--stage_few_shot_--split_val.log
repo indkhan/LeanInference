@@ -1,0 +1,15 @@
+[A] opencode/deepseek-v4.1-flash-free few_shot val: 300 to call, 0 cached
+  25/300
+  50/300
+  75/300
+  100/300
+  125/300
+  150/300
+  175/300
+  200/300
+  225/300
+  250/300
+  275/300
+  300/300
+[log] a_few_shot_val: {"model": "opencode/deepseek-v4.1-flash-free", "intent": {"acc": 0.0567, "macro_f1": 0.0089}, "urgency": {"acc": 0.3267, "macro_f1": 0.1642, "high_recall": 0.0}, "sentiment": {"acc": 0.5933, "macro_f1
+{"intent": {"acc": 0.0567, "macro_f1": 0.0089}, "urgency": {"acc": 0.3267, "macro_f1": 0.1642, "high_recall": 0.0}, "sentiment": {"acc": 0.5933, "macro_f1": 0.2483}} failed: 300 p95_s: 0.926

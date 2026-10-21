@@ -1,0 +1,2 @@
+[log] c_qwen_before: {"intent": {"acc": 0.0543, "macro_f1": 0.0086}, "urgency": {"acc": 0.3314, "macro_f1": 0.166, "high_recall": 0.0}, "sentiment": {"acc": 0.5929, "macro_f1": 0.2481}, "unparseable": 700, "latency": {"p5
+c_qwen_before {'intent': {'acc': 0.0543, 'macro_f1': 0.0086}, 'urgency': {'acc': 0.3314, 'macro_f1': 0.166, 'high_recall': 0.0}, 'sentiment': {'acc': 0.5929, 'macro_f1': 0.2481}} unparseable: 700 {'p50_ms': 911.6, 'p95_ms': 1359.8, 'n': 100, 'device': 'RTX 3050 Laptop fp16'}
