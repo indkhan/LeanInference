@@ -4,7 +4,8 @@ Prompt = label lists + ticket; target = "intent|urgency|sentiment" (one short li
   before  base model, same prompt, zero training
   after   LoRA (r=16) on the 4,000 train tickets, loss on the answer tokens only
 Both are scored on the 700-ticket test set; val is only used for the epoch-end loss.
-Unparseable labels fall back to other/medium/neutral and are counted (never dropped).
+Outputs that break the line format are counted ("unparseable") and scored with a lenient
+fallback (first valid label of each kind); nothing is dropped.
 
 Usage:
   python train/qwen_lora_clf.py --stage before
@@ -38,6 +39,17 @@ def prompt(tok, text):
 
 def answer(r):
     return f"{r['intent']}|{r['urgency']}|{r['sentiment']}"
+
+
+def parse_lenient(s):
+    """Fallback for outputs that ignore the line format (the base model writes e.g.
+    'intent: account_access, low, positive'): first valid label of each kind, by position."""
+    t = s.lower()
+    out = {}
+    for key, labels in (("intent", INTENTS), ("urgency", URGENCY), ("sentiment", SENTIMENT)):
+        hits = [(t.find(l), l) for l in labels if l in t]
+        out[key] = min(hits)[1] if hits else DEFAULT[key]
+    return out
 
 
 def parse(s):
@@ -90,9 +102,9 @@ def train(args):
                 "labels": torch.tensor([x["labels"] + [-100] * (n - len(x["labels"])) for x in b]),
                 "attention_mask": torch.tensor([[1] * len(x["input_ids"]) + [0] * (n - len(x["input_ids"])) for x in b])}
 
-    # ~170-token rows: batch 16 in one step keeps the GPU busy (same effective batch as 4 x 4)
-    targs = TrainingArguments(output_dir=str(OUT / "checkpoints"), per_device_train_batch_size=16,
-                              per_device_eval_batch_size=16, gradient_accumulation_steps=1,
+    # batch 16 OOMed: Qwen3.5's ~248K vocab makes fp32 logits ~3 GB for 16 x 200 tokens
+    targs = TrainingArguments(output_dir=str(OUT / "checkpoints"), per_device_train_batch_size=4,
+                              per_device_eval_batch_size=4, gradient_accumulation_steps=4,
                               num_train_epochs=args.epochs, learning_rate=2e-4, lr_scheduler_type="cosine",
                               warmup_steps=20, logging_steps=10, eval_strategy="epoch", save_strategy="epoch",
                               save_total_limit=2, fp16=True, report_to=[], seed=42, dataloader_num_workers=0,
@@ -102,7 +114,7 @@ def train(args):
     minutes = (time.time() - t0) / 60
     model.save_pretrained(str(OUT))
     tok.save_pretrained(str(OUT))
-    cfg = {"model": MODEL, "epochs": args.epochs, "lr": 2e-4, "lora_r": 16, "batch": "16 x accum 1",
+    cfg = {"model": MODEL, "epochs": args.epochs, "lr": 2e-4, "lora_r": 16, "batch": "4 x accum 4",
            "train_rows": len(tr), "train_minutes": round(minutes, 1),
            "peak_vram_gb": round(torch.cuda.max_memory_allocated() / 1e9, 2)}
     (OUT / "train_config.json").write_text(json.dumps(cfg, indent=2), encoding="utf-8")
@@ -125,8 +137,8 @@ def evaluate(stage):
         for seq in out[:, enc["input_ids"].shape[1]:]:
             s = tok.decode(seq, skip_special_tokens=True)
             p = parse(s)
-            fails += p is None
-            preds.append(p or dict(DEFAULT))
+            fails += p is None  # strict format failures, reported; scored with the lenient fallback
+            preds.append(p or parse_lenient(s))
             raws.append(s)
     run_s = time.time() - t0
     lats = []  # batch-1 single-request latency, as served

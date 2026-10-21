@@ -184,10 +184,18 @@ def main():
     todo = [r for r in rows if r["id"] not in done]
     print(f"[A] {args.model} {args.stage} {args.split}: {len(todo)} to call, {len(done)} cached", flush=True)
 
+    import threading
+    quota_gone = threading.Event()  # daily free quota spent: stop calling until the next run
+
     def work(r):
         # Free tier rate-limits: retry with backoff. Only successful records are cached.
+        if quota_gone.is_set():
+            return None
         for attempt in range(args.attempts):
             raw, err, lat = call(args.model, system, r["text"])
+            if err and "per-day" in err:
+                quota_gone.set()
+                return None
             pred, parse_err = None, None
             if raw is not None:
                 try:
@@ -202,6 +210,8 @@ def main():
 
     with cache_path.open("a", encoding="utf-8") as f, ThreadPoolExecutor(args.workers) as ex:
         for i, rec in enumerate(ex.map(work, todo), 1):
+            if rec is None:  # skipped: daily quota spent
+                continue
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
             f.flush()
             done[rec["id"]] = rec
@@ -213,7 +223,7 @@ def main():
     DEFAULT = {"intent": "other", "urgency": "medium", "sentiment": "neutral"}
     preds, golds, lats, n_fail = [], [], [], 0
     for r in rows:
-        rec = done[r["id"]]
+        rec = done.get(r["id"], {"pred": None, "latency_s": 0.0})
         if rec["pred"] is None:
             n_fail += 1
             p = dict(DEFAULT)
