@@ -1,42 +1,48 @@
-"""Adapter for the Needle 3 CLI/library (pip install cactus-needle).
+"""Needle 3 adapter (in-process `cactus-needle` engine, CPU).
 
-Thin subprocess wrapper around a command template, so it works with whatever the
-Needle CLI looks like once installed (verified in the training phase; adjust the
-template to match - the only contract is: prompt via a temp file ({prompt_file}
-placeholder), raw answer on stdout, non-zero exit = error).
+--model is the weights: a tuned .cact path, or "base" for the published Needle 3 archive.
+The prompt is NOT the shared system prompt: Needle gets the same compact tool list and
+"Today/Request" query it was fine-tuned on (train/needle/make_data.py), which is the point -
+no 5K-token schema dump. The reply is converted back into the harness' JSON contract:
+  call(s)                    -> {"type": "call", "calls": [...]}
+  ask_clarification(reason)  -> {"type": "clarify", "reason": ...}
+  no call                    -> {"type": "none"}
+The engine moves calls whose values are not literally in the request (enum values, resolved
+dates) to `suppressed_calls`; needle.extract() reads `function_calls or suppressed_calls`, and so
+does this adapter.
 
-Example:
-  uv run python eval/run_eval.py --adapter needle --model tuned.cact \\
-      --needle-cmd "needle chat --model {model} --prompt {prompt_file}"
+  python eval/run_eval.py --adapter needle --model train/needle/out/tuned_fullkv.cact
+  python eval/run_eval.py --adapter needle --model base --out eval/results/needle3-base.jsonl
 """
 from __future__ import annotations
 
-import subprocess
-import tempfile
+import json
+import sys
+import time
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "train" / "needle"))
+from make_data import compact_tools, query  # noqa: E402
 
 
 class NeedleAdapter:
-    def __init__(self, model: str, needle_cmd: str | None = None, timeout: int = 120,
-                 **_ignored):
-        if not needle_cmd:
-            raise SystemExit("adapter 'needle' needs --needle-cmd (see eval/adapters/needle.py)")
-        self.model = model
-        self.cmd = needle_cmd
-        self.timeout = timeout
+    def __init__(self, model: str, max_tokens: int = 256, **_ignored):
+        import needle
+        self.agent = needle.Needle(tools=compact_tools(), system=None, stateless=True,
+                                   weights=None if model == "base" else model, auto_date=False)
+        self.max_tokens = max_tokens
 
     def predict(self, record, system, tools_doc):
-        prompt = f"{system}\n\nToday: {record['request_date']}\nRequest: {record['request']}\n"
-        tmp = Path(tempfile.gettempdir()) / f"needle_prompt_{record['id']}.txt"
-        tmp.write_text(prompt, encoding="utf-8")
-        cmd = self.cmd.format(prompt_file=str(tmp), model=self.model)
-        try:
-            proc = subprocess.run(cmd, shell=True, capture_output=True, text=True,
-                                  encoding="utf-8", errors="replace", timeout=self.timeout)
-        except subprocess.TimeoutExpired:
-            return {"text": "", "error": "needle CLI timeout", "latency_ms": None}
-        if proc.returncode != 0:
-            return {"text": "",
-                    "error": f"needle CLI exit {proc.returncode}: {proc.stderr[:200]}",
-                    "latency_ms": None}
-        return {"text": proc.stdout}
+        t0 = time.perf_counter()
+        r = self.agent.complete(query(record), max_new_tokens=self.max_tokens)
+        ms = int((time.perf_counter() - t0) * 1000)
+        calls = r.get("function_calls") or r.get("suppressed_calls") or []
+        if calls and calls[0].get("name") == "ask_clarification":
+            out = {"type": "clarify", "reason": (calls[0].get("arguments") or {}).get("reason", "")}
+        elif calls:
+            out = {"type": "call", "calls": [{"name": c["name"], "arguments": c.get("arguments") or {}}
+                                             for c in calls]}
+        else:
+            out = {"type": "none"}
+        return {"text": json.dumps(out, ensure_ascii=False), "latency_ms": ms,
+                "usage": {"suppressed": bool(calls) and not r.get("function_calls")}}
