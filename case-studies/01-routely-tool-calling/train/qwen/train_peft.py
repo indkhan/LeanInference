@@ -67,13 +67,15 @@ def main():
     ap.add_argument("--lora-r", type=int, default=16)
     ap.add_argument("--train", default="train-chat.jsonl", help="file in train/qwen/data/")
     ap.add_argument("--tag", default="peft")
+    ap.add_argument("--batch", type=int, default=1,
+                    help=">1: padded micro-batches with the standard answer-only loss (short no-schema rows)")
     args = ap.parse_args()
 
     run_id = time.strftime("%Y%m%d-%H%M%S") + "-" + args.model.split("/")[-1].lower() + "-" + args.tag
     out_dir = ROOT / "train" / "qwen" / "out" / (args.model.replace("/", "__") + "-" + args.tag)
     row = {"run_id": run_id, "date": time.strftime("%Y-%m-%d %H:%M"), "stage": "qlora-peft",
            "base_model": args.model, "epochs": args.epochs, "seq_len": "full", "lr": args.lr,
-           "lora_r": args.lora_r, "batch": 1, "grad_accum": args.grad_accum, "status": "RUNNING"}
+           "lora_r": args.lora_r, "batch": args.batch, "grad_accum": args.grad_accum, "status": "RUNNING"}
     t0 = time.time()
     try:
         tok = AutoTokenizer.from_pretrained(args.model)
@@ -94,14 +96,23 @@ def main():
         model.config.use_cache = False
 
         targs = TrainingArguments(
-            output_dir=str(out_dir / "checkpoints"), per_device_train_batch_size=1,
+            output_dir=str(out_dir / "checkpoints"), per_device_train_batch_size=args.batch,
             gradient_accumulation_steps=args.grad_accum, num_train_epochs=args.epochs,
             max_steps=args.max_steps, learning_rate=args.lr, lr_scheduler_type="cosine",
             warmup_steps=10, logging_steps=5, save_strategy="steps", save_steps=40,
             save_total_limit=2, fp16=True, max_grad_norm=1.0, report_to=[], seed=42,
             dataloader_num_workers=0)
-        collate = lambda b: {k: torch.tensor([b[0][k]]) for k in ("input_ids", "labels")}  # noqa: E731
-        trainer = TailLossTrainer(model=model, args=targs, train_dataset=ds, data_collator=collate)
+        if args.batch == 1:
+            collate = lambda b: {k: torch.tensor([b[0][k]]) for k in ("input_ids", "labels")}  # noqa: E731
+            trainer = TailLossTrainer(model=model, args=targs, train_dataset=ds, data_collator=collate)
+        else:
+            def collate(b):
+                n, pad = max(len(x["input_ids"]) for x in b), tok.pad_token_id
+                return {"input_ids": torch.tensor([x["input_ids"] + [pad] * (n - len(x["input_ids"])) for x in b]),
+                        "labels": torch.tensor([x["labels"] + [-100] * (n - len(x["labels"])) for x in b]),
+                        "attention_mask": torch.tensor([[1] * len(x["input_ids"]) + [0] * (n - len(x["input_ids"]))
+                                                        for x in b])}
+            trainer = Trainer(model=model, args=targs, train_dataset=ds, data_collator=collate)
         stats = trainer.train()
         trainer.save_model(str(out_dir / "final"))
         tok.save_pretrained(str(out_dir / "final"))
