@@ -1,6 +1,6 @@
 # Case Study 2 — ClaimPilot: Implementation Plan
 
-Status: **draft for approval**
+Status: **executed/done 2026-10-22** (results: `README.md`, `eval/results/final_table.md`)
 Brief: `case-studies/02-claimpilot-extraction.md`
 Working folder for all artifacts: `case-studies/02-claimpilot/`
 
@@ -108,11 +108,11 @@ $0 spend (free tiers + local GPU). Wall-clock estimate: data 1–2 h; hosted eva
 
 ## 9. Definition of done
 
-- [ ] `data/` schema + generator + splits + verification report
-- [ ] `train/` reproducible scripts/configs/logs; LoRA artifacts
-- [ ] `eval/` one-command results table + per-field breakdown + failure cases
-- [ ] Results table with all brief columns, each cell traceable
-- [ ] 5–10 failure examples from the winning model, explained
-- [ ] One-page client write-up (savings + compliance)
-- [ ] Experiment journal showing the testing journey
-- [ ] No frontier fallback in the final solution; all numbers from real runs
+- [x] `data/` schema + generator + splits + verification report
+- [x] `train/` reproducible scripts/configs/logs; LoRA artifacts
+- [x] `eval/` one-command results table + per-field breakdown + failure cases
+- [x] Results table with all brief columns, each cell traceable
+- [x] 5–10 failure examples from the winning model, explained
+- [x] One-page client write-up (savings + compliance)
+- [x] Experiment journal showing the testing journey
+- [x] No frontier fallback in the final solution; all numbers from real runs

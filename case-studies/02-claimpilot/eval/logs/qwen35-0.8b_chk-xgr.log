@@ -1,27 +1,2 @@
 loading Qwen/Qwen3.5-0.8B (4-bit)... adapter=train/artifacts/qwen3.5-0.8b-lora
 constrained decoding: xgrammar ON
-[1/8] test-00003 cached
-[2/8] test-00005 cached
-[3/8] test-00006 cached
-[4/8] test-00008 cached
-[5/8] test-00010 cached
-[6/8] test-00011 cached
-[7/8] test-00017 cached
-[8/8] test-00019 cached
-{
-  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
-  "tag": "chk-xgr",
-  "transport": "local_transformers",
-  "split": "test",
-  "docs": 8,
-  "ok": 8,
-  "ok_rate": 1.0,
-  "wall_s": 0.0,
-  "latency_p50": 3.903,
-  "latency_p95": 3.903,
-  "errors": [],
-  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_chk-xgr.jsonl",
-  "grammar": "xgrammar",
-  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
-}
-peak VRAM: 0.83 GB

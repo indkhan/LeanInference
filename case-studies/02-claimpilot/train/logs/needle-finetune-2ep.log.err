@@ -1,0 +1,16 @@
+E1021 16:32:48.550823     475 slow_operation_alarm.cc:73] Constant folding an instruction is taking > 1s:
+
+  %xor.209 = s32[14155776]{0} xor(%broadcast.1122, %constant.2332)
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+E1021 16:32:48.617546     402 slow_operation_alarm.cc:140] The operation took 3.008815596s
+Constant folding an instruction is taking > 1s:
+
+  %xor.209 = s32[14155776]{0} xor(%broadcast.1122, %constant.2332)
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
