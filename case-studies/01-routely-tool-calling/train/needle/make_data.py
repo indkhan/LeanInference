@@ -45,6 +45,17 @@ def answers(gold):
     return []
 
 
+def reasoning(gold):
+    """One mechanical line, like cases 2 and 3. The engine always writes a reasoning line before the
+    call at inference; trained without one (run 1), the adapter fell back to the base model's
+    'Today -> date' habit and scored 18.6% (0/30 even on training rows)."""
+    if gold["type"] == "call":
+        return "Request maps to " + ", ".join(c["name"] for c in gold["calls"]) + "."
+    if gold["type"] == "clarify":
+        return f"Cannot act yet: {gold.get('reason', 'details missing')} -> ask_clarification."
+    return "No Routely tool applies."
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     tools = compact_tools()
@@ -52,8 +63,8 @@ def main():
         rows = [json.loads(l) for l in (ROOT / "data" / "splits" / f"{split}.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
         with open(OUT / f"{split}.jsonl", "w", encoding="utf-8", newline="\n") as fh:
             for r in rows:
-                fh.write(json.dumps({"query": query(r), "tools": tools, "answers": answers(r["gold"])},
-                                    ensure_ascii=False) + "\n")
+                fh.write(json.dumps({"query": query(r), "tools": tools, "answers": answers(r["gold"]),
+                                     "reasoning": reasoning(r["gold"])}, ensure_ascii=False) + "\n")
         print(f"{split}: {len(rows)} rows -> {OUT / (split + '.jsonl')}")
 
 

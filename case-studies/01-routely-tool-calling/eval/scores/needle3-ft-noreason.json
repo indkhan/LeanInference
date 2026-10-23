@@ -1,0 +1,285 @@
+{
+  "model": "train/needle/out/tuned_fullkv.cact",
+  "adapter": "needle",
+  "results_file": "eval\\results\\needle3-ft.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 500,
+  "n_split": 500,
+  "n_missing": 0,
+  "response_accuracy": 18.6,
+  "tool_selection": {
+    "n": 421,
+    "acc": 37.8
+  },
+  "args": {
+    "full_match_given_tool": 56.6,
+    "value_acc": 76.8,
+    "missing_total": 13,
+    "extra_total": 6,
+    "wrong_value_total": 63,
+    "wrong_date_total": 22
+  },
+  "no_tool": {
+    "n": 38,
+    "acc": 7.9
+  },
+  "clarify": {
+    "n": 41,
+    "acc": 0.0
+  },
+  "parse_validity": 100.0,
+  "status_counts": {
+    "json_call": 494,
+    "json_none": 6
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 41,
+      "acc": 0.0,
+      "top_errors": {
+        "called_instead_of_clarify": 38,
+        "none_instead_of_clarify": 3
+      }
+    },
+    "clear": {
+      "n": 268,
+      "acc": 27.2,
+      "top_errors": {
+        "wrong_tool": 159,
+        "wrong_value": 25,
+        "missing_args": 7,
+        "wrong_date": 2
+      }
+    },
+    "confusable": {
+      "n": 77,
+      "acc": 15.6,
+      "top_errors": {
+        "wrong_tool": 55,
+        "wrong_value": 6,
+        "missing_args": 3,
+        "extra_args": 1
+      }
+    },
+    "multilingual": {
+      "n": 26,
+      "acc": 11.5,
+      "top_errors": {
+        "wrong_tool": 21,
+        "wrong_value": 1,
+        "missing_args": 1
+      }
+    },
+    "no_tool": {
+      "n": 38,
+      "acc": 7.9,
+      "top_errors": {
+        "called_when_none": 35
+      }
+    },
+    "relative_date": {
+      "n": 50,
+      "acc": 4.0,
+      "top_errors": {
+        "wrong_tool": 27,
+        "wrong_date": 14,
+        "extra_args": 3,
+        "missing_args": 2
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 474,
+      "acc": 19.0
+    },
+    "es": {
+      "n": 13,
+      "acc": 15.4
+    },
+    "hi": {
+      "n": 13,
+      "acc": 7.7
+    }
+  },
+  "by_tool": {
+    "add_address": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "apply_credit": {
+      "n": 7,
+      "acc": 14.3
+    },
+    "assign_driver": {
+      "n": 18,
+      "acc": 33.3
+    },
+    "cancel_order": {
+      "n": 15,
+      "acc": 0.0
+    },
+    "cancel_pickup": {
+      "n": 15,
+      "acc": 6.7
+    },
+    "cancel_return": {
+      "n": 11,
+      "acc": 18.2
+    },
+    "check_inventory": {
+      "n": 9,
+      "acc": 0.0
+    },
+    "create_order": {
+      "n": 12,
+      "acc": 0.0
+    },
+    "create_return": {
+      "n": 14,
+      "acc": 0.0
+    },
+    "delete_address": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "dispute_charge": {
+      "n": 12,
+      "acc": 8.3
+    },
+    "driver_availability": {
+      "n": 13,
+      "acc": 30.8
+    },
+    "duplicate_order": {
+      "n": 13,
+      "acc": 7.7
+    },
+    "get_driver": {
+      "n": 7,
+      "acc": 57.1
+    },
+    "get_eta": {
+      "n": 14,
+      "acc": 64.3
+    },
+    "get_invoice": {
+      "n": 9,
+      "acc": 66.7
+    },
+    "get_order": {
+      "n": 9,
+      "acc": 66.7
+    },
+    "get_pickup_status": {
+      "n": 7,
+      "acc": 57.1
+    },
+    "get_quote": {
+      "n": 14,
+      "acc": 28.6
+    },
+    "get_rate_card": {
+      "n": 7,
+      "acc": 57.1
+    },
+    "get_return_status": {
+      "n": 6,
+      "acc": 33.3
+    },
+    "get_shipment_history": {
+      "n": 12,
+      "acc": 66.7
+    },
+    "get_warehouse_hours": {
+      "n": 13,
+      "acc": 23.1
+    },
+    "list_drivers": {
+      "n": 7,
+      "acc": 14.3
+    },
+    "list_pickups": {
+      "n": 15,
+      "acc": 13.3
+    },
+    "list_returns": {
+      "n": 9,
+      "acc": 11.1
+    },
+    "list_shipments": {
+      "n": 8,
+      "acc": 37.5
+    },
+    "list_warehouses": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "reassign_driver": {
+      "n": 11,
+      "acc": 0.0
+    },
+    "request_refund": {
+      "n": 13,
+      "acc": 0.0
+    },
+    "reschedule_pickup": {
+      "n": 15,
+      "acc": 0.0
+    },
+    "reserve_space": {
+      "n": 13,
+      "acc": 30.8
+    },
+    "schedule_pickup": {
+      "n": 13,
+      "acc": 0.0
+    },
+    "share_tracking_link": {
+      "n": 6,
+      "acc": 66.7
+    },
+    "track_shipment": {
+      "n": 11,
+      "acc": 0.0
+    },
+    "transfer_stock": {
+      "n": 7,
+      "acc": 42.9
+    },
+    "update_address": {
+      "n": 11,
+      "acc": 36.4
+    },
+    "update_customer_address": {
+      "n": 11,
+      "acc": 0.0
+    },
+    "update_order_service_level": {
+      "n": 7,
+      "acc": 28.6
+    },
+    "verify_address": {
+      "n": 6,
+      "acc": 0.0
+    }
+  },
+  "taxonomy": {
+    "wrong_tool": 262,
+    "called_instead_of_clarify": 38,
+    "called_when_none": 35,
+    "wrong_value": 34,
+    "wrong_date": 16,
+    "missing_args": 13,
+    "extra_args": 6,
+    "none_instead_of_clarify": 3
+  },
+  "latency_ms": {
+    "mean": 520,
+    "p50": 480,
+    "p95": 832
+  },
+  "usage_totals": {
+    "suppressed": 15
+  }
+}
