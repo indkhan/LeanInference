@@ -50,8 +50,10 @@ class HFAdapter:
         ids = self.tok(text, return_tensors="pt", add_special_tokens=False).input_ids.to("cuda")
         t0 = time.perf_counter()
         with torch.no_grad():
+            # eos explicit: the 2B checkpoint's model config stops on a different token, so the
+            # fine-tuned 2B ran to max_tokens after every answer (training ends answers with <|im_end|>)
             out = self.model.generate(input_ids=ids, max_new_tokens=self.max_tokens, do_sample=False,
-                                      pad_token_id=self.tok.eos_token_id)
+                                      eos_token_id=self.tok.eos_token_id, pad_token_id=self.tok.eos_token_id)
         torch.cuda.synchronize()
         ms = int((time.perf_counter() - t0) * 1000)
         new = out[0, ids.shape[1]:]
