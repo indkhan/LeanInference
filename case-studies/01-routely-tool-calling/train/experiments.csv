@@ -7,3 +7,7 @@ run_id,date,stage,base_model,epochs,seq_len,lr,lora_r,batch,grad_accum,status,mi
 Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
 CUDA kernel errors m"
 20261021-2335-hosted-baseline,2026-10-21 23:35,hosted,opencode/nemotron-3-ultra-free,0,full-schema,0,0,1,1,RUNNING,0,"baseline proxy (full 40-tool schemas, 500 test). Candidate A = openrouter minimax/minimax-m3.1-flash:free 500/500 = 83.6%. Nemotron moved from OpenRouter (0/500, key capped at 50 free req/day account-wide) to the same model on OpenCode free tier; OpenCode beam-free/deepseek partial runs (314/500, 21/500) kept in eval/results/.shards as evidence, not scored."
+20261021-212436-qwen3.5-0.8b-noschema,2026-10-21 21:24,qlora-peft,Qwen/Qwen3.5-0.8B,2.0,full,0.0002,16,1,16,DONE,176.1,train_loss=2.6764 peak_vram=1.1GiB
+20261022-011834-qwen3.5-2b-noschema,2026-10-22 01:18,qlora-peft,Qwen/Qwen3.5-2B,2.0,full,0.0002,16,4,4,FAILED,0.6,"AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors m"
