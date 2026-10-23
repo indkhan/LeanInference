@@ -11,3 +11,4 @@ CUDA kernel errors m"
 20261022-011834-qwen3.5-2b-noschema,2026-10-22 01:18,qlora-peft,Qwen/Qwen3.5-2B,2.0,full,0.0002,16,4,4,FAILED,0.6,"AcceleratorError: CUDA error: out of memory
 Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
 CUDA kernel errors m"
+20261023-193055-qwen3.5-2b-noschema,2026-10-23 19:30,qlora-peft,Qwen/Qwen3.5-2B,2.0,full,0.0002,16,1,16,DONE,75.5,train_loss=1.9745 peak_vram=2.1GiB
