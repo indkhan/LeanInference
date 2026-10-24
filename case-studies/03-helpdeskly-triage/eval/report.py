@@ -32,9 +32,9 @@ HOURS = 730
 
 # ponytail: the lineup is fixed by the brief, so it lives here, not in a config file.
 SYSTEMS = [
-    {"name": "Baseline proxy: Nemotron 3 Ultra 550B (zero-shot)", "after": "base_zero_shot_test",
-     "hosted": ("opencode_nemotron-3-ultra-free", "zero_shot"), "price": "frontier",
-     "where": "third-party API", "size": "550B (API)", "train": "none", "baseline": True},
+    {"name": "Baseline proxy: gpt-oss-120b (zero-shot)", "after": "base_zero_shot_test",
+     "hosted": ("gpt-oss-120b", "zero_shot"), "price": "frontier",
+     "where": "third-party API", "size": "117B (API)", "train": "none", "baseline": True},
     {"name": "Candidate A: MiniMax M3.1 Flash (few-shot)", "after": "a_few_shot_test",
      "hosted": ("minimax_minimax-m3.1-flash_free", "few_shot"), "price": "candidate_a",
      "where": "third-party API", "size": "API", "train": "none (prompt + 24 shots)"},

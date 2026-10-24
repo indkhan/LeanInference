@@ -148,6 +148,9 @@ def call_openrouter(model, system, text, timeout=180,
     lat = time.perf_counter() - t0
     if "error" in resp:
         return None, json.dumps(resp["error"])[:200], lat
+    served = resp.get("model") or ""
+    if model.split("/")[-1].split(":")[0] not in served:  # proxies may silently fall back to another model
+        return None, f"served by {served}, not {model}", lat
     return resp["choices"][0]["message"].get("content") or None, None, lat
 
 
