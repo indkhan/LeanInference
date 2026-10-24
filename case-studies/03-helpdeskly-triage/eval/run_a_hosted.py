@@ -122,7 +122,8 @@ def call_model(model, system, text, timeout=180):
     return raw, None, lat
 
 
-def call_openrouter(model, system, text, timeout=180):
+def call_openrouter(model, system, text, timeout=180,
+                    url="https://openrouter.ai/api/v1/chat/completions", key_env="OPENROUTER_API_KEY"):
     """OpenRouter chat completion, same prompt split as the OpenCode path (system + ticket).
     Needs OPENROUTER_API_KEY. Returns (raw, error, latency_s)."""
     import os
@@ -131,9 +132,9 @@ def call_openrouter(model, system, text, timeout=180):
     body = {"model": model, "temperature": 0, "max_tokens": 1024,
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": f"Ticket: {text}\nAnswer:"}]}
-    req = urllib.request.Request("https://openrouter.ai/api/v1/chat/completions",
+    req = urllib.request.Request(url,
                                  data=json.dumps(body).encode(), headers={
-                                     "Authorization": f"Bearer {os.environ['OPENROUTER_API_KEY']}",
+                                     "Authorization": f"Bearer {os.environ[key_env]}",
                                      "Content-Type": "application/json"})
     t0 = time.perf_counter()
     try:
@@ -157,7 +158,8 @@ def main():
     ap.add_argument("--split", choices=["val", "test"], required=True)
     ap.add_argument("--workers", type=int, default=2)
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--transport", choices=["opencode", "openrouter"], default="opencode")
+    ap.add_argument("--transport", choices=["opencode", "openrouter", "freellm"], default="opencode",
+                    help="freellm = the local FreeLLMAPI proxy (http://127.0.0.1:31415/v1, key in FREELLMAPI_KEY)")
     ap.add_argument("--ids-file", help="only these ticket ids (fixed seeded subset)")
     ap.add_argument("--attempts", type=int, default=6, help="tries per ticket (rate-limit backoff)")
     ap.add_argument("--role", default="a", help="output tag prefix: a = candidate A, base = baseline proxy")
@@ -167,7 +169,9 @@ def main():
     if args.ids_file:
         keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
         rows = [r for r in rows if r["id"] in keep]
-    call = call_openrouter if args.transport == "openrouter" else call_model
+    call = {"openrouter": call_openrouter, "opencode": call_model,
+            "freellm": lambda m, sy, t: call_openrouter(m, sy, t, url="http://127.0.0.1:31415/v1/chat/completions",
+                                                         key_env="FREELLMAPI_KEY")}[args.transport]
     if args.limit:
         rows = rows[: args.limit]
     shots = pick_shots() if args.stage == "few_shot" else []
