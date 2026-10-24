@@ -33,8 +33,8 @@ HOSTED = {  # $/MTok in, out - OpenRouter list prices fetched 2026-10-20
 
 # ponytail: the lineup is fixed by the brief, so it lives here, not in a config file.
 SYSTEMS = [
-    {"name": "Baseline proxy: Nemotron 3 Ultra 550B, all 40 schemas", "after": "opencode-nemotron-3-ultra-free",
-     "price": "frontier", "size": "550B (API)", "where": "third-party API", "baseline": True},
+    {"name": "Baseline proxy: gpt-oss-120b, all 40 schemas", "after": "freellm-gpt-oss-120b",
+     "price": "frontier", "size": "117B (API)", "where": "third-party API", "baseline": True},
     {"name": "Candidate A: MiniMax M3.1 Flash, all 40 schemas", "after": "openrouter-minimax-m3.1-flash-free",
      "price": "candidate_a", "size": "API", "where": "third-party API"},
     {"name": "B1: Qwen3.5-0.8B LoRA, no schemas in prompt", "before": "hf-qwen3.5-0.8b-base-noschema",

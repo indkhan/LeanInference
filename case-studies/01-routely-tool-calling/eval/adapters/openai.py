@@ -63,6 +63,10 @@ class OpenAIAdapter:
             return {"text": "", "error": f"HTTP {e.code}: {detail}", "latency_ms": None}
         except Exception as e:  # noqa: BLE001 - connection errors etc.
             return {"text": "", "error": f"{type(e).__name__}: {e}", "latency_ms": None}
+        served = data.get("model") or ""
+        if served and self.model.split("/")[-1].split(":")[0] not in served:
+            # routing proxies (FreeLLMAPI) can silently fall back to another model; never score that
+            return {"text": "", "error": f"served by {served}, not {self.model}", "latency_ms": None}
         choice = (data.get("choices") or [{}])[0]
         msg = choice.get("message") or {}
         text = msg.get("content") or ""
