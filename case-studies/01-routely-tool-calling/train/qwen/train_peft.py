@@ -113,7 +113,9 @@ def main():
                         "attention_mask": torch.tensor([[1] * len(x["input_ids"]) + [0] * (n - len(x["input_ids"]))
                                                         for x in b])}
             trainer = Trainer(model=model, args=targs, train_dataset=ds, data_collator=collate)
-        stats = trainer.train()
+        # resume from the last saved checkpoint (every 40 steps) if a previous run was killed
+        resume = any((out_dir / "checkpoints").glob("checkpoint-*"))
+        stats = trainer.train(resume_from_checkpoint=resume or None)
         trainer.save_model(str(out_dir / "final"))
         tok.save_pretrained(str(out_dir / "final"))
         minutes = round((time.time() - t0) / 60, 1)
