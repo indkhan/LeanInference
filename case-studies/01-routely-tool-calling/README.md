@@ -34,9 +34,9 @@ We build an eval set from "real usage", test cheaper alternatives, and prove whi
 - [x] Hand-verification of the 500 test examples (two independent review passes; 8 corrections)
 - [x] Eval harness (`eval/run_eval.py` → `eval/score.py` → `eval/report.py`; smoke-tested with the mock adapter, resume + strict coverage verified)
 - [x] Baseline assumption record (published BFCL-v4 scores, source + date → `writeup/BASELINE-ASSUMPTIONS.md`)
-- [ ] Train: Qwen3.5-0.8B / 2B / 4B (all local, Unsloth QLoRA; `train/experiments.csv` logs every run)
-- [ ] Fine-tune: Needle 3 (local LoRA)
-- [ ] Results table + failure analysis + client one-pager
+- [x] Train: Qwen3.5-0.8B / 2B without schemas in the prompt (local PEFT QLoRA; 4B dropped - full-schema runs OOMed on 6 GB; `train/experiments.csv` logs every run)
+- [x] Fine-tune: Needle 3 (LoRA in WSL2, compact tool list, full-KV `.cact`)
+- [x] Results table (`writeup/RESULTS.md`) + failure analysis (`writeup/FAILURES.md`) + client one-pager (`writeup/CLIENT-ONE-PAGER.md`) - baseline proxy row pending on the free tier
 
 ## Layout
 
