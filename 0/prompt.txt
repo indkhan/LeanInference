@@ -1,0 +1,27 @@
+I have to go to triathlon in our uni which helps students with startup and you can go and share what u working on and all so that they help me 
+
+I will take a few things including this project 
+I want you to first tell me all the findings we have had in the 3 cases and for the things which which could not have been done , finish just assume but no need to mention in the thing we show them it is just for us 
+
+Also share the idea it is and all 
+
+So idea , business and also the findings and all in the 3 cases in consice and then I say what to edit and all and finally then we make presentation for then
+
+---
+
+Okay, no, so the thing is, this is not a full page.  This is just a idea showcase to only one person, so it would be me and him talking one on one. So I can just like present to him what it is basically.  So uh, what you said is really good.  Uh, can you make a presentation? And then in the presentation at the very last page for futures, right?  We are going to have it as a service model right now where we take the thing and then do this manually.  Later, we are planning to, from the way we learn and all of those, to have a autonomous way of doing things so that scaling, we can scale it to the sky.  But don't go too much in detail.  This is just for them to know that in future, we do have that plan.  But yeah.  And knowing all of this, make a really nice presentation.  You do have a few skills for making presentations, but I think if they are not a 1st look searched through the internet, which is the best skill.  So that the presentation should look really presentable, a really nice presentation and all of that.  So yeah, make the presentation.
+
+---
+
+make it seem human
+
+---
+
+<task-notification>
+<task-id>br2q9iq27</task-id>
+<tool-use-id>toolu_01AQAd9F2aga4k9C6pE9SJ4K</tool-use-id>
+<output-file>C:\Users\mgsuk\AppData\Local\Temp\claude\C--codebases-LeanInference\0690dc7b-5c53-45cb-961f-ed47de8531d8\tasks\br2q9iq27.output</output-file>
+<status>killed</status>
+<summary>Background command "Serve the presentation locally" was stopped after reaching its background time limit</summary>
+<note>If the work in progress still needs it, start it again with `run_in_background` and a longer `timeout`. If it already had the longest `timeout` allowed, do not restart it. Either way, report that it was stopped.</note>
+</task-notification>
