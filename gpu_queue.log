@@ -1,0 +1,9 @@
+18:40:39 case1 smoke finished: ect has no attribute '__closure__'); keeping the stock forward for this layer. Unsloth: Double buffering enabled (parallel H2D + compute) for backward pass. [20261019-180139-qwen3.5-0.8b] FAILED after 37.4 min: RuntimeError: Unsloth: No or negligible GPU memory available for fused cross entropy. 
+18:40:39 START c2-qwen
+21:19:32 c2-qwen process ended (see /c/Users/mgsuk/.t3/worktrees/LeanInference/t3-4e600564/case-studies/02-claimpilot/train/logs/qwen35-0.8b-full.log)
+21:19:32 START c1-qwen
+21:37:37 FAIL c1-qwen (exit 1, see /c/Users/mgsuk/.t3/worktrees/LeanInference/t3-ce2b84b8/case-studies/01-routely-tool-calling/train/logs/qwen35-0.8b-peft.log)
+21:37:37 START c2-needle
+21:37:43 FAIL c2-needle (exit 127, see /c/Users/mgsuk/.t3/worktrees/LeanInference/t3-4e600564/case-studies/02-claimpilot/train/logs/needle-finetune.log)
+21:37:43 QUEUE DONE
+22:02:57 START c2-needle (batch 1)
