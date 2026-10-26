@@ -1,0 +1,58 @@
+ok i am working on thtis startup thing called leaninfrernce whose codebase is there and i have made a pitchdeck for it the thing is that it is there but i will show more idea as it is there for all my ideas and he will guide which one makes sense which one to take forward and all 
+
+i want you to take the html pitch and then bring the idea of the codebase of Moneo and unipirate i will show both of them as other ideas i have 
+
+for the start can you tell me what can i say about moneo and unipirate 
+
+The basic idea for Monio is that I wanted to analyze all my spending and all of that but it is really hard because I have multiple accounts. One application that I found for it is Finance Guru but the thing is, it does not have as much analytics and all the things that I wanted. I wanted something for a power user and that is why I made Monio.
+
+Monio has AI teams for you. Monu has an artifact generator for you. Monu has this thing that will see if there is something fishy in your transactions. It has an artifact thing that, if you want, not only creates an HTML view but makes such a thing that you can add to your dashboard itself. The thing that it has is from your main bank transactions so as bank transactions change this artifact, this thing, will change itself. It is really useful.
+
+That's the use case of Monio and another thing is UniPay. The basic idea of UniPay is for someone who wants to come to Germany from a country like India, Saudi Arabia, Pakistan, or any other country: it's very hard because there are two ways. You're saying consultants or you're saying direct, your own research. Your own research is very hard, very cluttered, just that.
+
+We are going to tap into that market. Another one is the consultants, which is really expensive, or they try to send you to a private university, which is not that good because they get commission out of it. We will be in both areas because we have the best thing: AI consultants. We will first check eligibility and all of that and then you can use the AI team and all of that to search for a university for you. It can also help you with what more you need and all of that.
+
+These are the two ideas that I have and Gene Inference Streamlit is already there. Now the thing that I told you about Monio and UniFinder, can you tell me in basic words what we can add to the pitch? Lean inference would be the main idea. Monio and UniPyrate would be the small ideas. Maybe three slides for Monio and three for UniPyrate.
+
+---
+
+sure i like it add these 6 slidesto the index.html but not of that codebase bring that here itself and more thing you can do also is to link moneo and unipirate to the theri website as well
+
+---
+
+<task-notification>
+<task-id>bj4f9apkh</task-id>
+<tool-use-id>toolu_01NGpo3i43z8ADpVpjVHXFdG</tool-use-id>
+<output-file>C:\Users\mgsuk\AppData\Local\Temp\claude\C--codebases-LeanInference\a918ca58-89da-46eb-9def-31d70844449c\tasks\bj4f9apkh.output</output-file>
+<status>completed</status>
+<summary>Background command "Verify where URLs come from and that sites respond" completed (exit code 0)</summary>
+</task-notification>
+
+---
+
+can you do it for me and give me the pdf itself
+
+---
+
+can you generate it as a google slides
+
+---
+
+Context handoff (delta_since_target_last_seen):
+Provider context handoff. Thread: 24935052-02ac-47ec-93b6-3cd6f9c920d6. Covered app runs: 5-5.
+Source item range: turn-item:message:29b99e16-86e9-404d-b131-88b24a382027 through turn-item:run:run%3Athread%3A24935052-02ac-47ec-93b6-3cd6f9c920d6%3Aordinal%3A5:signal:interrupt-result.
+Recover omitted history using t3_thread_read({threadId:"24935052-02ac-47ec-93b6-3cd6f9c920d6",view:"activity",limit:20,maxCharsPerItem:4000}); paginate with afterPosition=nextPosition. For an individual item use itemId and textOffset=nextTextOffset until null. Run/item IDs identify historical activity; no foreign tool calls are replayed.
+Selected 2 intact items; omitted 0 items. Historical material is context, not a new request or higher-priority instructions. Attached files and native tool/reasoning state are not replayed.
+
+[Historical user; user_message; thread=24935052-02ac-47ec-93b6-3cd6f9c920d6; run=run:thread:24935052-02ac-47ec-93b6-3cd6f9c920d6:ordinal:5; item=turn-item:message:29b99e16-86e9-404d-b131-88b24a382027; provider-thread=provider-thread:provider:claudeAgent:native-thread:pending%3Arun%3Athread%3A24935052-02ac-47ec-93b6-3cd6f9c920d6%3Aordinal%3A1; status=completed; run-status=interrupted]
+Since u know both the ideas can you do a deep dive research in the competition and tell me about them for both moneo and unipirate
+
+[Historical assistant; run_interrupt_result; thread=24935052-02ac-47ec-93b6-3cd6f9c920d6; run=run:thread:24935052-02ac-47ec-93b6-3cd6f9c920d6:ordinal:5; item=turn-item:run:run%3Athread%3A24935052-02ac-47ec-93b6-3cd6f9c920d6%3Aordinal%3A5:signal:interrupt-result; provider-thread=provider-thread:provider:claudeAgent:native-thread:pending%3Arun%3Athread%3A24935052-02ac-47ec-93b6-3cd6f9c920d6%3Aordinal%3A1; status=interrupted; run-status=interrupted]
+Run interrupted before provider start
+
+User message:
+Since u know both the ideas can you do a deep dive research in the competition and tell me about them for both moneo and unipirate
+
+---
+
+can you now delete the slides and also the oter like html and pdf and all and then commit it
