@@ -1,0 +1,246 @@
+{
+  "seed": 42,
+  "near_dup_threshold_masked": 0.95,
+  "loaded": 3140,
+  "dropped_exact": 0,
+  "dropped_near": 8,
+  "kept": 3132,
+  "splits": {
+    "train": {
+      "total": 2432,
+      "bucket": {
+        "clear": 1303,
+        "confusable": 372,
+        "relative_date": 246,
+        "clarify": 200,
+        "no_tool": 187,
+        "multilingual": 124
+      },
+      "language": {
+        "en": 2308,
+        "es": 62,
+        "hi": 62
+      },
+      "gold_type": {
+        "call": 2045,
+        "clarify": 200,
+        "none": 187
+      },
+      "tools": {
+        "clarify": 200,
+        "none": 187,
+        "cancel_order": 80,
+        "schedule_pickup": 75,
+        "cancel_pickup": 73,
+        "reschedule_pickup": 72,
+        "assign_driver": 69,
+        "get_quote": 68,
+        "reserve_space": 68,
+        "create_return": 67,
+        "request_refund": 67,
+        "cancel_return": 67,
+        "get_warehouse_hours": 67,
+        "list_pickups": 66,
+        "dispute_charge": 65,
+        "driver_availability": 62,
+        "duplicate_order": 62,
+        "update_address": 59,
+        "update_customer_address": 59,
+        "get_eta": 57,
+        "track_shipment": 57,
+        "create_order": 54,
+        "check_inventory": 45,
+        "get_shipment_history": 44,
+        "reassign_driver": 44,
+        "get_invoice": 39,
+        "get_order": 39,
+        "list_returns": 39,
+        "list_shipments": 39,
+        "share_tracking_link": 39,
+        "list_drivers": 37,
+        "transfer_stock": 37,
+        "update_order_service_level": 37,
+        "apply_credit": 36,
+        "get_rate_card": 36,
+        "list_warehouses": 36,
+        "delete_address": 31,
+        "get_driver": 31,
+        "get_pickup_status": 31,
+        "verify_address": 31,
+        "get_return_status": 30,
+        "add_address": 30
+      }
+    },
+    "val": {
+      "total": 200,
+      "bucket": {
+        "clear": 107,
+        "confusable": 31,
+        "relative_date": 20,
+        "clarify": 17,
+        "no_tool": 15,
+        "multilingual": 10
+      },
+      "language": {
+        "en": 190,
+        "es": 5,
+        "hi": 5
+      },
+      "gold_type": {
+        "call": 168,
+        "clarify": 17,
+        "none": 15
+      },
+      "tools": {
+        "clarify": 17,
+        "none": 15,
+        "schedule_pickup": 7,
+        "track_shipment": 7,
+        "cancel_order": 7,
+        "assign_driver": 7,
+        "cancel_pickup": 7,
+        "cancel_return": 6,
+        "reserve_space": 6,
+        "get_warehouse_hours": 6,
+        "reassign_driver": 5,
+        "request_refund": 5,
+        "reschedule_pickup": 5,
+        "share_tracking_link": 5,
+        "update_address": 5,
+        "update_customer_address": 5,
+        "dispute_charge": 5,
+        "get_quote": 5,
+        "driver_availability": 5,
+        "duplicate_order": 5,
+        "create_order": 4,
+        "create_return": 4,
+        "get_eta": 4,
+        "get_shipment_history": 4,
+        "list_pickups": 4,
+        "list_shipments": 3,
+        "verify_address": 3,
+        "get_return_status": 3,
+        "check_inventory": 3,
+        "list_drivers": 3,
+        "transfer_stock": 3,
+        "update_order_service_level": 3,
+        "apply_credit": 3,
+        "get_rate_card": 3,
+        "list_warehouses": 3,
+        "add_address": 3,
+        "delete_address": 2,
+        "get_driver": 2,
+        "get_invoice": 2,
+        "get_order": 2,
+        "get_pickup_status": 2,
+        "list_returns": 2
+      }
+    },
+    "test": {
+      "total": 500,
+      "bucket": {
+        "clear": 268,
+        "confusable": 77,
+        "relative_date": 50,
+        "clarify": 41,
+        "no_tool": 38,
+        "multilingual": 26
+      },
+      "language": {
+        "en": 474,
+        "es": 13,
+        "hi": 13
+      },
+      "gold_type": {
+        "call": 421,
+        "clarify": 41,
+        "none": 38
+      },
+      "tools": {
+        "clarify": 41,
+        "none": 38,
+        "assign_driver": 18,
+        "cancel_order": 15,
+        "cancel_pickup": 15,
+        "list_pickups": 15,
+        "reschedule_pickup": 15,
+        "get_quote": 14,
+        "create_return": 14,
+        "get_eta": 14,
+        "reserve_space": 13,
+        "get_warehouse_hours": 13,
+        "driver_availability": 13,
+        "duplicate_order": 13,
+        "request_refund": 13,
+        "schedule_pickup": 13,
+        "dispute_charge": 12,
+        "create_order": 12,
+        "get_shipment_history": 12,
+        "reassign_driver": 11,
+        "track_shipment": 11,
+        "update_address": 11,
+        "update_customer_address": 11,
+        "cancel_return": 11,
+        "check_inventory": 9,
+        "get_invoice": 9,
+        "get_order": 9,
+        "list_returns": 9,
+        "list_shipments": 8,
+        "list_drivers": 7,
+        "transfer_stock": 7,
+        "update_order_service_level": 7,
+        "apply_credit": 7,
+        "get_rate_card": 7,
+        "list_warehouses": 7,
+        "add_address": 7,
+        "delete_address": 7,
+        "get_driver": 7,
+        "get_pickup_status": 7,
+        "share_tracking_link": 6,
+        "verify_address": 6,
+        "get_return_status": 6
+      }
+    }
+  },
+  "sha256": {
+    "train": "d6d9e4f19c3b10e82fd288982c4db9df046dd4f05118079156dea5f905ad2f7a",
+    "val": "58d43a339c7e8ccd3e36ebdb130b16bc0023f71800d65062f86681c7c701b355",
+    "test": "31fa7ec1d39b30d641b508a269e334ee74dcd3092117363f9ade844c3aac4e48"
+  },
+  "targets_check": {
+    "clear": {
+      "count": 1678,
+      "actual_pct": 53.6,
+      "target_pct": 55
+    },
+    "confusable": {
+      "count": 480,
+      "actual_pct": 15.3,
+      "target_pct": 15
+    },
+    "relative_date": {
+      "count": 316,
+      "actual_pct": 10.1,
+      "target_pct": 10
+    },
+    "multilingual": {
+      "count": 160,
+      "actual_pct": 5.1,
+      "target_pct": 5
+    },
+    "no_tool": {
+      "count": 240,
+      "actual_pct": 7.7,
+      "target_pct": 7
+    },
+    "clarify": {
+      "count": 258,
+      "actual_pct": 8.2,
+      "target_pct": 8
+    }
+  },
+  "test_tools_missing": [
+    "clarify",
+    "none"
+  ]
+}

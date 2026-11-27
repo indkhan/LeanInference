@@ -1,0 +1,699 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "track_shipment",
+      "description": "Get the live location and current status of the shipment for an order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_eta",
+      "description": "Get the estimated time of arrival for a shipment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "shipment_id": { "type": "string", "pattern": "^SHP-[0-9]{5}$", "description": "Shipment identifier" }
+        },
+        "required": ["shipment_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_shipments",
+      "description": "List a customer's shipments, optionally filtered by status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "status": { "type": "string", "enum": ["in_transit", "delayed", "delivered", "exception"] },
+          "limit": { "type": "integer", "minimum": 1, "maximum": 100 }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_shipment_history",
+      "description": "Get the full scan history and checkpoints for all shipments of an order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "share_tracking_link",
+      "description": "Send a tracking link for an order to a contact via email, SMS, or WhatsApp.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "channel": { "type": "string", "enum": ["email", "sms", "whatsapp"] },
+          "contact": { "type": "string", "description": "Email address or phone number" }
+        },
+        "required": ["order_id", "channel", "contact"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "schedule_pickup",
+      "description": "Schedule a new parcel pickup at a customer address.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$", "description": "Pickup address identifier" },
+          "date": { "type": "string", "description": "Pickup date, ISO format YYYY-MM-DD" },
+          "time_window": { "type": "string", "enum": ["08:00-12:00", "12:00-16:00", "16:00-20:00"] },
+          "package_count": { "type": "integer", "minimum": 1 },
+          "notes": { "type": "string", "description": "Access instructions for the driver" }
+        },
+        "required": ["address_id", "date", "time_window"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "reschedule_pickup",
+      "description": "Move an existing scheduled pickup to a new date and time window.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pickup_id": { "type": "string", "pattern": "^PCK-[0-9]{5}$", "description": "Pickup identifier" },
+          "date": { "type": "string", "description": "New pickup date, ISO format YYYY-MM-DD" },
+          "time_window": { "type": "string", "enum": ["08:00-12:00", "12:00-16:00", "16:00-20:00"] }
+        },
+        "required": ["pickup_id", "date", "time_window"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cancel_pickup",
+      "description": "Cancel a scheduled pickup.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pickup_id": { "type": "string", "pattern": "^PCK-[0-9]{5}$", "description": "Pickup identifier" },
+          "reason": { "type": "string" }
+        },
+        "required": ["pickup_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_pickup_status",
+      "description": "Check the status of a scheduled pickup.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pickup_id": { "type": "string", "pattern": "^PCK-[0-9]{5}$", "description": "Pickup identifier" }
+        },
+        "required": ["pickup_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_pickups",
+      "description": "List pickups, optionally filtered by warehouse, date, or status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" },
+          "date": { "type": "string", "description": "Pickup date, ISO format YYYY-MM-DD" },
+          "status": { "type": "string", "enum": ["scheduled", "in_progress", "completed", "cancelled", "missed"] }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_order",
+      "description": "Create a new shipping order with pickup and delivery addresses. This books and charges a shipment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "pickup_address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$" },
+          "delivery_address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$" },
+          "weight_kg": { "type": "number", "exclusiveMinimum": 0 },
+          "service_level": { "type": "string", "enum": ["standard", "express", "overnight", "freight"] },
+          "declared_value_usd": { "type": "number", "minimum": 0 },
+          "notes": { "type": "string" }
+        },
+        "required": ["customer_id", "pickup_address_id", "delivery_address_id", "weight_kg", "service_level"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cancel_order",
+      "description": "Cancel an order and stop its shipment. Use for orders, not pickups or returns.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "reason": { "type": "string" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_order",
+      "description": "Fetch order details: addresses, packages, service level, and status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "update_order_service_level",
+      "description": "Change the service level of an order, for example upgrade to express.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "service_level": { "type": "string", "enum": ["standard", "express", "overnight", "freight"] }
+        },
+        "required": ["order_id", "service_level"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "duplicate_order",
+      "description": "Create a copy of an existing order for a repeat shipment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier to copy" },
+          "new_pickup_date": { "type": "string", "description": "Pickup date for the copy, ISO format YYYY-MM-DD" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "create_return",
+      "description": "Start a return for an order. The customer can request a pickup or drop the parcel at a point.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "reason": { "type": "string", "enum": ["item_damaged", "wrong_item", "no_longer_needed", "late_delivery", "other"] },
+          "dropoff": { "type": "string", "enum": ["pickup", "dropoff_point"] }
+        },
+        "required": ["order_id", "reason", "dropoff"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cancel_return",
+      "description": "Cancel an existing return, for example when the customer keeps the item.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "return_id": { "type": "string", "pattern": "^RET-[0-9]{5}$", "description": "Return identifier" },
+          "reason": { "type": "string" }
+        },
+        "required": ["return_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_return_status",
+      "description": "Get the status of a return: label issued, in transit, received, or refunded.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "return_id": { "type": "string", "pattern": "^RET-[0-9]{5}$", "description": "Return identifier" }
+        },
+        "required": ["return_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "request_refund",
+      "description": "Request a full or partial refund for an order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "amount_usd": { "type": "number", "exclusiveMinimum": 0, "description": "Partial amount; omit for a full refund" },
+          "reason": { "type": "string" }
+        },
+        "required": ["order_id", "reason"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_returns",
+      "description": "List a customer's returns, optionally filtered by status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "status": { "type": "string", "enum": ["open", "in_transit", "received", "closed"] }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "update_address",
+      "description": "Update the delivery address on an open order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" },
+          "new_address": {
+            "type": "object",
+            "properties": {
+              "street": { "type": "string" },
+              "city": { "type": "string" },
+              "postal_code": { "type": "string" },
+              "country": { "type": "string" }
+            },
+            "required": ["street", "city"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["order_id", "new_address"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "update_customer_address",
+      "description": "Update a saved address on the customer's profile (billing or default pickup).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "address_type": { "type": "string", "enum": ["billing", "default_pickup"] },
+          "new_address": {
+            "type": "object",
+            "properties": {
+              "street": { "type": "string" },
+              "city": { "type": "string" },
+              "postal_code": { "type": "string" },
+              "country": { "type": "string" }
+            },
+            "required": ["street", "city"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["customer_id", "address_type", "new_address"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "add_address",
+      "description": "Add a new saved address to a customer profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "address": {
+            "type": "object",
+            "properties": {
+              "street": { "type": "string" },
+              "city": { "type": "string" },
+              "postal_code": { "type": "string" },
+              "country": { "type": "string" }
+            },
+            "required": ["street", "city"],
+            "additionalProperties": false
+          },
+          "label": { "type": "string", "description": "Friendly label such as warehouse gate 3" }
+        },
+        "required": ["customer_id", "address"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "verify_address",
+      "description": "Check whether an address is deliverable and well-formatted before using it.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "object",
+            "properties": {
+              "street": { "type": "string" },
+              "city": { "type": "string" },
+              "postal_code": { "type": "string" },
+              "country": { "type": "string" }
+            },
+            "required": ["street", "city"],
+            "additionalProperties": false
+          },
+          "country": { "type": "string", "description": "ISO country hint when the address omits it" }
+        },
+        "required": ["address"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete_address",
+      "description": "Remove a saved address from a customer profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$", "description": "Address identifier to remove" }
+        },
+        "required": ["customer_id", "address_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "assign_driver",
+      "description": "Assign a driver to a shipment. Omit driver_id to let dispatch pick the next available driver.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "shipment_id": { "type": "string", "pattern": "^SHP-[0-9]{5}$", "description": "Shipment identifier" },
+          "driver_id": { "type": "string", "pattern": "^DRV-[0-9]{3}$", "description": "Driver identifier; omit for auto-assign" },
+          "date": { "type": "string", "description": "Date of the assignment, ISO format YYYY-MM-DD" }
+        },
+        "required": ["shipment_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "reassign_driver",
+      "description": "Move an already-assigned shipment to a different driver.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "shipment_id": { "type": "string", "pattern": "^SHP-[0-9]{5}$", "description": "Shipment identifier" },
+          "driver_id": { "type": "string", "pattern": "^DRV-[0-9]{3}$", "description": "New driver identifier" }
+        },
+        "required": ["shipment_id", "driver_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "driver_availability",
+      "description": "Check which drivers are available at a warehouse on a date and optional time window.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" },
+          "date": { "type": "string", "description": "Date, ISO format YYYY-MM-DD" },
+          "time_window": { "type": "string", "enum": ["08:00-12:00", "12:00-16:00", "16:00-20:00"] }
+        },
+        "required": ["warehouse_id", "date"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_driver",
+      "description": "Look up a driver's profile and current assignments.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "driver_id": { "type": "string", "pattern": "^DRV-[0-9]{3}$", "description": "Driver identifier" }
+        },
+        "required": ["driver_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_drivers",
+      "description": "List drivers, optionally filtered by warehouse or duty status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" },
+          "status": { "type": "string", "enum": ["available", "on_route", "off_duty"] }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "check_inventory",
+      "description": "Check stock levels for a SKU across warehouses, or list stock in one warehouse.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sku": { "type": "string", "pattern": "^SKU-[0-9]{4}$", "description": "SKU identifier" },
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "transfer_stock",
+      "description": "Move stock for a SKU between warehouses.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sku": { "type": "string", "pattern": "^SKU-[0-9]{4}$", "description": "SKU identifier" },
+          "from_warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$" },
+          "to_warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$" },
+          "quantity": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["sku", "from_warehouse_id", "to_warehouse_id", "quantity"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "reserve_space",
+      "description": "Reserve inbound pallet space at a warehouse for a date.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" },
+          "date": { "type": "string", "description": "Inbound date, ISO format YYYY-MM-DD" },
+          "pallets": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["warehouse_id", "date", "pallets"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_warehouse_hours",
+      "description": "Get opening hours and dock availability for a warehouse.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "warehouse_id": { "type": "string", "pattern": "^WH-[0-9]{3}$", "description": "Warehouse identifier" },
+          "date": { "type": "string", "description": "Date, ISO format YYYY-MM-DD" }
+        },
+        "required": ["warehouse_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_warehouses",
+      "description": "List warehouses, optionally filtered by city or region.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "city": { "type": "string" },
+          "region": { "type": "string" }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_invoice",
+      "description": "Get the invoice for an order: amounts, line items, and payment status.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "order_id": { "type": "string", "pattern": "^ORD-[0-9]{5}$", "description": "Order identifier" }
+        },
+        "required": ["order_id"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "dispute_charge",
+      "description": "Dispute a charge or surcharge on an invoice. Use for billing disputes, not refunds.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "invoice_id": { "type": "string", "pattern": "^INV-[0-9]{5}$", "description": "Invoice identifier" },
+          "amount_usd": { "type": "number", "exclusiveMinimum": 0, "description": "Amount disputed; omit to dispute the whole invoice" },
+          "reason": { "type": "string" }
+        },
+        "required": ["invoice_id", "reason"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_quote",
+      "description": "Get a price quote for a prospective shipment without creating an order.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pickup_address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$" },
+          "delivery_address_id": { "type": "string", "pattern": "^ADR-[0-9]{4}$" },
+          "weight_kg": { "type": "number", "exclusiveMinimum": 0 },
+          "service_level": { "type": "string", "enum": ["standard", "express", "overnight", "freight"] }
+        },
+        "required": ["pickup_address_id", "delivery_address_id", "weight_kg", "service_level"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "apply_credit",
+      "description": "Apply account credit to a customer.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "customer_id": { "type": "string", "pattern": "^CUS-[0-9]{4}$", "description": "Customer identifier" },
+          "amount_usd": { "type": "number", "exclusiveMinimum": 0 },
+          "reason": { "type": "string" }
+        },
+        "required": ["customer_id", "amount_usd", "reason"],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_rate_card",
+      "description": "Get current shipping rates by service level and region.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "service_level": { "type": "string", "enum": ["standard", "express", "overnight", "freight"] },
+          "region": { "type": "string" }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  }
+]

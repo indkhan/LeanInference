@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.safetensors
+*.cact
+# generated / large local artifacts (regenerable)
+unsloth_compiled_cache/
+train/qwen/out/
+train/qwen/data/*.jsonl
+*.bin
+*.gguf
+*.pt
+*.pth
+unsloth_compiled_cache/
+train/qwen/out/
+train/needle/out/
+*.bin
+*.gguf
+*.pt

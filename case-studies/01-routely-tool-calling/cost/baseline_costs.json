@@ -1,0 +1,27 @@
+{
+  "generated_from": "cost\\prices.json",
+  "as_of": "2026-10-17",
+  "inputs": {
+    "calls_per_month": 2000000,
+    "input_tokens_per_call": 5304,
+    "output_tokens_per_call": 100,
+    "cache_read_fraction": 1.0
+  },
+  "models": {
+    "gpt-6-astra": {
+      "label": "GPT-6 Astra (frontier baseline - the bill being replaced)",
+      "cost_per_call_uncached": 0.05804,
+      "cost_per_1m_calls_uncached": 58040.0,
+      "cost_per_month_uncached": 116080.0,
+      "cost_per_month_cached": 20608.0
+    },
+    "deepseek-v4.1-flash": {
+      "label": "DeepSeek V4.1 Flash (prompted small hosted model - candidate A; measured on free OpenCode tier, priced at list off-peak)",
+      "cost_per_call_uncached": 0.000856,
+      "cost_per_1m_calls_uncached": 855.6,
+      "cost_per_month_uncached": 1711.2,
+      "cost_per_month_cached": null
+    }
+  },
+  "note": "assumed list prices x token counts; no paid API runs"
+}

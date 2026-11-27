@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "routely": {
+      "description": "Routely tool-call benchmark. Tools disabled, single step: behaves like a plain model API call.",
+      "mode": "primary",
+      "steps": 1,
+      "system": "{file:eval/opencode_system.md}"
+    }
+  }
+}
