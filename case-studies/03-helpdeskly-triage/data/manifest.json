@@ -1,0 +1,31 @@
+{
+  "seed": 13,
+  "source": "tickets_raw.jsonl",
+  "rows": 5000,
+  "splits": {
+    "train": 4000,
+    "val": 300,
+    "test": 700
+  },
+  "test_hardness": {
+    "short": 74,
+    "multi_issue_with_return_exchange": 6,
+    "multi_issue_with_other": 10,
+    "rambling": 117,
+    "non_english": 34,
+    "multi_issue_with_complaint_escalation": 4,
+    "multi_issue_with_shipping_address_change": 7,
+    "multi_issue_with_damaged_item": 4,
+    "multi_issue_with_refund_request": 4,
+    "multi_issue_with_order_status": 3,
+    "multi_issue_with_payment_issue": 3,
+    "code_switched": 17,
+    "angry": 50,
+    "multi_issue_with_cancel_order": 5,
+    "multi_issue_with_wrong_item": 5,
+    "sarcastic": 23,
+    "multi_issue_with_product_question": 9,
+    "multi_issue_with_account_access": 4
+  },
+  "test_contradictions": 8
+}

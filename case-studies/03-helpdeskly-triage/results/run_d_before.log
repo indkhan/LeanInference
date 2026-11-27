@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  100/700 (8 refused, 0 invalid)
+  200/700 (16 refused, 0 invalid)
+  300/700 (44 refused, 0 invalid)
+  400/700 (87 refused, 0 invalid)
+  500/700 (149 refused, 0 invalid)
+  600/700 (150 refused, 0 invalid)
+  700/700 (163 refused, 0 invalid)
+[log] d_needle_before: {"intent": {"acc": 0.3329, "macro_f1": 0.2444}, "urgency": {"acc": 0.3757, "macro_f1": 0.3659, "high_recall": 0.4326}, "sentiment": {"acc": 0.4271, "macro_f1": 0.3934}, "latency": {"p50_ms": 388.6, "p
+[d_needle_before] {'intent': {'acc': 0.3329, 'macro_f1': 0.2444}, 'urgency': {'acc': 0.3757, 'macro_f1': 0.3659, 'high_recall': 0.4326}, 'sentiment': {'acc': 0.4271, 'macro_f1': 0.3934}} latency={'p50_ms': 388.6, 'p95_ms': 802.0, 'n': 700} turns={'ok': 3, 'suppressed': 534, 'refusal': 163, 'invalid': 0}

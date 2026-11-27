@@ -1,0 +1,4 @@
+[A] opencode/deepseek-v4.1-flash-free zero_shot val: 46 to call, 254 cached
+  25/46
+[log] a_zero_shot_val: {"model": "opencode/deepseek-v4.1-flash-free", "intent": {"acc": 0.8267, "macro_f1": 0.7199}, "urgency": {"acc": 0.7667, "macro_f1": 0.7565, "high_recall": 0.75}, "sentiment": {"acc": 0.74, "macro_f1"
+{"intent": {"acc": 0.8267, "macro_f1": 0.7199}, "urgency": {"acc": 0.7667, "macro_f1": 0.7565, "high_recall": 0.75}, "sentiment": {"acc": 0.74, "macro_f1": 0.6843}} failed: 46 p95_s: 19.326

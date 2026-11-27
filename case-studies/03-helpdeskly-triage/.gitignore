@@ -1,0 +1,18 @@
+# venvs, caches, model weights, GPU outputs
+.venv/
+venv/
+__pycache__/
+*.pyc
+.cache/
+hf_cache/
+*.safetensors
+*.bin
+*.gguf
+*.cact
+*.pt
+*.pth
+*.ckpt
+*.npy
+runs/
+checkpoints/
+.hf-cache/

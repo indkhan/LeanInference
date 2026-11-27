@@ -1,0 +1,5737 @@
+{
+ "name": "d_needle_val_fullkv",
+ "predictions": [
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  }
+ ],
+ "gold": [
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "cancel_order",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "complaint_escalation",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "damaged_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "order_status",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "payment_issue",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "product_question",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "refund_request",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "low",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "return_exchange",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "high",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "shipping_address_change",
+   "urgency": "medium",
+   "sentiment": "positive"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "low",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "wrong_item",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  }
+ ],
+ "metrics": {
+  "intent": {
+   "acc": 0.6367,
+   "macro_f1": 0.5605
+  },
+  "urgency": {
+   "acc": 0.87,
+   "macro_f1": 0.8535,
+   "high_recall": 0.8167
+  },
+  "sentiment": {
+   "acc": 0.9567,
+   "macro_f1": 0.9437
+  }
+ },
+ "latency": {
+  "p50_ms": 376.3,
+  "p95_ms": 519.3,
+  "n": 300
+ },
+ "turns": {
+  "ok": 25,
+  "suppressed": 275,
+  "refusal": 0,
+  "invalid": 0
+ },
+ "raw": [
+  {
+   "i": 0,
+   "kind": "suppressed",
+   "reasoning": "My account is locked after too many attempts -> intent account_access; 'this is unacceptable' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 447.4,
+   "prefill_tps": 343.9,
+   "decode_tps": 218.4,
+   "peak_ram_mb": 156.4
+  },
+  {
+   "i": 1,
+   "kind": "suppressed",
+   "reasoning": "I can't log in: the password reset emails never -> intent account_access; 'urgent' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 506.7,
+   "prefill_tps": 317.3,
+   "decode_tps": 212.8,
+   "peak_ram_mb": 156.5
+  },
+  {
+   "i": 2,
+   "kind": "suppressed",
+   "reasoning": "I can't log in: the password reset emails -> intent account_access; 'urgent' -> urgency high; plain request -> tone neutral",
+   "ms": 385.8,
+   "prefill_tps": 358.6,
+   "decode_tps": 226.6,
+   "peak_ram_mb": 156.5
+  },
+  {
+   "i": 3,
+   "kind": "suppressed",
+   "reasoning": "My account is locked after too many attempts -> intent account_access; 'my hotmail no rush at all' -> urgency high; plain request -> tone neutral",
+   "ms": 403.8,
+   "prefill_tps": 341.2,
+   "decode_tps": 230.7,
+   "peak_ram_mb": 156.5
+  },
+  {
+   "i": 4,
+   "kind": "suppressed",
+   "reasoning": "account locked help no rush at all -> intent account_access; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 354.1,
+   "prefill_tps": 341.8,
+   "decode_tps": 221.8,
+   "peak_ram_mb": 156.5
+  },
+  {
+   "i": 5,
+   "kind": "suppressed",
+   "reasoning": "account locked help And note: ASAP -> intent account_access; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 348.8,
+   "prefill_tps": 362.9,
+   "decode_tps": 219.1,
+   "peak_ram_mb": 156.5
+  },
+  {
+   "i": 6,
+   "kind": "ok",
+   "reasoning": "Two-factor codes keep getting rejected -> intent account_access; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 540.2,
+   "prefill_tps": 347.7,
+   "decode_tps": 216.2,
+   "peak_ram_mb": 156.8
+  },
+  {
+   "i": 7,
+   "kind": "suppressed",
+   "reasoning": "cant log in And note: not urgent, just asking -> intent other; 'not urgent, just asking' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 401.0,
+   "prefill_tps": 351.8,
+   "decode_tps": 219.5,
+   "peak_ram_mb": 156.8
+  },
+  {
+   "i": 8,
+   "kind": "ok",
+   "reasoning": "My account is locked after too many attempts -> intent account_access; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 410.3,
+   "prefill_tps": 300.7,
+   "decode_tps": 226.2,
+   "peak_ram_mb": 156.8
+  },
+  {
+   "i": 9,
+   "kind": "suppressed",
+   "reasoning": "Two-factor codes keep getting rejected -> intent account_access; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 462.9,
+   "prefill_tps": 307.9,
+   "decode_tps": 223.5,
+   "peak_ram_mb": 156.8
+  },
+  {
+   "i": 10,
+   "kind": "ok",
+   "reasoning": "I don't usually write to support, so I h -> intent account_access; 'seems like I always have bad luck with you' -> urgency high; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 653.0,
+   "prefill_tps": 338.2,
+   "decode_tps": 213.2,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 11,
+   "kind": "suppressed",
+   "reasoning": "I can't log in: the password reset emails -> intent account_access; 'in the next few days' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 464.2,
+   "prefill_tps": 334.3,
+   "decode_tps": 222.2,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 12,
+   "kind": "suppressed",
+   "reasoning": "cant log in And note: in the next few days -> intent account_access; 'in the next few days' -> urgency medium; 'very disappointed' -> tone negative",
+   "ms": 420.1,
+   "prefill_tps": 320.5,
+   "decode_tps": 216.8,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 13,
+   "kind": "suppressed",
+   "reasoning": "Two-factor codes keep getting rejected -> intent account_access; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 416.5,
+   "prefill_tps": 361.7,
+   "decode_tps": 229.6,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 14,
+   "kind": "suppressed",
+   "reasoning": "I can't log in: the password reset emails -> intent account_access; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 401.9,
+   "prefill_tps": 349.7,
+   "decode_tps": 237.1,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 15,
+   "kind": "suppressed",
+   "reasoning": "Je ne peux pas me connecter, compte bloqué -> intent payment_issue; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 539.3,
+   "prefill_tps": 338.1,
+   "decode_tps": 158.0,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 16,
+   "kind": "suppressed",
+   "reasoning": "Can I still cancel ORD-74075 -> intent cancel_order; 'this is unacceptable' -> urgency high; plain request -> tone neutral",
+   "ms": 479.4,
+   "prefill_tps": 327.4,
+   "decode_tps": 215.9,
+   "peak_ram_mb": 157.0
+  },
+  {
+   "i": 17,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent cancel_order; 'a heaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "ms": 2756.7,
+   "prefill_tps": 336.8,
+   "decode_tps": 202.9,
+   "peak_ram_mb": 161.3
+  },
+  {
+   "i": 18,
+   "kind": "suppressed",
+   "reasoning": "Please cancel order ORD-77358 -> intent cancel_order; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 445.3,
+   "prefill_tps": 343.0,
+   "decode_tps": 195.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 19,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent cancel_order; 'no rush at all' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 516.6,
+   "prefill_tps": 357.5,
+   "decode_tps": 212.8,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 20,
+   "kind": "suppressed",
+   "reasoning": "Cancel the coffee maker order please (ORD-23912 -> intent cancel_order; 'whenever you can' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 489.1,
+   "prefill_tps": 337.9,
+   "decode_tps": 231.3,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 21,
+   "kind": "suppressed",
+   "reasoning": "Can I still cancel ORD-82409 -> intent cancel_order; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 417.7,
+   "prefill_tps": 345.4,
+   "decode_tps": 220.6,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 22,
+   "kind": "suppressed",
+   "reasoning": "Please cancel order ORD-15262 -> intent cancel_order; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 435.9,
+   "prefill_tps": 325.5,
+   "decode_tps": 212.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 23,
+   "kind": "suppressed",
+   "reasoning": "Can I still cancel ORD-74993 -> intent cancel_order; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 423.8,
+   "prefill_tps": 343.7,
+   "decode_tps": 225.1,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 24,
+   "kind": "suppressed",
+   "reasoning": "cancel pls whenever you can -> intent cancel_order; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 306.9,
+   "prefill_tps": 365.9,
+   "decode_tps": 231.5,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 25,
+   "kind": "suppressed",
+   "reasoning": "Can I still cancel ORD-32971 -> intent cancel_order; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 690.6,
+   "prefill_tps": 321.9,
+   "decode_tps": 124.1,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 26,
+   "kind": "suppressed",
+   "reasoning": "cancel it, reorder whenever you can -> intent cancel_order; 'whenever you can' -> urgency low; 'love your shop otherwise' -> tone positive",
+   "ms": 394.5,
+   "prefill_tps": 305.1,
+   "decode_tps": 208.5,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 27,
+   "kind": "suppressed",
+   "reasoning": "Please cancel order ORD-49227 -> intent cancel_order; 'soon-ish' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 478.7,
+   "prefill_tps": 356.1,
+   "decode_tps": 211.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 28,
+   "kind": "suppressed",
+   "reasoning": "Cancel the wireless earbuds order please (ORD-92399 -> intent cancel_order; 'before the weekend' -> urgency medium; 'very disappointed' -> tone negative",
+   "ms": 484.6,
+   "prefill_tps": 355.1,
+   "decode_tps": 227.5,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 29,
+   "kind": "suppressed",
+   "reasoning": "Please cancel order ORD-35540 -> intent cancel_order; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 412.8,
+   "prefill_tps": 340.8,
+   "decode_tps": 220.9,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 30,
+   "kind": "suppressed",
+   "reasoning": "Cancel the desk lamp order please (ORD-45573 -> intent cancel_order; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 406.0,
+   "prefill_tps": 371.7,
+   "decode_tps": 237.8,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 31,
+   "kind": "suppressed",
+   "reasoning": "Cancel the air fryer order please (ORD-74143 -> intent cancel_order; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 439.5,
+   "prefill_tps": 359.9,
+   "decode_tps": 233.9,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 32,
+   "kind": "suppressed",
+   "reasoning": "Cancel the electric shaver order please (ORD-74257 -> intent cancel_order; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 485.2,
+   "prefill_tps": 339.1,
+   "decode_tps": 197.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 33,
+   "kind": "suppressed",
+   "reasoning": "Cancel the plant pot order please (ORD-12358 -> intent cancel_order; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 391.8,
+   "prefill_tps": 348.5,
+   "decode_tps": 253.5,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 34,
+   "kind": "suppressed",
+   "reasoning": "Can I still cancel ORD-12969 -> intent cancel_order; 'before the weekend' -> urgency medium; 'long-time customer, generally happy' -> tone positive",
+   "ms": 386.9,
+   "prefill_tps": 406.1,
+   "decode_tps": 277.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 35,
+   "kind": "suppressed",
+   "reasoning": "I've emailed five times about order ORD-32830 -> intent order_status; 'whenever you can' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 411.5,
+   "prefill_tps": 394.1,
+   "decode_tps": 275.4,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 36,
+   "kind": "suppressed",
+   "reasoning": "Enough. Every answer I get is a template -> intent other; 'urgent' -> urgency high; 'ridiculous' -> tone negative",
+   "ms": 330.1,
+   "prefill_tps": 386.1,
+   "decode_tps": 284.9,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 37,
+   "kind": "suppressed",
+   "reasoning": "Enough. Every answer I get is a template -> intent other; 'this is time-sensitive' -> urgency high; 'very disappointed' -> tone negative",
+   "ms": 359.7,
+   "prefill_tps": 423.9,
+   "decode_tps": 279.6,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 38,
+   "kind": "suppressed",
+   "reasoning": "Enough. Every answer I get is a template -> intent other; 'ASAP' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 336.4,
+   "prefill_tps": 449.6,
+   "decode_tps": 289.8,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 39,
+   "kind": "suppressed",
+   "reasoning": "If nobody gets back to me about my case today I will dispute the charge -> intent damaged_item; 'this is time-sensitive' -> urgency high; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 427.2,
+   "prefill_tps": 436.2,
+   "decode_tps": 296.5,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 40,
+   "kind": "suppressed",
+   "reasoning": "¡Inaceptable! Quiero hablar con un responsable AHORA -> intent complaint_escalation; 'this is time-sensitive' -> urgency high; 'I'm honestly furious' -> tone negative",
+   "ms": 443.2,
+   "prefill_tps": 414.2,
+   "decode_tps": 286.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 41,
+   "kind": "suppressed",
+   "reasoning": "This is the third broken item in a row and your support keeps replying with the same copied -> intent other; 'this is time-sensitive' -> urgency high; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 434.4,
+   "prefill_tps": 405.6,
+   "decode_tps": 298.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 42,
+   "kind": "suppressed",
+   "reasoning": "Enough. Every answer I get is a template -> intent other; 'when you get a minute' -> urgency low; 'ridiculous' -> tone negative",
+   "ms": 341.2,
+   "prefill_tps": 415.1,
+   "decode_tps": 287.4,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 43,
+   "kind": "suppressed",
+   "reasoning": "If nobody gets back to me about my case today I will dispute the charge -> intent complaint_escalation; 'in the next few days' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 435.8,
+   "prefill_tps": 446.6,
+   "decode_tps": 281.4,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 44,
+   "kind": "suppressed",
+   "reasoning": "get ME a human !! -> intent return_exchange; 'before the weekend' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 327.7,
+   "prefill_tps": 412.5,
+   "decode_tps": 296.7,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 45,
+   "kind": "suppressed",
+   "reasoning": "The bluetooth speaker ARRIVED broken: the box WAS crushed and the lid IS cracked -> intent damaged_item; '×añola' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 482.2,
+   "prefill_tps": 418.3,
+   "decode_tps": 280.3,
+   "peak_ram_mb": 161.4
+  },
+  {
+   "i": 46,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent damaged_item; 'today at the latest' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 491.5,
+   "prefill_tps": 418.5,
+   "decode_tps": 283.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 47,
+   "kind": "suppressed",
+   "reasoning": "The desk lamp arrived broken: the box -> intent damaged_item; 'I need it before my move on Thursday' -> urgency high; 'I'm honestly furious' -> tone negative",
+   "ms": 427.5,
+   "prefill_tps": 452.5,
+   "decode_tps": 285.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 48,
+   "kind": "suppressed",
+   "reasoning": "The smartwatch band arrived with a torn seam and stuffing -> intent damaged_item; 'very disappointed' -> urgency high; plain request -> tone neutral",
+   "ms": 395.8,
+   "prefill_tps": 451.4,
+   "decode_tps": 274.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 49,
+   "kind": "ok",
+   "reasoning": "Perfect, just perfect, I don't usually write to support, so I h -> intent order_status; 'urgent' -> urgency high; plain request -> tone neutral",
+   "ms": 545.1,
+   "prefill_tps": 417.3,
+   "decode_tps": 285.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 50,
+   "kind": "suppressed",
+   "reasoning": "There is a huge dent on the bluetooth speaker and one cable won't even connect -> intent damaged_item; 'I need it before my move on Thursday' -> urgency high; plain request -> tone neutral",
+   "ms": 419.2,
+   "prefill_tps": 407.6,
+   "decode_tps": 282.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 51,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent order_status; 'we fly out on vacation Friday' -> urgency high; plain request -> tone neutral",
+   "ms": 442.8,
+   "prefill_tps": 429.2,
+   "decode_tps": 291.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 52,
+   "kind": "suppressed",
+   "reasoning": "There is a huge dent on the charging cable and one cable won't even -> intent damaged_item; 'not urgent, just asking' -> urgency low; 'ridiculous' -> tone negative",
+   "ms": 408.1,
+   "prefill_tps": 428.2,
+   "decode_tps": 291.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 53,
+   "kind": "suppressed",
+   "reasoning": "item broke on arrival -> intent damaged_item; 'whenever you can' -> urgency low; 'very disappointed' -> tone negative",
+   "ms": 339.9,
+   "prefill_tps": 417.4,
+   "decode_tps": 302.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 54,
+   "kind": "suppressed",
+   "reasoning": "The phone case arrived with a torn seam and stuffing -> intent damaged_item; 'when you get a minute' -> urgency high; 'very disappointed' -> tone negative",
+   "ms": 471.9,
+   "prefill_tps": 341.4,
+   "decode_tps": 229.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 55,
+   "kind": "suppressed",
+   "reasoning": "The charging cable arrived broken: the box -> intent damaged_item; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 405.9,
+   "prefill_tps": 389.0,
+   "decode_tps": 261.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 56,
+   "kind": "suppressed",
+   "reasoning": "The kettle arrived with a torn seam and stuffing -> intent order_status; 'no rush at all' -> urgency low; 'you've been great every time before' -> tone positive",
+   "ms": 431.9,
+   "prefill_tps": 401.9,
+   "decode_tps": 261.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 57,
+   "kind": "suppressed",
+   "reasoning": "Just opened the package and the over-ear headphones is shattered -> intent damaged_item; 'before the weekend' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 457.1,
+   "prefill_tps": 416.2,
+   "decode_tps": 261.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 58,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'this week if possible' -> urgency medium; 'this week if possible' -> tone negative",
+   "ms": 453.3,
+   "prefill_tps": 385.3,
+   "decode_tps": 279.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 59,
+   "kind": "suppressed",
+   "reasoning": "There is a huge dent on the mechanical keyboard and one cable won't even -> intent damaged_item; 'this week if possible' -> urgency medium; 'very disappointed' -> tone negative",
+   "ms": 428.4,
+   "prefill_tps": 398.2,
+   "decode_tps": 276.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 60,
+   "kind": "suppressed",
+   "reasoning": "Just opened the package and the air fryer is shattered -> intent order_status; 'in the next few days' -> urgency medium; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 442.0,
+   "prefill_tps": 385.9,
+   "decode_tps": 270.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 61,
+   "kind": "suppressed",
+   "reasoning": "The coffee maker arrived with a torn seam and stuffing -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 337.3,
+   "prefill_tps": 445.3,
+   "decode_tps": 293.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 62,
+   "kind": "suppressed",
+   "reasoning": "The garden hose arrived with a torn seam and stuffing -> intent damaged_item; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 345.2,
+   "prefill_tps": 446.2,
+   "decode_tps": 298.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 63,
+   "kind": "suppressed",
+   "reasoning": "The garden hose arrived with a torn seam and stuffing coming out -> intent order_status; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 423.3,
+   "prefill_tps": 446.8,
+   "decode_tps": 267.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 64,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'today at the latest' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 656.4,
+   "prefill_tps": 362.9,
+   "decode_tps": 267.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 65,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-24433 still says processing -> intent order_status; 'my daughter's birthday is Saturday' -> urgency high; 'ridiculous' -> tone negative",
+   "ms": 415.1,
+   "prefill_tps": 414.0,
+   "decode_tps": 263.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 66,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-20916 last Friday -> intent order_status; 'my daughter's birthday is Saturday' -> urgency high; plain request -> tone neutral",
+   "ms": 393.1,
+   "prefill_tps": 408.7,
+   "decode_tps": 289.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 67,
+   "kind": "suppressed",
+   "reasoning": "Could you check what happened to order ORD-72987 -> intent order_status; 'today at the latest' -> urgency medium; plain request -> tone neutral",
+   "ms": 349.0,
+   "prefill_tps": 424.6,
+   "decode_tps": 287.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 68,
+   "kind": "suppressed",
+   "reasoning": "HI, I placed order ORD-76813 this morning and THERE -> intent order_status; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 377.8,
+   "prefill_tps": 427.8,
+   "decode_tps": 283.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 69,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-88231 last week and there has been no tracking update -> intent order_status; 'we fly out on vacation Friday' -> urgency high; plain request -> tone neutral",
+   "ms": 402.9,
+   "prefill_tps": 417.9,
+   "decode_tps": 287.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 70,
+   "kind": "suppressed",
+   "reasoning": "my stuff where -> intent order_status; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 243.7,
+   "prefill_tps": 384.6,
+   "decode_tps": 290.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 71,
+   "kind": "suppressed",
+   "reasoning": "The tracking for ORD-75905 hasn't moved in five -> intent order_status; 'urgent' -> urgency high; 'long-time customer, generally happy' -> tone positive",
+   "ms": 374.9,
+   "prefill_tps": 413.1,
+   "decode_tps": 293.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 72,
+   "kind": "suppressed",
+   "reasoning": "The tracking for ORD-72777 hasn't moved in five days -> intent order_status; 'whenever you can' -> urgency low; 'very disappointed' -> tone negative",
+   "ms": 373.0,
+   "prefill_tps": 441.1,
+   "decode_tps": 286.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 73,
+   "kind": "suppressed",
+   "reasoning": "Ich habe mein Paket ORD-13535 immer noch nicht -> intent order_status; 'ridiculous' -> urgency high; 'ridiculous' -> tone negative",
+   "ms": 369.6,
+   "prefill_tps": 439.7,
+   "decode_tps": 282.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 74,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-19201 still says processing last week -> intent order_status; 'when you get a minute' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 369.0,
+   "prefill_tps": 451.2,
+   "decode_tps": 287.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 75,
+   "kind": "suppressed",
+   "reasoning": "Où est ma commande ORD-23645 -> intent order_status; 'whenever you can' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 340.4,
+   "prefill_tps": 433.0,
+   "decode_tps": 296.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 76,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-66912 last week and there has been no tracking update -> intent order_status; 'whenever you can' -> urgency low; 'very disappointed' -> tone negative",
+   "ms": 386.5,
+   "prefill_tps": 428.0,
+   "decode_tps": 293.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 77,
+   "kind": "ok",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'not urgent, just asking' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 489.9,
+   "prefill_tps": 421.6,
+   "decode_tps": 288.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 78,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'when you get a minute' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 302.2,
+   "prefill_tps": 449.6,
+   "decode_tps": 316.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 79,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-69338 on the 12th -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 363.9,
+   "prefill_tps": 444.6,
+   "decode_tps": 290.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 80,
+   "kind": "suppressed",
+   "reasoning": "MY stuff where -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 281.2,
+   "prefill_tps": 446.1,
+   "decode_tps": 268.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 81,
+   "kind": "suppressed",
+   "reasoning": "order 48213 where -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 251.0,
+   "prefill_tps": 434.4,
+   "decode_tps": 292.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 82,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 261.5,
+   "prefill_tps": 411.3,
+   "decode_tps": 291.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 83,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 286.9,
+   "prefill_tps": 441.1,
+   "decode_tps": 281.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 84,
+   "kind": "ok",
+   "reasoning": "Could you check what happened to order ORD-39677 -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 339.9,
+   "prefill_tps": 418.9,
+   "decode_tps": 300.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 85,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-92570 still says processing on the 12th -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 340.9,
+   "prefill_tps": 472.0,
+   "decode_tps": 289.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 86,
+   "kind": "ok",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent shipping_address_change; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 509.1,
+   "prefill_tps": 421.9,
+   "decode_tps": 270.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 87,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed ORDER ORD-22176 two days ago and THERE -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 422.8,
+   "prefill_tps": 428.2,
+   "decode_tps": 279.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 88,
+   "kind": "ok",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 482.9,
+   "prefill_tps": 415.5,
+   "decode_tps": 284.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 89,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 273.1,
+   "prefill_tps": 461.1,
+   "decode_tps": 288.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 90,
+   "kind": "ok",
+   "reasoning": "Could you check what happened to order ORD-17918 -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 438.5,
+   "prefill_tps": 409.7,
+   "decode_tps": 279.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 91,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-81501 TWO days ago and there HAS been no tracking update -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 470.9,
+   "prefill_tps": 423.7,
+   "decode_tps": 289.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 92,
+   "kind": "suppressed",
+   "reasoning": "Fantastic -> intent product_question; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 266.9,
+   "prefill_tps": 481.8,
+   "decode_tps": 305.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 93,
+   "kind": "ok",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 443.6,
+   "prefill_tps": 410.3,
+   "decode_tps": 288.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 94,
+   "kind": "suppressed",
+   "reasoning": "Sigo sin recibir el pedido ORD-37179 -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 369.4,
+   "prefill_tps": 370.2,
+   "decode_tps": 275.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 95,
+   "kind": "ok",
+   "reasoning": "Could YOU check what happened to order ORD-87545 -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 362.6,
+   "prefill_tps": 462.7,
+   "decode_tps": 292.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 96,
+   "kind": "suppressed",
+   "reasoning": "The tracking FOR ORD-61757 hasn't moved in five days -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 357.8,
+   "prefill_tps": 505.9,
+   "decode_tps": 299.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 97,
+   "kind": "suppressed",
+   "reasoning": "Oh great, another one -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 354.8,
+   "prefill_tps": 433.2,
+   "decode_tps": 266.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 98,
+   "kind": "ok",
+   "reasoning": "Could you check what happened to order ORD-32095 -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 348.2,
+   "prefill_tps": 423.2,
+   "decode_tps": 291.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 99,
+   "kind": "ok",
+   "reasoning": "Perfect, just perfect, 'I set up a return for order ORD-45235' -> intent return_exchange; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 456.8,
+   "prefill_tps": 453.8,
+   "decode_tps": 283.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 100,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 366.2,
+   "prefill_tps": 417.5,
+   "decode_tps": 275.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 101,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-64008 was supposed to arriv -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 341.0,
+   "prefill_tps": 451.6,
+   "decode_tps": 299.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 102,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-26791 was supposed to arriv -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 336.4,
+   "prefill_tps": 548.1,
+   "decode_tps": 294.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 103,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-62230 was supposed to arriv -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 437.6,
+   "prefill_tps": 437.9,
+   "decode_tps": 285.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 104,
+   "kind": "suppressed",
+   "reasoning": "¿Dónde está mi pedido ORD-62653 -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 338.1,
+   "prefill_tps": 460.8,
+   "decode_tps": 303.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 105,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-71811 on the 12th -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 368.5,
+   "prefill_tps": 467.7,
+   "decode_tps": 276.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 106,
+   "kind": "suppressed",
+   "reasoning": "Ich habe mein Paket ORD-67704 immer noch nicht -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 358.3,
+   "prefill_tps": 442.2,
+   "decode_tps": 280.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 107,
+   "kind": "ok",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 448.2,
+   "prefill_tps": 431.2,
+   "decode_tps": 277.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 108,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-45846 THIS morning -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 371.1,
+   "prefill_tps": 447.0,
+   "decode_tps": 298.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 109,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-97684 this morning -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 377.7,
+   "prefill_tps": 394.1,
+   "decode_tps": 298.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 110,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 449.9,
+   "prefill_tps": 427.2,
+   "decode_tps": 281.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 111,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-21487 still says processing last week -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 325.7,
+   "prefill_tps": 450.1,
+   "decode_tps": 289.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 112,
+   "kind": "ok",
+   "reasoning": "Could you check what happened to order ORD-42812 -> intent order_status; 'my work email no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 423.0,
+   "prefill_tps": 413.5,
+   "decode_tps": 276.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 113,
+   "kind": "suppressed",
+   "reasoning": "My ORDER ORD-17336 was supposed to arriv -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 366.5,
+   "prefill_tps": 415.8,
+   "decode_tps": 294.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 114,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-28031 was supposed to arriv -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 348.3,
+   "prefill_tps": 412.3,
+   "decode_tps": 293.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 115,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'when you get a minute' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 311.0,
+   "prefill_tps": 412.6,
+   "decode_tps": 294.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 116,
+   "kind": "ok",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'no rush at all' -> urgency low; 'love your shop otherwise' -> tone positive",
+   "ms": 562.0,
+   "prefill_tps": 442.9,
+   "decode_tps": 265.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 117,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-69367 was supposed to arriv -> intent order_status; 'no rush at all' -> urgency low; 'thanks in advance' -> tone positive",
+   "ms": 360.2,
+   "prefill_tps": 470.1,
+   "decode_tps": 290.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 118,
+   "kind": "ok",
+   "reasoning": "Perfect, just perfect, just perfect -> intent order_status; 'when you get a minute' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 397.9,
+   "prefill_tps": 448.3,
+   "decode_tps": 286.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 119,
+   "kind": "ok",
+   "reasoning": "Could you check what happened to order ORD-87557 -> intent order_status; 'when you get a minute' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 387.8,
+   "prefill_tps": 445.7,
+   "decode_tps": 284.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 120,
+   "kind": "suppressed",
+   "reasoning": "Fantastic -> intent order_status; 'not urgent, just asking' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 345.3,
+   "prefill_tps": 440.7,
+   "decode_tps": 290.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 121,
+   "kind": "suppressed",
+   "reasoning": "Ich habe mein Paket ORD-32204 immer no -> intent order_status; 'you've been great every time before' -> urgency high; plain request -> tone neutral",
+   "ms": 385.0,
+   "prefill_tps": 426.6,
+   "decode_tps": 284.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 122,
+   "kind": "suppressed",
+   "reasoning": "Where is MY stuff -> intent return_exchange; 'in the next few days' -> urgency medium; 'very disappointed' -> tone negative",
+   "ms": 305.1,
+   "prefill_tps": 456.9,
+   "decode_tps": 294.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 123,
+   "kind": "suppressed",
+   "reasoning": "Could you check what happened to order ORD-10863 -> intent order_status; 'soon-ish' -> urgency medium; 'ridiculous' -> tone negative",
+   "ms": 453.6,
+   "prefill_tps": 425.4,
+   "decode_tps": 277.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 124,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-86293 was supposed to arriv -> intent order_status; 'soon-ish' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 377.7,
+   "prefill_tps": 472.5,
+   "decode_tps": 297.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 125,
+   "kind": "suppressed",
+   "reasoning": "order 48213 where -> intent order_status; 'this is unacceptable' -> urgency low; plain request -> tone neutral",
+   "ms": 264.0,
+   "prefill_tps": 513.5,
+   "decode_tps": 306.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 126,
+   "kind": "suppressed",
+   "reasoning": "The tracking for ORD-24101 hasn't moved in five days -> intent order_status; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 349.0,
+   "prefill_tps": 437.5,
+   "decode_tps": 290.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 127,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-90250 yesterday -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 367.7,
+   "prefill_tps": 404.8,
+   "decode_tps": 286.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 128,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-45934 was supposed to arriv -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 350.3,
+   "prefill_tps": 391.4,
+   "decode_tps": 298.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 129,
+   "kind": "suppressed",
+   "reasoning": "Perfect, just perfect, just perfect -> intent order_status; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 343.2,
+   "prefill_tps": 453.2,
+   "decode_tps": 288.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 130,
+   "kind": "suppressed",
+   "reasoning": "Hi, I placed order ORD-79386 on the 12th -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 380.9,
+   "prefill_tps": 427.2,
+   "decode_tps": 294.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 131,
+   "kind": "suppressed",
+   "reasoning": "The tracking for ORD-77492 HASN'T moved in five -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 359.4,
+   "prefill_tps": 421.3,
+   "decode_tps": 302.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 132,
+   "kind": "suppressed",
+   "reasoning": "ORDER ORD-76797 STILL says processing YESTERDAY -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 394.6,
+   "prefill_tps": 463.6,
+   "decode_tps": 279.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 133,
+   "kind": "suppressed",
+   "reasoning": "Where is my stuff -> intent order_status; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 273.8,
+   "prefill_tps": 440.2,
+   "decode_tps": 284.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 134,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-72307 still says processing yesterday -> intent order_status; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 346.3,
+   "prefill_tps": 389.3,
+   "decode_tps": 293.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 135,
+   "kind": "suppressed",
+   "reasoning": "Order ORD-42916 still says processing two days ago -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 338.8,
+   "prefill_tps": 434.8,
+   "decode_tps": 300.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 136,
+   "kind": "suppressed",
+   "reasoning": "my stuff where -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 318.6,
+   "prefill_tps": 417.7,
+   "decode_tps": 309.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 137,
+   "kind": "suppressed",
+   "reasoning": "tracking never moved, why And note: before the weekend -> intent other; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 281.8,
+   "prefill_tps": 457.8,
+   "decode_tps": 296.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 138,
+   "kind": "suppressed",
+   "reasoning": "Perfect, just perfect -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 348.8,
+   "prefill_tps": 434.2,
+   "decode_tps": 300.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 139,
+   "kind": "suppressed",
+   "reasoning": "Fantastic -> intent refund_request; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 317.9,
+   "prefill_tps": 429.7,
+   "decode_tps": 297.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 140,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-60327 was supposed to arriv -> intent order_status; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 469.6,
+   "prefill_tps": 414.8,
+   "decode_tps": 263.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 141,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent order_status; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 436.4,
+   "prefill_tps": 411.0,
+   "decode_tps": 282.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 142,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 515.4,
+   "prefill_tps": 418.6,
+   "decode_tps": 298.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 143,
+   "kind": "suppressed",
+   "reasoning": "Where is my STUFF?? ORD-58604 !!! -> intent order_status; 'in the next few days' -> urgency medium; 'thanks in advance' -> tone positive",
+   "ms": 367.1,
+   "prefill_tps": 394.7,
+   "decode_tps": 283.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 144,
+   "kind": "suppressed",
+   "reasoning": "My order ORD-54218 was supposed to arriv -> intent order_status; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 335.2,
+   "prefill_tps": 427.1,
+   "decode_tps": 289.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 145,
+   "kind": "suppressed",
+   "reasoning": "Please remove me from the marketing list for good -> intent refund_request; 'ASAP' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 395.2,
+   "prefill_tps": 443.4,
+   "decode_tps": 287.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 146,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'whenever you can' -> urgency low; 'very disappointed' -> tone negative",
+   "ms": 368.3,
+   "prefill_tps": 433.0,
+   "decode_tps": 284.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 147,
+   "kind": "ok",
+   "reasoning": "First of all I want to say your packagin -> intent product_question; 'when you get a minute' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 482.6,
+   "prefill_tps": 407.4,
+   "decode_tps": 284.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 148,
+   "kind": "suppressed",
+   "reasoning": "Feedback: the returns label page prints badly -> intent other; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 343.7,
+   "prefill_tps": 439.8,
+   "decode_tps": 241.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 149,
+   "kind": "suppressed",
+   "reasoning": "Do your gift cards expire -> intent product_question; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 293.4,
+   "prefill_tps": 384.1,
+   "decode_tps": 289.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 150,
+   "kind": "suppressed",
+   "reasoning": "My loyalty points disappeared after my last purchase -> intent account_access; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 314.9,
+   "prefill_tps": 423.5,
+   "decode_tps": 294.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 151,
+   "kind": "suppressed",
+   "reasoning": "Please remove me from the marketing list for good -> intent refund_request; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 418.8,
+   "prefill_tps": 430.6,
+   "decode_tps": 249.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 152,
+   "kind": "suppressed",
+   "reasoning": "Feedback: the returns label page prints badly -> intent refund_request; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 315.5,
+   "prefill_tps": 482.2,
+   "decode_tps": 280.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 153,
+   "kind": "ok",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 562.2,
+   "prefill_tps": 297.1,
+   "decode_tps": 211.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 154,
+   "kind": "suppressed",
+   "reasoning": "Please remove me from the marketing list for good -> intent other; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 283.4,
+   "prefill_tps": 437.5,
+   "decode_tps": 282.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 155,
+   "kind": "suppressed",
+   "reasoning": "My loyalty points disappeared after my last purchase -> intent account_access; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 341.7,
+   "prefill_tps": 384.1,
+   "decode_tps": 272.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 156,
+   "kind": "ok",
+   "reasoning": "I don't usually write to support, so I h -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 522.9,
+   "prefill_tps": 382.9,
+   "decode_tps": 278.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 157,
+   "kind": "suppressed",
+   "reasoning": "Do your gift cards expire -> intent product_question; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 301.2,
+   "prefill_tps": 407.5,
+   "decode_tps": 294.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 158,
+   "kind": "suppressed",
+   "reasoning": "Please remove me from the marketing list for good -> intent other; 'no rush at all' -> urgency low; 'you've been great every time before' -> tone positive",
+   "ms": 332.9,
+   "prefill_tps": 429.9,
+   "decode_tps": 279.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 159,
+   "kind": "suppressed",
+   "reasoning": "My loyalty points disappeared after my last purchase -> intent payment_issue; 'not urgent, just asking' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 352.4,
+   "prefill_tps": 454.6,
+   "decode_tps": 295.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 160,
+   "kind": "suppressed",
+   "reasoning": "Do your gift cards expire -> intent product_question; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 295.9,
+   "prefill_tps": 460.7,
+   "decode_tps": 279.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 161,
+   "kind": "suppressed",
+   "reasoning": "I would like to apply as a wholesale partner -> intent product_question; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 325.5,
+   "prefill_tps": 423.5,
+   "decode_tps": 291.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 162,
+   "kind": "suppressed",
+   "reasoning": "Checkout kept failing with payment error -> intent account_access; 'I need it before my move on Thursday' -> urgency high; 'I'm honestly furious' -> tone negative",
+   "ms": 396.5,
+   "prefill_tps": 452.1,
+   "decode_tps": 282.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 163,
+   "kind": "suppressed",
+   "reasoning": "I paid $59.90 but the site says transaction failed -> intent payment_issue; 'ASAP' -> urgency high; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 376.3,
+   "prefill_tps": 424.3,
+   "decode_tps": 279.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 164,
+   "kind": "suppressed",
+   "reasoning": "Checkout kept failing with payment error -> intent account_access; 'my daughter's birthday is Saturday' -> urgency high; 'very disappointed' -> tone negative",
+   "ms": 398.7,
+   "prefill_tps": 413.8,
+   "decode_tps": 279.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 165,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 440.6,
+   "prefill_tps": 476.7,
+   "decode_tps": 272.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 166,
+   "kind": "suppressed",
+   "reasoning": "Mir wurde $17.25 doppelt abgebucht -> intent payment_issue; 'the event is on Sunday' -> urgency high; plain request -> tone neutral",
+   "ms": 322.7,
+   "prefill_tps": 427.9,
+   "decode_tps": 293.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 167,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent damaged_item; 'this is time-sensitive' -> urgency high; plain request -> tone neutral",
+   "ms": 477.2,
+   "prefill_tps": 421.2,
+   "decode_tps": 284.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 168,
+   "kind": "suppressed",
+   "reasoning": "I was charged $239 twice for order ORD-37373 -> intent refund_request; 'thinks in advance' -> urgency high; 'the tone bald, danke' -> tone positive",
+   "ms": 474.3,
+   "prefill_tps": 373.8,
+   "decode_tps": 281.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 169,
+   "kind": "suppressed",
+   "reasoning": "Mir wurde $89 doppelt abgebucht -> intent payment_issue; 'no rush at all' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 349.0,
+   "prefill_tps": 431.0,
+   "decode_tps": 297.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 170,
+   "kind": "suppressed",
+   "reasoning": "I paid $89 but the site says transaction failed -> intent payment_issue; 'whenever you can' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 322.4,
+   "prefill_tps": 451.3,
+   "decode_tps": 297.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 171,
+   "kind": "suppressed",
+   "reasoning": "My card was declined at checkout twice, -> intent damaged_item; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 340.2,
+   "prefill_tps": 423.9,
+   "decode_tps": 292.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 172,
+   "kind": "suppressed",
+   "reasoning": "I paid $89 but the site says transaction failed -> intent payment_issue; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 301.2,
+   "prefill_tps": 451.0,
+   "decode_tps": 288.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 173,
+   "kind": "suppressed",
+   "reasoning": "charged twice, fix it -> intent refund_request; 'in the next few days' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 323.2,
+   "prefill_tps": 422.9,
+   "decode_tps": 282.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 174,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent payment_issue; 'variable my account' -> urgency high; 'very disappointed' -> tone negative",
+   "ms": 500.2,
+   "prefill_tps": 410.4,
+   "decode_tps": 280.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 175,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'this week if possible' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 541.5,
+   "prefill_tps": 422.1,
+   "decode_tps": 221.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 176,
+   "kind": "suppressed",
+   "reasoning": "Checkout kept failing with payment error 3 -> intent account_access; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 325.0,
+   "prefill_tps": 432.6,
+   "decode_tps": 293.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 177,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent return_exchange; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 467.8,
+   "prefill_tps": 448.0,
+   "decode_tps": 253.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 178,
+   "kind": "suppressed",
+   "reasoning": "Checkout kept failing with payment error 3 on the 12th -> intent account_access; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 369.0,
+   "prefill_tps": 393.0,
+   "decode_tps": 281.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 179,
+   "kind": "suppressed",
+   "reasoning": "My card was declined at checkout twice, -> intent damaged_item; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 334.1,
+   "prefill_tps": 423.7,
+   "decode_tps": 294.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 180,
+   "kind": "suppressed",
+   "reasoning": "I paid $239 but the site says transaction failed -> intent payment_issue; 'in the next few days' -> urgency medium; 'love your shop otherwise' -> tone positive",
+   "ms": 353.2,
+   "prefill_tps": 422.3,
+   "decode_tps": 279.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 181,
+   "kind": "suppressed",
+   "reasoning": "Does the computer mouse shrink in the wash -> intent product_question; 'today at the latest' -> urgency high; 'you've been great every time before' -> tone positive",
+   "ms": 363.2,
+   "prefill_tps": 360.6,
+   "decode_tps": 291.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 182,
+   "kind": "suppressed",
+   "reasoning": "will the cable fit pixel 9 -> intent product_question; 'no rush at all' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 331.2,
+   "prefill_tps": 400.8,
+   "decode_tps": 309.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 183,
+   "kind": "suppressed",
+   "reasoning": "Does the plant pot come with batteries or do I need to buy them separately -> intent product_question; 'no rush at all' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 491.4,
+   "prefill_tps": 398.7,
+   "decode_tps": 282.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 184,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 400.4,
+   "prefill_tps": 428.0,
+   "decode_tps": 285.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 185,
+   "kind": "suppressed",
+   "reasoning": "What is the difference between the desk lamp and the toaster -> intent product_question; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 317.4,
+   "prefill_tps": 441.9,
+   "decode_tps": 283.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 186,
+   "kind": "suppressed",
+   "reasoning": "Is the charging cable available in size S again -> intent product_question; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 340.0,
+   "prefill_tps": 427.3,
+   "decode_tps": 296.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 187,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent damaged_item; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 445.1,
+   "prefill_tps": 482.2,
+   "decode_tps": 276.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 188,
+   "kind": "suppressed",
+   "reasoning": "Will the sneakers charging cable work with a Pixel 9 -> intent product_question; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 346.9,
+   "prefill_tps": 456.8,
+   "decode_tps": 284.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 189,
+   "kind": "suppressed",
+   "reasoning": "Does the coffee maker shrink in the wash -> intent product_question; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 403.9,
+   "prefill_tps": 417.3,
+   "decode_tps": 283.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 190,
+   "kind": "suppressed",
+   "reasoning": "Does the phone case shrink in the wash -> intent damaged_item; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 396.2,
+   "prefill_tps": 433.3,
+   "decode_tps": 269.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 191,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent damaged_item; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 454.1,
+   "prefill_tps": 375.5,
+   "decode_tps": 282.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 192,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent other; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 461.8,
+   "prefill_tps": 435.8,
+   "decode_tps": 281.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 193,
+   "kind": "suppressed",
+   "reasoning": "Will the wireless earbuds charging cable work with a Pixel 9 -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 349.6,
+   "prefill_tps": 438.3,
+   "decode_tps": 299.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 194,
+   "kind": "suppressed",
+   "reasoning": "Does the computer mouse shrink in the wash -> intent product_question; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 298.2,
+   "prefill_tps": 424.9,
+   "decode_tps": 291.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 195,
+   "kind": "suppressed",
+   "reasoning": "What is the difference between the garden hose and the desk chair -> intent product_question; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 329.8,
+   "prefill_tps": 408.4,
+   "decode_tps": 292.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 196,
+   "kind": "suppressed",
+   "reasoning": "size 9 back in stock -> intent product_question; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 305.6,
+   "prefill_tps": 428.2,
+   "decode_tps": 303.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 197,
+   "kind": "suppressed",
+   "reasoning": "Will the computer mouse charging cable work with a Pixel 9 -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 373.2,
+   "prefill_tps": 470.7,
+   "decode_tps": 290.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 198,
+   "kind": "suppressed",
+   "reasoning": "Does the desk lamp shrink in the wash -> intent product_question; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 305.8,
+   "prefill_tps": 427.1,
+   "decode_tps": 302.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 199,
+   "kind": "suppressed",
+   "reasoning": "Will the plant pot charging cable work with a Pixel 9 -> intent product_question; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 327.1,
+   "prefill_tps": 464.3,
+   "decode_tps": 301.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 200,
+   "kind": "suppressed",
+   "reasoning": "What is the difference between the mechanical keyboard and the desk chair -> intent product_question; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 338.5,
+   "prefill_tps": 407.0,
+   "decode_tps": 281.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 201,
+   "kind": "suppressed",
+   "reasoning": "Is the air fryer available in size 10 again -> intent product_question; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 309.0,
+   "prefill_tps": 430.7,
+   "decode_tps": 290.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 202,
+   "kind": "suppressed",
+   "reasoning": "Is the desk lamp available in size M again -> intent product_question; 'when you get a minute' -> urgency low; 'you've been great every time before' -> tone positive",
+   "ms": 328.7,
+   "prefill_tps": 469.1,
+   "decode_tps": 310.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 203,
+   "kind": "suppressed",
+   "reasoning": "will the cable fit pixel 9 -> intent product_question; 'when you get a minute' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 333.4,
+   "prefill_tps": 430.4,
+   "decode_tps": 280.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 204,
+   "kind": "suppressed",
+   "reasoning": "Does the kettle come with batteries or do I need to buy them separately -> intent product_question; 'not urgent, just asking' -> urgency low; 'I appreciate your help' -> tone positive",
+   "ms": 361.7,
+   "prefill_tps": 431.7,
+   "decode_tps": 304.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 205,
+   "kind": "suppressed",
+   "reasoning": "Will the mechanical keyboard charging cable work with a Pixel 9 -> intent order_status; 'no rush at all' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 431.7,
+   "prefill_tps": 423.1,
+   "decode_tps": 286.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 206,
+   "kind": "suppressed",
+   "reasoning": "What is the difference between the smartwatch band and the monitor -> intent product_question; 'when you get a minute' -> urgency high; 'thanks in advance' -> tone positive",
+   "ms": 368.9,
+   "prefill_tps": 363.6,
+   "decode_tps": 291.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 207,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent order_status; 'when you get a minute' -> urgency low; 'you've been great every time before' -> tone positive",
+   "ms": 413.5,
+   "prefill_tps": 453.2,
+   "decode_tps": 287.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 208,
+   "kind": "suppressed",
+   "reasoning": "What is the difference between the bluetooth speaker and the bookends -> intent product_question; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 351.5,
+   "prefill_tps": 427.1,
+   "decode_tps": 283.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 209,
+   "kind": "suppressed",
+   "reasoning": "Does the mechanical keyboard shrink in the wash -> intent product_question; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 297.9,
+   "prefill_tps": 443.2,
+   "decode_tps": 305.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 210,
+   "kind": "suppressed",
+   "reasoning": "La garden hose incluye pilas -> intent product_question; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 299.4,
+   "prefill_tps": 425.6,
+   "decode_tps": 296.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 211,
+   "kind": "suppressed",
+   "reasoning": "Money back pls, order ORD-35790, the coffee maker -> intent order_status; 'ASAP' -> urgency high; 'this is unacceptable' -> tone negative",
+   "ms": 348.1,
+   "prefill_tps": 448.8,
+   "decode_tps": 290.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 212,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the plant pot from -> intent payment_issue; 'today at the latest' -> urgency high; 'ridiculous' -> tone negative",
+   "ms": 376.3,
+   "prefill_tps": 364.4,
+   "decode_tps": 301.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 213,
+   "kind": "suppressed",
+   "reasoning": "The sneakers stopped working after two -> intent refund_request; 'this is time-sensitive' -> urgency high; 'very disappointed' -> tone negative",
+   "ms": 400.8,
+   "prefill_tps": 487.4,
+   "decode_tps": 290.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 214,
+   "kind": "suppressed",
+   "reasoning": "Please refund $34.50 for order ORD-39923: -> intent refund_request; 'today at the latest' -> urgency high; plain request -> tone neutral",
+   "ms": 434.9,
+   "prefill_tps": 417.7,
+   "decode_tps": 297.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 215,
+   "kind": "suppressed",
+   "reasoning": "I want a refund for the phone case, order ORD-84723, it's still unopened and I changed my mind -> intent refund_request; 'urgent' -> urgency high; plain request -> tone neutral",
+   "ms": 388.7,
+   "prefill_tps": 477.2,
+   "decode_tps": 296.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 216,
+   "kind": "suppressed",
+   "reasoning": "Please refund $120.99 for order ORD-72351 -> intent refund_request; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 373.3,
+   "prefill_tps": 477.6,
+   "decode_tps": 289.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 217,
+   "kind": "suppressed",
+   "reasoning": "Money back pls, order ORD-74154, the desk lamp -> intent order_status; 'this is time-sensitive' -> urgency high; plain request -> tone neutral",
+   "ms": 357.5,
+   "prefill_tps": 434.1,
+   "decode_tps": 281.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 218,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the sneakers from -> intent return_exchange; 'when you get a minute' -> urgency low; 'ridiculous' -> tone negative",
+   "ms": 381.5,
+   "prefill_tps": 429.3,
+   "decode_tps": 285.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 219,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'when you get a minute' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 412.0,
+   "prefill_tps": 434.2,
+   "decode_tps": 296.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 220,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent payment_issue; 'no rush at all' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 544.4,
+   "prefill_tps": 436.6,
+   "decode_tps": 287.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 221,
+   "kind": "ok",
+   "reasoning": "I don't usually write to support, so I h -> intent return_exchange; 'no rush at all' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 492.0,
+   "prefill_tps": 429.7,
+   "decode_tps": 282.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 222,
+   "kind": "suppressed",
+   "reasoning": "Quiero el reembolso del yoga mat, pedido ORD-476 -> intent refund_request; 'no rush at all' -> urgency low; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 436.8,
+   "prefill_tps": 429.1,
+   "decode_tps": 282.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 223,
+   "kind": "suppressed",
+   "reasoning": "The smartwatch band stopped working after two -> intent refund_request; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 325.9,
+   "prefill_tps": 413.6,
+   "decode_tps": 285.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 224,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 478.2,
+   "prefill_tps": 436.7,
+   "decode_tps": 270.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 225,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 418.8,
+   "prefill_tps": 432.2,
+   "decode_tps": 283.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 226,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the sneakers from -> intent refund_request; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 388.3,
+   "prefill_tps": 422.2,
+   "decode_tps": 296.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 227,
+   "kind": "suppressed",
+   "reasoning": "The garden hose stopped working after two -> intent refund_request; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 325.6,
+   "prefill_tps": 382.4,
+   "decode_tps": 289.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 228,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the electric shaver from order ORD-30356 -> intent return_exchange; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 369.7,
+   "prefill_tps": 430.1,
+   "decode_tps": 295.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 229,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 519.3,
+   "prefill_tps": 405.7,
+   "decode_tps": 271.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 230,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent account_access; 'whenever you can' -> urgency low; 'love your shop otherwise' -> tone positive",
+   "ms": 400.3,
+   "prefill_tps": 439.8,
+   "decode_tps": 298.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 231,
+   "kind": "suppressed",
+   "reasoning": "money back pls -> intent damaged_item; 'not urgent, just asking' -> urgency low; 'you've been great every time before' -> tone positive",
+   "ms": 385.3,
+   "prefill_tps": 441.0,
+   "decode_tps": 272.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 232,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the over-ear headphones from -> intent payment_issue; 'in the next few days' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 403.6,
+   "prefill_tps": 398.4,
+   "decode_tps": 293.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 233,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent refund_request; 'this week if possible' -> urgency medium; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 559.9,
+   "prefill_tps": 407.0,
+   "decode_tps": 278.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 234,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent order_status; 'soon-ish' -> urgency medium; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 481.9,
+   "prefill_tps": 412.0,
+   "decode_tps": 288.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 235,
+   "kind": "suppressed",
+   "reasoning": "Money back pls, order ORD-87566, the bluetooth speaker -> intent order_status; 'before the weekend' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 355.8,
+   "prefill_tps": 508.0,
+   "decode_tps": 297.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 236,
+   "kind": "suppressed",
+   "reasoning": "The desk lamp stopped working after two -> intent refund_request; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 318.7,
+   "prefill_tps": 428.7,
+   "decode_tps": 292.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 237,
+   "kind": "suppressed",
+   "reasoning": "I want a refund for the hair dryer, order ORD-10063 -> intent refund_request; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 370.6,
+   "prefill_tps": 396.3,
+   "decode_tps": 294.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 238,
+   "kind": "suppressed",
+   "reasoning": "The kettle stopped working after two uses -> intent refund_request; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 328.8,
+   "prefill_tps": 425.5,
+   "decode_tps": 286.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 239,
+   "kind": "suppressed",
+   "reasoning": "I'd like my money back for the -> intent return_exchange; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 348.0,
+   "prefill_tps": 404.9,
+   "decode_tps": 293.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 240,
+   "kind": "suppressed",
+   "reasoning": "The phone case stopped working after two uses -> intent refund_request; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 301.3,
+   "prefill_tps": 422.0,
+   "decode_tps": 301.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 241,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent refund_request; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 434.1,
+   "prefill_tps": 434.5,
+   "decode_tps": 290.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 242,
+   "kind": "suppressed",
+   "reasoning": "The smartwatch band stopped working after two uses -> intent refund_request; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 333.7,
+   "prefill_tps": 449.8,
+   "decode_tps": 284.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 243,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent refund_request; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 432.0,
+   "prefill_tps": 407.3,
+   "decode_tps": 292.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 244,
+   "kind": "suppressed",
+   "reasoning": "I want a refund for the garden hose, order ORD-21592 -> intent refund_request; 'soon-ish' -> urgency medium; 'long-time customer, generally happy' -> tone positive",
+   "ms": 423.7,
+   "prefill_tps": 406.3,
+   "decode_tps": 284.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 245,
+   "kind": "suppressed",
+   "reasoning": "money back pls this week if possible -> intent refund_request; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 272.4,
+   "prefill_tps": 463.8,
+   "decode_tps": 304.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 246,
+   "kind": "suppressed",
+   "reasoning": "I need to return the wireless earbuds from order ORD-45736 -> intent return_exchange; 'urgent' -> urgency high; 'I'm honestly furious' -> tone negative",
+   "ms": 400.0,
+   "prefill_tps": 458.5,
+   "decode_tps": 293.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 247,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the plant pot for a size 9 -> intent return_exchange; 'this is time-sensitive' -> urgency high; plain request -> tone neutral",
+   "ms": 312.1,
+   "prefill_tps": 448.4,
+   "decode_tps": 302.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 248,
+   "kind": "ok",
+   "reasoning": "Je voudrais retourner le kettle et l'échanger contre la taille -> intent return_exchange; 'the event is on Sunday' -> urgency high; 'love your shop otherwise' -> tone positive",
+   "ms": 403.3,
+   "prefill_tps": 440.8,
+   "decode_tps": 288.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 249,
+   "kind": "suppressed",
+   "reasoning": "I need to return the desk lamp from order ORD-78366 -> intent return_exchange; 'no rush at all' -> urgency low; 'I'm honestly furious' -> tone negative",
+   "ms": 426.8,
+   "prefill_tps": 413.2,
+   "decode_tps": 289.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 250,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the bluetooth speaker for a size 42 -> intent order_status; 'no rush at all' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 341.9,
+   "prefill_tps": 432.4,
+   "decode_tps": 296.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 251,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the hair dryer for a size XL -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 322.5,
+   "prefill_tps": 437.5,
+   "decode_tps": 293.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 252,
+   "kind": "suppressed",
+   "reasoning": "I need to return the electric shaver from order ORD-20206 -> intent return_exchange; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 359.1,
+   "prefill_tps": 417.4,
+   "decode_tps": 292.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 253,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the sneakers for a size 41 -> intent order_status; 'when you get a minute' -> urgency low; plain request -> tone neutral",
+   "ms": 310.4,
+   "prefill_tps": 416.8,
+   "decode_tps": 305.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 254,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the charging cable for a size -> intent return_exchange; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 280.8,
+   "prefill_tps": 490.8,
+   "decode_tps": 311.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 255,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the mechanical keyboard for a size -> intent other; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 297.3,
+   "prefill_tps": 496.8,
+   "decode_tps": 287.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 256,
+   "kind": "suppressed",
+   "reasoning": "I need to return the sneakers from order ORD-36813. Can you tell me the -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 397.9,
+   "prefill_tps": 428.7,
+   "decode_tps": 278.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 257,
+   "kind": "ok",
+   "reasoning": "The backpack doesn't fit -> intent return_exchange; 'not urgent, just asking' -> urgency low; plain request -> tone neutral",
+   "ms": 361.6,
+   "prefill_tps": 426.8,
+   "decode_tps": 280.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 258,
+   "kind": "suppressed",
+   "reasoning": "return label where -> intent return_exchange; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 247.5,
+   "prefill_tps": 529.1,
+   "decode_tps": 294.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 259,
+   "kind": "suppressed",
+   "reasoning": "I need to return the computer mouse from order ORD-12792 -> intent return_exchange; 'no rush at all' -> urgency low; 'I appreciate your help' -> tone positive",
+   "ms": 407.6,
+   "prefill_tps": 414.8,
+   "decode_tps": 283.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 260,
+   "kind": "suppressed",
+   "reasoning": "I need to return the phone case from order ORD-53467 -> intent return_exchange; 'when you get a minute' -> urgency low; 'long-time customer, generally happy' -> tone positive",
+   "ms": 390.9,
+   "prefill_tps": 429.0,
+   "decode_tps": 301.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 261,
+   "kind": "suppressed",
+   "reasoning": "I need to return the phone case from order ORD-78031 -> intent return_exchange; 'soon-ish' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 418.7,
+   "prefill_tps": 413.8,
+   "decode_tps": 276.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 262,
+   "kind": "suppressed",
+   "reasoning": "The yoga mat doesn't fit -> intent return_exchange; 'soon-ish' -> urgency medium; 'I'm honestly furious' -> tone negative",
+   "ms": 361.0,
+   "prefill_tps": 410.2,
+   "decode_tps": 294.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 263,
+   "kind": "suppressed",
+   "reasoning": "I need to return the smartwatch band from order ORD-17460 -> intent return_exchange; 'soon-ish' -> urgency medium; 'very disappointed' -> tone negative",
+   "ms": 359.4,
+   "prefill_tps": 508.6,
+   "decode_tps": 293.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 264,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent return_exchange; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 457.5,
+   "prefill_tps": 425.0,
+   "decode_tps": 273.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 265,
+   "kind": "suppressed",
+   "reasoning": "The phone case doesn't fit -> intent return_exchange; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 315.5,
+   "prefill_tps": 404.9,
+   "decode_tps": 294.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 266,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 433.3,
+   "prefill_tps": 428.4,
+   "decode_tps": 279.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 267,
+   "kind": "suppressed",
+   "reasoning": "The sneakers doesn't fit -> intent return_exchange; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 325.6,
+   "prefill_tps": 408.0,
+   "decode_tps": 288.1,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 268,
+   "kind": "suppressed",
+   "reasoning": "The backpack doesn't fit -> intent return_exchange; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 323.3,
+   "prefill_tps": 444.4,
+   "decode_tps": 283.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 269,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent return_exchange; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 358.1,
+   "prefill_tps": 446.8,
+   "decode_tps": 285.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 270,
+   "kind": "suppressed",
+   "reasoning": "Can I exchange the over-ear headphones for a size XL -> intent return_exchange; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 416.9,
+   "prefill_tps": 390.0,
+   "decode_tps": 223.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 271,
+   "kind": "suppressed",
+   "reasoning": "I want to swap the blue mechanical keyboard for the same thing in -> intent shipping_address_change; 'before the weekend' -> urgency medium; 'love your shop otherwise' -> tone positive",
+   "ms": 427.3,
+   "prefill_tps": 365.5,
+   "decode_tps": 263.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 272,
+   "kind": "suppressed",
+   "reasoning": "return label where -> intent return_exchange; 'soon-ish' -> urgency medium; 'thanks in advance' -> tone positive",
+   "ms": 267.8,
+   "prefill_tps": 443.8,
+   "decode_tps": 297.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 273,
+   "kind": "suppressed",
+   "reasoning": "The over-ear headphones doesn't fit -> intent return_exchange; 'before the weekend' -> urgency medium; 'I appreciate your help' -> tone positive",
+   "ms": 392.5,
+   "prefill_tps": 386.0,
+   "decode_tps": 289.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 274,
+   "kind": "suppressed",
+   "reasoning": "Just realised I used my old address for ORD-11146 -> intent wrong_item; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 355.0,
+   "prefill_tps": 427.9,
+   "decode_tps": 291.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 275,
+   "kind": "suppressed",
+   "reasoning": "I need to change the delivery address on order ORD-94164 -> intent order_status; 'the event is on Sunday' -> urgency medium; plain request -> tone neutral",
+   "ms": 376.7,
+   "prefill_tps": 427.8,
+   "decode_tps": 294.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 276,
+   "kind": "ok",
+   "reasoning": "Cambien la dirección del pedido ORD-62352 -> intent order_status; 'this is time-sensitive' -> urgency high; plain request -> tone neutral",
+   "ms": 358.2,
+   "prefill_tps": 443.7,
+   "decode_tps": 290.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 277,
+   "kind": "suppressed",
+   "reasoning": "Just realised I used my old address for ORD-80030 -> intent account_access; 'before my move on Thursday' -> urgency medium; 'long-time customer, generally happy' -> tone positive",
+   "ms": 427.0,
+   "prefill_tps": 429.3,
+   "decode_tps": 295.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 278,
+   "kind": "suppressed",
+   "reasoning": "Can you reroute order ORD-46988 -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 370.9,
+   "prefill_tps": 439.2,
+   "decode_tps": 269.4,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 279,
+   "kind": "suppressed",
+   "reasoning": "Sorry in advance for the long email, I'v -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 538.8,
+   "prefill_tps": 367.6,
+   "decode_tps": 270.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 280,
+   "kind": "suppressed",
+   "reasoning": "Just realised I used my old address for ORD-65945 -> intent wrong_item; 'this week if possible' -> urgency medium; 'this is unacceptable' -> tone negative",
+   "ms": 405.5,
+   "prefill_tps": 413.9,
+   "decode_tps": 286.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 281,
+   "kind": "suppressed",
+   "reasoning": "I need to change the delivery address on order ORD-88005: it -> intent shipping_address_change; 'this week if possible' -> urgency medium; plain request -> tone neutral",
+   "ms": 374.3,
+   "prefill_tps": 443.0,
+   "decode_tps": 299.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 282,
+   "kind": "suppressed",
+   "reasoning": "I need to change the delivery address on -> intent shipping_address_change; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 342.9,
+   "prefill_tps": 443.8,
+   "decode_tps": 293.6,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 283,
+   "kind": "suppressed",
+   "reasoning": "I need to change the delivery address on -> intent shipping_address_change; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 373.0,
+   "prefill_tps": 434.2,
+   "decode_tps": 267.8,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 284,
+   "kind": "suppressed",
+   "reasoning": "Can you reroute order ORD-12750 -> intent refund_request; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 387.3,
+   "prefill_tps": 372.9,
+   "decode_tps": 289.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 285,
+   "kind": "suppressed",
+   "reasoning": "Just realised I used my old address for ORD-74017 -> intent account_access; 'before the weekend' -> urgency medium; 'thanks in advance' -> tone positive",
+   "ms": 413.1,
+   "prefill_tps": 436.2,
+   "decode_tps": 285.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 286,
+   "kind": "suppressed",
+   "reasoning": "The box contained two of the same bookends -> intent damaged_item; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 341.7,
+   "prefill_tps": 429.1,
+   "decode_tps": 286.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 287,
+   "kind": "suppressed",
+   "reasoning": "Wrong size arrived: I ordered S -> intent wrong_item; 'variable tone t -> urgency high; plain request -> tone neutral",
+   "ms": 341.3,
+   "prefill_tps": 388.0,
+   "decode_tps": 302.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 288,
+   "kind": "suppressed",
+   "reasoning": "Ich habe den bookends statt des -> intent damaged_item; 'the event is on Sunday' -> urgency high; plain request -> tone neutral",
+   "ms": 338.5,
+   "prefill_tps": 443.9,
+   "decode_tps": 287.0,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 289,
+   "kind": "suppressed",
+   "reasoning": "You sent me the white over-ear headphones but I ordered the -> intent order_status; 'ASAP' -> urgency high; plain request -> tone neutral",
+   "ms": 336.9,
+   "prefill_tps": 391.9,
+   "decode_tps": 295.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 290,
+   "kind": "suppressed",
+   "reasoning": "First of all I want to say your packagin -> intent order_status; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 382.4,
+   "prefill_tps": 471.2,
+   "decode_tps": 292.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 291,
+   "kind": "suppressed",
+   "reasoning": "Wrong size arrived: I ordered 9 and THE box -> intent wrong_item; 'no rush at all' -> urgency low; 'this is unacceptable' -> tone negative",
+   "ms": 389.4,
+   "prefill_tps": 448.2,
+   "decode_tps": 283.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 292,
+   "kind": "suppressed",
+   "reasoning": "Wrong size arrived: I ordered -> intent wrong_item; 'no rush at all' -> urgency low; plain request -> tone neutral",
+   "ms": 313.1,
+   "prefill_tps": 448.3,
+   "decode_tps": 294.5,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 293,
+   "kind": "suppressed",
+   "reasoning": "You sent me the red wireless earbuds but I ordered the grey one -> intent order_status; 'whenever you can' -> urgency low; plain request -> tone neutral",
+   "ms": 339.6,
+   "prefill_tps": 417.6,
+   "decode_tps": 300.3,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 294,
+   "kind": "suppressed",
+   "reasoning": "I received a kitchen scale instead of the air fryer I actually ordered -> intent order_status; 'seems like I always have bad luck with you' -> urgency high; plain request -> tone neutral",
+   "ms": 380.9,
+   "prefill_tps": 437.4,
+   "decode_tps": 295.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 295,
+   "kind": "suppressed",
+   "reasoning": "wrong size came (before the weekend -> intent wrong_item; 'before the weekend' -> urgency medium; 'ridiculous' -> tone negative",
+   "ms": 327.7,
+   "prefill_tps": 453.1,
+   "decode_tps": 260.7,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 296,
+   "kind": "suppressed",
+   "reasoning": "You sent me the green charging cable but I ordered -> intent order_status; 'before the weekend' -> urgency medium; 'seems like I always have bad luck with you' -> tone negative",
+   "ms": 417.8,
+   "prefill_tps": 395.2,
+   "decode_tps": 276.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 297,
+   "kind": "suppressed",
+   "reasoning": "Wrong size arrived: I ordered -> intent wrong_item; 'before the weekend' -> urgency medium; plain request -> tone neutral",
+   "ms": 343.5,
+   "prefill_tps": 391.6,
+   "decode_tps": 273.9,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 298,
+   "kind": "suppressed",
+   "reasoning": "I don't usually write to support, so I h -> intent wrong_item; 'soon-ish' -> urgency medium; plain request -> tone neutral",
+   "ms": 464.3,
+   "prefill_tps": 408.4,
+   "decode_tps": 265.2,
+   "peak_ram_mb": 161.5
+  },
+  {
+   "i": 299,
+   "kind": "suppressed",
+   "reasoning": "I received a monitor stand instead of the sneakers I actually ordered -> intent refund_request; 'in the next few days' -> urgency medium; plain request -> tone neutral",
+   "ms": 342.3,
+   "prefill_tps": 437.7,
+   "decode_tps": 283.0,
+   "peak_ram_mb": 161.5
+  }
+ ],
+ "config": "1-tool record, batch-1",
+ "weights": "../train/needle_out/tuned_fullkv.cact"
+}

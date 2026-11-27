@@ -1,0 +1,2 @@
+[log] b_needle_tuned: {"intent": {"acc": 0.9543, "macro_f1": 0.9516}, "urgency": {"acc": 0.8486, "macro_f1": 0.8339, "high_recall": 0.9007}, "sentiment": {"acc": 0.8957, "macro_f1": 0.8824}, "latency": {"p50_ms": 96.0, "p9
+[b_needle_tuned] intent={'acc': 0.9543, 'macro_f1': 0.9516} urgency={'acc': 0.8486, 'macro_f1': 0.8339, 'high_recall': 0.9007} sentiment={'acc': 0.8957, 'macro_f1': 0.8824}

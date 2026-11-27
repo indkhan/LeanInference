@@ -1,0 +1,85 @@
+{
+ "name": "a_zero_shot_val",
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "predictions": [
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "other",
+   "urgency": "medium",
+   "sentiment": "neutral"
+  }
+ ],
+ "gold": [
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "negative"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  },
+  {
+   "intent": "account_access",
+   "urgency": "high",
+   "sentiment": "neutral"
+  }
+ ],
+ "ids": [
+  "t04683",
+  "t01908",
+  "t04152",
+  "t03328",
+  "t03974"
+ ],
+ "metrics": {
+  "intent": {
+   "acc": 0.0,
+   "macro_f1": 0.0
+  },
+  "urgency": {
+   "acc": 0.0,
+   "macro_f1": 0.0,
+   "high_recall": 0.0
+  },
+  "sentiment": {
+   "acc": 0.6,
+   "macro_f1": 0.375
+  }
+ },
+ "failed_calls": 5,
+ "latency_s": {
+  "p50": 0.011,
+  "p95": 2.146
+ }
+}
