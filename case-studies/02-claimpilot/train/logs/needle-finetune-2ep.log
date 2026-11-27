@@ -1,0 +1,72 @@
+starting fine-tune 2026-10-21T10:03:49+02:00 ...
+  backend   gpu  float32
+  depth     20 layers
+  data      1500 examples  seq_len 2304  cap 2304
+  numerics  CQ W4 STE + A8 (matches export)
+  lora      rank 16  alpha 32  5 weight groups
+  holdout   150 examples for validation
+  schedule  2700 steps  warmup 135  cosine decay  clip 1.0  (compiling...)
+  step      54/2700  loss 1.2387
+  step      108/2700  loss 0.9308
+  step      162/2700  loss 0.5233
+  step      216/2700  loss 0.2896
+  step      270/2700  loss 0.2616
+  step      324/2700  loss 0.1030
+  step      378/2700  loss 0.0957
+  step      432/2700  loss 0.2228
+  step      486/2700  loss 0.1098
+  step      540/2700  loss 0.1428
+  step      594/2700  loss 0.1723
+  step      648/2700  loss 0.1000
+  step      702/2700  loss 0.1390
+  step      756/2700  loss 0.0604
+  step      810/2700  loss 0.0407
+  step      864/2700  loss 0.0736
+  step      918/2700  loss 0.0580
+  step      972/2700  loss 0.0287
+  step      1026/2700  loss 0.0551
+  step      1080/2700  loss 0.0849
+  step      1134/2700  loss 0.0296
+  step      1188/2700  loss 0.0414
+  step      1242/2700  loss 0.0463
+  step      1296/2700  loss 0.0537
+  step      1350/2700  loss 0.0434
+  epoch     1/2  loss 0.0434  val 0.0520
+  step      1404/2700  loss 0.0548
+  step      1458/2700  loss 0.0092
+  step      1512/2700  loss 0.0230
+  step      1566/2700  loss 0.0228
+  step      1620/2700  loss 0.0206
+  step      1674/2700  loss 0.0762
+  step      1728/2700  loss 0.0202
+  step      1782/2700  loss 0.0430
+  step      1836/2700  loss 0.0335
+  step      1890/2700  loss 0.0113
+  step      1944/2700  loss 0.0240
+  step      1998/2700  loss 0.0509
+  step      2052/2700  loss 0.0261
+  step      2106/2700  loss 0.1042
+  step      2160/2700  loss 0.0639
+  step      2214/2700  loss 0.0386
+  step      2268/2700  loss 0.0556
+  step      2322/2700  loss 0.0866
+  step      2376/2700  loss 0.0239
+  step      2430/2700  loss 0.0352
+  step      2484/2700  loss 0.0568
+  step      2538/2700  loss 0.0166
+  step      2592/2700  loss 0.0753
+  step      2646/2700  loss 0.0092
+  step      2700/2700  loss 0.0145
+  epoch     2/2  loss 0.0145  val 0.0431
+  accuracy  0/150 held-out calls exact, scored on the W4 weights the archive ships
+  adapter   train/needle_out/adapter.safetensors
+  next      needle build train/needle_out/checkpoints/needle3.safetensors --lora train/needle_out/adapter.safetensors
+  note      local tuning leaves the confidence head untrained; needle build drops it and confidence reports None
+fine-tune done 2026-10-21T18:30:19+02:00
+  base      /root/.cache/cactus-needle/v3/3.3.1/needle3.cact  35.34 MB
+  merged    5 weight groups  train/needle_out/adapter.safetensors
+  dropped   the confidence head; it is not trained locally, so confidence reports None
+  depth     20 layers
+  wrote     train/needle_out/tuned.cact  63.44 MB  574 tensors  W4A8
+  next      needle.Needle(weights='train/needle_out/tuned.cact', tools=[...])
+build done 2026-10-21T18:30:43+02:00

@@ -1,0 +1,18 @@
+{
+  "split": "val",
+  "docs": 100,
+  "problems": 0,
+  "problem_examples": [],
+  "families": {
+    "invoice_formal": 17,
+    "email_thread": 17,
+    "ocr_scan": 17,
+    "auto_repair_estimate": 17,
+    "medical_bill": 16,
+    "fax_memo": 16
+  },
+  "nulls_total": 363,
+  "nulls_avg_per_doc": 3.63,
+  "chars_p50": 2554,
+  "est_tokens_p50": 638
+}

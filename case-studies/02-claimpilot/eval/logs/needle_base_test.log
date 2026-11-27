@@ -1,0 +1,475 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+label=needle3-base weights=(base) split=test docs=400 tag=before
+agent ready in 3.17s
+[1/400] test-00000 ERR 112.70s  no function_calls in response
+[2/400] test-00001 ERR  10.64s  no function_calls in response
+[3/400] test-00002 ERR  10.17s  no function_calls in response
+[4/400] test-00003 ERR  10.92s  no function_calls in response
+[5/400] test-00004 ERR  10.26s  no function_calls in response
+[6/400] test-00005 ERR   9.65s  no function_calls in response
+[7/400] test-00006 ERR  11.13s  no function_calls in response
+[8/400] test-00007 ERR  10.95s  no function_calls in response
+[9/400] test-00008 ERR  10.53s  no function_calls in response
+[10/400] test-00009 ERR   8.23s  no function_calls in response
+[11/400] test-00010 ERR  11.03s  no function_calls in response
+[12/400] test-00011 ERR  11.41s  no function_calls in response
+[13/400] test-00012 ERR  10.38s  no function_calls in response
+[14/400] test-00013 ERR   9.73s  no function_calls in response
+[15/400] test-00014 ERR  11.33s  no function_calls in response
+[16/400] test-00015 ERR  11.02s  no function_calls in response
+[17/400] test-00016 ERR  10.92s  no function_calls in response
+[18/400] test-00017 ERR  10.66s  no function_calls in response
+[19/400] test-00018 ERR  10.30s  no function_calls in response
+[20/400] test-00019 ERR  10.64s  no function_calls in response
+[21/400] test-00020 ERR   9.83s  no function_calls in response
+[22/400] test-00021 ERR  10.18s  no function_calls in response
+[23/400] test-00022 ERR   9.83s  no function_calls in response
+[24/400] test-00023 ERR  10.76s  no function_calls in response
+[25/400] test-00024 ERR  11.02s  no function_calls in response
+[26/400] test-00025 ERR  10.28s  no function_calls in response
+[27/400] test-00026 ERR  10.44s  no function_calls in response
+[28/400] test-00027 ERR   3.70s  no function_calls in response
+[29/400] test-00028 ERR  10.43s  no function_calls in response
+[30/400] test-00029 ERR  10.35s  no function_calls in response
+[31/400] test-00030 ERR  10.27s  no function_calls in response
+[32/400] test-00031 ERR  11.05s  no function_calls in response
+[33/400] test-00032 ERR   5.22s  no function_calls in response
+[34/400] test-00033 ERR  10.06s  no function_calls in response
+[35/400] test-00034 ERR   9.96s  no function_calls in response
+[36/400] test-00035 ERR   9.94s  no function_calls in response
+[37/400] test-00036 ERR   7.59s  no function_calls in response
+[38/400] test-00037 ERR   3.28s  no function_calls in response
+[39/400] test-00038 ERR  10.56s  no function_calls in response
+[40/400] test-00039 ERR  10.62s  no function_calls in response
+[41/400] test-00040 ERR   9.85s  no function_calls in response
+[42/400] test-00041 ERR  10.12s  no function_calls in response
+[43/400] test-00042 ERR  10.93s  no function_calls in response
+[44/400] test-00043 ERR  11.18s  no function_calls in response
+[45/400] test-00044 ERR  10.40s  no function_calls in response
+[46/400] test-00045 ERR   9.61s  no function_calls in response
+[47/400] test-00046 ERR   8.24s  no function_calls in response
+[48/400] test-00047 ERR  10.36s  no function_calls in response
+[49/400] test-00048 ERR  10.13s  no function_calls in response
+[50/400] test-00049 ERR   4.38s  no function_calls in response
+[51/400] test-00050 ERR  11.55s  no function_calls in response
+[52/400] test-00051 ERR  10.47s  no function_calls in response
+[53/400] test-00052 ERR  10.70s  no function_calls in response
+[54/400] test-00053 ERR  10.59s  no function_calls in response
+[55/400] test-00054 ERR  10.63s  no function_calls in response
+[56/400] test-00055 ERR   8.39s  no function_calls in response
+[57/400] test-00056 ERR   9.28s  no function_calls in response
+[58/400] test-00057 ERR   4.52s  no function_calls in response
+[59/400] test-00058 ERR   9.71s  no function_calls in response
+[60/400] test-00059 ERR   8.44s  no function_calls in response
+[61/400] test-00060 ERR   9.83s  no function_calls in response
+[62/400] test-00061 ERR  10.45s  no function_calls in response
+[63/400] test-00062 ERR  10.60s  no function_calls in response
+[64/400] test-00063 ERR  10.41s  no function_calls in response
+[65/400] test-00064 ERR   9.62s  no function_calls in response
+[66/400] test-00065 ERR  10.62s  no function_calls in response
+[67/400] test-00066 ERR   8.17s  no function_calls in response
+[68/400] test-00067 ERR   9.94s  no function_calls in response
+[69/400] test-00068 ERR  10.70s  no function_calls in response
+[70/400] test-00069 ERR  10.13s  no function_calls in response
+[71/400] test-00070 ERR  10.50s  no function_calls in response
+[72/400] test-00071 ERR   9.67s  no function_calls in response
+[73/400] test-00072 ERR  10.24s  no function_calls in response
+[74/400] test-00073 ERR  10.75s  no function_calls in response
+[75/400] test-00074 ERR  10.61s  no function_calls in response
+[76/400] test-00075 ERR  10.32s  no function_calls in response
+[77/400] test-00076 ERR  11.08s  no function_calls in response
+[78/400] test-00077 ERR  10.56s  no function_calls in response
+[79/400] test-00078 ERR   9.81s  no function_calls in response
+[80/400] test-00079 ERR  10.40s  no function_calls in response
+[81/400] test-00080 ERR  10.64s  no function_calls in response
+[82/400] test-00081 ERR  10.10s  no function_calls in response
+[83/400] test-00082 ERR   4.65s  no function_calls in response
+[84/400] test-00083 ERR  10.14s  no function_calls in response
+[85/400] test-00084 ERR  10.62s  no function_calls in response
+[86/400] test-00085 ERR   8.12s  no function_calls in response
+[87/400] test-00086 ERR  11.27s  no function_calls in response
+[88/400] test-00087 ERR   4.81s  no function_calls in response
+[89/400] test-00088 ERR  10.52s  no function_calls in response
+[90/400] test-00089 ERR  11.52s  no function_calls in response
+[91/400] test-00090 ERR  11.09s  no function_calls in response
+[92/400] test-00091 ERR  11.01s  no function_calls in response
+[93/400] test-00092 ERR   8.65s  no function_calls in response
+[94/400] test-00093 ERR  10.84s  no function_calls in response
+[95/400] test-00094 ERR  10.86s  no function_calls in response
+[96/400] test-00095 ERR   9.13s  no function_calls in response
+[97/400] test-00096 ERR  11.70s  no function_calls in response
+[98/400] test-00097 ERR  10.84s  no function_calls in response
+[99/400] test-00098 ERR  11.68s  no function_calls in response
+[100/400] test-00099 ERR  10.83s  no function_calls in response
+[101/400] test-00100 ERR  11.05s  no function_calls in response
+[102/400] test-00101 ERR  11.60s  no function_calls in response
+[103/400] test-00102 ERR  10.56s  no function_calls in response
+[104/400] test-00103 ERR  11.35s  no function_calls in response
+[105/400] test-00104 ERR  10.92s  no function_calls in response
+[106/400] test-00105 ERR   8.39s  no function_calls in response
+[107/400] test-00106 ERR  11.16s  no function_calls in response
+[108/400] test-00107 ERR  10.91s  no function_calls in response
+[109/400] test-00108 ERR  11.53s  no function_calls in response
+[110/400] test-00109 ERR  12.06s  no function_calls in response
+[111/400] test-00110 ERR  10.17s  no function_calls in response
+[112/400] test-00111 ERR   4.84s  no function_calls in response
+[113/400] test-00112 ERR  10.72s  no function_calls in response
+[114/400] test-00113 ERR  11.43s  no function_calls in response
+[115/400] test-00114 ERR  11.18s  no function_calls in response
+[116/400] test-00115 ERR   9.99s  no function_calls in response
+[117/400] test-00116 ERR   5.10s  no function_calls in response
+[118/400] test-00117 ERR   8.54s  no function_calls in response
+[119/400] test-00118 ERR  11.84s  no function_calls in response
+[120/400] test-00119 ERR  11.21s  no function_calls in response
+[121/400] test-00120 ERR  11.47s  no function_calls in response
+[122/400] test-00121 ERR  12.03s  no function_calls in response
+[123/400] test-00122 ERR   8.91s  no function_calls in response
+[124/400] test-00123 ERR  10.52s  no function_calls in response
+[125/400] test-00124 ERR  10.57s  no function_calls in response
+[126/400] test-00125 ERR  11.37s  no function_calls in response
+[127/400] test-00126 ERR   8.44s  no function_calls in response
+[128/400] test-00127 ERR  11.15s  no function_calls in response
+[129/400] test-00128 ERR  11.12s  no function_calls in response
+[130/400] test-00129 ERR   8.47s  no function_calls in response
+[131/400] test-00130 ERR  10.19s  no function_calls in response
+[132/400] test-00131 ERR   4.11s  no function_calls in response
+[133/400] test-00132 ERR  11.47s  no function_calls in response
+[134/400] test-00133 ERR  11.63s  no function_calls in response
+[135/400] test-00134 ERR   4.97s  no function_calls in response
+[136/400] test-00135 ERR  10.12s  no function_calls in response
+[137/400] test-00136 ERR   9.09s  no function_calls in response
+[138/400] test-00137 ERR  11.17s  no function_calls in response
+[139/400] test-00138 ERR   8.80s  no function_calls in response
+[140/400] test-00139 ERR  12.05s  no function_calls in response
+[141/400] test-00140 ERR  10.85s  no function_calls in response
+[142/400] test-00141 ERR   8.41s  no function_calls in response
+[143/400] test-00142 ERR  11.19s  no function_calls in response
+[144/400] test-00143 ERR  10.81s  no function_calls in response
+[145/400] test-00144 ERR  11.31s  no function_calls in response
+[146/400] test-00145 ERR  11.08s  no function_calls in response
+[147/400] test-00146 ERR  10.05s  no function_calls in response
+[148/400] test-00147 ERR  10.19s  no function_calls in response
+[149/400] test-00148 ERR  10.70s  no function_calls in response
+[150/400] test-00149 ERR  10.28s  no function_calls in response
+[151/400] test-00150 ERR   5.05s  no function_calls in response
+[152/400] test-00151 ERR  11.03s  no function_calls in response
+[153/400] test-00152 ERR  10.19s  no function_calls in response
+[154/400] test-00153 ERR  11.34s  no function_calls in response
+[155/400] test-00154 ERR  10.52s  no function_calls in response
+[156/400] test-00155 ERR  11.56s  no function_calls in response
+[157/400] test-00156 ERR  11.27s  no function_calls in response
+[158/400] test-00157 ERR   8.80s  no function_calls in response
+[159/400] test-00158 ERR   8.69s  no function_calls in response
+[160/400] test-00159 ERR   9.98s  no function_calls in response
+[161/400] test-00160 ERR  11.14s  no function_calls in response
+[162/400] test-00161 ERR  10.39s  no function_calls in response
+[163/400] test-00162 ERR  10.97s  no function_calls in response
+[164/400] test-00163 ERR  10.72s  no function_calls in response
+[165/400] test-00164 ERR  11.95s  no function_calls in response
+[166/400] test-00165 ERR  10.69s  no function_calls in response
+[167/400] test-00166 ERR  10.28s  no function_calls in response
+[168/400] test-00167 ERR  10.91s  no function_calls in response
+[169/400] test-00168 ERR  11.12s  no function_calls in response
+[170/400] test-00169 ERR  10.82s  no function_calls in response
+[171/400] test-00170 ERR  12.14s  no function_calls in response
+[172/400] test-00171 ERR  10.83s  no function_calls in response
+[173/400] test-00172 ERR  10.38s  no function_calls in response
+[174/400] test-00173 ERR  11.40s  no function_calls in response
+[175/400] test-00174 ERR  10.80s  no function_calls in response
+[176/400] test-00175 ERR  10.09s  no function_calls in response
+[177/400] test-00176 ERR   9.00s  no function_calls in response
+[178/400] test-00177 ERR   9.10s  no function_calls in response
+[179/400] test-00178 ERR   9.27s  no function_calls in response
+[180/400] test-00179 ERR   4.41s  no function_calls in response
+[181/400] test-00180 ERR  10.05s  no function_calls in response
+[182/400] test-00181 ERR  10.05s  no function_calls in response
+[183/400] test-00182 ERR   5.07s  no function_calls in response
+[184/400] test-00183 ERR  10.08s  no function_calls in response
+[185/400] test-00184 ERR  10.06s  no function_calls in response
+[186/400] test-00185 ERR   7.75s  no function_calls in response
+[187/400] test-00186 ERR   9.70s  no function_calls in response
+[188/400] test-00187 ERR  10.25s  no function_calls in response
+[189/400] test-00188 ERR   7.79s  no function_calls in response
+[190/400] test-00189 ERR  10.45s  no function_calls in response
+[191/400] test-00190 ERR   8.77s  no function_calls in response
+[192/400] test-00191 ERR  11.05s  no function_calls in response
+[193/400] test-00192 ERR   8.66s  no function_calls in response
+[194/400] test-00193 ERR  10.61s  no function_calls in response
+[195/400] test-00194 ERR  11.95s  no function_calls in response
+[196/400] test-00195 ERR   3.96s  no function_calls in response
+[197/400] test-00196 ERR  10.60s  no function_calls in response
+[198/400] test-00197 ERR  10.46s  no function_calls in response
+[199/400] test-00198 ERR  10.10s  no function_calls in response
+[200/400] test-00199 ERR  10.39s  no function_calls in response
+[201/400] test-00200 ERR   9.27s  no function_calls in response
+[202/400] test-00201 ERR   9.28s  no function_calls in response
+[203/400] test-00202 ERR   7.01s  no function_calls in response
+[204/400] test-00203 ERR   9.25s  no function_calls in response
+[205/400] test-00204 ERR   4.99s  no function_calls in response
+[206/400] test-00205 ERR   9.72s  no function_calls in response
+[207/400] test-00206 ERR  11.56s  no function_calls in response
+[208/400] test-00207 ERR  11.29s  no function_calls in response
+[209/400] test-00208 ERR  13.71s  no function_calls in response
+[210/400] test-00209 ERR  14.01s  no function_calls in response
+[211/400] test-00210 ERR  12.52s  no function_calls in response
+[212/400] test-00211 ERR  11.23s  no function_calls in response
+[213/400] test-00212 ERR   9.06s  no function_calls in response
+[214/400] test-00213 ERR   9.91s  no function_calls in response
+[215/400] test-00214 ERR   9.27s  no function_calls in response
+[216/400] test-00215 ERR   8.64s  no function_calls in response
+[217/400] test-00216 ERR   9.87s  no function_calls in response
+[218/400] test-00217 ERR   9.61s  no function_calls in response
+[219/400] test-00218 ERR  10.30s  no function_calls in response
+[220/400] test-00219 ERR   9.33s  no function_calls in response
+[221/400] test-00220 ERR   9.51s  no function_calls in response
+[222/400] test-00221 ERR   9.27s  no function_calls in response
+[223/400] test-00222 ERR  10.19s  no function_calls in response
+[224/400] test-00223 ERR   9.13s  no function_calls in response
+[225/400] test-00224 ERR   9.42s  no function_calls in response
+[226/400] test-00225 ERR   8.89s  no function_calls in response
+[227/400] test-00226 ERR  10.26s  no function_calls in response
+[228/400] test-00227 ERR   9.15s  no function_calls in response
+[229/400] test-00228 ERR   9.94s  no function_calls in response
+[230/400] test-00229 ERR   9.77s  no function_calls in response
+[231/400] test-00230 ERR  10.43s  no function_calls in response
+[232/400] test-00231 ERR   9.93s  no function_calls in response
+[233/400] test-00232 ERR   9.58s  no function_calls in response
+[234/400] test-00233 ERR   9.97s  no function_calls in response
+[235/400] test-00234 ERR   9.49s  no function_calls in response
+[236/400] test-00235 ERR   9.39s  no function_calls in response
+[237/400] test-00236 ERR   9.74s  no function_calls in response
+[238/400] test-00237 ERR  10.25s  no function_calls in response
+[239/400] test-00238 ERR   8.33s  no function_calls in response
+[240/400] test-00239 ERR  10.58s  no function_calls in response
+[241/400] test-00240 ERR   9.62s  no function_calls in response
+[242/400] test-00241 ERR  10.13s  no function_calls in response
+[243/400] test-00242 ERR  10.03s  no function_calls in response
+[244/400] test-00243 ERR   8.76s  no function_calls in response
+[245/400] test-00244 ERR  10.38s  no function_calls in response
+[246/400] test-00245 ERR   9.70s  no function_calls in response
+[247/400] test-00246 ERR  10.72s  no function_calls in response
+[248/400] test-00247 ERR   7.81s  no function_calls in response
+[249/400] test-00248 ERR  10.42s  no function_calls in response
+[250/400] test-00249 ERR  10.18s  no function_calls in response
+[251/400] test-00250 ERR   9.98s  no function_calls in response
+[252/400] test-00251 ERR   9.47s  no function_calls in response
+{
+  "model": "needle3-base",
+  "tag": "before",
+  "transport": "local_needle",
+  "run_file": "eval\\results\\results_needle3-base_before.jsonl",
+  "split": "test",
+  "docs": 400,
+  "parsed_ok": 0,
+  "valid_schema_rate": 0.0,
+  "doc_exact_rate": 0.0,
+  "micro_precision": 0.0,
+  "micro_recall": 0.0,
+  "micro_f1": 0.0,
+  "macro_f1": 0.0,
+  "item_micro_precision": 0.0,
+  "item_micro_recall": 0.0,
+  "null_discipline": 1.0,
+  "total_amount_accuracy": 0.0,
+  "latency_p50": 10.12,
+  "latency_p95": 11.844,
+  "tokens_in_mean": 597.4,
+  "tokens_out_mean": 281.1,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "errors": 400
+}
+
+per-field F1:
+  claim_id                   f1=0.000  acc=0.000  tp=0 fp=0 fn=400 tn=0
+  policy_number              f1=0.000  acc=0.000  tp=0 fp=0 fn=351 tn=0
+  claimant_name              f1=0.000  acc=0.000  tp=0 fp=0 fn=371 tn=0
+  date_of_incident           f1=0.000  acc=0.000  tp=0 fp=0 fn=357 tn=0
+  date_of_service            f1=0.000  acc=0.000  tp=0 fp=0 fn=160 tn=0
+  provider_name              f1=0.000  acc=0.000  tp=0 fp=0 fn=374 tn=0
+  total_amount               f1=0.000  acc=0.000  tp=0 fp=0 fn=324 tn=0
+  currency                   f1=0.000  acc=0.000  tp=0 fp=0 fn=360 tn=0
+  diagnosis_or_damage_code   f1=0.000  acc=0.000  tp=0 fp=0 fn=223 tn=0
+  vehicle_vin                f1=0.000  acc=0.000  tp=0 fp=0 fn=98 tn=0
+  claim_type                 f1=0.000  acc=0.000  tp=0 fp=0 fn=400 tn=0
+  payout_iban                f1=0.000  acc=0.000  tp=0 fp=0 fn=331 tn=0
+  notes                      f1=0.000  acc=0.000  tp=0 fp=0 fn=80 tn=0
+  line_items                 f1=0.000  acc=0.000  tp=0 fp=0 fn=317 tn=0
+
+wrote eval\results\summary_needle3-base_before.json
+[253/400] test-00252 ERR   7.76s  no function_calls in response
+[254/400] test-00253 ERR   9.42s  no function_calls in response
+[255/400] test-00254 ERR  10.18s  no function_calls in response
+[256/400] test-00255 ERR  10.29s  no function_calls in response
+[257/400] test-00256 ERR   9.56s  no function_calls in response
+[258/400] test-00257 ERR  10.02s  no function_calls in response
+[259/400] test-00258 ERR  10.18s  no function_calls in response
+[260/400] test-00259 ERR   3.05s  no function_calls in response
+[261/400] test-00260 ERR  10.80s  no function_calls in response
+[262/400] test-00261 ERR   9.19s  no function_calls in response
+[263/400] test-00262 ERR   9.31s  no function_calls in response
+[264/400] test-00263 ERR   9.92s  no function_calls in response
+[265/400] test-00264 ERR  10.23s  no function_calls in response
+[266/400] test-00265 ERR   9.55s  no function_calls in response
+[267/400] test-00266 ERR  10.01s  no function_calls in response
+[268/400] test-00267 ERR   9.38s  no function_calls in response
+[269/400] test-00268 ERR   8.52s  no function_calls in response
+[270/400] test-00269 ERR   9.93s  no function_calls in response
+[271/400] test-00270 ERR  10.74s  no function_calls in response
+[272/400] test-00271 ERR   8.75s  no function_calls in response
+[273/400] test-00272 ERR  10.04s  no function_calls in response
+[274/400] test-00273 ERR   9.30s  no function_calls in response
+[275/400] test-00274 ERR   9.58s  no function_calls in response
+[276/400] test-00275 ERR   9.41s  no function_calls in response
+[277/400] test-00276 ERR  10.22s  no function_calls in response
+[278/400] test-00277 ERR   9.93s  no function_calls in response
+[279/400] test-00278 ERR   9.58s  no function_calls in response
+[280/400] test-00279 ERR   9.28s  no function_calls in response
+[281/400] test-00280 ERR   9.69s  no function_calls in response
+[282/400] test-00281 ERR   9.64s  no function_calls in response
+[283/400] test-00282 ERR   9.28s  no function_calls in response
+[284/400] test-00283 ERR   7.71s  no function_calls in response
+[285/400] test-00284 ERR   7.72s  no function_calls in response
+[286/400] test-00285 ERR  10.27s  no function_calls in response
+[287/400] test-00286 ERR   8.80s  no function_calls in response
+[288/400] test-00287 ERR   7.86s  no function_calls in response
+[289/400] test-00288 ERR   9.20s  no function_calls in response
+[290/400] test-00289 ERR   9.53s  no function_calls in response
+[291/400] test-00290 ERR   9.03s  no function_calls in response
+[292/400] test-00291 ERR   9.43s  no function_calls in response
+[293/400] test-00292 ERR  10.18s  no function_calls in response
+[294/400] test-00293 ERR   4.30s  no function_calls in response
+[295/400] test-00294 ERR  10.01s  no function_calls in response
+[296/400] test-00295 ERR   9.66s  no function_calls in response
+[297/400] test-00296 ERR   7.75s  no function_calls in response
+[298/400] test-00297 ERR   3.85s  no function_calls in response
+[299/400] test-00298 ERR   9.43s  no function_calls in response
+[300/400] test-00299 ERR  10.04s  no function_calls in response
+[301/400] test-00300 ERR   9.58s  no function_calls in response
+[302/400] test-00301 ERR   9.55s  no function_calls in response
+[303/400] test-00302 ERR  10.00s  no function_calls in response
+[304/400] test-00303 ERR   9.34s  no function_calls in response
+[305/400] test-00304 ERR   9.86s  no function_calls in response
+[306/400] test-00305 ERR  10.21s  no function_calls in response
+[307/400] test-00306 ERR  10.01s  no function_calls in response
+[308/400] test-00307 ERR   9.85s  no function_calls in response
+[309/400] test-00308 ERR  10.76s  no function_calls in response
+[310/400] test-00309 ERR   9.49s  no function_calls in response
+[311/400] test-00310 ERR   8.83s  no function_calls in response
+[312/400] test-00311 ERR   9.69s  no function_calls in response
+[313/400] test-00312 ERR   9.86s  no function_calls in response
+[314/400] test-00313 ERR   9.69s  no function_calls in response
+[315/400] test-00314 ERR   9.61s  no function_calls in response
+[316/400] test-00315 ERR   7.57s  no function_calls in response
+[317/400] test-00316 ERR  10.18s  no function_calls in response
+[318/400] test-00317 ERR   9.15s  no function_calls in response
+[319/400] test-00318 ERR   9.74s  no function_calls in response
+[320/400] test-00319 ERR  11.10s  no function_calls in response
+[321/400] test-00320 ERR   9.96s  no function_calls in response
+[322/400] test-00321 ERR   9.80s  no function_calls in response
+[323/400] test-00322 ERR   9.74s  no function_calls in response
+[324/400] test-00323 ERR  10.66s  no function_calls in response
+[325/400] test-00324 ERR   7.48s  no function_calls in response
+[326/400] test-00325 ERR   9.38s  no function_calls in response
+[327/400] test-00326 ERR  10.77s  no function_calls in response
+[328/400] test-00327 ERR  10.29s  no function_calls in response
+[329/400] test-00328 ERR   9.02s  no function_calls in response
+[330/400] test-00329 ERR   7.95s  no function_calls in response
+[331/400] test-00330 ERR   9.86s  no function_calls in response
+[332/400] test-00331 ERR   9.67s  no function_calls in response
+[333/400] test-00332 ERR  10.35s  no function_calls in response
+[334/400] test-00333 ERR   9.58s  no function_calls in response
+[335/400] test-00334 ERR   9.53s  no function_calls in response
+[336/400] test-00335 ERR   9.92s  no function_calls in response
+[337/400] test-00336 ERR   9.53s  no function_calls in response
+[338/400] test-00337 ERR   9.99s  no function_calls in response
+[339/400] test-00338 ERR   9.86s  no function_calls in response
+[340/400] test-00339 ERR   9.31s  no function_calls in response
+[341/400] test-00340 ERR   9.40s  no function_calls in response
+[342/400] test-00341 ERR   9.90s  no function_calls in response
+[343/400] test-00342 ERR   9.49s  no function_calls in response
+[344/400] test-00343 ERR   8.72s  no function_calls in response
+[345/400] test-00344 ERR  10.14s  no function_calls in response
+[346/400] test-00345 ERR  10.07s  no function_calls in response
+[347/400] test-00346 ERR   9.02s  no function_calls in response
+[348/400] test-00347 ERR   8.91s  no function_calls in response
+[349/400] test-00348 ERR   9.77s  no function_calls in response
+[350/400] test-00349 ERR   9.62s  no function_calls in response
+[351/400] test-00350 ERR  10.02s  no function_calls in response
+[352/400] test-00351 ERR   9.95s  no function_calls in response
+[353/400] test-00352 ERR  10.64s  no function_calls in response
+[354/400] test-00353 ERR   7.55s  no function_calls in response
+[355/400] test-00354 ERR   7.47s  no function_calls in response
+[356/400] test-00355 ERR  10.41s  no function_calls in response
+[357/400] test-00356 ERR   9.60s  no function_calls in response
+[358/400] test-00357 ERR   8.88s  no function_calls in response
+[359/400] test-00358 ERR  10.28s  no function_calls in response
+[360/400] test-00359 ERR   7.48s  no function_calls in response
+[361/400] test-00360 ERR  10.46s  no function_calls in response
+[362/400] test-00361 ERR  10.16s  no function_calls in response
+[363/400] test-00362 ERR  10.88s  no function_calls in response
+[364/400] test-00363 ERR  12.33s  no function_calls in response
+[365/400] test-00364 ERR   5.93s  no function_calls in response
+[366/400] test-00365 ERR  25.98s  no function_calls in response
+[367/400] test-00366 ERR   9.32s  no function_calls in response
+[368/400] test-00367 ERR  11.44s  no function_calls in response
+[369/400] test-00368 ERR  10.57s  no function_calls in response
+[370/400] test-00369 ERR  10.40s  no function_calls in response
+[371/400] test-00370 ERR   9.90s  no function_calls in response
+[372/400] test-00371 ERR  10.63s  no function_calls in response
+[373/400] test-00372 ERR   8.90s  no function_calls in response
+[374/400] test-00373 ERR  11.73s  no function_calls in response
+[375/400] test-00374 ERR  12.15s  no function_calls in response
+[376/400] test-00375 ERR  11.63s  no function_calls in response
+[377/400] test-00376 ERR  10.82s  no function_calls in response
+[378/400] test-00377 ERR  11.09s  no function_calls in response
+[379/400] test-00378 ERR  10.92s  no function_calls in response
+[380/400] test-00379 ERR  11.55s  no function_calls in response
+[381/400] test-00380 ERR   5.04s  no function_calls in response
+[382/400] test-00381 ERR  13.01s  no function_calls in response
+[383/400] test-00382 ERR  12.67s  no function_calls in response
+[384/400] test-00383 ERR  11.48s  no function_calls in response
+[385/400] test-00384 ERR  11.20s  no function_calls in response
+[386/400] test-00385 ERR  11.08s  no function_calls in response
+[387/400] test-00386 ERR  10.93s  no function_calls in response
+[388/400] test-00387 ERR  11.58s  no function_calls in response
+[389/400] test-00388 ERR   9.17s  no function_calls in response
+[390/400] test-00389 ERR   8.78s  no function_calls in response
+[391/400] test-00390 ERR  10.84s  no function_calls in response
+[392/400] test-00391 ERR  11.11s  no function_calls in response
+[393/400] test-00392 ERR  11.37s  no function_calls in response
+[394/400] test-00393 ERR   9.64s  no function_calls in response
+[395/400] test-00394 ERR   8.77s  no function_calls in response
+[396/400] test-00395 ERR   9.58s  no function_calls in response
+[397/400] test-00396 ERR  22.39s  no function_calls in response
+[398/400] test-00397 ERR  12.75s  no function_calls in response
+[399/400] test-00398 ERR  13.25s  no function_calls in response
+[400/400] test-00399 ERR  13.28s  no function_calls in response
+{
+  "model": "needle3-base",
+  "tag": "before",
+  "transport": "local_needle",
+  "split": "test",
+  "docs": 400,
+  "ok": 0,
+  "ok_rate": 0.0,
+  "cache_hits": 1,
+  "wall_s": 3955.5,
+  "latency_p50": 10.12,
+  "latency_p95": 11.726,
+  "errors": [
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response"
+  ]
+}
+wrote eval\results\results_needle3-base_before.jsonl

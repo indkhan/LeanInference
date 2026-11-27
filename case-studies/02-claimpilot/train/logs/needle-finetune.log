@@ -1,0 +1,34 @@
+[CudaDevice(id=0)]
+starting fine-tune ...
+  backend   gpu  float32
+  depth     20 layers
+  data      1500 examples  seq_len 2304  cap 2304
+  numerics  CQ W4 STE + A8 (matches export)
+  lora      rank 16  alpha 32  5 weight groups
+  holdout   150 examples for validation
+  schedule  4050 steps  warmup 202  cosine decay  clip 1.0  (compiling...)
+  step      81/4050  loss 0.9471
+  step      162/4050  loss 0.6160
+  step      243/4050  loss 0.3184
+  step      324/4050  loss 0.1317
+  step      405/4050  loss 0.2697
+  step      486/4050  loss 0.1154
+  step      567/4050  loss 0.0635
+  step      648/4050  loss 0.0996
+  step      729/4050  loss 0.0932
+  step      810/4050  loss 0.0440
+  step      891/4050  loss 0.1149
+  step      972/4050  loss 0.0304
+  step      1053/4050  loss 0.0608
+  step      1134/4050  loss 0.0318
+  step      1215/4050  loss 0.0480
+  step      1296/4050  loss 0.0480
+  epoch     1/3  loss 0.0405  val 0.0494
+  step      1377/4050  loss 0.0228
+  step      1458/4050  loss 0.0063
+  step      1539/4050  loss 0.1116
+  step      1620/4050  loss 0.0202
+  step      1701/4050  loss 0.0103
+  step      1782/4050  loss 0.0398
+  step      1863/4050  loss 0.0291
+  step      1944/4050  loss 0.0223

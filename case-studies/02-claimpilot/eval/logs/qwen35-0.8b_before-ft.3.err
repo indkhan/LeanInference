@@ -1,0 +1,303 @@
+W1021 02:03:28.368000 31428 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1021 02:03:38.840000 31428 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py:5118: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<06:06,  1.15s/it]Loading weights:   2%|▏         | 6/320 [00:01<00:54,  5.78it/s]Loading weights:   7%|▋         | 23/320 [00:01<00:11, 26.55it/s]Loading weights:  13%|█▎        | 41/320 [00:01<00:05, 49.27it/s]Loading weights:  20%|██        | 65/320 [00:01<00:03, 81.58it/s]Loading weights:  28%|██▊       | 89/320 [00:01<00:02, 112.25it/s]Loading weights:  33%|███▎      | 107/320 [00:01<00:01, 126.63it/s]Loading weights:  41%|████▏     | 132/320 [00:01<00:01, 154.04it/s]Loading weights:  48%|████▊     | 153/320 [00:02<00:01, 164.85it/s]Loading weights:  57%|█████▋    | 181/320 [00:02<00:00, 187.48it/s]Loading weights:  63%|██████▎   | 203/320 [00:02<00:00, 186.97it/s]Loading weights:  70%|███████   | 225/320 [00:02<00:00, 188.96it/s]Loading weights:  78%|███████▊  | 248/320 [00:02<00:00, 195.40it/s]Loading weights:  84%|████████▍ | 269/320 [00:02<00:00, 198.11it/s]Loading weights:  91%|█████████ | 290/320 [00:02<00:00, 198.27it/s]Loading weights:  97%|█████████▋| 311/320 [00:02<00:00, 186.75it/s]Loading weights: 100%|██████████| 320/320 [00:02<00:00, 110.54it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+ERROR:root:Unknown LMFormatEnforcer Problem. Prefix: '<|im_start|>system
+You are a document extraction engine for ClaimPilot, an insurance claims processor. You receive one claim document as plain text (already OCR'd). Extract the claim fields and reply with a single JSON object and nothing else.
+
+Rules:
+- Output ONLY the JSON object. No markdown fences, no comments, no explanation, no extra text.
+- Every field in the schema below must be present in the output.
+- Use null when the document does not state a value. Never guess, infer beyond what is written, or invent values. null is the correct answer for a field the document does not state.
+- Dates: ISO format YYYY-MM-DD.
+- Amounts: decimal string with a dot and exactly two decimals, e.g. "1234.56". No currency symbols, no thousands separators.
+- currency: ISO 4217 code (USD, EUR, GBP, CHF) or null.
+- line_items: array of objects with keys "description" and "amount", or null when the document contains no itemized charges.
+- claim_type: exactly one of "auto", "medical", "property", "travel", "other".
+- vehicle_vin: only for auto claims; null for every other claim type.
+- payout_iban: the payout account number with spaces removed and letters uppercased; null if absent.
+- Copy names, descriptions and notes exactly as written in the document (keep the original language, no translation).
+- If the document shows a subtotal and a total, use the final total for total_amount.
+
+The output must match this JSON Schema:
+
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service", "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code", "vehicle_vin", "claim_type", "payout_iban", "notes"],
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^CLM-[0-9]{4}-[0-9]{6}$"},
+    "policy_number": {"type": ["string", "null"], "pattern": "^POL-[A-Z]{2}[0-9]{2}-[0-9]{6}$"},
+    "claimant_name": {"type": ["string", "null"]},
+    "date_of_incident": {"type": ["string", "null"], "format": "date"},
+    "date_of_service": {"type": ["string", "null"], "format": "date"},
+    "provider_name": {"type": ["string", "null"]},
+    "line_items": {"oneOf": [{"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["description", "amount"], "properties": {"description": {"type": "string"}, "amount": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{2}$"}}}}, {"type": "null"}]},
+    "total_amount": {"type": ["string", "null"], "pattern": "^-?[0-9]+\\.[0-9]{2}$"},
+    "currency": {"type": ["string", "null"], "enum": ["USD", "EUR", "GBP", "CHF", null]},
+    "diagnosis_or_damage_code": {"type": ["string", "null"]},
+    "vehicle_vin": {"type": ["string", "null"]},
+    "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
+    "payout_iban": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}<|im_end|>
+<|im_start|>user
+Gonzalez Collision Center
+Statement
+Claim Ref: CLM-2025-300234
+Policy No.: POL-NH43-655931
+Insured: Patient: Anna Graves
+Claim category: auto
+Amounts in GBP.
+Date of loss: 03.01.2026
+Code: SCR-DOOR-L
+VIN: 6BVCV3PTTMUM91ABH
+
+DESCRIPTION                 AMOUNT
+----------------------------------------
+Paint and refinish, rear panel£ 200.00
+Wheel alignment             £ 1,092.00
+Wheel alignment             £ 963.00
+Rear bumper cover           £ 1,354.00
+
+TOTAL: £ 3,609.00
+Payment to: GB90 GAAJ 0998 9561 0595 77
+
+Page 1 of 1
+
+
+Retention schedule
+Claim records are held in line with our regulatory retention schedule. After the retention period ends, records are destroyed in a controlled manner. Aggregate statistics may be retained for reporting and actuarial purposes; these do not identify individuals. 
+
+Payment processing
+Approved settlements are issued to the account of record. Payment processing times can vary depending on the destination bank and the currency of payment. Where payment details on file are no longer correct, contact the claims team before the settlement is issued. 
+
+Coverage conditions summary
+Settlement is subject to the terms, conditions, limitations and exclusions of the policy under which the claim is made. Amounts shown may be subject to a policy excess or a deductible that is applied at settlement stage. Where the claim relates to a total loss, separate valuation rules apply. 
+
+How your claim is processed
+Our claims team reviews every submission within two business days of receipt. A case handler is assigned to your claim and will contact you if further documentation is required. Once the assessment is complete, a settlement decision is issued in writing. 
+
+Questions about this document
+If anything in this document is unclear, or if you believe a value has been captured incorrectly, contact the claims line quoting the claim reference shown on the first page. Please have the document to hand so that our team can locate your file quickly.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{
+  "claim_id": "CLM-2025-300234",
+  "policy_number": "POL-NH43-655931",
+  "claimant_name": "Anna Graves",
+  "date_of_incident": "03.01.2026",
+  "date_of_service": "03.01.2026",
+  "provider_name": "Gonzalez Collision Center",
+  "line_items": [
+    {"description": "Paint and refinish, rear panel", "amount": "200.00"},
+    {"description": "Wheel alignment", "amount": "1092.00"},
+    {"description": "Wheel alignment", "amount": "963.00"},
+    {"description": "Rear bumper cover", "amount": "1354.00"}
+  ],
+  "total_amount": "3609'
+Terminating the parser. Please open an issue at 
+https://github.com/noamgat/lm-format-enforcer/issues with the prefix and CharacterLevelParser parameters
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 107, in _compute_allowed_tokens
+    self._collect_allowed_tokens(state.parser, self.tokenizer_tree.root, allowed_tokens, shortcut_key)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 162, in _collect_allowed_tokens
+    self._collect_allowed_tokens(next_parser, next_tree_node, allowed_tokens, None)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 162, in _collect_allowed_tokens
+    self._collect_allowed_tokens(next_parser, next_tree_node, allowed_tokens, None)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 139, in _collect_allowed_tokens
+    allowed_tokens.extend(tree_node.tokens)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenlist.py", line 39, in extend
+    self.allowed_tokens.extend(token_ids)
+MemoryError
+ERROR:root:Unknown LMFormatEnforcer Problem. Prefix: '<|im_start|>system
+You are a document extraction engine for ClaimPilot, an insurance claims processor. You receive one claim document as plain text (already OCR'd). Extract the claim fields and reply with a single JSON object and nothing else.
+
+Rules:
+- Output ONLY the JSON object. No markdown fences, no comments, no explanation, no extra text.
+- Every field in the schema below must be present in the output.
+- Use null when the document does not state a value. Never guess, infer beyond what is written, or invent values. null is the correct answer for a field the document does not state.
+- Dates: ISO format YYYY-MM-DD.
+- Amounts: decimal string with a dot and exactly two decimals, e.g. "1234.56". No currency symbols, no thousands separators.
+- currency: ISO 4217 code (USD, EUR, GBP, CHF) or null.
+- line_items: array of objects with keys "description" and "amount", or null when the document contains no itemized charges.
+- claim_type: exactly one of "auto", "medical", "property", "travel", "other".
+- vehicle_vin: only for auto claims; null for every other claim type.
+- payout_iban: the payout account number with spaces removed and letters uppercased; null if absent.
+- Copy names, descriptions and notes exactly as written in the document (keep the original language, no translation).
+- If the document shows a subtotal and a total, use the final total for total_amount.
+
+The output must match this JSON Schema:
+
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service", "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code", "vehicle_vin", "claim_type", "payout_iban", "notes"],
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^CLM-[0-9]{4}-[0-9]{6}$"},
+    "policy_number": {"type": ["string", "null"], "pattern": "^POL-[A-Z]{2}[0-9]{2}-[0-9]{6}$"},
+    "claimant_name": {"type": ["string", "null"]},
+    "date_of_incident": {"type": ["string", "null"], "format": "date"},
+    "date_of_service": {"type": ["string", "null"], "format": "date"},
+    "provider_name": {"type": ["string", "null"]},
+    "line_items": {"oneOf": [{"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["description", "amount"], "properties": {"description": {"type": "string"}, "amount": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{2}$"}}}}, {"type": "null"}]},
+    "total_amount": {"type": ["string", "null"], "pattern": "^-?[0-9]+\\.[0-9]{2}$"},
+    "currency": {"type": ["string", "null"], "enum": ["USD", "EUR", "GBP", "CHF", null]},
+    "diagnosis_or_damage_code": {"type": ["string", "null"]},
+    "vehicle_vin": {"type": ["string", "null"]},
+    "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
+    "payout_iban": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}<|im_end|>
+<|im_start|>user
+From: billing@greer.com
+To: claims@claimpilot.example
+Subject: Claim CLM-2026-300235 - auto - documents attached
+
+Hi team,
+
+Please find the details for the claim below.
+
+Claim: CLM-2026-300235
+Policy: POL-KT13-493848
+Name: Patricia Church
+Type: auto
+Amounts stated in EUR.
+Incident: Jun 08 2024
+Provider: South Timothy Auto Body & Paint
+Ref code: GLASS-WS
+VIN: Z2PY5WRA3XHRMMPKJ
+
+Breakdown:
+- Wheel alignment: € 1,793.00
+- Body labor (4.0 hrs): € 978.00
+- Body labor (4.0 hrs): € 1,447.00
+- Tail lamp assembly: € 1,041.00
+- Body labor (4.0 hrs): € 1,162.00
+Total: € 6,421.00
+Payout account: GB73JMEU20341229347492
+
+Thanks,
+Cassandra
+Claims intake
+
+
+Fraud prevention
+We take fraud seriously. Information provided in support of a claim may be checked against industry databases and shared with law enforcement where required. Submitting false or misleading information is a criminal offence and may result in the claim being declined and the policy being cancelled. 
+
+Retention schedule
+Claim records are held in line with our regulatory retention schedule. After the retention period ends, records are destroyed in a controlled manner. Aggregate statistics may be retained for reporting and actuarial purposes; these do not identify individuals. 
+
+Document handling note
+The document you submitted was captured electronically and processed by an  automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time. 
+
+Office hours and accessibility
+Our offices are open Monday to Friday during normal business hours.  Assistance  is available for customers who need documents in alternative formats or who require additional support when submitting a claim. Please ask when you contact us. 
+
+Coverage conditions summary
+Settlement is subject to the terms, conditions, limitations and exclusions of the policy under which the claim is made. Amounts shown may be subject to a policy excess or a deductible that is applied at settlement stage. Where the claim relates to a total loss, separate valuation rules apply. 
+
+This document may contain confidential health or financial information. It is intended solely for the named recipient. If you received it in error, notify the sender and delete all copies. Processing of this claim is subject to the policy terms and applicable data protection regulations.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{
+  "claim_id": "'
+Terminating the parser. Please open an issue at 
+https://github.com/noamgat/lm-format-enforcer/issues with the prefix and CharacterLevelParser parameters
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 107, in _compute_allowed_tokens
+    self._collect_allowed_tokens(state.parser, self.tokenizer_tree.root, allowed_tokens, shortcut_key)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 156, in _collect_allowed_tokens
+    allowed_tokens.extend(cache.lookup_allowed_tokens(min_remaining, max_allowed_len).allowed_tokens)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenlist.py", line 39, in extend
+    self.allowed_tokens.extend(token_ids)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 226, in <module>
+    main()
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 167, in main
+    gen = model.generate(
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 2989, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 3189, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 4300, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 1708, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 1278, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_layers.py", line 111, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 875, in forward
+    hidden_states = self.linear_attn(
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\integrations\accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 576, in forward
+    mixed_qkv = causal_conv1d_fn(
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\integrations\hub_kernels.py", line 1051, in wrapped
+    return implementation(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 266, in causal_conv1d_fn
+    out = F.conv1d(
+          ^^^^^^^^^
+RuntimeError: bad allocation

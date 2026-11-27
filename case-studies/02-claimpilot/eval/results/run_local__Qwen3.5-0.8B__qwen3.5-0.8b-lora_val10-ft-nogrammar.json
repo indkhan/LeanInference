@@ -1,0 +1,16 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "val10-ft-nogrammar",
+  "transport": "local_transformers",
+  "split": "val",
+  "docs": 10,
+  "ok": 10,
+  "ok_rate": 1.0,
+  "wall_s": 185.2,
+  "latency_p50": 18.551,
+  "latency_p95": 25.137,
+  "errors": [],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_val10-ft-nogrammar.jsonl",
+  "grammar": false,
+  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "local__Qwen3.5-0.8B",
+  "tag": "before-ft-grammar",
+  "transport": "local_transformers",
+  "split": "test",
+  "docs": 400,
+  "ok": 370,
+  "ok_rate": 0.925,
+  "wall_s": 289.1,
+  "latency_p50": 38.754,
+  "latency_p95": 71.913,
+  "errors": [
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply",
+    "parse: unbalanced JSON in reply"
+  ],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B_before-ft-grammar.jsonl",
+  "grammar": true,
+  "adapter": null
+}

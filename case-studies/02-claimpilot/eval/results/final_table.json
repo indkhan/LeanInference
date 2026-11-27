@@ -1,0 +1,62 @@
+{
+  "as_of": "2026-10-17",
+  "winner": "Candidate B: Qwen3.5-0.8B QLoRA + xgrammar JSON",
+  "rows": [
+    {
+      "name": "Baseline proxy: beam-free",
+      "after": "opencode__beam-free_final",
+      "price": "frontier",
+      "where": "third-party API",
+      "own_cloud": false,
+      "baseline": true,
+      "usd1k": 9.4656,
+      "monthly": 4732.8,
+      "basis": "priced as Claude Opus 5.5 list price x measured tokens",
+      "p95": 19.991,
+      "micro_f1_before": null,
+      "micro_f1_after": 0.9738
+    },
+    {
+      "name": "Candidate A: DeepSeek V4.1 Flash",
+      "after": "opencode__deepseek-v4.1-flash-free_final",
+      "price": "DeepSeek V4.1 Flash",
+      "where": "third-party API",
+      "own_cloud": false,
+      "usd1k": 0.5993999999999999,
+      "monthly": 299.7,
+      "basis": "DeepSeek V4.1 Flash peak list price x measured tokens",
+      "p95": 25.908,
+      "micro_f1_before": null,
+      "micro_f1_after": 0.967
+    },
+    {
+      "name": "Candidate B: Qwen3.5-0.8B QLoRA + xgrammar JSON",
+      "before": "local__Qwen3.5-0.8B_before-ft-xgr",
+      "after": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_after-ft-xgr",
+      "latency": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_latency-b1",
+      "price": "local_gpu",
+      "where": "self-hosted GPU (own cloud)",
+      "own_cloud": true,
+      "usd1k": 1.7228,
+      "monthly": 861.4,
+      "basis": "2 x NVIDIA L4 24GB (Runpod Secure Cloud, on-demand) ($0.59/h) always-on at measured p50 6.07s/doc",
+      "p95": 23.807,
+      "micro_f1_before": 0.366,
+      "micro_f1_after": 0.9911
+    },
+    {
+      "name": "Candidate C: Needle 3 LoRA (.cact, full KV window)",
+      "before": "needle3-base_before",
+      "after": "needle3-ft-fullkv_after",
+      "price": "local_cpu",
+      "where": "self-hosted CPU / on-device",
+      "own_cloud": true,
+      "usd1k": 0.52122,
+      "monthly": 260.61,
+      "basis": "2 x AWS c7i.xlarge (4 vCPU, 8 GiB, us-east-1 on-demand Linux) ($0.1785/h) always-on at measured p50 5.64s/doc",
+      "p95": 11.208,
+      "micro_f1_before": 0.0,
+      "micro_f1_after": 0.7759
+    }
+  ]
+}

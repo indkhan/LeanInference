@@ -1,0 +1,18 @@
+W1021 22:06:54.297000 15200 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1021 22:06:59.433000 15200 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py:5118: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<05:21,  1.01s/it]Loading weights:   2%|2         | 8/320 [00:01<00:32,  9.48it/s]Loading weights:   8%|8         | 27/320 [00:01<00:08, 36.28it/s]Loading weights:  14%|#4        | 45/320 [00:01<00:04, 61.02it/s]Loading weights:  21%|##        | 66/320 [00:01<00:02, 89.46it/s]Loading weights:  28%|##7       | 89/320 [00:01<00:01, 116.83it/s]Loading weights:  33%|###3      | 107/320 [00:01<00:01, 131.24it/s]Loading weights:  41%|####1     | 132/320 [00:01<00:01, 157.68it/s]Loading weights:  48%|####7     | 152/320 [00:01<00:01, 166.76it/s]Loading weights:  57%|#####6    | 181/320 [00:01<00:00, 190.52it/s]Loading weights:  63%|######3   | 202/320 [00:02<00:00, 188.75it/s]Loading weights:  70%|#######   | 225/320 [00:02<00:00, 198.93it/s]Loading weights:  78%|#######7  | 249/320 [00:02<00:00, 208.47it/s]Loading weights:  85%|########5 | 273/320 [00:02<00:00, 209.13it/s]Loading weights:  92%|#########2| 295/320 [00:02<00:00, 208.73it/s]Loading weights:  99%|#########9| 318/320 [00:02<00:00, 211.77it/s]Loading weights: 100%|##########| 320/320 [00:02<00:00, 122.11it/s]
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 266, in <module>
+    main()
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 167, in main
+    keep = set((CASE / args.ids_file).read_text(encoding="utf-8").split())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\mgsuk\\.t3\\worktrees\\LeanInference\\t3-4e600564\\case-studies\\02-claimpilot\\eval\\ids8.tmp'

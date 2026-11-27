@@ -1,0 +1,59 @@
+Timeout (0:04:00)!
+Thread 0x00008c88 (most recent call first):
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 331 in wait
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 629 in wait
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\tqdm\_monitor.py", line 69 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00009c8c (most recent call first):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1273 in _materialize_copy
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1295 in _job
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83 in _worker
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00004b60 (most recent call first):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1271 in _materialize_copy
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1295 in _job
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83 in _worker
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00008584 (most recent call first):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1273 in _materialize_copy
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1295 in _job
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83 in _worker
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x0000265c (most recent call first):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1273 in _materialize_copy
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1295 in _job
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 83 in _worker
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 982 in run
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1045 in _bootstrap_inner
+  File "C:\Users\mgsuk\AppData\Local\Programs\Python\Python311\Lib\threading.py", line 1002 in _bootstrap
+
+Thread 0x00008240 (most recent call first):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\bitsandbytes\functional.py", line 523 in from_dict
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\bitsandbytes\nn\modules.py", line 367 in from_prequantized
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\integrations\bitsandbytes.py", line 88 in convert
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1222 in convert
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\core_model_loading.py", line 1787 in convert_and_load_state_dict_in_model
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4498 in _load_pretrained_model
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4353 in from_pretrained
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 411 in from_pretrained
+  File "train/train_qlora.py", line 122 in main
+  File "train/train_qlora.py", line 219 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "<string>", line 6 in <module>

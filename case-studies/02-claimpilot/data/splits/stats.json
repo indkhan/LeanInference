@@ -1,0 +1,26 @@
+{
+  "train": {
+    "docs": 1500,
+    "chars_median": 2559,
+    "chars_p10": 1921,
+    "chars_p90": 3107,
+    "est_tokens_median": 639,
+    "nulls_avg": 3.58
+  },
+  "val": {
+    "docs": 100,
+    "chars_median": 2554,
+    "chars_p10": 539,
+    "chars_p90": 3051,
+    "est_tokens_median": 638,
+    "nulls_avg": 3.63
+  },
+  "test": {
+    "docs": 400,
+    "chars_median": 2566,
+    "chars_p10": 633,
+    "chars_p90": 3107,
+    "est_tokens_median": 641,
+    "nulls_avg": 3.63
+  }
+}

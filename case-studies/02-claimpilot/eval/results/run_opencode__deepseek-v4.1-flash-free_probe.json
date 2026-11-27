@@ -1,0 +1,15 @@
+{
+  "model": "opencode/deepseek-v4.1-flash-free",
+  "tag": "probe",
+  "transport": "hosted_free",
+  "split": "test",
+  "docs": 1,
+  "ok": 1,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 6.5,
+  "latency_p50": 6.527,
+  "latency_p95": 6.527,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__deepseek-v4.1-flash-free_probe.jsonl"
+}

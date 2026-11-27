@@ -1,0 +1,16 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "after-ft-xgr",
+  "transport": "local_transformers",
+  "split": "test",
+  "docs": 400,
+  "ok": 400,
+  "ok_rate": 1.0,
+  "wall_s": 2314.3,
+  "latency_p50": 6.065,
+  "latency_p95": 6.564,
+  "errors": [],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_after-ft-xgr.jsonl",
+  "grammar": "xgrammar",
+  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
+}

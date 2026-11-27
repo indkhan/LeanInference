@@ -1,0 +1,54 @@
+[
+  {
+    "doc_id": "train-00000",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "SkyWay Airlines",
+        "pred": null
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-100000\",\"policy_number\":\"POL-XD31-316434\",\"claimant_name\":\"EVELYN HAWKINS\",\"date_of_incident\":\"2024-11-20\",\"date_of_service\":null,\"provider_name\":null,\"line_items\":[{\"description\":\"Overtime surcharge\",\"amount\":\"685.00\"}],\"total_amount\":\"685.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"travel\",\"payout_iban\":\"GB09ZPGT12884383635803\",\"notes\":null}"
+  },
+  {
+    "doc_id": "train-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Eric Cole",
+        "pred": "Mr./Ms. Eric Cole"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-100006\",\n  \"policy_number\": null,\n  \"claimant_name\": \"Mr./Ms. Eric Cole\",\n  \"date_of_incident\": \"2025-02-16\",\n  \"date_of_service\": \"2025-02-22\",\n  \"provider_name\": null,\n  \"line_items\": [\n    {\n      \"description\": \"Physician consultation\",\n      \"amount\": \"434.00\"\n    },\n    {\n      \"description\": \"X-ray, 2 views\",\n      \"amount\": \"962.00\"\n    },\n    {\n      \"description\": \"Wound dressing and supplies\",\n      \"amount\": \"151.00\"\n    },\n    {\n      \"description\": \"Emergency department visit, level 3\",\n      \"amount\": \"332.00\"\n    },\n    {\n      \"description\": \"Laboratory panel, CBC\",\n      \"amount\": \"1651.00\"\n    }\n  ],\n  \"total_amount\": \"3530.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB28ZSFB97977233553405\",\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "Document handling note The document you submitted was captured electronically and processed by an automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time. Regulatory information This communication is issued by the handling office named above, which is authorised and regulated for the conduct of insurance business. Calls to our teams may be recorded for quality assurance and training purposes. Nothing in this document constitutes legal advice. Retention schedule Claim records are held in line with our regulatory retention schedule. After the retention period ends, records are destroyed in a controlled manner. Aggregate statistics may be retained for reporting and actuarial purposes; these do not identify individuals. Coverage conditions summary Settlement is subject to the terms, conditions, limitations and exclusions of the policy under which the claim is made. Amounts shown may be subject to a policy excess or a deductible that is applied at settlement stage. Where the claim relates to a total loss, separate valuation rules apply. Data protection notice We process the information in this document for the purpose of assessing and administering your claim, in line with applicable data protection law. Data is retained only as long as necessary for the purpose it was collected for, after which it is deleted or anonymised. You may request a copy of the data we hold about you at any time by contacting our data protection office. Fraud prevention We take fraud seriously. Information provided in support of a claim may be checked against industry databases and shared with law enforcement where required. Submitting false or misleading information is a criminal offence and may result in the claim being declined and the policy being cancelled. Office hours and accessibility Our offices are open Monday to Friday during normal business hours. Assistance is available for customers who need documents in alternative formats or who require additional support when submitting a claim. Please ask when you contact us."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-100009\",\n  \"policy_number\": \"POL-SB14-793943\",\n  \"claimant_name\": \"Joel Gibson\",\n  \"date_of_incident\": \"2024-06-25\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Ray Collision Center\",\n  \"line_items\": [\n    {\"description\": \"Wheel alignment\", \"amount\": \"864.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"1039.00\"},\n    {\"description\": \"ADAS recalibration\", \"amount\": \"286.00\"},\n    {\"description\": \"Wheel alignment\", \"amount\": \"1227.00\"},\n    {\"description\": \"Rear bumper cover\", \"amount\": \"519.00\"}\n  ],\n  \"total_amount\": \"3935.00\",\n  \"currency\": \"GBP\",\n  \"diagnosis_or_damage_code\": \"BMP-31A\",\n  \"vehicle_vin\": \"PDV5ZLHYWSYB2L0RP\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB48IFHU29386090690404\",\n  \"notes\": \"Document handling note The document you submitted was captured electronically and processed by an automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time. Regulatory information This communication is issued by the handling office named above, which is authorised and regulated for the con"
+  },
+  {
+    "doc_id": "train-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Ricky Rodriguez",
+        "pred": "Mr./Ms. Ricky Rodriguez"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-100010\",\"policy_number\":\"POL-SM71-400923\",\"claimant_name\":\"Mr./Ms. Ricky Rodriguez\",\"date_of_incident\":\"2026-01-28\",\"date_of_service\":null,\"provider_name\":\"Bakerburgh Urgent Care\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"234.00\"},{\"description\":\"Medication administration\",\"amount\":\"917.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"507.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"940.00\"}],\"total_amount\":\"2598.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB32AMLS77452297394225\",\"notes\":\"Adjuster site visit scheduled.\"}"
+  }
+]

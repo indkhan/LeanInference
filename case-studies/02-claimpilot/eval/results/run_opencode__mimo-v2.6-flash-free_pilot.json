@@ -1,0 +1,15 @@
+{
+  "model": "opencode/mimo-v2.6-flash-free",
+  "tag": "pilot",
+  "transport": "hosted_free",
+  "split": "train",
+  "docs": 12,
+  "ok": 12,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 122.5,
+  "latency_p50": 24.743,
+  "latency_p95": 71.653,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__mimo-v2.6-flash-free_pilot.jsonl"
+}

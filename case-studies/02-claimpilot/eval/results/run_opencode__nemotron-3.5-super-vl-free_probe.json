@@ -1,0 +1,15 @@
+{
+  "model": "opencode/nemotron-3.5-super-vl-free",
+  "tag": "probe",
+  "transport": "hosted_free",
+  "split": "test",
+  "docs": 1,
+  "ok": 1,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 55.2,
+  "latency_p50": 55.19,
+  "latency_p95": 55.19,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__nemotron-3.5-super-vl-free_probe.jsonl"
+}

@@ -1,0 +1,202 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "after-ft-grammar",
+  "transport": "local_transformers",
+  "run_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_after-ft-grammar.jsonl",
+  "split": "test",
+  "docs": 400,
+  "parsed_ok": 399,
+  "valid_schema_rate": 0.995,
+  "doc_exact_rate": 0.68,
+  "micro_precision": 0.9657,
+  "micro_recall": 0.9631,
+  "micro_f1": 0.9644,
+  "macro_f1": 0.9661,
+  "item_micro_precision": 0.8916,
+  "item_micro_recall": 0.8909,
+  "null_discipline": 1.0,
+  "total_amount_accuracy": 0.9925,
+  "latency_p50": 10.497,
+  "latency_p95": 37.814,
+  "tokens_in_mean": 1392.6,
+  "tokens_out_mean": 197.0,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "per_field": {
+    "claim_id": {
+      "precision": 0.9975,
+      "recall": 0.995,
+      "f1": 0.9962,
+      "accuracy": 0.9925,
+      "tp": 398,
+      "fp": 1,
+      "fn": 2,
+      "tn": 0
+    },
+    "policy_number": {
+      "precision": 0.9971,
+      "recall": 0.9943,
+      "f1": 0.9957,
+      "accuracy": 0.9925,
+      "tp": 349,
+      "fp": 1,
+      "fn": 2,
+      "tn": 49
+    },
+    "claimant_name": {
+      "precision": 0.9811,
+      "recall": 0.9784,
+      "f1": 0.9798,
+      "accuracy": 0.9631,
+      "tp": 363,
+      "fp": 7,
+      "fn": 8,
+      "tn": 29
+    },
+    "date_of_incident": {
+      "precision": 0.9551,
+      "recall": 0.9524,
+      "f1": 0.9537,
+      "accuracy": 0.9207,
+      "tp": 340,
+      "fp": 16,
+      "fn": 17,
+      "tn": 43
+    },
+    "date_of_service": {
+      "precision": 0.9874,
+      "recall": 0.9812,
+      "f1": 0.9843,
+      "accuracy": 0.9875,
+      "tp": 157,
+      "fp": 2,
+      "fn": 3,
+      "tn": 239
+    },
+    "provider_name": {
+      "precision": 0.9946,
+      "recall": 0.992,
+      "f1": 0.9933,
+      "accuracy": 0.9876,
+      "tp": 371,
+      "fp": 2,
+      "fn": 3,
+      "tn": 26
+    },
+    "total_amount": {
+      "precision": 0.9969,
+      "recall": 0.9938,
+      "f1": 0.9954,
+      "accuracy": 0.9925,
+      "tp": 322,
+      "fp": 1,
+      "fn": 2,
+      "tn": 76
+    },
+    "currency": {
+      "precision": 0.9972,
+      "recall": 0.9972,
+      "f1": 0.9972,
+      "accuracy": 0.995,
+      "tp": 359,
+      "fp": 1,
+      "fn": 1,
+      "tn": 39
+    },
+    "diagnosis_or_damage_code": {
+      "precision": 0.9955,
+      "recall": 0.991,
+      "f1": 0.9933,
+      "accuracy": 0.9925,
+      "tp": 221,
+      "fp": 1,
+      "fn": 2,
+      "tn": 177
+    },
+    "vehicle_vin": {
+      "precision": 0.9898,
+      "recall": 0.9898,
+      "f1": 0.9898,
+      "accuracy": 0.995,
+      "tp": 97,
+      "fp": 1,
+      "fn": 1,
+      "tn": 301
+    },
+    "claim_type": {
+      "precision": 0.9975,
+      "recall": 0.995,
+      "f1": 0.9962,
+      "accuracy": 0.9925,
+      "tp": 398,
+      "fp": 1,
+      "fn": 2,
+      "tn": 0
+    },
+    "payout_iban": {
+      "precision": 0.994,
+      "recall": 0.994,
+      "f1": 0.994,
+      "accuracy": 0.99,
+      "tp": 329,
+      "fp": 2,
+      "fn": 2,
+      "tn": 68
+    },
+    "notes": {
+      "precision": 1.0,
+      "recall": 0.9875,
+      "f1": 0.9937,
+      "accuracy": 0.9975,
+      "tp": 79,
+      "fp": 0,
+      "fn": 1,
+      "tn": 319
+    },
+    "line_items": {
+      "precision": 0.6646,
+      "recall": 0.6625,
+      "f1": 0.6635,
+      "accuracy": 0.5791,
+      "tp": 210,
+      "fp": 106,
+      "fn": 107,
+      "tn": 83
+    }
+  },
+  "per_family": {
+    "auto_repair_estimate": {
+      "docs": 67,
+      "doc_exact_rate": 0.7761,
+      "micro_f1": 0.9757
+    },
+    "email_thread": {
+      "docs": 67,
+      "doc_exact_rate": 0.6418,
+      "micro_f1": 0.9651
+    },
+    "fax_memo": {
+      "docs": 66,
+      "doc_exact_rate": 0.6515,
+      "micro_f1": 0.9659
+    },
+    "invoice_formal": {
+      "docs": 67,
+      "doc_exact_rate": 0.6716,
+      "micro_f1": 0.9668
+    },
+    "medical_bill": {
+      "docs": 66,
+      "doc_exact_rate": 0.6061,
+      "micro_f1": 0.9393
+    },
+    "ocr_scan": {
+      "docs": 67,
+      "doc_exact_rate": 0.7313,
+      "micro_f1": 0.9732
+    }
+  },
+  "errors": 1
+}

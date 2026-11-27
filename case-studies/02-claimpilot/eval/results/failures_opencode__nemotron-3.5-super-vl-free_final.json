@@ -1,0 +1,67 @@
+[
+  {
+    "doc_id": "test-00002",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Lisa Gillespie",
+        "pred": "Mr./Ms. Lisa Gillespie"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-300002\",\n  \"policy_number\": \"POL-NX85-731498\",\n  \"claimant_name\": \"Mr./Ms. Lisa Gillespie\",\n  \"date_of_incident\": \"2025-08-03\",\n  \"date_of_service\": \"2025-08-08\",\n  \"provider_name\": \"St. Savage Medical Center\",\n  \"line_items\": [\n    {\n      \"description\": \"Emergency department visit, level 3\",\n      \"amount\": \"541.00\"\n    },\n    {\n      \"description\": \"Tax / VAT\",\n      \"amount\": \"48.47\"\n    }\n  ],\n  \"total_amount\": null,\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": \"S93.401\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB84UIQF70173443698285\",\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-08",
+        "pred": "2023-08-11"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300005\",\n  \"policy_number\": \"POL-CC57-910062\",\n  \"claimant_name\": \"JOSHUA ORR\",\n  \"date_of_incident\": \"2023-11-05\",\n  \"date_of_service\": \"2023-08-11\",\n  \"provider_name\": null,\n  \"line_items\": [\n    {\n      \"description\": \"Physical therapy session (45 min)\",\n      \"amount\": \"1181.00\"\n    },\n    {\n      \"description\": \"Tax / VAT\",\n      \"amount\": \"78.94\"\n    }\n  ],\n  \"total_amount\": \"1259.94\",\n  \"currency\": \"CHF\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB65ZKLA91054245897315\",\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "test-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-300009\",\n  \"policy_number\": \"POL-TA21-486772\",\n  \"claimant_name\": \"Carrie Weaver\",\n  \"date_of_incident\": \"2025-05-15\",\n  \"date_of_service\": \"2025-05-23\",\n  \"provider_name\": \"St. Wilson Medical Center\",\n  \"line_items\": [\n    {\n      \"description\": \"Medication administration\",\n      \"amount\": \"1752.00\"\n    },\n    {\n      \"description\": \"Wound dressing and supplies\",\n      \"amount\": \"189.00\"\n    },\n    {\n      \"description\": \"X-ray, 2 views\",\n      \"amount\": \"79.00\"\n    },\n    {\n      \"description\": \"Emergency department visit, level 3\",\n      \"amount\": \"1565.00\"\n    },\n    {\n      \"description\": \"Medication administration\",\n      \"amount\": \"1119.00\"\n    },\n    {\n      \"description\": \"Emergency department visit, level 3\",\n      \"amount\": \"1666.00\"\n    }\n  ],\n  \"total_amount\": \"6370.00\",\n  \"currency\": \"CHF\",\n  \"diagnosis_or_damage_code\": \"J06.9\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB80ADPM42042619706778\",\n  \"notes\": \"All work subject to parts availability.\"\n}"
+  },
+  {
+    "doc_id": "test-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "The document you submitted was captured electronically and processed by an automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-300010\",\n  \"policy_number\": \"POL-CE84-840079\",\n  \"claimant_name\": \"James Walsh\",\n  \"date_of_incident\": \"2026-02-04\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Midwest Motor Works\",\n  \"line_items\": [\n    {\n      \"description\": \"Paint and refinish, rear panel\",\n      \"amount\": \"886.00\"\n    },\n    {\n      \"description\": \"Rear bumper cover\",\n      \"amount\": \"1150.00\"\n    },\n    {\n      \"description\": \"Radiator support bracket\",\n      \"amount\": \"476.00\"\n    },\n    {\n      \"description\": \"Wheel alignment\",\n      \"amount\": \"804.00\"\n    },\n    {\n      \"description\": \"Body labor (4.0 hrs)\",\n      \"amount\": \"1345.00\"\n    },\n    {\n      \"description\": \"Tax / VAT\",\n      \"amount\": \"252.70\"\n    }\n  ],\n  \"total_amount\": \"4913.70\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"SCR-DOOR-L\",\n  \"vehicle_vin\": \"NUSU05AALRKP30ZHC\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB18EJWP06490872282595\",\n  \"notes\": \"The document you submitted was captured electronically and processed by an automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requ"
+  },
+  {
+    "doc_id": "test-00011",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": "Second occurrence at the same address.",
+        "pred": "Margin note: Second occurrence at the same address."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-300011\",\n  \"policy_number\": \"POL-TW22-856550\",\n  \"claimant_name\": \"SHELLY ALVAREZ\",\n  \"date_of_incident\": \"2026-01-12\",\n  \"date_of_service\": null,\n  \"provider_name\": \"Michaelbury Auto Body & Paint\",\n  \"line_items\": [\n    {\n      \"description\": \"ADAS recalibration\",\n      \"amount\": \"1679.00\"\n    },\n    {\n      \"description\": \"Paint and refinish, rear panel\",\n      \"amount\": \"850.00\"\n    },\n    {\n      \"description\": \"Paint and refinish, rear panel\",\n      \"amount\": \"1228.00\"\n    },\n    {\n      \"description\": \"Tail lamp assembly\",\n      \"amount\": \"303.00\"\n    },\n    {\n      \"description\": \"Body labor (4.0 hrs)\",\n      \"amount\": \"1791.00\"\n    }\n  ],\n  \"total_amount\": \"5851.00\",\n  \"currency\": \"EUR\",\n  \"diagnosis_or_damage_code\": \"WTR-INT-07\",\n  \"vehicle_vin\": \"25VCGRYL7XVJ14SEE\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": null,\n  \"notes\": \"Margin note: Second occurrence at the same address.\"\n}"
+  }
+]

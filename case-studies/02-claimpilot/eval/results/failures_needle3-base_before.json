@@ -1,0 +1,5554 @@
+[
+  {
+    "doc_id": "test-00000",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300000",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-KO70-689651",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Rachel Boyer",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-01-06",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Castro Inc",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1241.82",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB03MTSF70526854183850",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Insured requested expedited handling.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Replacement parts",
+            "amount": "1148.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "93.82"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim reference 'CLM-A-FR-2024' from the document. No other tool handles claim records.\", \"confidence\": 0.0017, \"prefill_tps\": 29.0, \"decode_tps\": 11.5, \"peak_ram_mb\": 152.9}"
+  },
+  {
+    "doc_id": "test-00001",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300001",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-RC73-549816",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "David Villarreal",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-03-31",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-03-31",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "North Rebeccaview Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3475.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB43MHHY72881341976977",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "X-ray, 2 views",
+            "amount": "86.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "463.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1576.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "752.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "598.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim reference 'CLM-887-NORTH' from the document. Call record_claim with claim_id 'CLM-887-NORTH' and policy_number 'CLM-887-NORTH'.\", \"confidence\": 0.0041, \"prefill_tps\": 201.2, \"decode_tps\": 155.4, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00002",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300002",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NX85-731498",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Lisa Gillespie",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-08-03",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-08-08",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Savage Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S93.401",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB84UIQF70173443698285",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "541.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "48.47"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-NORTH-001' from the email. Date_of_incident is '2025-03-28' from the email. Date_of_service is 'HR' from the email. Date_of_service is 'HR' from the email. Date_of_service is 'HR' from the email. Date_of_service is 'HR' from the email. Date_of_service is 'HR' from the email. Date_of_service is 'HR' from the email.\", \"confidence\": 0.0071, \"prefill_tps\": 213.9, \"decode_tps\": 149.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00003",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300003",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ST92-858581",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Megan Williams",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-07-20",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1178.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "HAIL-04",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB74ONBS12662731888172",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1178.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id from the document request. Date_of_incident is the only tool that records claims. Date_of_service is the only tool that records claims. The user explicitly says 'the date of the claim' and 'the date of the incident' which is the date of the claim.\", \"confidence\": 0.005, \"prefill_tps\": 200.1, \"decode_tps\": 152.4, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00004",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300004",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UT13-641466",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Cassandra Keller",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-03-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-04-01",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Fredborough General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4695.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB23XFHM24737737558016",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "640.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "419.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "361.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1652.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "1623.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query asks to record a claim from the document. record_claim tool with claim_id 'CLM-A-Z0-9-NORTH' from the document. policy_number 'CLM-A-Z0-9-NORTH' from the document. claim_type 'medical' from 'medical insurance'. date_of_incident '2025-03-15' from 'March 15th'. date_of_service 'Null' from 'Null'. provider_name 'CLM-A-Z0-9-NORTH' from the document. line_items not stated. total_amount '$150.00' from '$150.00'. currency 'USD' from 'USD'.\", \"confidence\": 0.002, \"prefill_tps\": 196.4, \"decode_tps\": 154.0, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00005",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300005",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-CC57-910062",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Joshua Orr",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-05",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-08",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1259.94",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB65ZKLA91054245897315",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1181.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "78.94"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-001' from the document. Call record_claim with claim_id 'CLM-A-F-001' and policy_number 'CLM-A-F-001'.\", \"confidence\": 0.0082, \"prefill_tps\": 195.1, \"decode_tps\": 163.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00006",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300006",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UK40-240755",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Dana Hurley",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2615.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "7ELW1JG0GUN93XKXM",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB22CCHG31055738254521",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "807.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "1697.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "111.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Recording from history: claim_id 'CLM-A-FG-001' from 'claim reference shown on the first page'. Document from query: claim_id 'CLM-A-FG-001' from 'claim reference shown on the first page'. Date_of_incident: date_of_incident: '2024-03-15' from 'date of 2024-03-15'. Date_of_service: 'Netflix' from 'Netflix'. Date_of_service: 'Netflix' from 'Netflix'. Date_of_service: 'Netflix' from 'Netflix'. Date_of_service: 'Netflix' from 'Netflix'.\", \"confidence\": 0.006, \"prefill_tps\": 203.4, \"decode_tps\": 151.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00007",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300007",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-JB88-835521",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Yvette Kelly",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-05-13",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Thompson Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "GLASS-WS",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "SY9R0RC3EHVXRL06M",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB21HNYK41076160396010",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FR-2024' from the email. Date_of_incident is the only tool that records claim records. Date_of_service is the only tool that records claim records. The user explicitly says 'claim ID CLM-A-FR-2024' and 'date_of_service' is the date.\", \"confidence\": 0.0048, \"prefill_tps\": 202.0, \"decode_tps\": 147.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00008",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300008",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ZV91-755214",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Catherine Montgomery",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Glasstown Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5373.11",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "GLASS-WS",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "211.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "881.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "1250.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "1077.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "1547.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "407.11"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"The user wants to record a claim from the document. The claim_id is 'CLM-A-FIN-001' from the document. The policy_number is 'DOC-NORTH-001' from the document. The claim_type is 'medical' from the document. The date_of_incident is '2025-03-15' from the document. The date_of_service is 'Not specified' from the document. The provider_name is 'Claims' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The provider_name is 'Claims' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The provider_name is 'Claims' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The date_of_service is 'Not specified' from the document. The "
+  },
+  {
+    "doc_id": "test-00009",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300009",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-TA21-486772",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Carrie Weaver",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-15",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-05-23",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Wilson Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6370.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "J06.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB80ADPM42042619706778",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1752.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "189.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "79.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1565.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "1119.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1666.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'POL-TA21-486772' from query; policy_number 'POL-TA21-486772' from query; claimant_name 'Carrie Weaver' from query; date_of_incident '05/15/2025' from query; date_of_service 'Medication administration' from query; provider_name 'Medication administration' from query; line_items from query; total_amount '6.370,00' from query; currency 'CHF' from query; diagnosis_or_damage_code 'NO-NORTH-NORTH' from query; vehicle_vin 'NO-NORTH-NORTH' from query; claim_type 'travel' from query; payout_iban 'NO-NORTH-NORTH' from query.\", \"confidence\": 0.0021, \"prefill_tps\": 195.3, \"decode_tps\": 150.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00010",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300010",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-CE84-840079",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "James Walsh",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-02-04",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4913.70",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "SCR-DOOR-L",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "NUSU05AALRKP30ZHC",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB18EJWP06490872282595",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "886.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "1150.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "476.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "804.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "1345.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "252.70"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-8872) and turn 3 (record_claim for claim CLM-8872). The user wants to record the claim for the same claim, so record_claim with the claim ID from the document.\", \"confidence\": 0.0123, \"prefill_tps\": 219.8, \"decode_tps\": 151.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00011",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300011",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-TW22-856550",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Shelly Alvarez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-01-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Michaelbury Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5851.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "25VCGRYL7XVJ14SEE",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Second occurrence at the same address.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "ADAS recalibration",
+            "amount": "1679.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "850.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1228.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "303.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "1791.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-ABC) and turn 3 (record_claim for claim CLM-887-BBC). Follow-up references the claim reference from turn 2 and the policy terms from turn 3; changes claim_id to CLM-887-BBC and policy_number to 'CLM-887-BBC' from turn 3.\", \"confidence\": 0.002, \"prefill_tps\": 203.9, \"decode_tps\": 153.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00012",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300012",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-IO52-108953",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Erin Anderson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-10-11",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-10-21",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Bridgetmouth Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2957.03",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB30TVUJ34201057341450",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "1737.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1019.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "201.03"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-FEED-001' from the document. Date_of_incident is the only tool that records claims. Date_of_service is the only relevant tool. No other details needed.\", \"confidence\": 0.0093, \"prefill_tps\": 197.7, \"decode_tps\": 147.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00013",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300013",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-TG92-626922",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Carl Porter",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Smith Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2232.34",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "FRYXMW5ETMVWGUZKF",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB50EBJF35969523582274",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wheel alignment",
+            "amount": "1399.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "722.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "111.34"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim reference 'CLM-A-Z0-9-Null-CLM-NORTH' from the document. Call record_claim with claim_id 'CLM-A-Z0-9-Null-CLM-NORTH' and policy_number 'CLM-A-Z0-9-Null-CLM-NORTH'. No other details provided.\", \"confidence\": 0.0039, \"prefill_tps\": 196.9, \"decode_tps\": 165.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00014",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300014",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-PN31-868749",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "William Robertson",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-18",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "965.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "HAIL-04",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB15ERQM72600311452080",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-C-001' from the document. Date_of_incident is the only tool that records claims. Date_of_service is the only tool that records claims. Provider name 'Claims' from the document. Location 'Monterey, CA' from the document. Date_of_service is the only tool that records claims. Provider name 'Claims' from the document. Location 'Monterey, CA' from the document. Date_of_service is the only tool that records claims. Provider name 'Claims' from the document. Location 'Monterey, CA' from the document.\", \"confidence\": 0.0044, \"prefill_tps\": 206.0, \"decode_tps\": 148.4, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00015",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300015",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-HC62-982373",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Richard Hill",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-12-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "New James Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6152.13",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB93TNBX36771675441098",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Radiator support bracket",
+            "amount": "1249.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1052.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "1405.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "1054.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "373.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "697.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "322.13"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FL-001' from the email. Document type 'medical' from 'medical claim'. Date_of_incident 'date' from 'date of the incident'. Date_of_service 'null' from 'no evidence'. Date_of_service 'provider_name' from 'null'. Date_of_service 'line_items' from 'no evidence'. Date_of_service 'pattern' from 'pattern'. Date_of_service 'travel' from 'travel'. Date_of_service 'travel' from 'travel'. Date_of_service 'travel' from 'travel'.\", \"confidence\": 0.0019, \"prefill_tps\": 203.9, \"decode_tps\": 150.4, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00016",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300016",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Ariel Beck",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-05-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-05-09",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Castro Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4274.58",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB88FSWX48105649610261",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Photos available on request.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physician consultation",
+            "amount": "1657.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "656.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "1706.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "255.58"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-TR) and turn 3 (record_claim for claim CLM-887-TR). The user wants the claim record recorded in the same document. The claim_id is the CLM-887-TR from the earlier record.\", \"confidence\": 0.028, \"prefill_tps\": 205.5, \"decode_tps\": 155.2, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00017",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300017",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "James Peters",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-11-06",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-11-09",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Vazquezmouth Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3963.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB16IFFM31178946319883",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1644.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1777.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "365.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "177.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-8872) and turn 3 (record_claim for claim CLM-8872). The user wants the claim record recorded in the same document. The claim_id is 'CLM-8872' from the earlier record.\", \"confidence\": 0.0236, \"prefill_tps\": 206.5, \"decode_tps\": 166.6, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00018",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300018",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-DF62-731863",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2875.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Diagnostic fee",
+            "amount": "1328.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "1547.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-2024' from the email. No other details given.\", \"confidence\": 0.0058, \"prefill_tps\": 194.4, \"decode_tps\": 146.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00019",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300019",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-IF53-776908",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Seth Ford",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-21",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-01-30",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Zimmermanshire Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB48QTMR94858733712777",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1485.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "492.00"
+          },
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1793.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "892.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1528.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "692.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "668.96"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim ID 'CLM-A-F-001' from the document. Claim ID 'CLM-A-F-001' from the document. Claim type 'medical' from 'medical insurance'. Date_of_incident 'date' from 'last year' (2025-03-15). Date_of_service 'null' from 'null'. Date_of_service 'provider_name' from 'claims team'. Date_of_service 'line_items' from 'claims team'. Date_of_service 'claim_type' from 'medical insurance'.\", \"confidence\": 0.0013, \"prefill_tps\": 199.1, \"decode_tps\": 150.5, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00020",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300020",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-LN51-809529",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Edward Russell",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-05-03",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5185.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB34ATOK65870672833630",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Towing and recovery",
+            "amount": "1581.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "106.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "1001.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1612.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "885.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-NORTH-001' from the email. Claim_id 'CLM-A-NORTH-001' from the email. Date_of_incident '2025-03-15' from 'Monday to Friday during normal business hours'. Date_of_service 'Hyundai' from 'Hyundai'. Date_of_service 'Netflix' from 'Netflix'. Date_of_service 'Tech' from 'Tech'. Date_of_service 'Med' from 'Med'. Date_of_service 'Denver' from 'Denver'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco' from 'Costco'. Date_of_service 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Costco' from 'Co"
+  },
+  {
+    "doc_id": "test-00021",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300021",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-HZ27-195109",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Cheyenne Herring",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-02-21",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-02-21",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Dawson Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1700.75",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "J06.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB48CUVX23847030117752",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1568.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "132.75"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-Z0-9-NORTH' from the document. Claim_id 'CLM-A-Z0-9-NORTH' from the document. Policy_number 'CLM-A-Z0-9-NORTH' from the document. Date_of_incident '2025-03-15' from the document. Date_of_service 'null' from the document. Provider_name 'Claims' from the document. Location 'Not-Null' from the document. Date_of_service 'null' from the document. Provider_name 'Claims' from the document.\", \"confidence\": 0.0034, \"prefill_tps\": 215.0, \"decode_tps\": 154.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00022",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300022",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-GF68-610214",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Krystal Bean",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "West Teresa Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "399.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB27TITV33471941657707",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-NOR-001' from the document. policy_number 'NOR-001' from the claim reference. claim_type 'medical' from 'medical insurance'. claim_id 'CLM-A-NOR-001' from the claim reference. date_of_service 'Null' from 'Null'. provider_name 'Null' from 'Null'. line_items not stated. date_of_service 'Null' from 'Null'. provider_name 'Null' from 'Null'. line_items not stated. date_of_service 'Null' from 'Null'.\", \"confidence\": 0.0019, \"prefill_tps\": 194.4, \"decode_tps\": 152.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00023",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300023",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Cynthia Hendrix",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-07-03",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "East Sherry Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4409.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "R0AHPUGMBZYZJ052B",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB13VPLN73876945861258",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1711.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1000.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "1698.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-FECT-001' from the document. Date_of_incident is the only tool that records claims. Date_of_service is required and the user says 'Document ID: CLM-A-FECT-001' which is the claim_id. No other details provided.\", \"confidence\": 0.0063, \"prefill_tps\": 200.5, \"decode_tps\": 149.5, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00024",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300024",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UR50-510772",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Fred Bryant",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-05",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-06",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Duran Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "H10.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB59DUEY37134260369584",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "658.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1083.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "237.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "115.44"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-8872) and turn 3 (record_claim for claim CLM-8872). The user wants the claim record recorded in the same document. The claim_id is 'CLM-8872' from the earlier record.\", \"confidence\": 0.0206, \"prefill_tps\": 219.7, \"decode_tps\": 150.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00025",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300025",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-XB60-527984",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jennifer Frank",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-01-20",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Moreno-Hernandez",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3328.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB45FPSR12514764986500",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Overtime surcharge",
+            "amount": "505.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1220.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "1603.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim ID 'CLM-A-NOR-001' from the document. Date is the date of the claim. Date_of_incident is the date of the claim. Date_of_service is the date of the claim. The user explicitly says 'Date of the claim' and 'Date of the claim'.\", \"confidence\": 0.0042, \"prefill_tps\": 196.0, \"decode_tps\": 151.4, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00026",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300026",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-LA43-600943",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Roger Ingram",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-06-16",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "East Jesus Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2938.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "H10.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB07QHGW22065900186970",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1240.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1698.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim reference 'CLM-A-Z0-9-NO' from the document. Call record_claim with claim_id 'CLM-A-Z0-9-NO' and policy_number 'CLM-A-Z0-9-NO'.\", \"confidence\": 0.0024, \"prefill_tps\": 199.7, \"decode_tps\": 157.0, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00027",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300027",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ZH97-567892",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Shannon Holt",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-03-19",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Ochoastad Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3935.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB12BSXU89311408971960",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Materials and consumables",
+            "amount": "25.00"
+          },
+          {
+            "description": "Replacement parts",
+            "amount": "391.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "666.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1167.00"
+          },
+          {
+            "description": "Labor (2.5 hrs)",
+            "amount": "1686.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-FR-2024' from the document. Date_of_incident is the only relevant tool. Date_of_service is the only relevant tool. No other details given.\", \"confidence\": 0.0054, \"prefill_tps\": 193.9, \"decode_tps\": 148.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00028",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300028",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-XU92-913684",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Benjamin Turner",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Johnson Ltd",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5242.32",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB74XUZQ47120240031775",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Materials and consumables",
+            "amount": "1780.00"
+          },
+          {
+            "description": "Subcontractor labor",
+            "amount": "337.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "490.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "233.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1204.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "748.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "450.32"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-NORTH) and turn 3 (record_claim for claim CLM-887-NORTH). Follow-up changes claim_id to CLM-887-NORTH, keeps policy_number and date_of_incident.\", \"confidence\": 0.015, \"prefill_tps\": 211.7, \"decode_tps\": 157.2, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00029",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300029",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-XG76-718709",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Kevin Hawkins",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-04-05",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-04-06",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6164.24",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "BMP-31A",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "VXSU1ZB28E85RKUEC",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB84VJQV37813008587739",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "1587.00"
+          },
+          {
+            "description": "ADAS recalibration",
+            "amount": "1679.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "1784.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "784.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "330.24"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FIL-2024' from the document. Document type 'medical' from 'medical insurance'. Date_of_incident 'date' from 'date of the incident'. Date_of_service 'null' from 'notify the sender'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'other' from 'other insurance'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'other' from 'other insurance'. Date_of_service 'medical' from 'medical insurance'. Date_of_service 'property' from 'medical insurance'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'other' from 'other insurance'. Date_of_service 'medical' from 'medical insurance'. Date_of_service 'property' from 'medical insurance'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'travel' from 'travel insurance'. Date_of_service 'other' from 'travel insurance'. Date_of_service 'other' from 'other' from 'other' from 'other' from 'other' from 'oth"
+  },
+  {
+    "doc_id": "test-00030",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300030",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-BM11-479868",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-15",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-08-15",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Williams Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5099.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M25.561",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB73HPHS54513206449198",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Medication administration",
+            "amount": "1485.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1086.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1652.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "876.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-FL-001' from the email. No other details given.\", \"confidence\": 0.0092, \"prefill_tps\": 197.5, \"decode_tps\": 149.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00031",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300031",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-QL61-223007",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Mason Taylor",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-02-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-02-13",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Delgado Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "270.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S61.401",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB46MTTT70314809375577",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "X-ray, 2 views",
+            "amount": "270.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FECT-001' from the email. Date_of_incident '2025-03-15' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email. Date_of_service 'Document' from the email.\", \"confidence\": 0.0027, \"prefill_tps\": 203.4, \"decode_tps\": 148.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00032",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300032",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jonathan Peck",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-03-27",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Vincent-Oconnor",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3185.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB73KIAK12448027165111",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Materials and consumables",
+            "amount": "1729.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "1456.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"User explicitly states claim_id 'CLM-ABC123' from the document request. They explicitly request claim_type 'medical' from 'medical insurance claim'. They explicitly request claim_type 'travel' from 'travel insurance claim'. They explicitly request claim_type 'other' from 'travel insurance claim'. They explicitly request claim_type 'other' from 'travel insurance claim'. They explicitly request claim_type 'other' from 'travel insurance claim'.\", \"confidence\": 0.003, \"prefill_tps\": 207.9, \"decode_tps\": 184.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00033",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300033",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-WS63-824189",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Francisco Arnold",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-03-16",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-03-31",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6228.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB16WDQE40580614521692",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "1792.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "1399.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "653.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "1556.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "828.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim ID 'CLM-A-FEC-001' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date "
+  },
+  {
+    "doc_id": "test-00034",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300034",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-YK11-810780",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Rhonda Palmer",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-01",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Apex Property Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3034.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB85ILTY12887364895526",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Second occurrence at the same address.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Replacement parts",
+            "amount": "410.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "879.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "1745.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query states claim_id 'CLM-A-NORTH-NORTH-NORTH' from the document. Policy number 'CLM-A-NORTH-NORTH-NORTH' from the document. Date_of_service 'Null' from 'Null' and 'Null'. Provider_name 'Herräge' from 'Herräge'. Location 'Null' from 'Null'. Calls record_claim.\", \"confidence\": 0.0023, \"prefill_tps\": 193.1, \"decode_tps\": 152.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00035",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300035",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EG56-605098",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-03-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-03-26",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Blairfurt General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "995.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "R51.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "797.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "198.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query asks to record a claim from the document. record_claim tool with claim_id from the document.\", \"confidence\": 0.0037, \"prefill_tps\": 190.5, \"decode_tps\": 146.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00036",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300036",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-ET60-769785",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Christine Rosario",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-09-29",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-10-05",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Parkerview Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1353.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1353.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'CLM-2023-300036' from query; policy_number 'POL-ET60-769785' from query; claimant_name 'Mr./Ms. Christine Rosario' from query; date_of_incident '29/09/2024' from query; date_of_service '05/10/2024' from query; provider_name 'Ms. Christine Rosario' from query; line_items omitted as not stated; currency 'EUR' from query; notes omitted as not stated.\", \"confidence\": 0.0279, \"prefill_tps\": 201.9, \"decode_tps\": 154.0, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00037",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300037",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-AG15-714090",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Savannah Fry",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-10-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "SCR-DOOR-L",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "CVN09FBST5P4PXRKT",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB35QITU12994777390033",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1397.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "374.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "611.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1589.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "747.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "129.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'CLM-AG15-714090' from query; policy_number 'SAVANNAH FRY' from query; claimant_name 'Precision Auto Repair' from query; date_of_incident 'January 15th' from query; date_of_service 'Michael' from query; provider_name 'Michael' from query; line_items 'Wheel alignment: USD 374.00' from query; total_amount '$374.00' from query; currency 'USD' from query; document_type 'travel' from query; payout_iban 'GB35QITU12994777390033' from query; notes 'Wheel alignment: USD 374.00' from query.\", \"confidence\": 0.0042, \"prefill_tps\": 190.5, \"decode_tps\": 137.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00038",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300038",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VH71-850602",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-09-03",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-09-10",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Cherylstad Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1377.36",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "AUWLEUVYJUMX2UVAX",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1288.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "89.36"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-NORTH-001' from the email. Date_of_incident is the only tool that records claims. Date_of_service is the only relevant tool.\", \"confidence\": 0.0088, \"prefill_tps\": 196.6, \"decode_tps\": 149.0, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00039",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300039",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-YS80-430352",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2024-10-06",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Precision Auto Repair",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "4123.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "3D21L21LKA55WL57F",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB74LCRG74047324414092",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1004.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "706.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "366.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1415.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "632.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-001' from the document. Call record_claim with claim_id 'CLM-A-F-001' and policy_number 'CLM-A-F-001'.\", \"confidence\": 0.0055, \"prefill_tps\": 195.5, \"decode_tps\": 152.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00040",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300040",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-VS89-186230",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Sherry Macias",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-05-22",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2025-05-31",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Chen Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2854.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-001' from the document. Call record_claim with claim_id 'CLM-A-F-001' and policy_number 'CLM-A-F-001'.\", \"confidence\": 0.0059, \"prefill_tps\": 195.2, \"decode_tps\": 158.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00041",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300041",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NG35-299254",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Chelsea Fields",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-01",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Jones, Brown and Perez",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2539.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB18HFQL46798460047713",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Inspection fee",
+            "amount": "1062.00"
+          },
+          {
+            "description": "Towing and recovery",
+            "amount": "179.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "1298.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states document ID 'CLM-A-F-001' from the document. Document ID 'CLM-A-F-001' from the document. Document type 'medical' from 'medical insurance'. Pattern 'Null' from 'Null'. No other details given.\", \"confidence\": 0.0019, \"prefill_tps\": 196.6, \"decode_tps\": 153.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00042",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300042",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-WD26-700881",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Roberto Lopez",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-10-26",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-01",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Smith Collision Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5021.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "WTR-INT-07",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "0XC475F74TULVF75W",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB75ZOSM38835840177419",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "ADAS recalibration",
+            "amount": "96.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "130.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "1736.00"
+          },
+          {
+            "description": "Radiator support bracket",
+            "amount": "1269.00"
+          },
+          {
+            "description": "Rear bumper cover",
+            "amount": "1790.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query asks to record a claim from the document. record_claim tool with claim_id from the document. policy_number from the document. claim_type from 'medical' (medical). date_of_incident from 'last year' (2025-03-17). date_of_service from 'next year' (2025-03-21). provider_name from 'Medicare' (Medicare). line_items from 'Please be in the form, no payout, no credit, no receipt'. total_amount from '$150.00'. currency from 'USD'.\", \"confidence\": 0.0009, \"prefill_tps\": 202.9, \"decode_tps\": 148.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00043",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300043",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UE20-232520",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Elizabeth Conley",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-02-16",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Myers Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5079.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB85HWSJ90260472329337",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "105.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "819.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "472.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1617.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "523.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1543.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FG-001' from the email. Date_of_incident '2025-03-15' from the email. Date_of_service 'Denver' from the email. Date_of_service 'Netflix' from the email. Date_of_service 'Netflix' from the email. Date_of_service 'Tech' from the email. Date_of_service 'Tech' from the email. Date_of_service 'Tech' from the email. Date_of_service 'Tech' from the email. Date_of_service 'Tech' from the email. Date_of_service 'Tech' from the email.\", \"confidence\": 0.0103, \"prefill_tps\": 205.3, \"decode_tps\": 151.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00044",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300044",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Gary Huffman",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-07",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Leahfort Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "65.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "C3U0KC7TL2P0ZZ4KR",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "65.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Extract claim_id 'CLM-A-FLO-001' from the email. Document is the document request. No other details given.\", \"confidence\": 0.0119, \"prefill_tps\": 205.1, \"decode_tps\": 164.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00045",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300045",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-CX90-977905",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Amy Marshall",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-06-30",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6167.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Photos available on request.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Subcontractor labor",
+            "amount": "948.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "861.00"
+          },
+          {
+            "description": "Materials and consumables",
+            "amount": "1693.00"
+          },
+          {
+            "description": "Inspection fee",
+            "amount": "1397.00"
+          },
+          {
+            "description": "Service call-out",
+            "amount": "1268.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-NORTH-NORTH-NORTH' from the document. No other details given.\", \"confidence\": 0.0021, \"prefill_tps\": 195.0, \"decode_tps\": 152.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00046",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300046",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-SQ67-383053",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Thomas Matthews",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-10-24",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "5171.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "H10.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1229.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1151.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "489.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "800.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1502.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'CLM-2025-300046' from query; policy_number 'POL-SQ67-383053' from query; claimant_name 'Thomas Matthews' from query; date_of_incident 'Oct 24 2024' from query; date_of_service 'POL-SQ67-383053' from query; provider_name 'H10.9' from query; line_items from query; total_amount '€5,171.00' from query; currency '€' from query; document_type 'medical' from query; payout_iban '€1,229.00' from query; notes 'MRI without contrast: €800.00' from query.\", \"confidence\": 0.0135, \"prefill_tps\": 196.0, \"decode_tps\": 145.2, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00047",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300047",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Larry Mills",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-12-23",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Mills Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1303.47",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB43WFNB03347127921527",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "428.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "283.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "513.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "79.47"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Recording from history: claim_id 'CLM-A-FECT-001' from 'Claim records are held in line with our regulatory retention schedule'. Date_of_incident: date_of_incident '2025-03-15' from 'April 15, 2025'. Date_of_service: provider_name 'Medicine' from 'Medicine provider'. Date_of_service: provider_name 'Tech' from 'Tech provider'. Date_of_service: provider_name 'Security' from 'Security provider'. Date_of_service: provider_name 'Security' from 'Security provider'. Date_of_service: provider_name 'Security' from 'Security provider'. Date_of_service: provider_name 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from 'Security' from"
+  },
+  {
+    "doc_id": "test-00048",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300048",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-FQ16-195583",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Tamara Beck",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-04-28",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Lake Taylor Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1112.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "D-214",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB56KMUG51584810537025",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query asks to record a claim from the document. record_claim tool with claim_id from the document.\", \"confidence\": 0.0039, \"prefill_tps\": 199.8, \"decode_tps\": 165.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00049",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300049",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-BG43-138897",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Paul Fitzpatrick",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-05-02",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Mills Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6141.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB58QGFU81090087264988",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Laboratory panel, CBC",
+            "amount": "1524.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "374.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1261.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "1449.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "1533.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"User explicitly asks to record a claim for a fraud prevention document. The document is 'Claim ID: CLM-FR-2024-887-001' from the document. The claim_id is 'CLM-FR-2024-887-001' from the document. The policy_number is 'NO-9' from the document. The claim_type is 'other' from 'fraud prevention'.\", \"confidence\": 0.0062, \"prefill_tps\": 193.8, \"decode_tps\": 159.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00050",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300050",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-DJ95-488276",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Donna Lawrence",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-12-30",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "St. Carter Medical Center",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6516.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB21LTLS35099571947751",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "1326.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1150.00"
+          },
+          {
+            "description": "Physician consultation",
+            "amount": "667.00"
+          },
+          {
+            "description": "Medication administration",
+            "amount": "1789.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1508.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "76.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-ABC) and turn 3 (record_claim for claim CLM-887-BB). The user wants to record the claim and then delete the claim. The claim_id is the original claim ID from the record.\", \"confidence\": 0.0295, \"prefill_tps\": 207.0, \"decode_tps\": 147.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00051",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300051",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-YD25-588705",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Alexander Butler",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-07-12",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-07-13",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Howe Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3538.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "CHF",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB18XMXF38058418159800",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Documents follow by courier.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "749.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "558.00"
+          },
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "831.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1400.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim ID 'CLM-A-FIN-001' from the document. Call record_claim with claim_id 'CLM-A-FIN-001' and policy_number 'CLM-A-FIN-001'.\", \"confidence\": 0.0189, \"prefill_tps\": 197.8, \"decode_tps\": 152.9, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00052",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300052",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-GP94-279093",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Jennifer Espinoza",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-08-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Wilcox Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3511.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S61.401",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB84RXCX58246223879621",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-001' from the document. Claim_id 'CLM-A-F-001' from the document. Date_of_incident '2025-03-15' from the date of the document. Date_of_service 'null' from the date of the document. Date_of_service 'null' from the date of the document. Date_of_service 'null' from the date of the document.\", \"confidence\": 0.0021, \"prefill_tps\": 200.8, \"decode_tps\": 149.7, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00053",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300053",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-EW85-157661",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Shelby Wiley",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-08-20",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "HomeShield Contractors",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "1178.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB35PZLX63214293742770",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Inspection fee",
+            "amount": "1178.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-TR) and turn 3 (record_claim for claim CLM-887-TR). The user wants the claim record recorded in the same order as the original claim record.\", \"confidence\": 0.013, \"prefill_tps\": 218.7, \"decode_tps\": 155.1, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00054",
+    "family": "invoice_formal",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300054",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-WY12-326210",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Anthony Brewer",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-12-28",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-12-30",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Moore Clinic",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "921.41",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "S83.511",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB36VUSV15010085802585",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "MRI without contrast",
+            "amount": "862.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "59.41"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Reaches back to turn 2 (record_claim for claim CLM-887-NORTH) and turn 3 (record_claim for claim CLM-887-NORTH). The user wants to record the claim for the same claim. The claim_id is the claim reference from the previous turn.\", \"confidence\": 0.0303, \"prefill_tps\": 202.2, \"decode_tps\": 156.3, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00055",
+    "family": "email_thread",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300055",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MK31-820964",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Benjamin Cole",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-01-11",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-01-17",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "South Adambury Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "J06.9",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB07JEYZ93016313236716",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Wound dressing and supplies",
+            "amount": "135.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "669.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "706.00"
+          },
+          {
+            "description": "X-ray, 2 views",
+            "amount": "1650.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "648.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'CLM-2026-300055' from query; policy_number 'POL-MK31-820964' from query; claimant_name 'BENJAMIN COLE' from query; date_of_incident '11.01.2026' from query; date_of_service 'South Adambury Urgent Care' from query; provider_name 'South Adambury Urgent Care' from query; line_items not stated; total_amount '£135.00' from query; currency 'NOK' from query; document_id 'GB07JEYZ93016313236716' from query; date_of_service 'Null' from query; provider_name 'South Adambury Urgent Care' from query; line_items not stated\", \"confidence\": 0.0405, \"prefill_tps\": 189.7, \"decode_tps\": 150.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00056",
+    "family": "ocr_scan",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-300056",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-NR83-182906",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Donald Blackburn",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-01-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3572.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "other",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB93KNVX05417449516948",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query states claim ID 'CLM-A-FECT-001' from the document. Date is today. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. Date is '2025-03-15' from the document. "
+  },
+  {
+    "doc_id": "test-00057",
+    "family": "auto_repair_estimate",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-300057",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-RY41-756465",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Renee Lewis",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2024-11-15",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Midwest Motor Works",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "6230.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "EUR",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "FIRE-ENG-01",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "SXTPBF31B7EWN06SV",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB24LWIX45240276688122",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": "Customer asked for a call back before 5 pm.",
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Tail lamp assembly",
+            "amount": "1405.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "443.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1325.00"
+          },
+          {
+            "description": "Tail lamp assembly",
+            "amount": "965.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "574.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "1518.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim_id 'CLM-A-F-2024-887' from the document. Date_of_incident is the only tool that records claims. Date_of_service is the only relevant tool. No other details needed.\", \"confidence\": 0.0079, \"prefill_tps\": 197.8, \"decode_tps\": 162.0, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00058",
+    "family": "medical_bill",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2025-300058",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Rodney Hahn",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-06-09",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-06-12",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Ericafurt Urgent Care",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2178.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M54.5",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB45MIMY54501711449200",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": null,
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"Query explicitly states claim reference 'CLM-NORTH-NORTH-NORTH-NORTH-NORTH' and policy number 'NORTH-NORTH-NORTH-NORTH-NORTH-NORTH' from the email. No other details provided.\", \"confidence\": 0.0024, \"prefill_tps\": 194.4, \"decode_tps\": 152.8, \"peak_ram_mb\": 151.9}"
+  },
+  {
+    "doc_id": "test-00059",
+    "family": "fax_memo",
+    "error": "no function_calls in response",
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2026-300059",
+        "pred": null
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-UX77-290841",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Caroline Galvan",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2026-04-09",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Paulmouth General Hospital",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "7341.37",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": null
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "M54.5",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "medical",
+        "pred": null
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB13ECJS54902690128513",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1117.00"
+          },
+          {
+            "description": "Emergency department visit, level 3",
+            "amount": "1671.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1114.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "1223.00"
+          },
+          {
+            "description": "Physical therapy session (45 min)",
+            "amount": "1467.00"
+          },
+          {
+            "description": "MRI without contrast",
+            "amount": "369.00"
+          },
+          {
+            "description": "Tax / VAT",
+            "amount": "380.37"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": false, \"error\": \"tool call truncated: token budget exhausted\", \"error_code\": \"truncated\", \"reason\": \"runtime_failure\", \"function_calls\": [], \"suppressed_calls\": [], \"reasoning\": \"record_claim: claim_id 'POL-UX77-290841' from query; policy_number 'POL-UX77-290841' from query; claimant_name 'Carlos Mendez' from query; date_of_incident 'Apr 09 2026' from query; date_of_service 'Paulmouth General Hospital' from query; provider_name 'Null' from query; line_items from query; total_amount '$3,697.00' from query; currency 'USD' from query; document_type 'other' from 'other claim type'.\", \"confidence\": 0.0048, \"prefill_tps\": 194.8, \"decode_tps\": 147.3, \"peak_ram_mb\": 151.9}"
+  }
+]

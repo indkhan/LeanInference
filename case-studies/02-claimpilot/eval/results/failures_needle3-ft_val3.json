@@ -1,0 +1,205 @@
+[
+  {
+    "doc_id": "val-00000",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2023-200000",
+        "pred": "CLM-2023-"
+      },
+      {
+        "field": "policy_number",
+        "truth": "POL-MJ60-894620",
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Brittany Schultz",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2023-11-08",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2023-11-18",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Smithville Auto Body & Paint",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "2764.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "GBP",
+        "pred": "GBP"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": "COL-REAR-02",
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": "AFF2J9LLE6YABP2TK",
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "auto",
+        "pred": "auto"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB53ACEP76093823178141",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Rear bumper cover",
+            "amount": "636.00"
+          },
+          {
+            "description": "Wheel alignment",
+            "amount": "1643.00"
+          },
+          {
+            "description": "Paint and refinish, rear panel",
+            "amount": "449.00"
+          },
+          {
+            "description": "Body labor (4.0 hrs)",
+            "amount": "36.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2023-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"GBP\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"auto\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 263.9, \"decode_tps\": 152.6, \"peak_ram_mb\": 160.7, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00001",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claim_id",
+        "truth": "CLM-2024-200001",
+        "pred": "CLM-2024-"
+      },
+      {
+        "field": "policy_number",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claimant_name",
+        "truth": "Ryan Dennis",
+        "pred": null
+      },
+      {
+        "field": "date_of_incident",
+        "truth": "2025-12-25",
+        "pred": null
+      },
+      {
+        "field": "date_of_service",
+        "truth": "2026-01-10",
+        "pred": null
+      },
+      {
+        "field": "provider_name",
+        "truth": "Jacksonburgh Restoration Services",
+        "pred": null
+      },
+      {
+        "field": "total_amount",
+        "truth": "3009.00",
+        "pred": null
+      },
+      {
+        "field": "currency",
+        "truth": "USD",
+        "pred": "USD"
+      },
+      {
+        "field": "diagnosis_or_damage_code",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "vehicle_vin",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "claim_type",
+        "truth": "property",
+        "pred": "property"
+      },
+      {
+        "field": "payout_iban",
+        "truth": "GB85PNGD87915023883316",
+        "pred": null
+      },
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": null
+      },
+      {
+        "field": "line_items",
+        "truth": [
+          {
+            "description": "Towing and recovery",
+            "amount": "501.00"
+          },
+          {
+            "description": "Disposal fee",
+            "amount": "141.00"
+          },
+          {
+            "description": "Diagnostic fee",
+            "amount": "1662.00"
+          },
+          {
+            "description": "Overtime surcharge",
+            "amount": "705.00"
+          }
+        ],
+        "pred": null
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2024-\", \"policy_number\": null, \"claimant_name\": null, \"date_of_incident\": null, \"date_of_service\": null, \"provider_name\": null, \"line_items\": null, \"total_amount\": null, \"currency\": \"USD\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": null, \"claim_type\": \"property\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 234.5, \"decode_tps\": 197.4, \"peak_ram_mb\": 160.8, \"validation\": {\"ungrounded\": [], \"negation\": true}}"
+  },
+  {
+    "doc_id": "val-00002",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": "South Toni General Hospital",
+        "pred": "Greenwood Health"
+      }
+    ],
+    "raw": "{\"type\": \"call\", \"success\": true, \"error\": null, \"error_code\": null, \"reason\": null, \"function_calls\": [{\"name\": \"record_claim\", \"arguments\": {\"claim_id\": \"CLM-2025-200002\", \"policy_number\": \"POL-IE13-106523\", \"claimant_name\": \"Robert Ford\", \"date_of_incident\": \"2025-12-29\", \"date_of_service\": \"2026-01-06\", \"provider_name\": \"Greenwood Health\", \"line_items\": [{\"description\": \"Physician consultation\", \"amount\": \"309.00\"}, {\"description\": \"Tax / VAT\", \"amount\": \"20.16\"}], \"total_amount\": \"329.16\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": \"K21.9\", \"vehicle_vin\": null, \"claim_type\": \"medical\", \"payout_iban\": null, \"notes\": null}}], \"suppressed_calls\": [], \"reasoning\": \"claim fields are read from wherever the document states them; fields the document does not state are null\", \"confidence\": null, \"prefill_tps\": 214.8, \"decode_tps\": 146.6, \"peak_ram_mb\": 160.8, \"validation\": {\"ungrounded\": [\"record_claim.provider_name\", \"record_claim.total_amount\"], \"negation\": false}}"
+  }
+]

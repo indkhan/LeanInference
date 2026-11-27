@@ -1,0 +1,278 @@
+loading Qwen/Qwen3.5-0.8B (4-bit)... adapter=None
+W1020 22:10:44.806000 39180 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+W1020 22:10:46.548000 39180 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_utils.py:5118: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:01<07:50,  1.48s/it]Loading weights:   2%|1         | 6/320 [00:01<01:13,  4.30it/s]Loading weights:   4%|4         | 13/320 [00:01<00:29, 10.51it/s]Loading weights:   8%|8         | 26/320 [00:01<00:11, 24.81it/s]Loading weights:  12%|#1        | 37/320 [00:02<00:07, 36.64it/s]Loading weights:  14%|#4        | 46/320 [00:02<00:06, 44.82it/s]Loading weights:  20%|##        | 65/320 [00:02<00:03, 71.88it/s]Loading weights:  25%|##5       | 80/320 [00:02<00:02, 85.19it/s]Loading weights:  30%|##9       | 95/320 [00:02<00:02, 97.52it/s]Loading weights:  37%|###6      | 117/320 [00:02<00:01, 126.38it/s]Loading weights:  42%|####1     | 133/320 [00:02<00:01, 126.64it/s]Loading weights:  46%|####6     | 148/320 [00:02<00:01, 126.13it/s]Loading weights:  51%|#####     | 162/320 [00:03<00:01, 114.62it/s]Loading weights:  55%|#####4    | 175/320 [00:03<00:01, 108.89it/s]Loading weights:  58%|#####8    | 187/320 [00:03<00:01, 110.98it/s]Loading weights:  64%|######3   | 204/320 [00:03<00:00, 123.90it/s]Loading weights:  70%|#######   | 224/320 [00:03<00:00, 139.49it/s]Loading weights:  75%|#######4  | 239/320 [00:03<00:00, 132.74it/s]Loading weights:  79%|#######9  | 254/320 [00:03<00:00, 133.28it/s]Loading weights:  84%|########4 | 269/320 [00:03<00:00, 137.64it/s]Loading weights:  88%|########8 | 283/320 [00:03<00:00, 133.52it/s]Loading weights:  93%|#########2| 297/320 [00:04<00:00, 132.41it/s]Loading weights:  97%|#########7| 311/320 [00:04<00:00, 118.33it/s]Loading weights: 100%|##########| 320/320 [00:04<00:00, 75.08it/s] 
+constrained decoding: lm-format-enforcer ON
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[1/400] test-00000 ok   25.2s in=1335 out=256
+[2/400] test-00001 ok   33.7s in=1526 out=343
+[3/400] test-00002 ok   28.9s in=1363 out=294
+[4/400] test-00003 ERR  59.8s in=1514 out=600  parse: unbalanced JSON in reply
+[5/400] test-00004 ok   48.8s in=1419 out=432
+[6/400] test-00005 ok   28.1s in=1342 out=264
+[7/400] test-00006 ok   32.6s in=1501 out=371
+[8/400] test-00007 ok   19.8s in=1485 out=261
+[9/400] test-00008 ok   42.2s in=1531 out=484
+[10/400] test-00009 ok   39.0s in=1111 out=416
+[11/400] test-00010 ok   64.6s in=1593 out=441
+[12/400] test-00011 ok   49.1s in=1563 out=378
+[13/400] test-00012 ok   37.8s in=1365 out=312
+[14/400] test-00013 ok   22.3s in=1408 out=297
+[15/400] test-00014 ok   32.7s in=1519 out=279
+[16/400] test-00015 ok   62.6s in=1539 out=437
+[17/400] test-00016 ok   60.6s in=1550 out=346
+[18/400] test-00017 ok   82.3s in=1570 out=329
+[19/400] test-00018 ok   42.4s in=1312 out=294
+[20/400] test-00019 ok   71.9s in=1462 out=424
+[21/400] test-00020 ERR  73.8s in=1424 out=600  parse: unbalanced JSON in reply
+[22/400] test-00021 ok   36.0s in=1453 out=284
+[23/400] test-00022 ok   35.5s in=1320 out=299
+[24/400] test-00023 ok   58.0s in=1445 out=340
+[25/400] test-00024 ok   39.8s in=1557 out=356
+[26/400] test-00025 ok   34.8s in=1399 out=301
+[27/400] test-00026 ok   62.6s in=1424 out=488
+[28/400] test-00027 ERR  70.1s in=1355 out=600  parse: unbalanced JSON in reply
+[29/400] test-00028 ok   51.2s in=1497 out=468
+[30/400] test-00029 ok   36.1s in=1460 out=354
+[31/400] test-00030 ok   42.1s in=1368 out=389
+[32/400] test-00031 ok   22.1s in=1521 out=250
+[33/400] test-00032 ok   31.0s in=1542 out=292
+[34/400] test-00033 ok   38.8s in=1475 out=423
+[35/400] test-00034 ok   29.8s in=1344 out=291
+[36/400] test-00035 ok   38.5s in=1284 out=276
+[37/400] test-00036 ok   26.3s in=992 out=237
+[38/400] test-00037 ok   36.3s in=1130 out=346
+[39/400] test-00038 ok   31.4s in=1381 out=305
+[40/400] test-00039 ok   64.0s in=1457 out=384
+[41/400] test-00040 ERR  66.1s in=1362 out=600  parse: unbalanced JSON in reply
+[42/400] test-00041 ok   27.6s in=1379 out=306
+[43/400] test-00042 ok   37.6s in=1478 out=454
+[44/400] test-00043 ok   36.0s in=1567 out=371
+[45/400] test-00044 ok   23.1s in=1447 out=230
+[46/400] test-00045 ok   33.9s in=1288 out=326
+[47/400] test-00046 ok   43.8s in=1040 out=404
+[48/400] test-00047 ok   43.6s in=1463 out=323
+[49/400] test-00048 ok   42.7s in=1444 out=298
+[50/400] test-00049 ok   42.8s in=1409 out=375
+[51/400] test-00050 ok   61.1s in=1585 out=451
+[52/400] test-00051 ok   57.8s in=1444 out=385
+[53/400] test-00052 ok   60.3s in=1444 out=290
+[54/400] test-00053 ok   40.8s in=1501 out=248
+[55/400] test-00054 ok   40.5s in=1447 out=317
+[56/400] test-00055 ok   42.8s in=1120 out=367
+[57/400] test-00056 ok   21.1s in=1350 out=275
+[58/400] test-00057 ok   32.5s in=1470 out=431
+[59/400] test-00058 ok   35.9s in=1303 out=450
+[60/400] test-00059 ok   39.5s in=1099 out=508
+[61/400] test-00060 ok   24.5s in=1378 out=319
+[62/400] test-00061 ok   17.6s in=1439 out=242
+[63/400] test-00062 ok   24.5s in=1383 out=320
+[64/400] test-00063 ok   21.1s in=1420 out=290
+[65/400] test-00064 ok   24.7s in=1337 out=334
+ERROR:root:Unknown LMFormatEnforcer Problem. Prefix: '<|im_start|>system
+You are a document extraction engine for ClaimPilot, an insurance claims processor. You receive one claim document as plain text (already OCR'd). Extract the claim fields and reply with a single JSON object and nothing else.
+
+Rules:
+- Output ONLY the JSON object. No markdown fences, no comments, no explanation, no extra text.
+- Every field in the schema below must be present in the output.
+- Use null when the document does not state a value. Never guess, infer beyond what is written, or invent values. null is the correct answer for a field the document does not state.
+- Dates: ISO format YYYY-MM-DD.
+- Amounts: decimal string with a dot and exactly two decimals, e.g. "1234.56". No currency symbols, no thousands separators.
+- currency: ISO 4217 code (USD, EUR, GBP, CHF) or null.
+- line_items: array of objects with keys "description" and "amount", or null when the document contains no itemized charges.
+- claim_type: exactly one of "auto", "medical", "property", "travel", "other".
+- vehicle_vin: only for auto claims; null for every other claim type.
+- payout_iban: the payout account number with spaces removed and letters uppercased; null if absent.
+- Copy names, descriptions and notes exactly as written in the document (keep the original language, no translation).
+- If the document shows a subtotal and a total, use the final total for total_amount.
+
+The output must match this JSON Schema:
+
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim_id", "policy_number", "claimant_name", "date_of_incident", "date_of_service", "provider_name", "line_items", "total_amount", "currency", "diagnosis_or_damage_code", "vehicle_vin", "claim_type", "payout_iban", "notes"],
+  "properties": {
+    "claim_id": {"type": "string", "pattern": "^CLM-[0-9]{4}-[0-9]{6}$"},
+    "policy_number": {"type": ["string", "null"], "pattern": "^POL-[A-Z]{2}[0-9]{2}-[0-9]{6}$"},
+    "claimant_name": {"type": ["string", "null"]},
+    "date_of_incident": {"type": ["string", "null"], "format": "date"},
+    "date_of_service": {"type": ["string", "null"], "format": "date"},
+    "provider_name": {"type": ["string", "null"]},
+    "line_items": {"oneOf": [{"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["description", "amount"], "properties": {"description": {"type": "string"}, "amount": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{2}$"}}}}, {"type": "null"}]},
+    "total_amount": {"type": ["string", "null"], "pattern": "^-?[0-9]+\\.[0-9]{2}$"},
+    "currency": {"type": ["string", "null"], "enum": ["USD", "EUR", "GBP", "CHF", null]},
+    "diagnosis_or_damage_code": {"type": ["string", "null"]},
+    "vehicle_vin": {"type": ["string", "null"]},
+    "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
+    "payout_iban": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}<|im_end|>
+<|im_start|>user
+FAX TRANSMISSION
+--------------------------------
+TO: CLAIMS DEPARTMENT
+RE: PROPERTY CLAIM CLM-2024-300065
+AMOUNTS  IN  EUR
+--------------------------------
+Claimant: April Austin
+Ref policy POL-FM38-807734
+Loss dt 16.10.2024
+From Patelburgh Restoration Services
+Inspection fee = 1.219,00 €
+Labor (2.5 hrs) = 1.123,00 €
+Labor (2.5 hrs) = 1.459,00 €
+TOTAL 3.801,00 €
+IBAN GB31 MVNH 2128 6045 2568 56
+CONFIDENTIAL - FOR CLAIMS USE ONLY
+
+
+Regulatory information
+This communication is issued by the handling office named above, which is authorised and regulated for the conduct of insurance business. Calls to our teams may be recorded for quality assurance and training purposes. Nothing in this document constitutes legal advice. 
+
+Data protection notice
+We process the information in this document for the  purpose of assessing and administering your claim, in line with applicable data protection law. Data is retained only as long as necessary for the purpose it was collected for, after which it is deleted or anonymised. You may request a copy of the data we hold about you at any time by contacting our data protection office. 
+
+Office hours and accessibility
+Our offices are open Monday to Friday during normal business hours. Assistance is available  for customers who need documents in alternative formats or who require additional support when submitting a claim. Please ask when you contact us. 
+
+Fraud prevention
+We take fraud seriously. Information provided in support of a claim may be checked against industry databases and shared with law enforcement where required. Submitting false or misleading information is a criminal offence and may result in the claim being declined and the policy being cancelled. 
+
+Retention schedule
+Claim records are held in line with our regulatory retention schedule. After the retention period ends, records are destroyed in a controlled manner. Aggregate statistics may be retained for reporting and actuarial purposes; these do not identify individuals. 
+
+Document handling note
+The document you submitted was captured electronically and processed by an automated intake pipeline. Scanned pages are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time. 
+
+Payment processing
+Approved settlements are issued to the account of record. Payment processing times can vary depending on the destination bank and the currency of payment. Where payment details on file are no longer correct, contact the claims team before the settlement is issued. 
+
+This  document may contain confidential health or financial information. It is intended solely for the named recipient. If you received it in error, notify the sender and delete all copies. Processing of this claim is subject to the policy terms and applicable data protection regulations.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+{
+  "claim_id": "CLM-2024-300065",
+  "policy_number": "POL-FM38-807734",
+  "claimant_name": "April Austin",
+  "date_of_incident": "2024-10-16",
+  "date_of_service": "2024-10-16",
+  "provider_name": "Patelburgh Restoration Services",
+  "line_items": [
+    {
+      "description": "Inspection fee",
+      "amount": "1.21900"
+    },
+    {
+      "description": "Labor (2.5 hrs) - 1.12300",
+      "amount": "1.12300"
+    },
+    {
+      "description": "Labor (2.5 hrs) - 1.45900",
+      "amount": "1.45900"
+    }
+  ],
+  "total_amount": "3.80100",
+  "currency": "EUR",
+  "diagnosis_or_damage_code": null,
+  "vehicle_vin": null,
+  "claim_type": "property",
+  "payout_iban": "GB31MVNH21286045256856",
+  "notes": "CONFIDENTIAL - FOR CLAIMS USE'
+Terminating the parser. Please open an issue at 
+https://github.com/noamgat/lm-format-enforcer/issues with the prefix and CharacterLevelParser parameters
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 107, in _compute_allowed_tokens
+    self._collect_allowed_tokens(state.parser, self.tokenizer_tree.root, allowed_tokens, shortcut_key)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenenforcer.py", line 156, in _collect_allowed_tokens
+    allowed_tokens.extend(cache.lookup_allowed_tokens(min_remaining, max_allowed_len).allowed_tokens)
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\lmformatenforcer\tokenlist.py", line 39, in extend
+    self.allowed_tokens.extend(token_ids)
+MemoryError
+[66/400] test-00065 ERR  26.2s in=1473 out=328  parse: unbalanced JSON in reply
+Traceback (most recent call last):
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 222, in <module>
+    print(f"peak VRAM: {torch.cuda.max_memory_allocated() / 1e9:.2f} GB", flush=True)
+^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\extract_local.py", line 163, in main
+    )
+     
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 2989, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 3189, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\generation\utils.py", line 4300, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 1708, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\generic.py", line 1081, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\utils\output_capturing.py", line 287, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 1278, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\modeling_layers.py", line 111, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 875, in forward
+    hidden_states = self.linear_attn(
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\integrations\accelerate.py", line 1010, in wrapped
+    output = forward_func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 576, in forward
+    mixed_qkv = causal_conv1d_fn(
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\integrations\hub_kernels.py", line 1051, in wrapped
+    return implementation(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\.venv\Lib\site-packages\transformers\models\qwen3_5\modeling_qwen3_5.py", line 266, in causal_conv1d_fn
+    out = F.conv1d(
+          ^^^^^^^^^
+RuntimeError: bad allocation

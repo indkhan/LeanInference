@@ -1,0 +1,41 @@
+[
+  {
+    "doc_id": "train-00003",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\": \"CLM-2026-100003\", \"policy_number\": \"POL-IS90-440583\", \"claimant_name\": \"James Martin\", \"date_of_incident\": \"2024-11-08\", \"date_of_service\": null, \"provider_name\": \"Precision Auto Repair\", \"line_items\": [{\"description\": \"Paint and refinish, rear panel\", \"amount\": \"911.00\"}, {\"description\": \"ADAS recalibration\", \"amount\": \"137.00\"}], \"total_amount\": \"1048.00\", \"currency\": \"EUR\", \"diagnosis_or_damage_code\": null, \"vehicle_vin\": \"8B8BE6ZUBRX1UH82G\", \"claim_type\": \"auto\", \"payout_iban\": \"GB91VJXN06559408069494\", \"notes\": \"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00005",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS  USE ONLY"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2024-100005\",\n  \"policy_number\": \"POL-KY40-115688\",\n  \"claimant_name\": \"LISA DUNLAP\",\n  \"date_of_incident\": \"2024-01-21\",\n  \"date_of_service\": \"2024-01-30\",\n  \"provider_name\": \"St. Burch Medical Center\",\n  \"line_items\": null,\n  \"total_amount\": \"391.00\",\n  \"currency\": null,\n  \"diagnosis_or_damage_code\": \"S61.401\",\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB87QQRK07183688827151\",\n  \"notes\": \"CONFIDENTIAL - FOR CLAIMS  USE ONLY\"\n}"
+  },
+  {
+    "doc_id": "train-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "AMERISAFE CLAIM SERVICES"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-100006\",\"policy_number\":null,\"claimant_name\":\"Eric Cole\",\"date_of_incident\":\"2025-02-16\",\"date_of_service\":\"2025-02-22\",\"provider_name\":\"AMERISAFE CLAIM SERVICES\",\"line_items\":[{\"description\":\"Physician consultation\",\"amount\":\"434.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"962.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"151.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"332.00\"},{\"description\":\"Laboratory panel, CBC\",\"amount\":\"1651.00\"}],\"total_amount\":\"3530.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB28ZSFB97977233553405\",\"notes\":null}"
+  }
+]

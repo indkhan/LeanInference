@@ -1,0 +1,82 @@
+[
+  {
+    "name": "record_claim",
+    "description": "Record the claim fields stated in the document. Use null for any field the document does not state; never invent values.",
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "policy_number",
+        "claimant_name",
+        "date_of_incident",
+        "date_of_service",
+        "provider_name",
+        "line_items",
+        "total_amount",
+        "currency",
+        "diagnosis_or_damage_code",
+        "vehicle_vin",
+        "claim_type",
+        "payout_iban",
+        "notes"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^CLM-[0-9]{4}-[0-9]{6}$",
+          "description": "Claim reference exactly as printed."
+        },
+        "policy_number": {
+          "type": ["string", "null"],
+          "pattern": "^POL-[A-Z]{2}[0-9]{2}-[0-9]{6}$"
+        },
+        "claimant_name": {
+          "type": ["string", "null"],
+          "description": "Person name exactly as stated."
+        },
+        "date_of_incident": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Date of loss or incident, YYYY-MM-DD."
+        },
+        "date_of_service": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Treatment or service date, YYYY-MM-DD."
+        },
+        "provider_name": {"type": ["string", "null"]},
+        "line_items": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["description", "amount"],
+            "properties": {
+              "description": {"type": "string"},
+              "amount": {"type": "string", "pattern": "^-?[0-9]+\\.[0-9]{2}$"}
+            }
+          }
+        },
+        "total_amount": {
+          "type": ["string", "null"],
+          "pattern": "^-?[0-9]+\\.[0-9]{2}$",
+          "description": "Total, decimal string with two decimals, no symbols."
+        },
+        "currency": {"type": ["string", "null"], "enum": ["USD", "EUR", "GBP", "CHF", null]},
+        "diagnosis_or_damage_code": {"type": ["string", "null"]},
+        "vehicle_vin": {
+          "type": ["string", "null"],
+          "pattern": "^[A-HJ-NPR-Z0-9]{17}$",
+          "description": "Auto claims only; null for every other claim type."
+        },
+        "claim_type": {"type": "string", "enum": ["auto", "medical", "property", "travel", "other"]},
+        "payout_iban": {
+          "type": ["string", "null"],
+          "description": "Payout account, no spaces, uppercase."
+        },
+        "notes": {"type": ["string", "null"]}
+      }
+    }
+  }
+]

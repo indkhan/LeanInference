@@ -1,0 +1,16 @@
+{
+  "model": "local__Qwen3.5-0.8B__qwen3.5-0.8b-lora",
+  "tag": "latency-b1",
+  "transport": "local_transformers",
+  "split": "test",
+  "docs": 50,
+  "ok": 50,
+  "ok_rate": 1.0,
+  "wall_s": 0.4,
+  "latency_p50": 18.593,
+  "latency_p95": 23.807,
+  "errors": [],
+  "results_file": "eval\\results\\results_local__Qwen3.5-0.8B__qwen3.5-0.8b-lora_latency-b1.jsonl",
+  "grammar": "xgrammar",
+  "adapter": "train/artifacts/qwen3.5-0.8b-lora"
+}

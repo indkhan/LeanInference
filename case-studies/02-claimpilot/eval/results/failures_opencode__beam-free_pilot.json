@@ -1,0 +1,28 @@
+[
+  {
+    "doc_id": "train-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "provider_name",
+        "truth": null,
+        "pred": "AMERISAFE CLAIM SERVICES"
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2025-100006\",\n  \"policy_number\": null,\n  \"claimant_name\": \"Eric Cole\",\n  \"date_of_incident\": \"2025-02-16\",\n  \"date_of_service\": \"2025-02-22\",\n  \"provider_name\": \"AMERISAFE CLAIM SERVICES\",\n  \"line_items\": [\n    {\"description\": \"Physician consultation\", \"amount\": \"434.00\"},\n    {\"description\": \"X-ray, 2 views\", \"amount\": \"962.00\"},\n    {\"description\": \"Wound dressing and supplies\", \"amount\": \"151.00\"},\n    {\"description\": \"Emergency department visit, level 3\", \"amount\": \"332.00\"},\n    {\"description\": \"Laboratory panel, CBC\", \"amount\": \"1651.00\"}\n  ],\n  \"total_amount\": \"3530.00\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": null,\n  \"claim_type\": \"medical\",\n  \"payout_iban\": \"GB28ZSFB97977233553405\",\n  \"notes\": null\n}"
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "Maximum steps for this agent have been reached. No further tool calls can be made.\n\nSummary of what has been accomplished:\n- Reviewed the provided claim document (VEHICLE REPAIR ESTIMATE from Ray Collision Center).\n- Identified all fields required by the JSON schema:\n  - claim_id: CLM-2024-100009\n  - policy_number: POL-SB14-793943\n  - claimant_name: Joel Gibson\n  - date_of_incident: 2024-06-25 (from \"Loss date: 25.06.2024\")\n  - date_of_service: null (not stated)\n  - provider_name: Ray Collision Center\n  - line_items: array of 5 items\n  - total_amount: 3935.00\n  - currency: GBP\n  - diagnosis_or_damage_code: BMP-31A\n  - vehicle_vin: PDV5ZLHYWSYB2L0RP\n  - claim_type: auto\n  - payout_iban: GB48IFHU29386090690404 (spaces removed, uppercased)\n  - notes: null (no notes field stated)\n\nRemaining tasks not completed:\n- The JSON object itself was not emitted in the prior response due to the step limit being hit before final output.\n\nRecommendation:\n- Re-run the extraction request; the document is fully parsed and the JSON can be produced directly without additional tool calls.{\n  \"claim_id\": \"CLM-2024-100009\",\n  \"policy_number\": \"POL-SB14-793943\",\n  \"claimant_name\": \"Joel Gibson\",\n  \"date_of_"
+  }
+]

@@ -1,0 +1,17 @@
+# Python
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+
+# Model artifacts (big binaries)
+*.gguf
+*.safetensors
+*.cact
+case-studies/*/train/artifacts/
+case-studies/*/models/
+
+# Eval caches (raw results in eval/results/ are committed)
+case-studies/*/eval/cache/
+case-studies/*/.hf-cache/
+case-studies/*/.venv-linux/

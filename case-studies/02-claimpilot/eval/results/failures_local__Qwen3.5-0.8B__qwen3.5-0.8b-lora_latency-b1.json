@@ -1,0 +1,80 @@
+[
+  {
+    "doc_id": "test-00022",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Krystal Bean",
+        "pred": "Kristal Bean"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300022\",\"policy_number\":\"POL-GF68-610214\",\"claimant_name\":\"Kristal Bean\",\"date_of_incident\":null,\"date_of_service\":null,\"provider_name\":\"West Teresa Restoration Services\",\"line_items\":null,\"total_amount\":\"399.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"WTR-INT-07\",\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB27TITV33471941657707\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00029",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2024-04-05",
+        "pred": "2024-05-04"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-300029\",\"policy_number\":\"POL-XG76-718709\",\"claimant_name\":\"Kevin Hawkins\",\"date_of_incident\":\"2024-05-04\",\"date_of_service\":\"2024-04-06\",\"provider_name\":\"Midwest Motor Works\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"1587.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"1679.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"1784.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"784.00\"},{\"description\":\"Tax / VAT\",\"amount\":\"330.24\"}],\"total_amount\":\"6164.24\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":\"BMP-31A\",\"vehicle_vin\":\"VXSU1ZB28E85RKUEC\",\"claim_type\":\"auto\",\"payout_iban\":\"GB84VJQV37813008587739\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00032",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Jonathan Peck",
+        "pred": "Jonathan Pack"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300032\",\"policy_number\":null,\"claimant_name\":\"Jonathan Pack\",\"date_of_incident\":\"2026-03-27\",\"date_of_service\":null,\"provider_name\":\"Vincent-Oconnor\",\"line_items\":[{\"description\":\"Materials and consumables\",\"amount\":\"1729.00\"},{\"description\":\"Towing and recovery\",\"amount\":\"1456.00\"}],\"total_amount\":\"3185.00\",\"currency\":\"EUR\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"other\",\"payout_iban\":\"GB73KIAK12448027165111\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00042",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Roberto Lopez",
+        "pred": "Robert Lopez"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-300042\",\"policy_number\":\"POL-WD26-700881\",\"claimant_name\":\"Robert Lopez\",\"date_of_incident\":\"2023-10-26\",\"date_of_service\":\"2023-11-01\",\"provider_name\":\"Smith Collision Center\",\"line_items\":[{\"description\":\"ADAS recalibration\",\"amount\":\"96.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"130.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1736.00\"},{\"description\":\"Radiator support bracket\",\"amount\":\"1269.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"1790.00\"}],\"total_amount\":\"5021.00\",\"currency\":null,\"diagnosis_or_damage_code\":\"WTR-INT-07\",\"vehicle_vin\":\"0XC475F74TULVF75W\",\"claim_type\":\"auto\",\"payout_iban\":\"GB75ZOSM38835840177419\",\"notes\":null}"
+  },
+  {
+    "doc_id": "test-00044",
+    "family": "ocr_scan",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2026-08-07",
+        "pred": "2026-07-08"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300044\",\"policy_number\":null,\"claimant_name\":\"Gary Huffman\",\"date_of_incident\":\"2026-07-08\",\"date_of_service\":null,\"provider_name\":\"Leahfort Auto Body & Paint\",\"line_items\":[{\"description\":\"Rear bumper cover\",\"amount\":\"65.00\"}],\"total_amount\":\"65.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":\"C3U0KC7TL2P0ZZ4KR\",\"claim_type\":\"auto\",\"payout_iban\":null,\"notes\":\"Documents follow by courier.\"}"
+  },
+  {
+    "doc_id": "test-00048",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Tamara Beck",
+        "pred": "Tamarae Beck"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2023-300048\",\"policy_number\":\"POL-FQ16-195583\",\"claimant_name\":\"Tamarae Beck\",\"date_of_incident\":\"2024-04-28\",\"date_of_service\":null,\"provider_name\":\"Lake Taylor Restoration Services\",\"line_items\":null,\"total_amount\":\"1112.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"D-214\",\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB56KMUG51584810537025\",\"notes\":null}"
+  }
+]

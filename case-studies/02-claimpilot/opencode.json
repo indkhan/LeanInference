@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "extractor": {
+      "description": "ClaimPilot document-to-JSON extraction. Tools disabled, single step: behaves like a plain model API call.",
+      "mode": "primary",
+      "steps": 1,
+      "system": "{file:data/extract_system.md}"
+    }
+  }
+}

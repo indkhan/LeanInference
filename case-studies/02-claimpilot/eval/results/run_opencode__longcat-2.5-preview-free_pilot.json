@@ -1,0 +1,15 @@
+{
+  "model": "opencode/longcat-2.5-preview-free",
+  "tag": "pilot",
+  "transport": "hosted_free",
+  "split": "train",
+  "docs": 12,
+  "ok": 12,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 62.0,
+  "latency_p50": 14.689,
+  "latency_p95": 27.846,
+  "errors": [],
+  "results_file": "eval\\results\\results_opencode__longcat-2.5-preview-free_pilot.jsonl"
+}

@@ -1,0 +1,170 @@
+C:\Users\mgsuk\.t3\worktrees\LeanInference\t3-4e600564\case-studies\02-claimpilot\eval\needle_extract.py:115: UserWarning: these weights carry no confidence head trained for them, so this agent reports confidence as None; platform fine-tunes keep the head
+  agent = Needle(tools=tools, system=system, weights=args.weights, stateless=True,
+{
+  "model": "needle3-ft",
+  "tag": "val",
+  "transport": "local_needle",
+  "run_file": "eval\\results\\results_needle3-ft_val.jsonl",
+  "split": "val",
+  "docs": 100,
+  "parsed_ok": 96,
+  "valid_schema_rate": 0.08,
+  "doc_exact_rate": 0.0,
+  "micro_precision": 0.1959,
+  "micro_recall": 0.0646,
+  "micro_f1": 0.0972,
+  "macro_f1": 0.0994,
+  "item_micro_precision": 0.7778,
+  "item_micro_recall": 0.0486,
+  "null_discipline": 0.978,
+  "total_amount_accuracy": 0.0864,
+  "latency_p50": 3.993,
+  "latency_p95": 4.74,
+  "tokens_in_mean": 586.4,
+  "tokens_out_mean": 225.1,
+  "usage_tokens_in_mean": null,
+  "usage_tokens_out_mean": null,
+  "cost_usd_mean": null,
+  "cost_usd_total": 0,
+  "errors": 4
+}
+
+per-field F1:
+  claim_id                   f1=0.082  acc=0.043  tp=8 fp=88 fn=92 tn=0
+  policy_number              f1=0.174  acc=0.095  tp=8 fp=0 fn=76 tn=0
+  claimant_name              f1=0.122  acc=0.075  tp=6 fp=1 fn=85 tn=1
+  date_of_incident           f1=0.125  acc=0.077  tp=6 fp=1 fn=83 tn=1
+  date_of_service            f1=0.245  acc=0.178  tp=6 fp=0 fn=37 tn=2
+  provider_name              f1=0.020  acc=0.010  tp=1 fp=2 fn=95 tn=0
+  total_amount               f1=0.140  acc=0.086  tp=6 fp=1 fn=73 tn=1
+  currency                   f1=0.085  acc=0.044  tp=8 fp=88 fn=84 tn=0
+  diagnosis_or_damage_code   f1=0.082  acc=0.100  tp=2 fp=0 fn=45 tn=3
+  vehicle_vin                f1=0.083  acc=0.241  tp=1 fp=0 fn=22 tn=6
+  claim_type                 f1=0.082  acc=0.043  tp=8 fp=88 fn=92 tn=0
+  payout_iban                f1=0.088  acc=0.057  tp=4 fp=2 fn=81 tn=1
+  notes                      f1=0.000  acc=0.258  tp=0 fp=0 fn=23 tn=8
+  line_items                 f1=0.065  acc=0.044  tp=3 fp=4 fn=82 tn=1
+
+wrote eval\results\summary_needle3-ft_val.json
+label=needle3-ft weights=train/needle_out/tuned.cact split=val docs=100 tag=val
+agent ready in 2.24s
+[1/100] val-00000 ok    3.42s
+[2/100] val-00001 ok    3.83s
+[3/100] val-00002 ok    2.27s
+[4/100] val-00003 ok    4.29s
+[5/100] val-00004 ok    3.89s
+[6/100] val-00005 ok    3.37s
+[7/100] val-00006 ok    3.56s
+[8/100] val-00007 ok    4.02s
+[9/100] val-00008 ok    3.64s
+[10/100] val-00009 ok    3.60s
+[11/100] val-00010 ok    3.77s
+[12/100] val-00011 ok    3.70s
+[13/100] val-00012 ok    3.47s
+[14/100] val-00013 ok    3.59s
+[15/100] val-00014 ok    2.77s
+[16/100] val-00015 ok    3.31s
+[17/100] val-00016 ok    3.95s
+[18/100] val-00017 ok    3.75s
+[19/100] val-00018 ok    4.49s
+[20/100] val-00019 ok    4.16s
+[21/100] val-00020 ok    3.82s
+[22/100] val-00021 ok    3.51s
+[23/100] val-00022 ok    3.28s
+[24/100] val-00023 ok    4.19s
+[25/100] val-00024 ok    3.62s
+[26/100] val-00025 ok    4.21s
+[27/100] val-00026 ok    2.39s
+[28/100] val-00027 ok    3.80s
+[29/100] val-00028 ok    3.54s
+[30/100] val-00029 ok    3.97s
+[31/100] val-00030 ok    3.56s
+[32/100] val-00031 ok    4.29s
+[33/100] val-00032 ok    4.29s
+[34/100] val-00033 ok    2.40s
+[35/100] val-00034 ok    4.23s
+[36/100] val-00035 ok    2.49s
+[37/100] val-00036 ok    4.58s
+[38/100] val-00037 ok    4.01s
+[39/100] val-00038 ok    4.24s
+[40/100] val-00039 ok    3.48s
+[41/100] val-00040 ERR   5.70s  no function_calls in response
+[42/100] val-00041 ok    3.32s
+[43/100] val-00042 ok    3.97s
+[44/100] val-00043 ok    3.74s
+[45/100] val-00044 ok    4.38s
+[46/100] val-00045 ok    2.00s
+[47/100] val-00046 ok    2.46s
+[48/100] val-00047 ok    4.43s
+[49/100] val-00048 ok    4.26s
+[50/100] val-00049 ok    4.08s
+[51/100] val-00050 ok    3.65s
+[52/100] val-00051 ok    4.12s
+[53/100] val-00052 ok    3.31s
+[54/100] val-00053 ok    3.83s
+[55/100] val-00054 ok    4.53s
+[56/100] val-00055 ok    4.30s
+[57/100] val-00056 ok    4.48s
+[58/100] val-00057 ok    3.89s
+[59/100] val-00058 ok    2.00s
+[60/100] val-00059 ok    3.66s
+[61/100] val-00060 ok    3.78s
+[62/100] val-00061 ok    4.26s
+[63/100] val-00062 ok    3.95s
+[64/100] val-00063 ok    3.84s
+[65/100] val-00064 ERR   5.58s  no function_calls in response
+[66/100] val-00065 ok    4.50s
+[67/100] val-00066 ok    4.64s
+[68/100] val-00067 ok    3.99s
+[69/100] val-00068 ok    4.19s
+[70/100] val-00069 ok    4.45s
+[71/100] val-00070 ok    3.63s
+[72/100] val-00071 ok    4.30s
+[73/100] val-00072 ok    4.33s
+[74/100] val-00073 ok    4.57s
+[75/100] val-00074 ok    4.51s
+[76/100] val-00075 ok    3.97s
+[77/100] val-00076 ok    2.97s
+[78/100] val-00077 ok    4.61s
+[79/100] val-00078 ERR   6.16s  no function_calls in response
+[80/100] val-00079 ok    4.74s
+[81/100] val-00080 ok    2.66s
+[82/100] val-00081 ok    4.49s
+[83/100] val-00082 ok    4.06s
+[84/100] val-00083 ERR   7.32s  no function_calls in response
+[85/100] val-00084 ok    4.54s
+[86/100] val-00085 ok    4.47s
+[87/100] val-00086 ok    4.15s
+[88/100] val-00087 ok    4.03s
+[89/100] val-00088 ok    4.10s
+[90/100] val-00089 ok    4.17s
+[91/100] val-00090 ok    4.28s
+[92/100] val-00091 ok    4.51s
+[93/100] val-00092 ok    4.69s
+[94/100] val-00093 ok    4.20s
+[95/100] val-00094 ok    3.79s
+[96/100] val-00095 ok    4.04s
+[97/100] val-00096 ok    3.56s
+[98/100] val-00097 ok    3.50s
+[99/100] val-00098 ok    4.16s
+[100/100] val-00099 ok    3.65s
+{
+  "model": "needle3-ft",
+  "tag": "val",
+  "transport": "local_needle",
+  "split": "val",
+  "docs": 100,
+  "ok": 96,
+  "ok_rate": 0.96,
+  "cache_hits": 0,
+  "wall_s": 394.5,
+  "latency_p50": 3.993,
+  "latency_p95": 4.691,
+  "errors": [
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response",
+    "no function_calls in response"
+  ]
+}
+wrote eval\results\results_needle3-ft_val.jsonl

@@ -1,0 +1,15 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "tag": "probe",
+  "transport": "openrouter_schema",
+  "split": "train",
+  "docs": 1,
+  "ok": 1,
+  "ok_rate": 1.0,
+  "cache_hits": 0,
+  "wall_s": 5.2,
+  "latency_p50": 5.125,
+  "latency_p95": 5.125,
+  "errors": [],
+  "results_file": "eval\\results\\results_anthropic__claude-haiku-5.5_probe.jsonl"
+}

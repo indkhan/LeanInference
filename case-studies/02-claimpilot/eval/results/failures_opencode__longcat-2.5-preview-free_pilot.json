@@ -1,0 +1,67 @@
+[
+  {
+    "doc_id": "train-00006",
+    "family": "invoice_formal",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Eric Cole",
+        "pred": "Mr./Ms. Eric Cole"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-100006\",\"policy_number\":null,\"claimant_name\":\"Mr./Ms. Eric Cole\",\"date_of_incident\":\"2025-02-16\",\"date_of_service\":\"2025-02-22\",\"provider_name\":null,\"line_items\":[{\"description\":\"Physician consultation\",\"amount\":\"434.00\"},{\"description\":\"X-ray, 2 views\",\"amount\":\"962.00\"},{\"description\":\"Wound dressing and supplies\",\"amount\":\"151.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"332.00\"},{\"description\":\"Laboratory panel, CBC\",\"amount\":\"1651.00\"}],\"total_amount\":\"3530.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":null,\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB28ZSFB97977233553405\",\"notes\":null}"
+  },
+  {
+    "doc_id": "train-00007",
+    "family": "email_thread",
+    "error": null,
+    "diffs": [
+      {
+        "field": "date_of_incident",
+        "truth": "2025-08-12",
+        "pred": "2025-12-08"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2026-100007\",\"policy_number\":\"POL-GF48-651425\",\"claimant_name\":\"Scott Smith\",\"date_of_incident\":\"2025-12-08\",\"date_of_service\":null,\"provider_name\":\"HomeShield Contractors\",\"line_items\":[{\"description\":\"Labor (2.5 hrs)\",\"amount\":\"962.00\"},{\"description\":\"Disposal fee\",\"amount\":\"582.00\"},{\"description\":\"Service call-out\",\"amount\":\"97.00\"},{\"description\":\"Diagnostic fee\",\"amount\":\"899.00\"},{\"description\":\"Materials and consumables\",\"amount\":\"408.00\"}],\"total_amount\":\"2948.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"FIRE-ENG-01\",\"vehicle_vin\":null,\"claim_type\":\"property\",\"payout_iban\":\"GB58VBLI12671451562016\",\"notes\":null}"
+  },
+  {
+    "doc_id": "train-00009",
+    "family": "auto_repair_estimate",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "All work subject to parts availability."
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2024-100009\",\"policy_number\":\"POL-SB14-793943\",\"claimant_name\":\"Joel Gibson\",\"date_of_incident\":\"2024-06-25\",\"date_of_service\":null,\"provider_name\":\"Ray Collision Center\",\"line_items\":[{\"description\":\"Wheel alignment\",\"amount\":\"864.00\"},{\"description\":\"Paint and refinish, rear panel\",\"amount\":\"1039.00\"},{\"description\":\"ADAS recalibration\",\"amount\":\"286.00\"},{\"description\":\"Wheel alignment\",\"amount\":\"1227.00\"},{\"description\":\"Rear bumper cover\",\"amount\":\"519.00\"}],\"total_amount\":\"3935.00\",\"currency\":\"GBP\",\"diagnosis_or_damage_code\":\"BMP-31A\",\"vehicle_vin\":\"PDV5ZLHYWSYB2L0RP\",\"claim_type\":\"auto\",\"payout_iban\":\"GB48IFHU29386090690404\",\"notes\":\"All work subject to parts availability.\"}"
+  },
+  {
+    "doc_id": "train-00010",
+    "family": "medical_bill",
+    "error": null,
+    "diffs": [
+      {
+        "field": "claimant_name",
+        "truth": "Ricky Rodriguez",
+        "pred": "Mr./Ms. Ricky Rodriguez"
+      }
+    ],
+    "raw": "{\"claim_id\":\"CLM-2025-100010\",\"policy_number\":\"POL-SM71-400923\",\"claimant_name\":\"Mr./Ms. Ricky Rodriguez\",\"date_of_incident\":\"2026-01-28\",\"date_of_service\":null,\"provider_name\":\"Bakerburgh Urgent Care\",\"line_items\":[{\"description\":\"Medication administration\",\"amount\":\"234.00\"},{\"description\":\"Medication administration\",\"amount\":\"917.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"507.00\"},{\"description\":\"Emergency department visit, level 3\",\"amount\":\"940.00\"}],\"total_amount\":\"2598.00\",\"currency\":\"USD\",\"diagnosis_or_damage_code\":\"S83.511\",\"vehicle_vin\":null,\"claim_type\":\"medical\",\"payout_iban\":\"GB32AMLS77452297394225\",\"notes\":\"Adjuster site visit scheduled.\"}"
+  },
+  {
+    "doc_id": "train-00011",
+    "family": "fax_memo",
+    "error": null,
+    "diffs": [
+      {
+        "field": "notes",
+        "truth": null,
+        "pred": "CONFIDENTIAL - FOR CLAIMS USE ONLY\n\nHow your claim is processed\nOur claims team reviews every submission within two business days of receipt. A case handler is assigned to your claim and  will contact you if further documentation is required. Once the assessment is complete, a settlement decision is issued in writing.\n\nRetention schedule\nClaim records are held in line with our regulatory retention schedule. After the retention period ends, records are destroyed in a controlled manner. Aggregate statistics may be retained for reporting and actuarial purposes; these do not identify individuals.\n\nDocument handling note\nThe document you submitted was captured electronically and processed by  an automated intake pipeline. Scanned pages  are checked for completeness and legibility; pages that fail quality checks are flagged for manual review. Reprints of this document can be requested at any time.\n\nCoverage conditions summary\nSettlement is  subject to the terms, conditions, limitations and exclusions of the policy under which the claim is made. Amounts shown may be subject to a policy excess or a deductible that is applied at settlement stage. Where the claim relates to  a total loss, separate valuation rules apply.\n\nRegulatory information\nThis communication is issued  by the handling office named above, which is authorised and regulated for the conduct  of insurance business. Calls to our teams may be recorded for quality assurance and training purposes. Nothing in this document constitutes legal advice."
+      }
+    ],
+    "raw": "{\n  \"claim_id\": \"CLM-2026-100011\",\n  \"policy_number\": \"POL-MR46-937502\",\n  \"claimant_name\": \"Jackie Moss\",\n  \"date_of_incident\": null,\n  \"date_of_service\": null,\n  \"provider_name\": null,\n  \"line_items\": [\n    {\"description\": \"Radiator support bracket\", \"amount\": \"1716.00\"},\n    {\"description\": \"Tail lamp assembly\", \"amount\": \"907.00\"},\n    {\"description\": \"Body labor (4.0 hrs)\", \"amount\": \"523.00\"},\n    {\"description\": \"Paint and refinish, rear panel\", \"amount\": \"783.00\"},\n    {\"description\": \"Tax / VAT\", \"amount\": \"300.43\"}\n  ],\n  \"total_amount\": \"4229.43\",\n  \"currency\": \"USD\",\n  \"diagnosis_or_damage_code\": null,\n  \"vehicle_vin\": \"KFEHX0EJLT3ZV9K4H\",\n  \"claim_type\": \"auto\",\n  \"payout_iban\": \"GB83VCGG42799522861323\",\n  \"notes\": \"CONFIDENTIAL - FOR CLAIMS USE ONLY\\n\\nHow your claim is processed\\nOur claims team reviews every submission within two business days of receipt. A case handler is assigned to your claim and  will contact you if further documentation is required. Once the assessment is complete, a settlement decision is issued in writing.\\n\\nRetention schedule\\nClaim records are held in line with our regulatory retention schedule. After the retention period ends, records are"
+  }
+]
