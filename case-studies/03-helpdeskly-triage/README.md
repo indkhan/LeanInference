@@ -14,15 +14,15 @@ with a classification prompt, to get back three labels: intent (12 classes), urg
 
 | Approach | Intent macro-F1 (before → after) | High-urgency recall | Sentiment acc | p95 | Monthly $ | Size |
 |---|---|---|---|---|---|---|
-| Baseline proxy: Nemotron 3 Ultra 550B, zero-shot | *pending* ¹ | | | | | API |
+| Baseline proxy: gpt-oss-120b, zero-shot | 0.969 | 0.943 | 0.779 | 2.76 s | $2,202 ¹ | API |
 | A: MiniMax M3.1 Flash, few-shot prompt | 1.000 | 0.936 | 0.814 | 3.7 s | $563 ² | API |
 | B1: MiniLM embeddings + logistic regression (no generation) | 0.608 → 0.972 | 0.936 | 0.837 | 0.02 s | $130 | 22M params |
 | B2: Needle 3 embeddings + logistic regression (no generation) | 0.184 → 0.952 | 0.901 | 0.896 | 0.22 s | $130 | 63 MB |
 | **C: Qwen3.5-0.8B fine-tuned (LoRA) to output the labels** | 0.551 → **1.000** | **0.943** | **1.000** | 0.98 s ³ | **$431** | 0.8B |
 | D: Needle 3 fine-tuned (LoRA) as a classifier, `.cact` | 0.244 → 0.576 | 0.858 | 0.967 | 0.51 s | $130 | 63 MB |
 
-¹ The baseline proxy runs on a free tier capped at 50 requests/day; 54 of 700 tickets are done and it
-resumes daily. Until it completes, the bar below is Candidate A. ² A is priced at MiniMax M3 list
+¹ The baseline proxy completed all 700 tickets. Its measured token usage is priced at the
+status quo model's list rates. ² A is priced at MiniMax M3 list
 price (its closest paid listing) × its measured ~1,800-token few-shot prompt. ³ Single request on a
 6 GB laptop GPU. Self-hosted monthly cost = always-on rented machines (L4 GPU $0.59/h; 4-vCPU c7i
 $0.18/h) at measured latency.
@@ -34,7 +34,7 @@ gets intent 1.000 with no training at all. Urgency and sentiment are where appro
 
 ## What we recommend
 
-**C, the fine-tuned Qwen3.5-0.8B** (provisional until the baseline proxy completes):
+**C, the fine-tuned Qwen3.5-0.8B**:
 
 - the only approach at or above the bar on both intent macro-F1 and high-urgency recall, and the best
   on everything else: urgency accuracy 0.989, sentiment accuracy 1.000;
@@ -43,9 +43,8 @@ gets intent 1.000 with no training at all. Urgency and sentiment are where appro
 
 **If you want the cheapest option that is nearly as good: B1** - plain embeddings + logistic
 regression, no text generation at all, $130/month on one small CPU machine (-88%), 20 ms per ticket.
-It matches C on high-urgency recall (0.936) and gives up intent accuracy (0.972 vs 1.000) and urgency
-accuracy (0.740 vs 0.989 - its threshold is tuned to over-flag "high" rather than miss one). If the
-baseline proxy lands below 0.972 intent macro-F1, the brief's rule makes B1 the winner outright.
+Its intent macro-F1 of 0.972 clears the baseline bar, and its high-urgency recall
+of 0.936 falls below the baseline bar of 0.943.
 
 Needle 3 (B2 embeddings, D fine-tune) is the smallest, on-device option; its sentiment is strong
 (0.967 for D) but its intent accuracy is not ready.

@@ -1,0 +1,251 @@
+{
+  "model": "opencode/beam-free",
+  "adapter": "opencode",
+  "results_file": "eval\\results\\opencode-beam-free.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 314,
+  "n_split": 500,
+  "n_missing": 186,
+  "response_accuracy": 27.1,
+  "tool_selection": {
+    "n": 273,
+    "acc": 22.0
+  },
+  "args": {
+    "full_match_given_tool": 75.0,
+    "value_acc": 90.6,
+    "missing_total": 2,
+    "extra_total": 0,
+    "wrong_value_total": 13,
+    "wrong_date_total": 0
+  },
+  "no_tool": {
+    "n": 0,
+    "acc": null
+  },
+  "clarify": {
+    "n": 41,
+    "acc": 97.6
+  },
+  "parse_validity": 25.2,
+  "status_counts": {
+    "free_text": 235,
+    "json_call": 61,
+    "json_clarify": 18
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 41,
+      "acc": 97.6,
+      "top_errors": {
+        "no_question": 1
+      }
+    },
+    "clear": {
+      "n": 236,
+      "acc": 17.4,
+      "top_errors": {
+        "no_call_unparsed": 181,
+        "wrong_value": 9,
+        "clarified_instead_of_call": 4,
+        "missing_args": 1
+      }
+    },
+    "confusable": {
+      "n": 37,
+      "acc": 10.8,
+      "top_errors": {
+        "no_call_unparsed": 27,
+        "wrong_value": 4,
+        "missing_args": 1,
+        "wrong_tool": 1
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 314,
+      "acc": 27.1
+    }
+  },
+  "by_tool": {
+    "add_address": {
+      "n": 7,
+      "acc": 28.6
+    },
+    "apply_credit": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "assign_driver": {
+      "n": 6,
+      "acc": 33.3
+    },
+    "cancel_order": {
+      "n": 5,
+      "acc": 0.0
+    },
+    "cancel_pickup": {
+      "n": 8,
+      "acc": 0.0
+    },
+    "cancel_return": {
+      "n": 9,
+      "acc": 11.1
+    },
+    "check_inventory": {
+      "n": 5,
+      "acc": 20.0
+    },
+    "create_order": {
+      "n": 9,
+      "acc": 66.7
+    },
+    "create_return": {
+      "n": 6,
+      "acc": 16.7
+    },
+    "delete_address": {
+      "n": 6,
+      "acc": 50.0
+    },
+    "dispute_charge": {
+      "n": 10,
+      "acc": 0.0
+    },
+    "driver_availability": {
+      "n": 7,
+      "acc": 28.6
+    },
+    "duplicate_order": {
+      "n": 6,
+      "acc": 0.0
+    },
+    "get_driver": {
+      "n": 6,
+      "acc": 16.7
+    },
+    "get_eta": {
+      "n": 11,
+      "acc": 9.1
+    },
+    "get_invoice": {
+      "n": 6,
+      "acc": 0.0
+    },
+    "get_order": {
+      "n": 6,
+      "acc": 0.0
+    },
+    "get_pickup_status": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "get_quote": {
+      "n": 6,
+      "acc": 16.7
+    },
+    "get_rate_card": {
+      "n": 7,
+      "acc": 0.0
+    },
+    "get_return_status": {
+      "n": 6,
+      "acc": 0.0
+    },
+    "get_shipment_history": {
+      "n": 9,
+      "acc": 11.1
+    },
+    "get_warehouse_hours": {
+      "n": 6,
+      "acc": 0.0
+    },
+    "list_drivers": {
+      "n": 5,
+      "acc": 20.0
+    },
+    "list_pickups": {
+      "n": 6,
+      "acc": 16.7
+    },
+    "list_returns": {
+      "n": 7,
+      "acc": 14.3
+    },
+    "list_shipments": {
+      "n": 4,
+      "acc": 0.0
+    },
+    "list_warehouses": {
+      "n": 7,
+      "acc": 14.3
+    },
+    "reassign_driver": {
+      "n": 8,
+      "acc": 62.5
+    },
+    "request_refund": {
+      "n": 10,
+      "acc": 0.0
+    },
+    "reschedule_pickup": {
+      "n": 5,
+      "acc": 40.0
+    },
+    "reserve_space": {
+      "n": 7,
+      "acc": 42.9
+    },
+    "schedule_pickup": {
+      "n": 5,
+      "acc": 20.0
+    },
+    "share_tracking_link": {
+      "n": 6,
+      "acc": 16.7
+    },
+    "track_shipment": {
+      "n": 10,
+      "acc": 10.0
+    },
+    "transfer_stock": {
+      "n": 6,
+      "acc": 50.0
+    },
+    "update_address": {
+      "n": 5,
+      "acc": 0.0
+    },
+    "update_customer_address": {
+      "n": 10,
+      "acc": 10.0
+    },
+    "update_order_service_level": {
+      "n": 5,
+      "acc": 40.0
+    },
+    "verify_address": {
+      "n": 6,
+      "acc": 0.0
+    }
+  },
+  "taxonomy": {
+    "no_call_unparsed": 208,
+    "wrong_value": 13,
+    "clarified_instead_of_call": 4,
+    "missing_args": 2,
+    "no_question": 1,
+    "wrong_tool": 1
+  },
+  "latency_ms": {
+    "mean": 15489,
+    "p50": 3927,
+    "p95": 61638
+  },
+  "usage_totals": {
+    "input": 3967,
+    "output": 2032,
+    "reasoning": 5352
+  }
+}

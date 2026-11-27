@@ -5,7 +5,7 @@ Volume 2,000,000 calls/month. Accuracy = the whole response correct (tool, every
 | Model | Overall (before -> after) | Tool acc (before -> after) | Arg exact | No-tool / clarify acc | p95 latency | $/1M calls | Monthly $ | Size | Runs where |
 |---|---|---|---|---|---|---|---|---|---|
 | Status quo: GPT-6 Astra (cost only, not run) | - | - | - | - | - | 58,040 | 116,080 | API | third-party API |
-| Baseline proxy: Nemotron 3 Ultra 550B, all 40 schemas | pending (0/500) | | | | | | | 550B (API) | third-party API |
+| Baseline proxy: gpt-oss-120b, all 40 schemas | pending (71/500) | | | | | | | 117B (API) | third-party API |
 | Candidate A: MiniMax M3.1 Flash, all 40 schemas | **83.6%** | 98.6% | 82.2% | 97.5% | 5.0 s | 1,502 | 3,005 | API | third-party API |
 | B1: Qwen3.5-0.8B LoRA, no schemas in prompt | 7.6% -> **78.8%** | 0.0% -> 95.7% | 78.7% | 97.5% | 5.5 s | 646 | 1,292 | 0.8B, 4-bit ~0.6 GB + 25 MB LoRA | self-hosted GPU |
 | B2: Qwen3.5-2B LoRA, no schemas in prompt | 15.8% -> **82.0%** | 1.7% -> 97.9% | 81.3% | 94.9% | 5.1 s | 646 | 1,292 | 2B, 4-bit ~1.5 GB + LoRA | self-hosted GPU |

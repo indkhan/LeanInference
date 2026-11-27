@@ -1,0 +1,59 @@
+{
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "adapter": "openai",
+  "results_file": "eval\\results\\openrouter-nemotron-3-ultra-free.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 5,
+  "n_split": 500,
+  "n_missing": 495,
+  "response_accuracy": 0.0,
+  "tool_selection": {
+    "n": 0,
+    "acc": null
+  },
+  "args": {
+    "full_match_given_tool": null,
+    "value_acc": null,
+    "missing_total": 0,
+    "extra_total": 0,
+    "wrong_value_total": 0,
+    "wrong_date_total": 0
+  },
+  "no_tool": {
+    "n": 0,
+    "acc": null
+  },
+  "clarify": {
+    "n": 5,
+    "acc": 0.0
+  },
+  "parse_validity": 0.0,
+  "status_counts": {
+    "adapter_error": 5
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 5,
+      "acc": 0.0,
+      "top_errors": {
+        "adapter_error": 5
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 5,
+      "acc": 0.0
+    }
+  },
+  "by_tool": {},
+  "taxonomy": {
+    "adapter_error": 5
+  },
+  "latency_ms": {
+    "mean": 350,
+    "p50": 135,
+    "p95": 1212
+  },
+  "usage_totals": {}
+}

@@ -6,7 +6,7 @@
   "docs": 50,
   "ok": 50,
   "ok_rate": 1.0,
-  "wall_s": 0.4,
+  "wall_s": 0.5,
   "latency_p50": 18.593,
   "latency_p95": 23.807,
   "errors": [],

@@ -1,0 +1,79 @@
+{
+  "model": "opencode/nemotron-3-ultra-free",
+  "adapter": "opencode",
+  "results_file": "eval\\results\\opencode-nemotron-3-ultra-free.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 40,
+  "n_split": 500,
+  "n_missing": 460,
+  "response_accuracy": 97.5,
+  "tool_selection": {
+    "n": 2,
+    "acc": 100.0
+  },
+  "args": {
+    "full_match_given_tool": 50.0,
+    "value_acc": 83.3,
+    "missing_total": 0,
+    "extra_total": 0,
+    "wrong_value_total": 1,
+    "wrong_date_total": 0
+  },
+  "no_tool": {
+    "n": 0,
+    "acc": null
+  },
+  "clarify": {
+    "n": 38,
+    "acc": 100.0
+  },
+  "parse_validity": 97.5,
+  "status_counts": {
+    "json_clarify": 37,
+    "json_call": 2,
+    "free_text": 1
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 38,
+      "acc": 100.0,
+      "top_errors": {}
+    },
+    "clear": {
+      "n": 2,
+      "acc": 50.0,
+      "top_errors": {
+        "wrong_value": 1
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 40,
+      "acc": 97.5
+    }
+  },
+  "by_tool": {
+    "cancel_order": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "get_quote": {
+      "n": 1,
+      "acc": 100.0
+    }
+  },
+  "taxonomy": {
+    "wrong_value": 1
+  },
+  "latency_ms": {
+    "mean": 5855,
+    "p50": 4822,
+    "p95": 13218
+  },
+  "usage_totals": {
+    "input": 6075,
+    "output": 11,
+    "reasoning": 302
+  }
+}

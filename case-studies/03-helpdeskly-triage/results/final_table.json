@@ -1,23 +1,55 @@
 {
   "as_of": "2026-10-20",
   "winner": "C: Qwen3.5-0.8B LoRA label generator",
-  "bar_provisional": true,
+  "bar_provisional": false,
   "rows": [
     {
-      "name": "Baseline proxy: Nemotron 3 Ultra 550B (zero-shot)",
+      "name": "Baseline proxy: gpt-oss-120b (zero-shot)",
       "after": "base_zero_shot_test",
       "hosted": [
-        "nvidia_nemotron-3-ultra-550b-a55b_free",
+        "gpt-oss-120b",
         "zero_shot"
       ],
       "price": "frontier",
       "where": "third-party API",
-      "size": "550B (API)",
+      "size": "117B (API)",
       "train": "none",
       "baseline": true,
-      "usd1m": null,
-      "monthly": null,
-      "basis": "not complete"
+      "usd1m": 2201.902857142857,
+      "monthly": 2201.902857142857,
+      "basis": "Claude Opus 5.5 list x 469 in + 16 out tokens/ticket (measured)",
+      "m": {
+        "intent": {
+          "acc": 0.9729,
+          "macro_f1": 0.9692
+        },
+        "urgency": {
+          "acc": 0.8329,
+          "macro_f1": 0.8211,
+          "high_recall": 0.9433
+        },
+        "sentiment": {
+          "acc": 0.7786,
+          "macro_f1": 0.7295
+        }
+      },
+      "mu": {
+        "intent": {
+          "acc": 0.972,
+          "macro_f1": 0.9731
+        },
+        "urgency": {
+          "acc": 0.8249,
+          "macro_f1": 0.8189,
+          "high_recall": 0.937
+        },
+        "sentiment": {
+          "acc": 0.7618,
+          "macro_f1": 0.7167
+        }
+      },
+      "p50": 0.553,
+      "p95": 2.758
     },
     {
       "name": "Candidate A: MiniMax M3.1 Flash (few-shot)",

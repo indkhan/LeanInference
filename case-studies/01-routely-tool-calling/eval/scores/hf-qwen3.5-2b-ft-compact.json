@@ -1,0 +1,243 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "adapter": "hf",
+  "results_file": "eval\\results\\hf-qwen3.5-2b-ft-compact.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 209,
+  "n_split": 500,
+  "n_missing": 291,
+  "response_accuracy": 85.2,
+  "tool_selection": {
+    "n": 168,
+    "acc": 97.6
+  },
+  "args": {
+    "full_match_given_tool": 85.4,
+    "value_acc": 93.1,
+    "missing_total": 2,
+    "extra_total": 2,
+    "wrong_value_total": 22,
+    "wrong_date_total": 0
+  },
+  "no_tool": {
+    "n": 0,
+    "acc": null
+  },
+  "clarify": {
+    "n": 41,
+    "acc": 92.7
+  },
+  "parse_validity": 100.0,
+  "status_counts": {
+    "json_call": 168,
+    "json_clarify": 39,
+    "json_none": 2
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 41,
+      "acc": 92.7,
+      "top_errors": {
+        "called_instead_of_clarify": 2,
+        "none_instead_of_clarify": 1
+      }
+    },
+    "clear": {
+      "n": 168,
+      "acc": 83.3,
+      "top_errors": {
+        "wrong_value": 21,
+        "wrong_tool": 2,
+        "missing_args": 2,
+        "extra_args": 1
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 209,
+      "acc": 85.2
+    }
+  },
+  "by_tool": {
+    "add_address": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "apply_credit": {
+      "n": 4,
+      "acc": 75.0
+    },
+    "assign_driver": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "cancel_order": {
+      "n": 5,
+      "acc": 60.0
+    },
+    "cancel_pickup": {
+      "n": 4,
+      "acc": 50.0
+    },
+    "cancel_return": {
+      "n": 4,
+      "acc": 50.0
+    },
+    "check_inventory": {
+      "n": 5,
+      "acc": 100.0
+    },
+    "create_order": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "create_return": {
+      "n": 4,
+      "acc": 50.0
+    },
+    "delete_address": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "dispute_charge": {
+      "n": 5,
+      "acc": 40.0
+    },
+    "driver_availability": {
+      "n": 4,
+      "acc": 75.0
+    },
+    "duplicate_order": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_driver": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_eta": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_invoice": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_order": {
+      "n": 4,
+      "acc": 75.0
+    },
+    "get_pickup_status": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_quote": {
+      "n": 5,
+      "acc": 80.0
+    },
+    "get_rate_card": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_return_status": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_shipment_history": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "get_warehouse_hours": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "list_drivers": {
+      "n": 5,
+      "acc": 100.0
+    },
+    "list_pickups": {
+      "n": 4,
+      "acc": 50.0
+    },
+    "list_returns": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "list_shipments": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "list_warehouses": {
+      "n": 4,
+      "acc": 75.0
+    },
+    "reassign_driver": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "request_refund": {
+      "n": 4,
+      "acc": 0.0
+    },
+    "reschedule_pickup": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "reserve_space": {
+      "n": 5,
+      "acc": 100.0
+    },
+    "schedule_pickup": {
+      "n": 4,
+      "acc": 50.0
+    },
+    "share_tracking_link": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "track_shipment": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "transfer_stock": {
+      "n": 5,
+      "acc": 60.0
+    },
+    "update_address": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "update_customer_address": {
+      "n": 4,
+      "acc": 100.0
+    },
+    "update_order_service_level": {
+      "n": 5,
+      "acc": 100.0
+    },
+    "verify_address": {
+      "n": 4,
+      "acc": 50.0
+    }
+  },
+  "taxonomy": {
+    "wrong_value": 21,
+    "called_instead_of_clarify": 2,
+    "wrong_tool": 2,
+    "missing_args": 2,
+    "none_instead_of_clarify": 1,
+    "extra_args": 1,
+    "none_instead_of_call": 1,
+    "clarified_instead_of_call": 1
+  },
+  "latency_ms": {
+    "mean": 5511,
+    "p50": 5247,
+    "p95": 10755
+  },
+  "usage_totals": {
+    "prompt_tokens": 153590,
+    "completion_tokens": 7003
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "model": "gpt-oss-120b",
+  "adapter": "openai",
+  "results_file": "eval\\results\\freellm-gpt-oss-120b.jsonl",
+  "split": "data\\splits\\test.jsonl",
+  "n_scored": 71,
+  "n_split": 500,
+  "n_missing": 429,
+  "response_accuracy": 85.9,
+  "tool_selection": {
+    "n": 30,
+    "acc": 83.3
+  },
+  "args": {
+    "full_match_given_tool": 84.0,
+    "value_acc": 92.7,
+    "missing_total": 1,
+    "extra_total": 0,
+    "wrong_value_total": 3,
+    "wrong_date_total": 0
+  },
+  "no_tool": {
+    "n": 0,
+    "acc": null
+  },
+  "clarify": {
+    "n": 41,
+    "acc": 97.6
+  },
+  "parse_validity": 93.0,
+  "status_counts": {
+    "json_clarify": 40,
+    "json_call": 25,
+    "adapter_error": 5,
+    "json_none": 1
+  },
+  "by_bucket": {
+    "clarify": {
+      "n": 41,
+      "acc": 97.6,
+      "top_errors": {
+        "none_instead_of_clarify": 1
+      }
+    },
+    "clear": {
+      "n": 30,
+      "acc": 70.0,
+      "top_errors": {
+        "adapter_error": 5,
+        "wrong_value": 3,
+        "missing_args": 1
+      }
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 71,
+      "acc": 85.9
+    }
+  },
+  "by_tool": {
+    "add_address": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "apply_credit": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "assign_driver": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "cancel_order": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "cancel_pickup": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "check_inventory": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "create_order": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "create_return": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "delete_address": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "dispute_charge": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "driver_availability": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "duplicate_order": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_driver": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_eta": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_invoice": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_order": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_pickup_status": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_quote": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_rate_card": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "get_shipment_history": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "get_warehouse_hours": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "list_drivers": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "list_pickups": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "list_returns": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "list_shipments": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "list_warehouses": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "reassign_driver": {
+      "n": 1,
+      "acc": 0.0
+    },
+    "reserve_space": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "transfer_stock": {
+      "n": 1,
+      "acc": 100.0
+    },
+    "update_order_service_level": {
+      "n": 1,
+      "acc": 100.0
+    }
+  },
+  "taxonomy": {
+    "adapter_error": 5,
+    "wrong_value": 3,
+    "none_instead_of_clarify": 1,
+    "missing_args": 1
+  },
+  "latency_ms": {
+    "mean": 1717,
+    "p50": 884,
+    "p95": 4598
+  },
+  "usage_totals": {
+    "queue_time": 13.515980570999998,
+    "prompt_tokens": 290978,
+    "prompt_time": 12.713309156,
+    "completion_tokens": 8426,
+    "completion_time": 19.512359832000005,
+    "total_tokens": 299404,
+    "total_time": 32.225668987999995
+  }
+}

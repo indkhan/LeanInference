@@ -13,15 +13,15 @@ word. That is **about $116,000 a month**, and 97% of the prompt (5,141 tokens) i
 
 | Model | Overall correct (before → after) | Right tool | Args exact | No-tool / clarify | p95 | Monthly $ | Runs where |
 |---|---|---|---|---|---|---|---|
-| Baseline proxy: Nemotron 3 Ultra 550B, all schemas | *pending* ¹ | | | | | | API |
+| Baseline proxy: gpt-oss-120b, all schemas | *pending (71/500)* ¹ | | | | | | API |
 | A: MiniMax M3.1 Flash, all schemas | 83.6% | 98.6% | 82.2% | 97.5% | 5.0 s | $3,005 | API |
 | B1: Qwen3.5-0.8B fine-tuned, **no schemas** | 7.6% → 78.8% | 95.7% | 78.7% | 97.5% | 5.5 s ² | $1,292 | your cloud (GPU) |
 | **B2: Qwen3.5-2B fine-tuned, no schemas** | 15.8% → **82.0%** | **97.9%** | 81.3% | 94.9% | 5.1 s ² | **$1,292** | **your cloud (GPU)** |
 | C: Needle 3 fine-tuned (63 MB, on-device) | 2.0% → 43.2% | 59.4% | 59.6% | 84.8% | 0.8 s (CPU) | $130 | your cloud / device |
 
 "Overall correct" is strict: right tool, every argument exactly right (including free-text
-`reason` fields), or the right clarify / no-tool decision. ¹ The baseline proxy runs on a rate-limited
-free tier (40/500 done); until it completes, Candidate A is the bar. ² Measured on a 6 GB laptop GPU in
+`reason` fields), or the right clarify / no-tool decision. ¹ Candidate A remains the provisional bar
+while the gpt-oss-120b baseline is incomplete. ² Measured on a 6 GB laptop GPU in
 4-bit; self-hosted cost = 3 rented L4 GPUs sized from that latency, so it is conservative.
 
 ## What we found
